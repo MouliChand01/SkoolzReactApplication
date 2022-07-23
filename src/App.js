@@ -9,10 +9,10 @@ import Blogs from './component/Blogs/Blogs';
 function App() {
   return (
     <div className="App">
-      <Blogs/>
-      <AwardsAndRecognitions/>
+      {/* <Blogs/> */}
+      {/* <AwardsAndRecognitions/> */}
       <Testimonials/>
-      <FooterComponent/>
+      {/* <FooterComponent/> */}
     </div>
   );
 }

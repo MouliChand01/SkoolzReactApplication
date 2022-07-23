@@ -7,7 +7,7 @@ const Testimonials = () => {
         <div>
             <div className="schoolMainHome">
                 <div className="baseContainer topSchoolSection">
-                    <div className="topSchoolSectionTitleTestimonial"><a asp-controller="Testimonial" asp-action="Index"><p style={{ "color": "#FF6700" }}> Testimonials</p></a> </div>
+                    <div className="topSchoolSectionTitleTestimonial"><a href="/testimonial/index" asp-controller="Testimonial" asp-action="Index" style={{"textDecoration":"none"}}><p style={{ "color": "#FF6700" }}> Testimonials</p></a> </div>
                     <div className="swiper-container-evTestimonial">
                         <div className="swiper-wrapper">
                             <div className="swiper-slide indexBlogs">
@@ -73,16 +73,16 @@ const Testimonials = () => {
                         </div>
                     </div>
                 </div>
-                <div class="pagination">
-                    <div class="swiper-button-prev-evTestimonial"></div>
-                    <div class="swiper-pagination-evTestimonial"></div>
-                    <div class="swiper-button-next-evTestimonial"></div>
-                </div>
+                    <div class="pagination">
+                        <div class="swiper-button-prev-evTestimonial"></div>
+                        <div class="swiper-pagination-evTestimonial"></div>
+                        <div class="swiper-button-next-evTestimonial"></div>
+                     </div>
                 <div class="joinOurNetwork" id="contactRedirect">
                     <div class="joinOurNetworkText">
                         More Testimonials
                         <div class="viewMoreTestimonialsHomeButton"></div>
-                        <a asp-controller="Testimonial" asp-action="Index" style={{"textDecoration":"None"}} class="joinOurNetworkButton">
+                        <a asp-controller="Testimonial" asp-action="Index" style={{ "textDecoration": "None" }} class="joinOurNetworkButton">
                             <div>
                                 Click here<span class="registerSchoolIcon"></span>
                             </div>
