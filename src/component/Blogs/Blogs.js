@@ -1,0 +1,426 @@
+import React, { useState } from "react";
+import "./Blogs.css";
+import skoolzlogo from "../../Assets/Images/skoolz.PNG"
+
+const Blogs = () => {
+    const [trending, setTrending] = useState(true);
+    const [seleted,setSelected] = useState(true);
+    const OnTranding = (val) => {
+        if(val === "Latest"){
+            setTrending(false)
+            setSelected(false)
+        }else{
+            setTrending(true)
+            setSelected(true)
+        }
+    }
+    return (
+        <div>
+            <div className="schoolMainHome">
+                <div className="baseContainer topSchoolSection">
+                    <div className="topSchoolSectionTitle"><a href="/blog/index" style={{ "textDecoration": "none" }}><p style={{ "color": "#FF6700" }}> Blogs </p></a></div>
+                    <div id="btn-content" className="text-center m-3 mb-5">
+                        <div className="btn-group shadow-lg  bg-white rounded-pill" role="group" aria-label="Basic example">
+                            <button type="submit" data-index="0" className={`btn-board-trendblogshome m-3 Trending ${seleted?"btnSelected":''}`}  onClick={() => OnTranding("Trending")}>Trending</button>
+                            <button type="submit" data-index="1" className={`btn-board-trendblogshome m-3 Latest ${!seleted?"btnSelected":''}`} onClick={() => OnTranding("Latest")}>Latest</button>
+                        </div>
+                    </div>
+                    {trending ? (
+                        <div className="swiper-container-blogs" id="BlogsHomeTrending">
+                            <div className="swiper-wrapper">
+                                <div className="swiper-slide indexBlogs">
+                                    <div className="row">
+                                        <article className="blog indexBlog fadeIn" >
+                                            <div className="row no-gutters">
+                                                <div className="col-lg-5">
+                                                    <figure>
+                                                        <a href="/blog/cbse-vs-icse-vs-ib-vs-igcse-vs-stateboard">
+                                                            <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%", "left": "130px" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
+                                                            <div className="preview"><span>Read more</span></div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                                <div className="col-lg-7">
+                                                    <div className="post_info" style={{ "height": "310px" }}>
+                                                        <h3>
+                                                            <a href="/blog/cbse-vs-icse-vs-ib-vs-igcse-vs-stateboard">
+                                                                CBSE vs ICSE vs IB vs IGCSE vs State Board
+                                                            </a>
+                                                        </h3>
+
+                                                        <p>
+                                                            Things that start on a good note usually have flourishing conclusions. The same also applies to a student's school-level education. It lays the foundation for a lucrative career, be it in the government or the private sector.
+                                                        </p>
+
+                                                        <ul>
+                                                            <li>
+                                                                <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+
+                                                            </li>
+                                                            <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div className="swiper-slide indexBlogs">
+                                    <div className="row">
+                                        <article className="blog indexBlog fadeIn" >
+                                            <div className="row no-gutters">
+                                                <div className="col-lg-5">
+                                                    <figure>
+                                                        <a href="/blog/various-types-of-preschools-all-parents-should-know">
+                                                            <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%", "left": "130px" }} alt="VariousTypesofPreschoolsAllParentsShouldknow" />
+                                                            <div className="preview"><span>Read more</span></div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                                <div className="col-lg-7">
+                                                    <div className="post_info" style={{ "height": "310px" }}>
+                                                        <h3>
+                                                            <a href="/blog/various-types-of-preschools-all-parents-should-know">
+                                                                Various Types of Preschools All Parents Should know
+                                                            </a>
+                                                        </h3>
+
+                                                        <p>
+                                                            There are many educational preschool programs, and each one follows a unique learning approach. However, they share something in common – the motto, which is to empower, improve, and refine preschool education.
+                                                        </p>
+
+                                                        <ul>
+                                                            <li>
+                                                                <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+
+                                                            </li>
+                                                            <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div className="swiper-slide indexBlogs">
+                                    <div className="row">
+                                        <article className="blog indexBlog fadeIn" >
+                                            <div className="row no-gutters">
+                                                <div className="col-lg-5">
+                                                    <figure>
+                                                        <a href="/blog/best-cbse-schools-in-bangalore-for-admissions-in-2022-23">
+                                                            <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "286px", "width": "90%", "left": "130px" }} alt="BestCBSESchoolsinBangaloreforadmissionsin202223" />
+                                                            <div className="preview"><span>Read more</span></div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                                <div className="col-lg-7">
+                                                    <div className="post_info" style={{ "height": "310px" }}>
+                                                        <h3>
+                                                            <a href="/blog/best-cbse-schools-in-bangalore-for-admissions-in-2022-23">
+                                                                Best CBSE Schools in Bangalore for admissions in 2022-23
+                                                            </a>
+                                                        </h3>
+                                                        <p>
+                                                            Bangalore is the top priority of parents when education is concerned. This beautiful city never fails to produce record-breaking board results.
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+
+                                                            </li>
+                                                            <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ) :
+                        (<div className="swiper-container-blogs" id="BlogsHomeLatest">
+                            <div className="swiper-wrapper">
+
+                                <div className="swiper-slide indexBlogs">
+                                    <div className="row">
+                                        <article className="blog indexBlog fadeIn">
+                                            <div className="row no-gutters">
+                                                <div className="col-lg-5">
+                                                    <figure>
+                                                        <a href="/blog/pre-schools-in-mumbai">
+                                                            <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%", "left": "130px" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
+                                                            <div className="preview"><span>Read more</span></div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                                <div className="col-lg-7">
+                                                    <div className="post_info" style={{ "height": "310px" }}>
+                                                        <h3>
+                                                            <a href="/blog/pre-schools-in-mumbai">
+                                                                Pre schools in Mumbai
+                                                            </a>
+                                                        </h3>
+
+                                                        <p>
+                                                            The early learning period of a child's life is crucial. It lays the basis for an educational foundation and a bright future. Therefore, choosing the top preschool for your child becomes a vital step.
+                                                        </p>
+
+                                                        <ul>
+                                                            <li>
+                                                                <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+
+                                                            </li>
+                                                            <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <div className="swiper-slide indexBlogs">
+                                    <div className="row">
+                                        <article className="blog indexBlog fadeIn" >
+                                            <div className="row no-gutters">
+                                                <div className="col-lg-5">
+                                                    <figure>
+                                                        <a href="/blog/montessori-schools-in-mumbai">
+                                                            <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%", "left": "130px" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
+                                                            <div className="preview"><span>Read more</span></div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                                <div className="col-lg-7">
+                                                    <div className="post_info" style={{ "height": "310px" }}>
+                                                        <h3>
+                                                            <a href="/blog/montessori-schools-in-mumbai">
+                                                                Montessori schools in Mumbai
+                                                            </a>
+                                                        </h3>
+
+                                                        <p>
+                                                            A child on his journey to adulthood passes through many developmental stages. The needs of a child are unique, changing at every stage of their life.
+                                                        </p>
+
+                                                        <ul>
+                                                            <li>
+                                                                <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+
+                                                            </li>
+                                                            <li sstyle={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <div className="swiper-slide indexBlogs">
+                                    <div className="row">
+                                        <article className="blog indexBlog fadeIn">
+                                            <div className="row no-gutters">
+                                                <div className="col-lg-5">
+                                                    <figure>
+                                                        <a href="/blog/best-pre-schools-in-delhi">
+                                                            <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%", "left": "130px" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
+                                                            <div className="preview"><span>Read more</span></div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                                <div className="col-lg-7">
+                                                    <div className="post_info" style={{ "height": "310px" }}>
+                                                        <h3>
+                                                            <a href="/blog/best-pre-schools-in-delhi">
+                                                                Best Pre Schools in Delhi
+                                                            </a>
+                                                        </h3>
+
+                                                        <p>
+                                                            Pre-schools are basically early childhood education programs that kids should attend before they begin schooling. The programs they offer combine play with learning and are taught by professionally trained educators.
+                                                        </p>
+
+                                                        <ul>
+                                                            <li>
+                                                                <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+
+                                                            </li>
+                                                            <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <div className="swiper-slide indexBlogs">
+                                    <div className="row">
+                                        <article className="blog indexBlog fadeIn">
+                                            <div className="row no-gutters">
+                                                <div className="col-lg-5">
+                                                    <figure>
+                                                        <a href="/blog/best-montessori-schools-in-delhi">
+                                                            <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%", "left": "130px" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
+                                                            <div className="preview"><span>Read more</span></div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                                <div className="col-lg-7">
+                                                    <div className="post_info" style={{ "height": "310px" }}>
+                                                        <h3>
+                                                            <a href="/blog/best-montessori-schools-in-delhi">
+                                                                Best Montessori Schools in Delhi
+                                                            </a>
+                                                        </h3>
+
+                                                        <p>
+                                                            The Montessori education system is an internationally recognized method of education that has become quite famous in Delhi. The top Montessori Schools in Delhi provide a growing and creative environment for your child's growth.
+                                                        </p>
+
+                                                        <ul>
+                                                            <li>
+                                                                <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+
+                                                            </li>
+                                                            <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+
+                                <div className="swiper-slide indexBlogs">
+                                    <div className="row">
+                                        <article className="blog indexBlog fadeIn">
+                                            <div className="row no-gutters">
+                                                <div className="col-lg-5">
+                                                    <figure>
+                                                        <a href="/blog/best-ICSE-schools-Bangalore">
+                                                            <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%", "left": "130px" }} alt="BestICSESchoolsInBangaloreforAdmissionsin2022" />
+                                                            <div className="preview"><span>Read more</span></div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                                <div className="col-lg-7">
+                                                    <div className="post_info" style={{ "height": "310px" }}>
+                                                        <h3>
+                                                            <a href="/blog/best-ICSE-schools-Bangalore">
+                                                                Best ICSE Schools in Bangalore for admissions in 2022
+                                                            </a>
+                                                        </h3>
+                                                        <p>
+                                                            Education is essential not just for securing a bright future, but it gives knowledge for leading a virtuous life. Education is said to be life itself.Yet, the school from where this education is garnered makes all the difference.
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+
+                                                            </li>
+                                                            <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div className="swiper-slide indexBlogs">
+                                    <div className="row">
+                                        <article className="blog indexBlog fadeIn">
+                                            <div className="row no-gutters">
+                                                <div className="col-lg-5">
+                                                    <figure>
+                                                        <a href="/blog/nep-to-early-childhood-care-and-education">
+                                                            <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%", "left": "130px" }} alt="NepToEarlyChildhoodCareAndEducation" />
+                                                            <div className="preview"><span>Read more</span></div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                                <div className="col-lg-7">
+                                                    <div className="post_info" style={{ "height": "310px" }}>
+                                                        <h3>
+                                                            <a href="/blog/nep-to-early-childhood-care-and-education">
+                                                                The Shower of Blessings from NEP to Early Childhood Care and Education
+                                                            </a>
+                                                        </h3>
+                                                        <p>
+                                                            In 2008, when I was working as a principal for a private school, I happened to substitute an invigilator for a Class-8 English unit test. Peeking into Students' answer scripts always makes invigilation less dull.
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+
+                                                            </li>
+                                                            <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div className="swiper-slide indexBlogs">
+                                    <div className="row">
+                                        <article className="blog indexBlog fadeIn">
+                                            <div className="row no-gutters">
+                                                <div className="col-lg-5">
+                                                    <figure>
+                                                        <a href="/blog/top-7-serious-concerns-addressed-by-new-education-policy">
+                                                            <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%", "left": "130px" }} alt="Top7SeriousConcernsAddressedByNewEducationPolicy" />
+                                                            <div className="preview"><span>Read more</span></div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                                <div className="col-lg-7">
+                                                    <div className="post_info" style={{ "height": "310px" }}>
+                                                        <h3>
+                                                            <a href="/blog/top-7-serious-concerns-addressed-by-new-education-policy">
+                                                                Top 7 Serious Concerns Addressed By New Education Policy
+                                                            </a>
+                                                        </h3>
+                                                        <p>
+                                                            I have addressed the class-10 students and their parents in many farewell functions and career guidance seminars past 15 years. For me, it is customary to interact during the beginning of the session about their past and the future.
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+
+                                                            </li>
+                                                            <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>)}
+                    </div>
+                <div className="pagination">
+                    <div className="swiper-button-prev-blogs"></div>
+                    <div className="swiper-pagination-blogs"></div>
+                    <div className="swiper-button-next-blogs"></div>
+                </div>
+                <div className="joinOurNetwork">
+                    <div className="joinOurNetworkText">
+                        More Blogs On Various Topics
+                        <a className="joinOurNetworkButton" href="/blog/index" style={{"textDecoration":"none"}}>
+                            <div>
+                                Click Here<span className="registerSchoolIcon"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+export default Blogs;

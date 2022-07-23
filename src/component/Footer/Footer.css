@@ -1,0 +1,419 @@
+.copyrightLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyrightLogo img {
+    height: 68px;
+}
+
+.copyrightPowered {
+    text-align: right;
+}
+
+.baseContainer {
+    width: 100%;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.copyright {
+    color: #000000;
+    width: 100%;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    background: #ffffff;
+    font-size: 14px;
+    margin-left: 0px;
+}
+
+.webFooter {
+    min-height: 376px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    margin-top: 0px;
+    background: linear-gradient(90deg, #34A853 0%, #044816 104.58%);
+    margin-top: 20px;
+}
+
+.applyBtn {
+    color: #34A853;
+    cursor: pointer;
+    text-decoration: none;
+    height: 45px;
+    border-radius: 27px;
+    min-width: 120px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.25s;
+    box-shadow: none;
+    background: #ffffff;
+    border: 1px solid #34A853;
+    outline: none !important;
+}
+
+.applyBtn:hover {
+    box-shadow: inset 0 -3.25em 0 0 #34A853;
+    color: #ffffff;
+    border: 1px solid #34A853;
+}
+
+.joinOurNetworkButton1 {
+    height: 54px;
+    line-height: 54px;
+    font-family: MontserratRegular;
+    font-size: 18px;
+    margin-left: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: rgba(52, 168, 83, 1);
+    border-radius: 27px;
+    font-weight: 600;
+    width: 300px;
+}
+
+.joinOurNetworkText {
+    display: flex;
+    font-family: MontserratRegular;
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.webFooterContent1List {
+    list-style: none;
+    padding: 0px;
+    padding-top: 17px;
+}
+
+.webFooterContent1List li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.webFooterContent1List li {
+    color: #fff;
+    text-align: left;
+}
+
+.webFooterContent1List li a span {
+    padding-right: 14px;
+    width: 30px;
+    float: left;
+}
+
+.webFooterContent1List li a:hover {
+    color: #00CA9D;
+}
+
+.webFooterContent1List li a:hover span img {
+    filter: invert(0) sepia(1) saturate(41) hue-rotate(80.2deg) brightness(0.8);
+    -moz-filter: invert(0) sepia(1) saturate(41) hue-rotate(80.2deg) brightness(0.8);
+    -webkit-filter: invert(0) sepia(1) saturate(41) hue-rotate(80.2deg) brightness(0.8);
+}
+
+.webFooterContent1List li {
+    padding-top: 17px;
+}
+
+.webFooterContent1Title {
+    /*opacity: .8;*/
+    opacity: 1.8;
+    text-align: left;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: MontserratRegular;
+}
+
+.webFooterCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.mobileFooter {
+    display: none;
+}
+
+.quickLinkFooter {
+    padding-left: 10%;
+    padding-right: 10%;
+    background: linear-gradient(90deg, #34A853 0%, #044816 104.58%);
+}
+
+.main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 14px;
+    text-align: justify;
+    color: rgba(255, 255, 255, .8);
+}
+
+.main-footer a {
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+}
+
+.main-footer div {
+    padding-bottom: 10px;
+}
+
+.main-footer a.top_boarding {
+    font-size: 15px;
+    padding: 14px 0;
+    line-height: 2;
+
+}
+
+.main-footer a:hover {
+    color: #fff;
+}
+
+.main-footer .footer-top-boarding {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 6px 0 0;
+}
+
+.joinOurNetwork {
+    min-height: 132px;
+    background: linear-gradient(90deg, #34A853 0%, #044816 104.58%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.callUsHomeButton {
+    margin-left: 11px;
+}
+.joinOurNetworkButton {
+    height: 54px;
+    line-height: 54px;
+    font-family: MontserratRegular;
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: rgba(52, 168, 83, 1);
+    border-radius: 27px;
+    font-weight: 600;
+    width: 300px;
+}
+.joinOurNetworkButton a {
+    color: #fff;
+}
+
+.callBackBtn {
+    color: #ffffff;
+    background: #34A853;
+}
+.joinOurNetworkOfBestSchoolsHomeButton {
+    margin-left: 263px;
+}
+.registerButton:hover{
+    color: #ffffff;
+
+}
+.registerSchoolIcon {
+    /* background-image: url(../img/registerSchoolIcon.svg); */
+    background-size: 100%;
+    width: 26px;
+    height: 33px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 5px 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .copyrightLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyrightLogo img {
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .copyrightPowered {
+        text-align: center;
+    }
+
+    .copyrighTnC {
+        text-align: center;
+    }
+
+    .baseContainer {
+        width: 100%;
+        padding-right: 17px;
+        padding-left: 17px;
+    }
+
+    .copyright {
+        color: #000000;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background: #ffffff;
+        font-size: 14px;
+        margin-left: 0px;
+    }
+
+    .joinOurNetworkButton1 {
+        margin: auto;
+        width: 60%;
+        font-family: MontserratRegular;
+        font-size: 25px;
+        color: #ffffff;
+        margin-left: 10%;
+        padding-left: 0px;
+        padding-right: 0px;
+        background: rgba(52, 168, 83, 1);
+        border-radius: 27px;
+        font-weight: 600;
+        margin: auto;
+        margin-top: 12px;
+    }
+
+    .joinOurNetworkText {
+        margin: auto;
+        width: 100%;
+        display: block;
+        font-family: MontserratRegular;
+        font-size: 2.5rem;
+        color: rgba(255, 255, 255, .8);
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .webFooterCenter {
+        display: flex;
+        justify-content: center;
+    }
+
+    .webFooter {
+        display: none;
+    }
+
+    .mobileFooter {
+        height: 434px;
+        width: 100%;
+        display: block;
+        margin: auto;
+        margin-top: 0px;
+        background: linear-gradient(90deg, #34A853 0%, #044816 104.58%);
+    }
+
+    .mobileFooterContent1 {
+        width: 100%;
+        color: rgba(255, 255, 255, .8);
+        font-size: 16px;
+        font-weight: 600;
+        font-family: MontserratRegular;
+        padding-top: 20px;
+        /*min-height: 376px;*/
+        float: left;
+    }
+
+    .mobileFooterContent1SubTitle {
+        color: rgba(255, 255, 255, .8);
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        font-family: MontserratRegular;
+    }
+
+    .mobileFooterContent1List {
+        list-style: none;
+        padding: 0px;
+        padding-top: 17px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .mobileFooterContent1List li {
+        padding-top: 14px;
+        /* font-size: 14px;*/
+        font-size: 14px;
+        font-family: MontserratSemiBold;
+    }
+
+    .mobileFooterContent1List li a {
+        text-decoration: none;
+    }
+
+    .footerSS {
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .footerSS img {
+        height: 18px;
+        width: 18px;
+    }
+
+    .footerSS .fa {
+        padding-right: 10px;
+    }
+    .joinOurNetwork {
+        min-height: 132px;
+        background: linear-gradient(90deg, #34A853 0%, #044816 104.58%);
+        width: 100%;
+        line-height: inherit;
+        padding-top: 20px;
+        margin-top: 20px;
+        padding-bottom: 25px;
+    }
+    .joinOurNetworkButton {
+        margin: auto;
+        width: 60%;
+        font-family: MontserratRegular;
+        font-size: 25px;
+        color: #ffffff;
+        margin-left: 10%;
+        padding-left: 0px;
+        padding-right: 0px;
+        background: rgba(52, 168, 83, 1);
+        border-radius: 27px;
+        font-weight: 600;
+        margin: auto;
+        margin-top: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .SearchButtonContactus .applyBtn {
+        width: 57%;
+        margin-top: -16px;
+        color: rgba(52, 168, 83, 1);
+        /*background: #ffffff;*/
+        font-size: 17px;
+        position: relative;
+        bottom: 8px;
+        color: #ffffff;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .baseContainer {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}

@@ -1,0 +1,351 @@
+.baseContainer {
+    width: 100%;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+.schoolMainHome .swiper-container-evTestimonial {
+    width: 100%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.schoolMainHome .swiper-container-evTestimonial {
+    width: 100%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.schoolMainHome .swiper-container-evTestimonial {
+    width: 100%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.schoolMainHome .swiper-container-evTestimonial {
+    width: 100%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.topSchoolSectionTitle {
+    margin-top: 64px;
+    margin-bottom: 47px;
+    font-family: MontserratSemiBold;
+    font-weight: 600;
+    font-size: 36px;
+    color: #012F4F;
+    color: #FF6700;
+    text-align: center;
+}
+
+.topSchoolSectionTitleawards {
+    margin-top: 64px;
+    margin-bottom: 47px;
+    font-family: MontserratSemiBold;
+    font-weight: 600;
+    font-size: 36px;
+    color: #012F4F;
+    color: #34A853;
+    text-align: center;
+}
+
+.topSchoolSectionTitleTestimonial {
+    margin-top: 64px;
+    margin-bottom: 47px;
+    font-family: MontserratSemiBold;
+    font-weight: 600;
+    font-size: 36px;
+    color: #012F4F;
+    color: #34A853;
+    text-align: center;
+}
+.topSchoolSectionTitleTestimonial {
+    margin-top: 64px;
+    margin-bottom: 47px;
+    font-family: MontserratSemiBold;
+    font-weight: 600;
+    font-size: 36px;
+    color: #012F4F;
+    color: #34A853;
+    text-align: center;
+}
+.schoolMainHome .swiper-container-evTestimonial .swiper-slide {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid #F2F1F1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.schoolMainHome .swiper-container-evTestimonial .swiper-slide {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid #F2F1F1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.schoolMainHome .swiper-container-evTestimonial .swiper-slide {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid #F2F1F1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.schoolMainHome .swiper-container-evTestimonial .swiper-slide {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid #F2F1F1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+/* .schoolMainHome .swiper-container-evTestimonial p {
+    font-size: 16px;
+    color: rgba(0,0,0,.8);
+    font-family: MontserratRegular;
+    text-align: left;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+.schoolMainHome .swiper-container-evTestimonial p {
+    font-size: 16px;
+    color: rgba(0,0,0,.8);
+    font-family: MontserratRegular;
+    text-align: left;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+.schoolMainHome .swiper-container-evTestimonial p {
+    font-size: 16px;
+    color: rgba(0,0,0,.8);
+    font-family: MontserratRegular;
+    text-align: left;
+    margin-top: 20px;
+    padding-right: 10px;
+} */
+.schoolMainHome .swiper-container-evTestimonial p {
+    font-size: 17px;
+    color: rgba(0,0,0,.8);
+    font-family: MontserratRegular;
+    text-align: left;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+.schoolMainHome .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.indexBlogs .row {
+    margin: 0px;
+}
+
+.indexBlogsImage {
+    height: 100%;
+}
+
+.indexBlogs .blog {
+    margin-bottom: 0px !important;
+}
+
+.indexBlogs .post_info {
+    padding: 10px !important;
+    text-align: left !important;
+    padding-bottom: 20px !important;
+}
+.paddingP {
+    padding-left: 20px;
+}
+
+.indexBlogs .blog .post_info ul {
+    margin: 0;
+}
+.parentName {
+    color: #34A853;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-left:13px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 22px;
+    color: #FF6700;
+    margin-left: 14px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: end;
+}
+.schoolMainHome .swiper-pagination-evTestimonial,
+.schoolMainHome .swiper-button-prev-evTestimonial,
+.schoolMainHome .swiper-button-next-evTestimonial {
+    position: inherit;
+    margin-top: 20px;
+    line-height: 46px;
+}
+.schoolMainHome .swiper-pagination-evTestimonial,
+.schoolMainHome .swiper-button-prev-evTestimonial,
+.schoolMainHome .swiper-button-next-evTestimonial {
+    text-align: center;
+}
+.schoolMainHome .pagination {
+    display: flex;
+}
+.joinOurNetwork {
+    min-height: 132px;
+    background: linear-gradient(90deg, #34A853 0%, #044816 104.58%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.joinOurNetworkText {
+    display: flex;
+    font-family: MontserratRegular;
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+}
+.viewMoreTestimonialsHomeButton {
+    margin-left: 215px;
+}
+.joinOurNetworkButton {
+    height: 54px;
+    line-height: 54px;
+    font-family: MontserratRegular;
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: rgba(52, 168, 83, 1);
+    border-radius: 27px;
+    font-weight: 600;
+    width: 300px;
+}
+.joinOurNetworkButton a {
+    color: #fff;
+}
+.joinOurNetworkButton div:hover{
+    color: #fff;
+}
+
+.registerSchoolIcon {
+    /* background-image: url(../img/registerSchoolIcon.svg); */
+    background-size: 100%;
+    width: 26px;
+    height: 33px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 5px 14px;
+}
+.swiper-wrapper{
+    display: flex;
+}
+.swiper-slide{
+    margin: 6px;
+}
+@media only screen and (max-width: 768px) {
+    .baseContainer {
+        width: 100%;
+        padding-right: 17px;
+        padding-left: 17px;
+    }
+    .topSchoolSectionTitle {
+        margin-top: 32px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .topSchoolSectionTitleawards {
+        margin-top: 32px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .topSchoolSectionTitleTestimonial {
+        margin-top: 32px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .topSchoolSectionTitleTestimonial {
+        margin-top: 32px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .joinOurNetwork {
+        min-height: 132px;
+        background: linear-gradient(90deg, #34A853 0%, #044816 104.58%);
+        width: 100%;
+        line-height: inherit;
+        padding-top: 20px;
+        margin-top: 20px;
+        padding-bottom: 25px;
+    }
+    .joinOurNetworkText {
+        margin: auto;
+        width: 100%;
+        display: block;
+        font-family: MontserratRegular;
+        font-size: 2.5rem;
+        color: rgba(255, 255, 255, .8);
+        font-weight: 600;
+        text-align: center;
+    }
+    .joinOurNetworkButton {
+        margin: auto;
+        width: 60%;
+        font-family: MontserratRegular;
+        font-size: 25px;
+        color: #ffffff;
+        margin-left: 10%;
+        padding-left: 0px;
+        padding-right: 0px;
+        background: rgba(52, 168, 83, 1);
+        border-radius: 27px;
+        font-weight: 600;
+        margin: auto;
+        margin-top: 12px;
+    }
+
+}
+@media only screen and (max-width: 280px) {
+    .baseContainer {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}

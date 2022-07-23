@@ -1,0 +1,200 @@
+.schoolMainHome .swiper-container-ev1 {
+    width: 100%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.schoolMainHome .swiper-container-ev1 .swiper-slide {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid #F2F1F1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.schoolMainHome .swiper-container-ev1 p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, .8);
+    font-family: MontserratRegular;
+    text-align: left;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.schoolMainHome .swiper-container-ev1 .logo {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    height: 20px;
+    width: 54px;
+}
+
+.schoolMainHome .swiper-pagination-ev1,
+.schoolMainHome .swiper-button-prev-ev1,
+.schoolMainHome .swiper-button-next-ev1 {
+    position: inherit;
+    margin-top: 20px;
+    line-height: 46px;
+}
+
+.schoolMainHome .swiper-button-prev-ev1 {
+    margin-left: 40%;
+}
+
+.schoolMainHome .swiper-button-next-ev1 {
+    margin-right: 40%;
+}
+
+.schoolMainHome .swiper-button-next-ev1,
+.schoolMainHome .swiper-button-prev-ev1 {
+    color: #3A9605;
+    outline: none;
+}
+
+.schoolHome .swiper-button-next-ev1:after,
+.schoolMainHome .swiper-button-prev-ev1:after {
+    font-size: 18px;
+}
+
+.schoolMainHome .swiper-button-next-ev1:after {
+    content: 'next';
+    font-family: swiper-icons;
+}
+
+.schoolMainHome .swiper-button-prev-ev1:after {
+    content: 'prev';
+    font-family: swiper-icons;
+}
+
+.schoolMainHome .swiper-pagination-ev1,
+.schoolMainHome .swiper-button-prev-ev1,
+.schoolMainHome .swiper-button-next-ev1 {
+    text-align: center;
+}
+
+.schoolMainHome .swiper-button-next-ev1.swiper-button-disabled,
+.schoolMainHome .swiper-button-prev-ev1.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.baseContainer {
+    width: 100%;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.topSchoolSectionTitleawards {
+    margin-top: 64px;
+    margin-bottom: 47px;
+    font-family: MontserratSemiBold;
+    font-weight: 600;
+    font-size: 36px;
+    color: #012F4F;
+    color: #34A853;
+    text-align: center;
+}
+
+.schoolMainHome .topSchoolSection.topSchoolBlog .swiper-slide {
+    transition: 1s;
+    transform: scale(1.0);
+    transform-origin: center;
+}
+
+.schoolMainHome .topSchoolSection.topSchoolBlog .swiper-slide:hover {
+    cursor: pointer;
+}
+
+.indexBlogs .row {
+    margin: 0px;
+}
+
+.indexBlogsImage {
+    height: 100%;
+}
+
+.indexBlogs .blog {
+    margin-bottom: 0px !important;
+}
+
+.indexBlogs .post_info {
+    padding: 10px !important;
+    text-align: left !important;
+    padding-bottom: 20px !important;
+
+}
+
+.indexBlogs .blog .post_info ul {
+    margin: 0;
+
+}
+
+.post_info ul {
+    list-style-type: none
+}
+
+.post_info .thumb {
+    margin-bottom: 0;
+}
+.post_info a {
+    color: black;
+    text-align: justify;
+}
+.post_info a:hover{
+    color: #34A853;
+}
+
+article.blog .post_info ul li .thumb img {
+    width: 80px;
+    height: auto;
+}
+.indexBlogs figure:hover{
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1,1);
+    }
+    50% {
+      transform: scale(1.5,1.5);
+    }
+    100% {
+      transform: scale(1,1);
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .baseContainer {
+        width: 100%;
+        padding-right: 17px;
+        padding-left: 17px;
+    }
+
+    .topSchoolSectionTitleawards {
+        margin-top: 32px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .baseContainer {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    article.blog .post_info ul {
+        position: static;
+        width: auto;
+    }
+}
