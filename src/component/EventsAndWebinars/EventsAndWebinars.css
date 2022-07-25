@@ -1,0 +1,471 @@
+.baseContainer {
+    width: 100%;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.topSchoolSectionTitle {
+    margin-top: 64px;
+    margin-bottom: 47px;
+    font-family: MontserratSemiBold;
+    font-weight: 600;
+    font-size: 36px;
+    color: #012F4F;
+    color: #FF6700;
+    text-align: center;
+}
+
+.schoolMainHome .swiper-container-ev {
+    width: 100%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.schoolMainHome .swiper-container-ev .swiper-slide {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid #F2F1F1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.schoolMainHome .swiper-container-ev h1 {
+    font-size: 20px;
+    font-family: MontserratSemiBold;
+    text-align: left;
+    padding-top: 16px;
+}
+
+.schoolMainHome .swiper-container-ev p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, .8);
+    font-family: MontserratRegular;
+    text-align: left;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.schoolMainHome .swiper-container-ev .logo {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    height: 20px;
+    width: 54px;
+}
+
+.schoolMainHome .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.indexBlogs .row {
+    margin: 0px;
+}
+
+.indexBlogsImage {
+    height: 100%;
+}
+
+.indexBlogs .blog {
+    margin-bottom: 0px !important;
+}
+
+.indexBlogs .post_info {
+    padding: 10px !important;
+    text-align: left !important;
+    padding-bottom: 20px !important;
+}
+
+
+
+.indexBlogs .blog .post_info ul {
+    margin: 0;
+}
+
+article.blog figure .preview {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -12px;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    z-index: 2;
+}
+
+article.blog figure .preview span {
+    background-color: #fcfcfc;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    color: #222;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+}
+
+article.blog figure:hover .preview {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+article.blog .post_info {
+    padding: 30px;
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+article.blog .post_info small {
+    font-weight: 500;
+    color: #999;
+}
+
+article.blog .post_info p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, .6);
+    font-family: MontserratRegular;
+}
+
+article.blog .post_info h3 {
+    font-size: 1.125rem;
+}
+
+article.blog .post_info h3 a {
+    color: #000000;
+    font-family: MontserratSemiBold;
+}
+
+article.blog .post_info h3 a:hover {
+    color: #34A853;
+}
+
+article.blog .post_info ul {
+    margin: 0 -30px 0 -30px;
+    padding: 10px 15px 0 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    border-top: 1px solid #ededed;
+}
+
+article.blog .post_info ul li {
+    display: inline-block;
+    position: relative;
+    padding: 12px 0 0 55px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #999;
+}
+
+article.blog .post_info ul li .thumb {
+    width: 80px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 0%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+article.blog .post_info ul li .thumb img {
+    width: 80px;
+    height: auto;
+}
+
+article.blog .post_info ul li:last-child {
+    float: right;
+    padding-left: 0;
+}
+
+.singlepost .boldTitle {
+    font-family: MontserratSemiBold;
+    padding-bottom: 10px;
+}
+
+article.blog .post_info ul li .thumb {
+    width: 80px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 0%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+article.blog .post_info ul li .thumb img {
+    width: 80px;
+    height: auto;
+}
+
+.schoolMainHome .swiper-pagination,
+.schoolMainHome .swiper-button-prev,
+.schoolMainHome .swiper-button-next {
+    position: inherit;
+    margin-top: 20px;
+    line-height: 46px;
+}
+
+.schoolMainHome .swiper-pagination-blogs,
+.schoolMainHome .swiper-button-prev-blogs,
+.schoolMainHome .swiper-button-next-blogs {
+    position: inherit;
+    margin-top: 20px;
+    line-height: 46px;
+}
+
+.schoolMainHome .swiper-pagination-ev,
+.schoolMainHome .swiper-button-prev-ev,
+.schoolMainHome .swiper-button-next-ev {
+    position: inherit;
+    margin-top: 20px;
+    line-height: 46px;
+}
+
+.schoolMainHome .swiper-pagination-blogs,
+.schoolMainHome .swiper-button-prev-blogs,
+.schoolMainHome .swiper-button-next-blogs {
+    text-align: center;
+}
+
+.schoolMainHome .swiper-pagination-ev,
+.schoolMainHome .swiper-button-prev-ev,
+.schoolMainHome .swiper-button-next-ev {
+    text-align: center;
+}
+
+.schoolMainHome .pagination {
+    display: flex;
+}
+
+.joinOurNetwork {
+    min-height: 132px;
+    background: linear-gradient(90deg, #34A853 0%, #044816 104.58%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.joinOurNetworkText {
+    display: flex;
+    font-family: MontserratRegular;
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.joinOurNetworkButton {
+    height: 54px;
+    line-height: 54px;
+    font-family: MontserratRegular;
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: rgba(52, 168, 83, 1);
+    border-radius: 27px;
+    font-weight: 600;
+    width: 300px;
+}
+
+.joinOurNetworkButton a {
+    color: #fff;
+}
+
+.joinOurNetworkButton:hover {
+    background: rgba(52, 168, 79, 0.8);
+    color: #ffffff;
+}
+
+.registerSchoolIcon {
+    /* background-image: url(../img/registerSchoolIcon.svg); */
+    background-size: 100%;
+    width: 26px;
+    height: 33px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 5px 14px;
+}
+
+.registerSchoolIconContactUs {
+    /* background-image: url(../img/registerSchoolIcon.svg); */
+    background-size: 100%;
+    width: 26px;
+    height: 33px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 5px 14px;
+}
+
+.schoolMainHome .swiper-button-next-ev {
+    margin-right: 40%;
+}
+
+.schoolMainHome .swiper-button-next-ev,
+.schoolMainHome .swiper-button-prev-ev {
+    color: #3A9605;
+    outline: none;
+}
+
+.schoolHome .swiper-button-next-ev:after,
+.schoolMainHome .swiper-button-prev-ev:after {
+    font-size: 18px;
+}
+
+.schoolMainHome .swiper-button-next-ev:after {
+    content: 'next';
+}
+
+.schoolMainHome .swiper-button-next-ev.swiper-button-disabled,
+.schoolMainHome .swiper-button-prev-ev.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.indexBlogs figure:hover {
+
+    animation: zoom-in-zoom-out 1s ease infinite;
+
+}
+
+
+
+@keyframes zoom-in-zoom-out {
+
+    0% {
+
+        transform: scale(1, 1);
+
+    }
+
+    50% {
+
+        transform: scale(1.5, 1.5);
+
+    }
+
+    100% {
+
+        transform: scale(1, 1);
+
+    }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .baseContainer {
+        width: 100%;
+        padding-right: 17px;
+        padding-left: 17px;
+    }
+
+    .topSchoolSectionTitle {
+        margin-top: 32px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .joinOurNetwork {
+        min-height: 132px;
+        background: linear-gradient(90deg, #34A853 0%, #044816 104.58%);
+        width: 100%;
+        line-height: inherit;
+        padding-top: 20px;
+        margin-top: 20px;
+        padding-bottom: 25px;
+    }
+
+    .joinOurNetworkText {
+        margin: auto;
+        width: 100%;
+        display: block;
+        font-family: MontserratRegular;
+        font-size: 2.5rem;
+        color: rgba(255, 255, 255, .8);
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .joinOurNetworkButton {
+        margin: auto;
+        width: 60%;
+        font-family: MontserratRegular;
+        font-size: 25px;
+        color: #ffffff;
+        margin-left: 10%;
+        padding-left: 0px;
+        padding-right: 0px;
+        background: rgba(52, 168, 83, 1);
+        border-radius: 27px;
+        font-weight: 600;
+        margin: auto;
+        margin-top: 12px;
+    }
+
+}
+
+
+@media only screen and (max-width: 280px) {
+    .baseContainer {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .ht-st {
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    article.blog .post_info ul {
+        position: static;
+        width: auto;
+    }
+}

@@ -1,0 +1,531 @@
+
+.header {
+    height: 76px;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 10px;
+}
+
+    .header .logo {
+        min-height: 76px;
+        line-height: 76px;
+        width: 140px;
+    }
+
+.logo img {
+    height: 70px;
+}
+
+.baseContainer {
+    width: 100%;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+
+
+.headerSearchBar form, .fullSearchBox {
+    width: 100%;
+    display: flex;
+}
+
+
+.headerSearchBar .form-control:focus {
+    border: none;
+}
+
+.headerSearchBarWeb1 {
+    margin: auto;
+    width: 100%;
+    margin-left: 22%;
+}
+
+.input-group {
+    background: #f2f2f2;
+    border: 1px solid #ecebeb;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+.headerSearchBox {
+    height: 54px;
+    width: 100%;
+    padding-left: 10px;
+    background: #F2F2F2;
+    border: 0px solid #ECEBEB;
+    border-radius: 6px;
+}
+
+.location-icon {
+    border-radius: 6px;
+    width: 46px;
+    height: 43px;
+    text-align: center;
+    z-index: 1;
+    margin: 6px 10px 0px 0px;
+    padding: 7px 0px 0px 0px;
+    display: none;
+}
+
+.search-icon {
+    background: #34A853;
+    border-radius: 6px;
+    width: 46px;
+    height: 43px;
+    text-align: center;
+    z-index: 1;
+    margin: 5px 6px 0px 0px;
+    border: 0px solid transparent;
+}
+.search-icon {
+    width: 39px;
+    height: 37px;
+    margin: 6px 6px 0px 0px;
+}
+
+.schoolLoggedInUser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+    .schoolLoggedInUser ul.navbar-nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+        .schoolLoggedInUser ul.navbar-nav li {
+            margin: 0;
+            margin-left: 15px;
+        }
+
+            .schoolLoggedInUser ul.navbar-nav li a {
+                color: rgba(0, 0, 0, 0.8);
+                position: relative;
+            }
+
+                .schoolLoggedInUser ul.navbar-nav li a:hover {
+                    background: transparent;
+                    box-shadow: none;
+                }
+
+                .schoolLoggedInUser ul.navbar-nav li a span.badge {
+                    position: absolute;
+                    top: 15px;
+                    left: 24px;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #D6712D;
+                }
+
+            .schoolLoggedInUser ul.navbar-nav li .loggedIcon {
+                display: inline-block;
+                margin-right: 5px;
+            }
+
+            .schoolLoggedInUser ul.navbar-nav li .dropdown-menu {
+                position: static;
+                width: 13rem;
+            }
+            
+.loggedInButton {
+    min-height: 54px;
+    width: auto;
+    height: 54px;
+    color: #000000;
+    line-height: 40px;
+    text-align: center;
+    /*background: rgba(52,168,79,1);*/
+    border-radius: 27px;
+    margin-top: 10px;
+    list-style: none;
+}
+.loggedInButton #navbarDropdown,
+    .loggedInButton #navbarDropdown:hover, .loggedInButton1 #navbarDropdown,
+    .loggedInButton1 #navbarDropdown:hover {
+        color: #000000;
+        height: 100%;
+        display: block;
+        font-family: MontserratRegular;
+    }
+
+.loggedInButton a {
+    color: #000000;
+    height: 100%;
+    display: block;
+    font-family: MontserratRegular;
+}
+
+    .loggedInButton a:hover {
+        color: #000000;
+        height: 100%;
+        display: block;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);
+        background: #F4F4F4;
+        font-family: MontserratSemiBold;
+    }
+
+.loggedInButton:hover,
+.loggedInButton:active {
+    /*background: rgba(52,168,79,0.8);*/
+    border-radius: 27px;
+}
+
+
+.logoutButton {
+    border: 0;
+    background: transparent;
+    color: rgba(0,0,0,.7);
+    text-align: left;
+    width: 100%;
+    padding: .25rem 1.5rem !important;
+}
+
+    .logoutButton:hover {
+        border: 0;
+        background: transparent;
+        font-family: MontserratSemiBold;
+        color: rgba(0,0,0,.7);
+        text-align: left;
+        width: 100%;
+        padding: .25rem 1.5rem !important;
+    }
+    .logoutButton {
+        border: 0;
+        background: transparent;
+        color: rgba(255,255,255,.7);
+        text-align: center;
+        width: 100%;
+    }
+
+        .logoutButton:hover {
+            border: 0;
+            background: transparent;
+            font-family: MontserratSemiBold;
+            color: #ffffff;
+            text-align: center;
+            width: 100%;
+            padding: .25rem 1.5rem !important;
+        }
+
+        .headerSearchBarWeb {
+            margin: auto;
+            width: 57%;
+            margin-left: 5%;
+        }
+
+        .headerSearchBarWeb > .input-group {
+            position: relative;
+        }
+        
+            .headerSearchBarWeb > form > .input-group .autocomplete-items,
+            .headerSearchBarWeb > .input-group .autocomplete-items {
+                position: absolute;
+                border: none;
+                border-bottom: none;
+                border-top: none;
+                z-index: 99;
+                top: 100%;
+                left: 0;
+                right: 0;
+                margin-top: 1px;
+                border-radius: 5px;
+                ;
+            }
+            
+.headerSearchBarWeb > form > .input-group .autocomplete-items div.suggestion-item,
+.headerSearchBarWeb > .input-group .autocomplete-items div.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, .8);
+    font-family: 'MontserratRegular';
+}
+
+.headerSearchBarWeb > .input-group .autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+.headerSearchBarWeb > .input-group .autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+
+
+.schoolLoggedOutUser ul.navbar-nav li a {
+    color: rgba(0, 0, 0, 0.8);
+}
+.schoolLoggedOutUser {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /*width: 100%;*/
+}
+
+.schoolLoggedOutUser ul, .studentLoggedOutUser ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.schoolLoggedOutUser ul li, .studentLoggedOutUser ul li {
+    margin-left: 15px;
+}
+
+.loginButton {
+    min-height: 45px;
+    width: 158px;
+    height: 45px;
+    color: #ffffff !important;
+    line-height: 45px;
+    text-align: center;
+    background: rgba(52, 168, 79, 1);
+    border-radius: 27px;
+    font-family: MontserratSemiBold;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .loginButton a,
+    .loginButton a:hover {
+        color: #fff;
+        height: 100%;
+        display: block;
+    }
+
+    .loginButton:hover,
+    .loginButton:active {
+        background: rgba(52, 168, 79, 0.8);
+        border-radius: 27px;
+    }
+    
+.blogsButton {
+    min-height: 66px;
+    width: 100px;
+    height: 66px;
+    color: rgba(0,0,0,.7);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 27px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+    .blogsButton a:hover {
+        background: transparent;
+        box-shadow: none;
+        color: rgba(52, 168, 79, 0.8) !important;
+    }
+
+.blogsButton_dropdown_menu {
+    width: 20px !important;
+    position: static !important;
+}
+
+.blogsButton_dropdown_menu {
+    width: 20px !important;
+    position: static !important;
+}
+
+.searchtextSignedIn {
+    margin-left: 4% !important;
+}
+.cart-count {
+    width: 62px;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border: none;
+    background: none;
+    padding-left: 0;
+    border-bottom: 4px solid #34A853;
+    margin-bottom: -4px;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #34A853;
+}
+.nav-tabs .nav-item {
+    margin-top: 25px;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: 4px solid #bcbcbc;
+    width: 100%;
+}
+.LoginTypeModalBody .nav-item {
+    width: 50%;
+    text-align: center;
+}
+.nav-tabs .nav-item {
+    border-bottom: 4px solid #bcbcbc;
+    margin-bottom: 2px;
+}
+
+.mobileHeader {
+    display: none;
+}
+
+.menuCloseIcon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    /* background-image: url(../img/icon/closeIcon.svg); */
+    color: transparent;
+    width: 22px;
+    background-repeat: no-repeat;
+}
+
+
+
+#navbarSupportedContent, #navbarSupportedContent1 {
+    background: #012F4F;
+    z-index: 999;
+    width: 70%;
+    float: left;
+    position: absolute;
+    right: -300px;
+    top: 0px;
+    color: rgb(255, 255, 255);
+    transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    height: 100vh;
+    border-radius: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 35%;
+}
+
+    #navbarSupportedContent.navbar-collapse.collapse.show, #navbarSupportedContent1.navbar-collapse.collapse.show {
+        right: 0;
+    }
+
+
+    #navbarSupportedContent a, #navbarSupportedContent1 a {
+        color: rgba(255,255,255,.7);
+        padding: 10px;
+        width: 100%;
+        /*border-bottom: 1px solid rgba(0, 123, 255, 1);*/
+    }
+
+    #navbarSupportedContent li, #navbarSupportedContent1 li {
+        margin-right: 0
+    }
+
+    /* #navbarSupportedContent a:hover {
+        background: rgba(0, 123, 255, 1);
+        text-decoration: underline;
+    } */
+
+    #navbarSupportedContent a.nav-link.active, #navbarSupportedContent1 a.nav-link.active {
+        border-bottom: 2px solid #D6712D;
+        color: #fff !important;
+        padding-bottom: 0px !important;
+    }
+    .detailnavigation li a {
+        color: rgba(0, 0, 0, .8);
+        font-size: 16px;
+        line-height: 20px;
+        font-family: 'MontserratRegular';
+    }
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    .baseContainer {
+        width: 100%;
+        padding-right: 17px;
+        padding-left: 17px;
+    }
+    /* .webHeader {
+        display: none;
+    } */
+    .headerSearchBox {
+        height: 45px;
+    }
+    .mobileHeaderSection1 {
+        height: 150px;
+    }
+    .mobileHeader .logo {
+        /*background-image: url(../../assets/img/SKOOLZ.png);*/
+        /*min-height: 65px;*/
+        margin-bottom: 20px;
+        width: 100px;
+        /*line-height: 96px;*/
+        float: left;
+        /*background-size: 100%;*/
+        /*background-repeat: no-repeat;*/
+    }
+    .mobileHeader .headerSearchBox {
+        padding-left: 10px;
+        padding-right: 7px;
+        font-size: 16px;
+        color: rgba(0, 0, 0, .7);
+    }
+    .mobileHeaderMenuButton {
+        float: right;
+        /* background-image: url('../../assets/img/mobileHeaserMenuIcon.svg'); */
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: transparent;
+        height: 32px;
+        width: 32px;
+        margin-left: 16px;
+    }
+    .mobileHeaderProfileButton {
+        float: right;
+        /* background-image: url('../../assets/img/icon/loggedinUser.svg'); */
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: transparent;
+        height: 32px;
+        width: 32px;
+    }
+    .mobileHeader {
+        display: block;
+        height: 165px;
+        background: #ffffff;
+        padding-top: 21px;
+        margin: auto;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 10px;
+    }
+    .menuCloseIcon {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        /* background-image: url(../img/icon/closeIcon.svg); */
+        color: transparent;
+        width: 22px;
+        background-repeat: no-repeat;
+    }
+    
+}
+
+
+
+

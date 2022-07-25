@@ -1,0 +1,142 @@
+
+.heroSection {
+    height: calc(100vh - 76px);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 0%), url('../../Assets/Images/skoolz.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*display: block;*/
+    align-items: center;
+    justify-content: center;
+    margin-top: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.heroSection .heroSectionMiddletext {
+    color: #ffffff;
+    font-size: 55px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.heroSectionMiddletext1 {
+    font-family: MontserratRegular;
+    font-size: 70px;
+}
+.heroSectionMiddletext2 {
+    font-family: MontserratBlack;
+    font-size: 70px;
+    padding-top: 25px;
+}
+.webSkoolzRecord {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    border-radius: 6px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.recordItems {
+    padding-top: 18px;
+    padding-bottom: 13px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.recordItems .itemListTitle {
+    font-size: 36px;
+    font-weight: 600;
+    opacity: .8;
+    color: #ffffff;
+    font-family: MontserratRegular;
+}
+.recordItems .text-info,
+    .recordItems .text-primary,
+    .recordItems .text-success {
+        font-size: 45px;
+       /* font-size: 50px;*/
+        font-family: MontserratSemiBold;
+        font-weight: bold;
+    }
+
+    .recordItems .text-info {
+        color: #9B59B6 !important;
+    }
+    
+    .recordItems .text-primary {
+        color: #3498DB;
+    }
+    
+    .recordItems .text-success {
+        color: #1E8B2F;
+    }
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    .heroSection {
+        /*height: calc(100vh - 150px);*/
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 0%), url('../../Assets/Images/skoolz.PNG');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+        position: relative;
+        height: 267px;
+    }
+    .heroSectionMiddletext1 {
+        font-size: 23px;
+        line-height: 25px;
+    }
+    .heroSectionMiddletext2 {
+        font-size: 34px;
+        padding-top: 0px;
+        line-height: 36px;
+    }
+    .webSkoolzRecord {
+        display: none;
+    }
+    .recordItems .itemListTitle {
+        font-size: 11px;
+        font-weight: 600;
+        opacity: .8;
+        color: #ffffff;
+        font-family: MontserratRegular;
+    }
+
+    .recordItems .text-info,
+    .recordItems .text-primary,
+    .recordItems .text-success {
+        font-size: 24px;
+        font-family: MontserratBold;
+        font-weight: bold;
+    }
+    .recordItems .text-info,
+    .recordItems .text-primary,
+    .recordItems .text-success {
+        font-size: 18px;
+        font-family: MontserratBold;
+        font-weight: bold;
+    }
+
+.recordItems .text-successText {
+    color: #1E8B2F;
+}
+
+    
+}
