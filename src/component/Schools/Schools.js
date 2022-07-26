@@ -1,5 +1,11 @@
 import React from "react";
 import "./Schools.css"
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import skoolslogo from "../../Assets/Images/skoolz.PNG";
+import { Pagination, Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Schools =()=>{
     return (
@@ -20,6 +26,18 @@ const Schools =()=>{
                         <button type="submit" data-value="false" className="btn-board-trend m-3">Near Me</button>
                     </div>
                 </div>
+                <Swiper slidesPerView={4}
+                        spaceBetween={30}
+                        slidesPerGroup={3}
+                        loop={true}
+                        loopFillGroupWithBlank={false}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        navigation={true}
+                        modules={[Pagination, Navigation]}
+                        className="mySwiper">
+
                  <div id="overlay" style={{ "display": "none" }}>
                     <div className="spinner"></div>
                     <br />
@@ -27,8 +45,8 @@ const Schools =()=>{
                 </div> 
                  <div className="swiper-container">
                     <div className="swiper-wrapper" id="divTopSchools" data-hostname="@ViewBag.Hostname" data-skoolz="@ViewBag.SkoolzHostname">
-
-                        <div className="swiper-slide">
+                       <SwiperSlide>
+                       <div className="swiper-slide">
                             <a>
                                 <img src="~/skoolz/assets/img/Harvest.jpg" className="sliderImage" alt="sliderImage" />
                                 <div className="sliderCaption">
@@ -37,7 +55,9 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
-                        <div className="swiper-slide">
+                       </SwiperSlide>
+                       <SwiperSlide>
+                       <div className="swiper-slide">
                             <a href="https://www.skoolz.in/home/view-school?profileId=132&d=16.8">
                                 <img src="~/skoolz/assets/img/blog-mainpage/Bgs_international_academia-school.png" className="sliderImage" alt="sliderImage" />
                                 <div className="sliderCaption">
@@ -46,7 +66,9 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
-                        <div className="swiper-slide">
+                       </SwiperSlide>
+                       <SwiperSlide>
+                       <div className="swiper-slide">
                             <a href="https://www.skoolz.in/home/view-school?profileId=82&d=25.2">
                                 <img src="~/skoolz/assets/img/blog-mainpage/Basil_woods_blog3.jpg" className="sliderImage" alt="sliderImage" />
                                 <div className="sliderCaption">
@@ -55,7 +77,9 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
-                        <div className="swiper-slide">
+                       </SwiperSlide>
+                       <SwiperSlide>
+                       <div className="swiper-slide">
                             <a href="https://www.skoolz.in/home/view-school?profileId=690&d=32.9">
                                 <img src="~/skoolz/assets/img/blog-mainpage/Candor_International_School_Blog_4_600x400.jpg" className="sliderImage" alt="sliderImage" />
                                 <div className="sliderCaption">
@@ -64,7 +88,9 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
-                        <div className="swiper-slide">
+                       </SwiperSlide>
+                       <SwiperSlide>
+                       <div className="swiper-slide">
                             <a href="https://www.skoolz.in/home/view-school?profileId=52&d=36.9">
                                 <img src="~/skoolz/assets/img/blog-mainpage/Glentree_Academy_Sarjapur_Road_Blog_5_600x400.png" style={{ "width": "100%" }} className="sliderImage" alt="sliderImage" />
                                 <div className="sliderCaption">
@@ -73,7 +99,9 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
-                        <div className="swiper-slide">
+                       </SwiperSlide>
+                       <SwiperSlide>
+                       <div className="swiper-slide">
                             <a href="https://www.skoolz.in/home/view-school?profileId=128&d=47.1">
                                 <img src="~/skoolz/assets/img/blog-mainpage/The Green School Bangalore_blog_6.jpg" className="sliderImage" alt="sliderImage" />
                                 <div className="sliderCaption">
@@ -82,7 +110,9 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
-                        <div className="swiper-slide">
+                       </SwiperSlide>
+                       <SwiperSlide>
+                       <div className="swiper-slide">
                             <a href="https://www.skoolz.in/home/view-school?profileId=196&d=31.5">
                                 <img src="~/skoolz/assets/img/blog-mainpage/Vishwa Vidyapeeth Group of Schools_blog_7.jpg" className="sliderImage" alt="sliderImage" />
                                 <div className="sliderCaption">
@@ -91,7 +121,9 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
-                        <div className="swiper-slide">
+                       </SwiperSlide>
+                       <SwiperSlide>
+                       <div className="swiper-slide">
                             <a href="https://www.skoolz.in/home/view-school?profileId=137&d=35.1">
                                 <img src="~/skoolz/assets/img/blog-mainpage/The Cambridge International School, Sarjapur Road_blogs_8.jpg" className="sliderImage" alt="sliderImage" />
                                 <div className="sliderCaption">
@@ -100,7 +132,9 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
-                        <div className="swiper-slide">
+                       </SwiperSlide>
+                       <SwiperSlide>
+                       <div className="swiper-slide">
                             <a href="https://www.skoolz.in/home/view-school?profileId=12&d=11.9">
                                 <img src="~/skoolz/assets/img/blog-mainpage/Vidya_Sanskaar_International_Public_School_blog_9_600x400.jpeg" className="sliderImage" alt="sliderImage" />
                                 <div className="sliderCaption">
@@ -109,6 +143,21 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
+                       </SwiperSlide>
+                       <SwiperSlide>
+                       <div className="swiper-slide">
+                            <a href="https://skoolz.in/home/view-school?profileId=23">
+                                <img src="~/skoolz/assets/img/StSophia.jpg" className="sliderImage" alt="sliderImage" />
+                                <div className="sliderCaption">
+                                    <div className="sliderCaptionTitle">
+                                        St Sophia Convent High School
+                                    </div>
+                                    <div className="sliderCaptionSubTitle">Nagarabhavi, Bengaluru</div>
+                                </div>
+                            </a>
+                        </div>
+                       </SwiperSlide>
+                       <SwiperSlide>
                         <div className="swiper-slide">
                             <a href="https://skoolz.in/home/view-school?profileId=23">
                                 <img src="~/skoolz/assets/img/StSophia.jpg" className="sliderImage" alt="sliderImage" />
@@ -120,7 +169,9 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
-                        <div className="swiper-slide">
+                       </SwiperSlide>
+                       <SwiperSlide>
+                       <div className="swiper-slide">
                             <a href="https://skoolz.in/home/view-school?profileId=37">
                                 <img src="~/skoolz/assets/img/Vishwa.jpg" className="sliderImage" alt="sliderImage" />
                                 <div className="sliderCaption">
@@ -131,7 +182,9 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
-                        <div className="swiper-slide">
+                       </SwiperSlide>
+                       <SwiperSlide>
+                       <div className="swiper-slide">
                             <a href="https://skoolz.in/home/view-school?profileId=7">
                                 <img src="~/skoolz/assets/img/Open-Minds.jpg" className="sliderImage" alt="sliderImage" />
                                 <div className="sliderCaption">
@@ -140,9 +193,9 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
-
-
-                        <div className="swiper-slide">
+                       </SwiperSlide>
+                       <SwiperSlide>
+                       <div className="swiper-slide">
                             <a href="https://skoolz.in/home/view-school?profileId=8">
                                 <img src="~/skoolz/assets/img/Cordial.jpg" className="sliderImage" alt="sliderImage" />
                                 <div className="sliderCaption">
@@ -151,8 +204,9 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
-
-                        <div className="swiper-slide">
+                       </SwiperSlide>
+                       <SwiperSlide>
+                       <div className="swiper-slide">
                             <a href="https://skoolz.in/home/view-school?profileId=12">
                                 <img src="~/skoolz/assets/img/VidyaSanskar.jpg" className="sliderImage" alt="sliderImage" />
                                 <div className="sliderCaption">
@@ -163,53 +217,12 @@ const Schools =()=>{
                                 </div>
                             </a>
                         </div>
-
-                        <div className="swiper-slide">
-                            <a href="https://skoolz.in/home/view-school?profileId=24">
-                                <img src="~/skoolz/assets/img/Eka.jpg" className="sliderImage" alt="sliderImage" />
-                                <div className="sliderCaption">
-                                    <div className="sliderCaptionTitle">
-                                        Eka Montessori House Of Children
-                                    </div>
-                                    <div className="sliderCaptionSubTitle">Kumara Park West, Bengaluru</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="swiper-slide">
-                            <a href="https://skoolz.in/home/view-school?profileId=36">
-                                <img src="~/skoolz/assets/img/TheLearningCurve.jpg" className="sliderImage" alt="sliderImage" />
-                                <div className="sliderCaption">
-                                    <div className="sliderCaptionTitle">
-                                        The Learning Curve
-                                    </div>
-                                    <div className="sliderCaptionSubTitle">Kamothe, Navi Mumbai</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="swiper-slide">
-                            <a href="https://skoolz.in/home/view-school?profileId=30">
-                                <img src="~/skoolz/assets/img/KidsCube.jpg" className="sliderImage" alt="sliderImage" />
-                                <div className="sliderCaption">
-                                    <div className="sliderCaptionTitle">Kids Cube International Pre School</div>
-                                    <div className="sliderCaptionSubTitle">Marathahalli, Bengaluru</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="swiper-slide">
-                            <img src="~/skoolz/assets/img/Rectangle-129.jpg" className="sliderImage" alt="sliderImage" />
-                            <div className="sliderCaption">
-                                <div className="sliderCaptionTitle">Orchids The International School</div>
-                                <div className="sliderCaptionSubTitle">New Tippasandra, Bengaluru</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
+                       </SwiperSlide>
+                     </div>
+                </div>
+                </Swiper> 
             </div>
-            <div className="pagination">
-                <div className="swiper-button-prev"></div>
-                <div className="swiper-pagination"></div>
-                <div className="swiper-button-next"></div>
-            </div>
+           
             <div className="joinOurNetwork">
                 <div className="joinOurNetworkText">
                     <h1>

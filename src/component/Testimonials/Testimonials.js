@@ -1,6 +1,11 @@
 import React from "react";
 import skoolzlogo from "../../Assets/Images/skoolz.PNG"
+import { Pagination, Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import './Testimonials.css'
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const Testimonials = () => {
     return (
@@ -8,8 +13,20 @@ const Testimonials = () => {
             <div className="schoolMainHome">
                 <div className="baseContainer topSchoolSection">
                     <div className="topSchoolSectionTitleTestimonial"><a href="/testimonial/index" asp-controller="Testimonial" asp-action="Index" style={{"textDecoration":"none"}}><p style={{ "color": "#FF6700" }}> Testimonials</p></a> </div>
-                    <div className="swiper-container-evTestimonial">
+                    <Swiper slidesPerView={2}
+                     spaceBetween={30}
+                     slidesPerGroup={3}
+                     loop={true}
+                     loopFillGroupWithBlank={false}
+                     pagination={{
+                         clickable: true,
+                     }}
+                     navigation={true}
+                     modules={[Pagination, Navigation]}
+                     className="mySwiper">
+                        <div className="swiper-container-evTestimonial">
                         <div className="swiper-wrapper">
+                            <SwiperSlide>
                             <div className="swiper-slide indexBlogs">
                                 <div className="row">
                                     <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn;" }}>
@@ -27,6 +44,8 @@ const Testimonials = () => {
                                     </article>
                                 </div>
                             </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
                             <div className="swiper-slide indexBlogs">
                                 <div className="row">
                                     <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn;" }}>
@@ -46,6 +65,8 @@ const Testimonials = () => {
                                     </article>
                                 </div>
                             </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
                             <div className="swiper-slide indexBlogs">
                                 <div className="row">
                                     <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn;" }}>
@@ -55,7 +76,6 @@ const Testimonials = () => {
                                                     <p className="card-text text-justify paddingP">
                                                         “Thank you, skoolz; searching for a school for my son was a lot easier than we thought; We gathered the utmost information about a school without visiting them personally, which helped me save time & was able to reach the school of my choice easily. We Like the comparison of schools of three schools, if not Skoolz, it would have taken ages few days to collect data and compare them side by side.”
                                                     </p>
-                                                    <br />
                                                     <br />
                                                     <br />
                                                     <img src={skoolzlogo} style={{ "height": "138px", "width": "155px", "borderRadius": "16%;" }} alt="Startup-Certificate-Xergy" />
@@ -70,14 +90,12 @@ const Testimonials = () => {
                                     </article>
                                 </div>
                             </div>
+                            </SwiperSlide>
                         </div>
                     </div>
+                    </Swiper>
                 </div>
-                    <div class="pagination">
-                        <div class="swiper-button-prev-evTestimonial"></div>
-                        <div class="swiper-pagination-evTestimonial"></div>
-                        <div class="swiper-button-next-evTestimonial"></div>
-                     </div>
+                   
                 <div class="joinOurNetwork" id="contactRedirect">
                     <div class="joinOurNetworkText">
                         More Testimonials

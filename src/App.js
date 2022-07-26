@@ -13,14 +13,14 @@ import EvetsAndWeninars from './component/EventsAndWebinars/EventsAndWebinars';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Homeimage/>
+      {/* <Header/>
+      <Homeimage/>*/}
       <Schools/>
-      <EvetsAndWeninars/>
+      <EvetsAndWeninars/> 
       <Blogs/>
       <AwardsAndRecognitions/>
-      <Testimonials/>
-      <FooterComponent/>
+      <Testimonials/> 
+      <FooterComponent/> 
     </div>
   );
 }
