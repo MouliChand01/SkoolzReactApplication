@@ -13,12 +13,12 @@ import EvetsAndWeninars from './component/EventsAndWebinars/EventsAndWebinars';
 function App() {
   return (
     <div className="App">
-      {/* <Header/>
-      <Homeimage/>*/}
+      <Header/>
+      <Homeimage/>
       <Schools/>
-      <EvetsAndWeninars/> 
+      <EvetsAndWeninars/>
       <Blogs/>
-      <AwardsAndRecognitions/>
+      <AwardsAndRecognitions/> 
       <Testimonials/> 
       <FooterComponent/> 
     </div>

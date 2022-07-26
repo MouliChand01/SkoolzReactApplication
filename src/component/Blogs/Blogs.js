@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import "./Blogs.css";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -19,6 +19,20 @@ const Blogs = () => {
             setSelected(true)
         }
     }
+    let [mywindow, setMywindow] = useState({})
+    let resizeId;
+    useEffect(() => {
+        window.addEventListener("resize", function () {
+            clearTimeout(resizeId);
+            resizeId = setTimeout(doneResizing, 500);
+
+        })
+        function doneResizing() {
+            console.log("window is ", window.innerHeight, window.innerWidth)
+            setMywindow({ height: window.innerHeight, width: window.innerWidth })
+        }
+
+    }, [mywindow])
     return (
         <div>
             <div className="schoolMainHome">
@@ -30,7 +44,7 @@ const Blogs = () => {
                             <button type="submit" data-index="1" className={`btn-board-trendblogshome m-3 Latest ${!seleted ? "btnSelected" : ''}`} onClick={() => OnTranding("Latest")}>Latest</button>
                         </div>
                     </div>
-                    <Swiper slidesPerView={2}
+                    <Swiper slidesPerView={mywindow.width && mywindow.width < 768 ? 1 : 2}
                         spaceBetween={30}
                         slidesPerGroup={3}
                         loop={true}
@@ -44,8 +58,8 @@ const Blogs = () => {
                         {trending ? (
                             <div className="swiper-container-blogs" id="BlogsHomeTrending">
                                 <div className="swiper-wrapper">
-                                    <SwiperSlide>
-                                        <div className="swiper-slide indexBlogs">
+                                    <SwiperSlide className="swiper-slide indexBlogs">
+                                        <div className="indexBlogs">
                                             <div className="row">
                                                 <article className="blog indexBlog fadeIn" >
                                                     <div className="row no-gutters">
@@ -83,8 +97,8 @@ const Blogs = () => {
                                             </div>
                                         </div>
                                     </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="swiper-slide indexBlogs">
+                                    <SwiperSlide className="swiper-slide indexBlogs">
+                                        <div className="indexBlogs">
                                             <div className="row">
                                                 <article className="blog indexBlog fadeIn" >
                                                     <div className="row no-gutters">
@@ -122,8 +136,8 @@ const Blogs = () => {
                                             </div>
                                         </div>
                                     </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="swiper-slide indexBlogs">
+                                    <SwiperSlide className="swiper-slide indexBlogs">
+                                        <div className="indexBlogs">
                                             <div className="row">
                                                 <article className="blog indexBlog fadeIn" >
                                                     <div className="row no-gutters">
@@ -164,8 +178,8 @@ const Blogs = () => {
                         ) :
                             (<div className="swiper-container-blogs" id="BlogsHomeLatest">
                                 <div className="swiper-wrapper">
-                                    <SwiperSlide>
-                                        <div className="swiper-slide indexBlogs">
+                                    <SwiperSlide className="swiper-slide indexBlogs">
+                                        <div className="indexBlogs">
                                             <div className="row">
                                                 <article className="blog indexBlog fadeIn">
                                                     <div className="row no-gutters">
@@ -203,8 +217,8 @@ const Blogs = () => {
                                             </div>
                                         </div>
                                     </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="swiper-slide indexBlogs">
+                                    <SwiperSlide className="swiper-slide indexBlogs">
+                                        <div className="indexBlogs">
                                             <div className="row">
                                                 <article className="blog indexBlog fadeIn" >
                                                     <div className="row no-gutters">
@@ -242,8 +256,8 @@ const Blogs = () => {
                                             </div>
                                         </div>
                                     </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="swiper-slide indexBlogs">
+                                    <SwiperSlide className="swiper-slide indexBlogs">
+                                        <div className="indexBlogs">
                                             <div className="row">
                                                 <article className="blog indexBlog fadeIn">
                                                     <div className="row no-gutters">
@@ -281,8 +295,8 @@ const Blogs = () => {
                                             </div>
                                         </div>
                                     </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="swiper-slide indexBlogs">
+                                    <SwiperSlide className="swiper-slide indexBlogs">
+                                        <div className="indexBlogs">
                                             <div className="row">
                                                 <article className="blog indexBlog fadeIn">
                                                     <div className="row no-gutters">
@@ -320,8 +334,8 @@ const Blogs = () => {
                                             </div>
                                         </div>
                                     </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="swiper-slide indexBlogs">
+                                    <SwiperSlide className="swiper-slide indexBlogs">
+                                        <div className="indexBlogs">
                                             <div className="row">
                                                 <article className="blog indexBlog fadeIn">
                                                     <div className="row no-gutters">
@@ -357,8 +371,8 @@ const Blogs = () => {
                                             </div>
                                         </div>
                                     </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="swiper-slide indexBlogs">
+                                    <SwiperSlide className="swiper-slide indexBlogs">
+                                        <div className="indexBlogs">
                                             <div className="row">
                                                 <article className="blog indexBlog fadeIn">
                                                     <div className="row no-gutters">
@@ -394,8 +408,8 @@ const Blogs = () => {
                                             </div>
                                         </div>
                                     </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="swiper-slide indexBlogs">
+                                    <SwiperSlide className="swiper-slide indexBlogs">
+                                        <div className="indexBlogs">
                                             <div className="row">
                                                 <article className="blog indexBlog fadeIn">
                                                     <div className="row no-gutters">

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "./EventsAndWebinars.css"
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,13 +8,27 @@ import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const EvetsAndWeninars = () => {
+    let [mywindow, setMywindow] = useState({})
+    let resizeId;
+    useEffect(() => {
+        window.addEventListener("resize", function () {
+            clearTimeout(resizeId);
+            resizeId = setTimeout(doneResizing, 500);
+
+        })
+        function doneResizing() {
+            console.log("window is ", window.innerHeight, window.innerWidth)
+            setMywindow({ height: window.innerHeight, width: window.innerWidth })
+        }
+
+    }, [mywindow])
     return (
         <div>
             <div class="schoolMainHome">
                 <div className="baseContainer topSchoolSection" style={{ "display": "inline-block" }}>
                     <div className="topSchoolSectionTitle"><a><p style={{ "color": "#FF6700" }}> Events/Webinars/Workshops</p></a></div>
-                    <Swiper slidesPerView={2}
-                        spaceBetween={30}
+                    <Swiper slidesPerView={mywindow.width && mywindow.width < 768 ? 1 : 2}
+                        spaceBetween={35}
                         slidesPerGroup={3}
                         loop={true}
                         loopFillGroupWithBlank={false}
@@ -27,8 +41,8 @@ const EvetsAndWeninars = () => {
 
                         <div className="swiper-container-ev">
                             <div className="swiper-wrapper">
-                                <SwiperSlide>
-                                    <div className="swiper-slide indexBlogs">
+                                <SwiperSlide className="swiper-slide indexBlogs">
+                                    <div className="indexBlogs">
                                         <div className="row">
                                             <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": " fadeIn" }}>
                                                 <div className="row no-gutters .ht-st">
@@ -70,8 +84,8 @@ const EvetsAndWeninars = () => {
                                         </div>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="swiper-slide indexBlogs">
+                                <SwiperSlide className="swiper-slide indexBlogs">
+                                    <div className="indexBlogs">
                                         <div className="row">
                                             <article className="blog indexBlog fadeIn" style={{ "visibility": " visible", "animation-name": "fadeIn" }}>
                                                 <div className="row no-gutters .ht-st">
@@ -113,8 +127,8 @@ const EvetsAndWeninars = () => {
                                         </div>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="swiper-slide indexBlogs">
+                                <SwiperSlide className="swiper-slide indexBlogs">
+                                    <div className="indexBlogs">
                                         <div className="row">
                                             <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn" }}>
                                                 <div className="row no-gutters .ht-st">
@@ -156,8 +170,8 @@ const EvetsAndWeninars = () => {
                                         </div>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="swiper-slide indexBlogs">
+                                <SwiperSlide className="swiper-slide indexBlogs">
+                                    <div className="indexBlogs">
                                         <div className="row">
                                             <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn" }}>
                                                 <div className="row no-gutters .ht-st">
@@ -199,8 +213,8 @@ const EvetsAndWeninars = () => {
                                         </div>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="swiper-slide indexBlogs">
+                                <SwiperSlide className="swiper-slide indexBlogs">
+                                    <div className="indexBlogs">
                                         <div className="row">
                                             <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn" }}>
                                                 <div className="row no-gutters .ht-st">

@@ -169,9 +169,13 @@ article.blog .post_info h3 a {
     color: #000000;
     font-family: MontserratSemiBold;
 }
-
-article.blog .post_info h3 a:hover {
+article.blog .post_info  a {
     color: #34A853;
+    font-family: MontserratSemiBold;
+}
+
+article.blog .post_info  a:hover {
+    color: #1c8839;
 }
 
 article.blog .post_info ul {

@@ -1,6 +1,5 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import './AwardsAndRecognitions.css'
-import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import award1 from "../../Assets/Images/award1.PNG"
@@ -8,15 +7,29 @@ import award2 from "../../Assets/Images/award2.PNG"
 import skoolzlogo from "../../Assets/Images/skoolz.PNG"
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 const AwardsAndRecognitions = () => {
+    let [mywindow, setMywindow] = useState({})
+    let resizeId;
+    useEffect(() => {
+        window.addEventListener("resize", function () {
+            clearTimeout(resizeId);
+            resizeId = setTimeout(doneResizing, 500);
 
+        })
+        function doneResizing() {
+            console.log("window is ", window.innerHeight, window.innerWidth)
+            setMywindow({ height: window.innerHeight, width: window.innerWidth })
+        }
+
+    }, [mywindow])
     return (
         <div>
             <div className="schoolMainHome">
                 <div className="baseContainer topSchoolSection">
                     <div className="topSchoolSectionTitleawards"><a href="/Awards/index" style={{ "textDecoration": "none" }}><p style={{ "color": "#FF6700" }}> Awards &amp; Recognitions</p></a> </div>
-                    <Swiper slidesPerView={2}
+                    <Swiper slidesPerView={mywindow.width && mywindow.width < 768 ? 1 : 2}
                         spaceBetween={30}
                         slidesPerGroup={3}
                         loop={true}
@@ -29,8 +42,8 @@ const AwardsAndRecognitions = () => {
                         className="mySwiper">
                         <div className="swiper-container-ev1">
                             <div className="swiper-wrapper">
-                                <SwiperSlide>
-                                    <div className="swiper-slide indexBlogs">
+                                <SwiperSlide className="swiper-slide indexBlogs">
+                                    <div className="indexBlogs">
                                         <div className="row">
                                             <article className="blog indexBlog fadeIn" >
                                                 <div className="row no-gutters .ht-st">
@@ -69,8 +82,8 @@ const AwardsAndRecognitions = () => {
                                         </div>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="swiper-slide indexBlogs">
+                                <SwiperSlide className="swiper-slide indexBlogs">
+                                    <div className="indexBlogs">
                                         <div className="row">
                                             <article className="blog indexBlog fadeIn" >
                                                 <div className="row no-gutters .ht-st">
