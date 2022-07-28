@@ -42,6 +42,7 @@ body {
 .schoolMainHome .swiper-pagination,
 .schoolMainHome .swiper-button-prev,
 .schoolMainHome .swiper-button-next {
+    cursor: pointer;
     position: inherit;
     margin-top: 20px;
     line-height: 46px;
@@ -110,13 +111,6 @@ body {
     width: 54px;
 }
 
-.schoolMainHome .swiper-pagination-blogs,
-.schoolMainHome .swiper-button-prev-blogs,
-.schoolMainHome .swiper-button-next-blogs {
-    position: inherit;
-    margin-top: 20px;
-    line-height: 46px;
-}
 
 .schoolMainHome .swiper-button-prev-blogs {
     margin-left: 40%;

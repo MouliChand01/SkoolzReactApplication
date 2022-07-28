@@ -52,7 +52,7 @@ const Testimonials = () => {
                                                         </p>
                                                         <img src={skoolzlogo} style={{ "height": "138px", "width": "155px", "borderRadius": "16%;" }} alt="Startup-Certificate-Xergy" />
                                                         <div className="parentName">Anandmayi Priyadarshini</div>
-                                                        <div className="description">Parent</div>
+                                                        <div className="description">Parent x</div>
                                                     </div>
                                                 </div>
                                             </article>
@@ -72,7 +72,7 @@ const Testimonials = () => {
                                                         <img src={skoolzlogo} style={{ "height": "138px", "width": "155px", "borderRadius": "16%;" }} alt="Startup-Certificate-Xergy" />
                                                         <div className="footer">
                                                             <div className="parentName">Geetha S</div>
-                                                            <div className="description">Parent</div>
+                                                            <div className="description">Parent y</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -84,7 +84,7 @@ const Testimonials = () => {
                                     <div className="indexBlogs">
                                         <div className="row">
                                             <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn;" }}>
-                                                <div className="card-deck">
+                                        
                                                     <div>
                                                         <div className="card-body">
                                                             <p className="card-text text-justify paddingP">
@@ -96,11 +96,11 @@ const Testimonials = () => {
                                                             <br />
                                                             <div className="footer">
                                                                 <div className="parentName">Punith Gowda</div>
-                                                                <div className="description">Parent</div>
+                                                                <div className="description">Parent z</div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                    
                                             </article>
                                         </div>
                                     </div>

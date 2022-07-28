@@ -24,11 +24,10 @@
 }
 
 .heroSectionMiddletext1 {
-    font-family: MontserratRegular;
     font-size: 70px;
 }
 .heroSectionMiddletext2 {
-    font-family: MontserratBlack;
+    font-weight: bold;
     font-size: 70px;
     padding-top: 25px;
 }
@@ -46,7 +45,6 @@
 .recordItems {
     padding-top: 18px;
     padding-bottom: 13px;
-    padding-left: 10px;
     text-align: center;
 }
 
@@ -102,36 +100,38 @@
     }
     .heroSectionMiddletext1 {
         font-size: 23px;
-        line-height: 25px;
+        line-height: 35px;
+        transform: translate(0, -35px);
     }
     .heroSectionMiddletext2 {
         font-size: 34px;
         padding-top: 0px;
         line-height: 36px;
     }
-    .webSkoolzRecord {
-        display: none;
+     .webSkoolzRecord {
+        transform: translate(-50%, -100%);
     }
+    
     .recordItems .itemListTitle {
         font-size: 11px;
         font-weight: 600;
         opacity: .8;
         color: #ffffff;
-        font-family: MontserratRegular;
     }
 
+    .recordItems .itemList > div{
+        font-size: 16px;
+    }
     .recordItems .text-info,
     .recordItems .text-primary,
     .recordItems .text-success {
         font-size: 24px;
-        font-family: MontserratBold;
         font-weight: bold;
     }
     .recordItems .text-info,
     .recordItems .text-primary,
     .recordItems .text-success {
         font-size: 18px;
-        font-family: MontserratBold;
         font-weight: bold;
     }
 

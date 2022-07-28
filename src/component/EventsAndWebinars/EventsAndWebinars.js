@@ -31,7 +31,7 @@ const EvetsAndWeninars = () => {
                         spaceBetween={35}
                         slidesPerGroup={3}
                         loop={true}
-                        loopFillGroupWithBlank={false}
+                        loopFillGroupWithBlank={true}
                         pagination={{
                             clickable: true,
                         }}
