@@ -518,6 +518,9 @@ article.blog figure:hover .preview {
     -o-transform: translateY(0);
     transform: translateY(0);
 }
+article .card-body img{
+    border-radius: 10px;
+}
 
 article.blog figure img {
     -webkit-transform: translate(-50%, -50%) scale(1);
@@ -553,7 +556,7 @@ article.blog figure img:hover {
 @media (max-width: 991px) {
     article.blog figure img {
         max-width: 50%;
-        margin-right: 194px;
+        margin-right: 360px;
         height: 196px !important;
     }
 

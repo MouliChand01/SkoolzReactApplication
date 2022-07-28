@@ -1,7 +1,7 @@
 
 .heroSection {
     height: calc(100vh - 76px);
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 0%), url('../../Assets/Images/skoolz.PNG');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 0%), url('../../Assets/Images/Skoolz-Hero-Image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     /*display: block;*/
@@ -88,7 +88,7 @@
 @media only screen and (max-width: 768px){
     .heroSection {
         /*height: calc(100vh - 150px);*/
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 0%), url('../../Assets/Images/skoolz.PNG');
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 0%), url('../../Assets/Images/Skoolz-Hero-Image.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;

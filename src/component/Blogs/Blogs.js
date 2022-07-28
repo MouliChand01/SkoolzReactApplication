@@ -3,6 +3,15 @@ import "./Blogs.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import blogtrand1 from "../../Assets/Images/CBSE vs ICSE vs IB vs IGCSE vs State Board_11zon.jpg";
+import blogtrand2 from "../../Assets/Images/Various Types of Preschool_11zon.jpg";
+import blogtrand3 from "../../Assets/Images/CBSE schools Banglore_11zon.jpg";
+import bloglatest1 from "../../Assets/Images/Preschools in Mumbai.png";
+import bloglatest2 from "../../Assets/Images/Montessori schools in Mumbai.png";
+import bloglatest3 from "../../Assets/Images/Best PreSchools in Delhi.png";
+import bloglatest4 from "../../Assets/Images/Best Montessori schools in Delhi.png";
+import bloglatest5 from "../../Assets/Images/ICSE schools banglore.jpg";
+import bloglatest6 from "../../Assets/Images/blog10_thumb.jpg";
 import skoolzlogo from "../../Assets/Images/skoolz.PNG"
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,7 +27,7 @@ const Blogs = () => {
             setTrending(true)
             setSelected(true)
         }
-    }
+    };
     let [mywindow, setMywindow] = useState({})
     let resizeId;
     useEffect(() => {
@@ -45,7 +54,7 @@ const Blogs = () => {
                         </div>
                     </div>
                     <Swiper slidesPerView={mywindow.width && mywindow.width < 768 ? 1 : 2}
-                        spaceBetween={30}
+                        spaceBetween={35}
                         slidesPerGroup={3}
                         loop={true}
                         loopFillGroupWithBlank={false}
@@ -66,7 +75,7 @@ const Blogs = () => {
                                                         <div className="col-lg-5">
                                                             <figure>
                                                                 <a href="/blog/cbse-vs-icse-vs-ib-vs-igcse-vs-stateboard">
-                                                                    <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
+                                                                    <img src={blogtrand1} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
                                                                     <div className="preview"><span>Read more</span></div>
                                                                 </a>
                                                             </figure>
@@ -85,7 +94,7 @@ const Blogs = () => {
 
                                                                 <ul>
                                                                     <li>
-                                                                        <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+                                                                        <div className="thumb"><img src={skoolzlogo} alt="skoolz logo" /></div>
 
                                                                     </li>
                                                                     <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
@@ -105,7 +114,7 @@ const Blogs = () => {
                                                         <div className="col-lg-5">
                                                             <figure>
                                                                 <a href="/blog/various-types-of-preschools-all-parents-should-know">
-                                                                    <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="VariousTypesofPreschoolsAllParentsShouldknow" />
+                                                                    <img src={blogtrand2} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="VariousTypesofPreschoolsAllParentsShouldknow" />
                                                                     <div className="preview"><span>Read more</span></div>
                                                                 </a>
                                                             </figure>
@@ -124,7 +133,7 @@ const Blogs = () => {
 
                                                                 <ul>
                                                                     <li>
-                                                                        <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+                                                                        <div className="thumb"><img src={skoolzlogo} alt="skoolz logo" /></div>
 
                                                                     </li>
                                                                     <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
@@ -144,7 +153,7 @@ const Blogs = () => {
                                                         <div className="col-lg-5">
                                                             <figure>
                                                                 <a href="/blog/best-cbse-schools-in-bangalore-for-admissions-in-2022-23">
-                                                                    <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "286px", "width": "90%" }} alt="BestCBSESchoolsinBangaloreforadmissionsin202223" />
+                                                                    <img src={blogtrand3} className="mr-st indexBlogsImage" style={{ "height": "286px", "width": "90%" }} alt="BestCBSESchoolsinBangaloreforadmissionsin202223" />
                                                                     <div className="preview"><span>Read more</span></div>
                                                                 </a>
                                                             </figure>
@@ -161,7 +170,7 @@ const Blogs = () => {
                                                                 </p>
                                                                 <ul>
                                                                     <li>
-                                                                        <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+                                                                        <div className="thumb"><img src={skoolzlogo} alt="skoolz logo" /></div>
 
                                                                     </li>
                                                                     <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
@@ -186,7 +195,7 @@ const Blogs = () => {
                                                         <div className="col-lg-5">
                                                             <figure>
                                                                 <a href="/blog/pre-schools-in-mumbai">
-                                                                    <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
+                                                                    <img src={bloglatest1} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
                                                                     <div className="preview"><span>Read more</span></div>
                                                                 </a>
                                                             </figure>
@@ -205,7 +214,7 @@ const Blogs = () => {
 
                                                                 <ul>
                                                                     <li>
-                                                                        <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+                                                                        <div className="thumb"><img src={skoolzlogo} alt="skoolz logo" /></div>
 
                                                                     </li>
                                                                     <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
@@ -225,7 +234,7 @@ const Blogs = () => {
                                                         <div className="col-lg-5">
                                                             <figure>
                                                                 <a href="/blog/montessori-schools-in-mumbai">
-                                                                    <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
+                                                                    <img src={bloglatest2} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
                                                                     <div className="preview"><span>Read more</span></div>
                                                                 </a>
                                                             </figure>
@@ -244,7 +253,7 @@ const Blogs = () => {
 
                                                                 <ul>
                                                                     <li>
-                                                                        <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+                                                                        <div className="thumb"><img src={skoolzlogo} alt="skoolz logo" /></div>
 
                                                                     </li>
                                                                     <li sstyle={{ "display": "none" }}><i className="icon_comment_alt"></i></li>
@@ -264,7 +273,7 @@ const Blogs = () => {
                                                         <div className="col-lg-5">
                                                             <figure>
                                                                 <a href="/blog/best-pre-schools-in-delhi">
-                                                                    <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
+                                                                    <img src={bloglatest3} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
                                                                     <div className="preview"><span>Read more</span></div>
                                                                 </a>
                                                             </figure>
@@ -283,7 +292,7 @@ const Blogs = () => {
 
                                                                 <ul>
                                                                     <li>
-                                                                        <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+                                                                        <div className="thumb"><img src={skoolzlogo} alt="skoolz logo" /></div>
 
                                                                     </li>
                                                                     <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
@@ -303,7 +312,7 @@ const Blogs = () => {
                                                         <div className="col-lg-5">
                                                             <figure>
                                                                 <a href="/blog/best-montessori-schools-in-delhi">
-                                                                    <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
+                                                                    <img src={bloglatest4} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="CBSEvsICSEvsIBvsIGCSEvsStateBoard" />
                                                                     <div className="preview"><span>Read more</span></div>
                                                                 </a>
                                                             </figure>
@@ -322,7 +331,7 @@ const Blogs = () => {
 
                                                                 <ul>
                                                                     <li>
-                                                                        <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+                                                                        <div className="thumb"><img src={skoolzlogo} alt="skoolz logo" /></div>
 
                                                                     </li>
                                                                     <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
@@ -342,7 +351,7 @@ const Blogs = () => {
                                                         <div className="col-lg-5">
                                                             <figure>
                                                                 <a href="/blog/best-ICSE-schools-Bangalore">
-                                                                    <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="BestICSESchoolsInBangaloreforAdmissionsin2022" />
+                                                                    <img src={bloglatest5} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="BestICSESchoolsInBangaloreforAdmissionsin2022" />
                                                                     <div className="preview"><span>Read more</span></div>
                                                                 </a>
                                                             </figure>
@@ -359,7 +368,7 @@ const Blogs = () => {
                                                                 </p>
                                                                 <ul>
                                                                     <li>
-                                                                        <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+                                                                        <div className="thumb"><img src={skoolzlogo} alt="skoolz logo" /></div>
 
                                                                     </li>
                                                                     <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
@@ -379,7 +388,7 @@ const Blogs = () => {
                                                         <div className="col-lg-5">
                                                             <figure>
                                                                 <a href="/blog/nep-to-early-childhood-care-and-education">
-                                                                    <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="NepToEarlyChildhoodCareAndEducation" />
+                                                                    <img src={bloglatest5} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="NepToEarlyChildhoodCareAndEducation" />
                                                                     <div className="preview"><span>Read more</span></div>
                                                                 </a>
                                                             </figure>
@@ -396,7 +405,7 @@ const Blogs = () => {
                                                                 </p>
                                                                 <ul>
                                                                     <li>
-                                                                        <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+                                                                        <div className="thumb"><img src={skoolzlogo} alt="skoolz logo" /></div>
 
                                                                     </li>
                                                                     <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
@@ -416,7 +425,7 @@ const Blogs = () => {
                                                         <div className="col-lg-5">
                                                             <figure>
                                                                 <a href="/blog/nep-to-early-childhood-care-and-education">
-                                                                    <img src={skoolzlogo} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="NepToEarlyChildhoodCareAndEducation" />
+                                                                    <img src={bloglatest6} className="mr-st indexBlogsImage" style={{ "height": "280px", "width": "90%" }} alt="NepToEarlyChildhoodCareAndEducation" />
                                                                     <div className="preview"><span>Read more</span></div>
                                                                 </a>
                                                             </figure>
@@ -433,7 +442,7 @@ const Blogs = () => {
                                                                 </p>
                                                                 <ul>
                                                                     <li>
-                                                                        <div className="thumb"><img src="/skoolz/assets/img/SKOOLZ.png" alt="skoolz logo" /></div>
+                                                                        <div className="thumb"><img src={skoolzlogo} alt="skoolz logo" /></div>
 
                                                                     </li>
                                                                     <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>

@@ -3,6 +3,12 @@ import "./EventsAndWebinars.css"
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import ev1 from "../../Assets/Images/homeCSM.png";
+import ev2 from "../../Assets/Images/FTHP13.png";
+import ev3 from "../../Assets/Images/SSPanHP.png";
+import ev4 from "../../Assets/Images/Fish tank July HP 2022.png";
+import ev5 from "../../Assets/Images/SSThome.png";
+import ev6 from "../../Assets/Images/cool chills image for main page.jpg";
 import skoolslogo from "../../Assets/Images/skoolz.PNG";
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -28,7 +34,7 @@ const EvetsAndWeninars = () => {
                 <div className="baseContainer topSchoolSection" style={{ "display": "inline-block" }}>
                     <div className="topSchoolSectionTitle"><a><p style={{ "color": "#FF6700" }}> Events/Webinars/Workshops</p></a></div>
                     <Swiper slidesPerView={mywindow.width && mywindow.width < 768 ? 1 : 2}
-                        spaceBetween={35}
+                        spaceBetween={37}
                         slidesPerGroup={3}
                         loop={true}
                         loopFillGroupWithBlank={true}
@@ -49,7 +55,7 @@ const EvetsAndWeninars = () => {
                                                     <div className="col-lg-5">
                                                         <figure>
                                                             <a>
-                                                                <img src={skoolslogo} style={{ "width": "100%", "height": "360px" }} alt="" />
+                                                                <img src={ev1} style={{ "width": "100%", "height": "360px" }} alt="" />
                                                                 <div className="preview"><span>Read more</span></div>
                                                             </a>
                                                         </figure>
@@ -92,7 +98,7 @@ const EvetsAndWeninars = () => {
                                                     <div className="col-lg-5">
                                                         <figure>
                                                             <a>
-                                                                <img src={skoolslogo} style={{ "width": "100%", "height": "360px" }} alt="" />
+                                                                <img src={ev2} style={{ "width": "100%", "height": "360px" }} alt="" />
                                                                 <div className="preview"><span>Read more</span></div>
                                                             </a>
                                                         </figure>
@@ -135,7 +141,7 @@ const EvetsAndWeninars = () => {
                                                     <div className="col-lg-5">
                                                         <figure>
                                                             <a>
-                                                                <img src={skoolslogo} style={{ "width": "100%", "height": "360px" }} alt="" />
+                                                                <img src={ev3} style={{ "width": "100%", "height": "360px" }} alt="" />
                                                                 <div className="preview"><span>Read more</span></div>
                                                             </a>
                                                         </figure>
@@ -178,7 +184,7 @@ const EvetsAndWeninars = () => {
                                                     <div className="col-lg-5">
                                                         <figure>
                                                             <a>
-                                                                <img src={skoolslogo} style={{ "width": "100%", "height": "360px" }} alt="" />
+                                                                <img src={ev4} style={{ "width": "100%", "height": "360px" }} alt="" />
                                                                 <div className="preview"><span>Read more</span></div>
                                                             </a>
                                                         </figure>
@@ -221,7 +227,7 @@ const EvetsAndWeninars = () => {
                                                     <div className="col-lg-5">
                                                         <figure>
                                                             <a>
-                                                                <img src={skoolslogo} style={{ "width": "100%", "height": "360px" }} alt="" />
+                                                                <img src={ev5} style={{ "width": "100%", "height": "360px" }} alt="" />
                                                                 <div className="preview"><span>Read more</span></div>
                                                             </a>
                                                         </figure>
@@ -255,6 +261,49 @@ const EvetsAndWeninars = () => {
                                             </article>
                                         </div>
                                     </div>
+                                </SwiperSlide>
+                                <SwiperSlide className="swiper-slide indexBlogs">
+                                <div className="indexBlogs">
+                                <div className="row">
+                                    <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn" }}>
+                                        <div className="row no-gutters ht-st">
+                                            <div className="col-lg-5">
+                                                <figure>
+                                                    <a>
+                                                        <img src={ev6} style={{ "width": "100%", "height": "360px" }} alt="" />
+                                                        <div className="preview"><span>Read more</span></div>
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                            <div className="col-lg-7">
+                                                <div className="post_info" style={{ "height": "292px" }}>
+                                                    <div>
+                                                        <div className="boldTitle">
+                                                            <b>Workshop:</b><span>
+                                                                <a>
+                                                                    Cool Chills
+                                                                </a>
+                                                            </span>
+                                                        </div>
+                                                        <div className="boldTitle">Speaker: <span>Mrs. Kirti Parnami</span></div>
+                                                        <div className="boldTitle"><b>Day:</b>Sunday<br /> <span></span></div>
+                                                        <div className="boldTitle"><b>Date:</b> <span>26th June 2022</span></div>
+                                                        <div className="boldTitle"><b>Time:</b> <span>10:00 am – 10:45 am</span></div>
+
+                                                        <a target="_blank">Register Here</a>
+                                                    </div>
+                                                    <ul>
+                                                        <li>
+                                                            <div className="thumb"><img src={skoolslogo} alt="skoolz" /></div>
+                                                        </li>
+                                                        <li style={{ "display": "none" }}><i className="icon_comment_alt"></i> 20</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                               </div>
                                 </SwiperSlide>
                             </div>
                         </div>

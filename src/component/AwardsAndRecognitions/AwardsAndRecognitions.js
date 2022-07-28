@@ -2,8 +2,8 @@ import React,{useEffect,useState} from "react";
 import './AwardsAndRecognitions.css'
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import award1 from "../../Assets/Images/award1.PNG"
-import award2 from "../../Assets/Images/award2.PNG"
+import award1 from "../../Assets/Images/Best-Edutech-Award-2021.jpeg"
+import award2 from "../../Assets/Images/Startup-Certificate-Xergy.jpg"
 import skoolzlogo from "../../Assets/Images/skoolz.PNG"
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";

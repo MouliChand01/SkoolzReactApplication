@@ -1,14 +1,19 @@
-import React,{useState,useEffect}from "react";
+import React, { useState, useEffect } from "react";
 import "./Schools.css"
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import skoolslogo from "../../Assets/Images/skoolz.PNG";
+import school1 from "../../Assets/Images/CoverPicture_1.jpg"
+import school2 from "../../Assets/Images/CoverPicture_2.jpg"
+import school3 from "../../Assets/Images/CoverPicture_3.jpg"
+import school4 from "../../Assets/Images/CoverPicture_4.jpg"
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Schools = () => {
-    let [mywindow, setMywindow] = useState({})
+    let [mywindow, setMywindow] = useState({});
+    let [trending, setTrending] = useState(true);
+    let [selected, setSelected] = useState(false)
     let resizeId;
     useEffect(() => {
         window.addEventListener("resize", function () {
@@ -37,10 +42,10 @@ const Schools = () => {
                     <div id="btn-content" className="text-center m-3 mb-5">
                         <div className="btn-group shadow-lg  bg-white rounded-pill" role="group" aria-label="Basic example">
                             <button type="submit" data-value="true" className="btn-board-trend m-3 btn-selected">Trending</button>
-                            <button type="submit" data-value="false" className="btn-board-trend m-3">Near Me</button>
+                            <button type="submit" data-value="false" className={`btn-board-trend m-3 ${selected ? 'btn-selected' : ''}`} onClick={() => changebtn('nearMe')} >Near Me</button>
                         </div>
                     </div>
-                    <Swiper slidesPerView={mywindow.width && mywindow.width < 768 ? 1 : 4}
+                    <Swiper slidesPerView={mywindow.width && mywindow.width < 768 ? 1 : 3}
                         spaceBetween={39}
                         slidesPerGroup={3}
                         loop={true}
@@ -59,62 +64,52 @@ const Schools = () => {
                         </div>
                         <div className="swiper-container">
                             <div className="swiper-wrapper" id="divTopSchools" data-hostname="@ViewBag.Hostname" data-skoolz="@ViewBag.SkoolzHostname">
-                                <SwiperSlide>
-                                    <div className="swiper-slide">
+                                <SwiperSlide className="swiper-slide">
+                                    <div >
                                         <a>
-                                            <img src={skoolslogo} className="sliderImage" alt="sliderImage" />
+                                            <img src={school1} className="sliderImage" alt="sliderImage" />
                                             <div className="sliderCaption">
-                                                <div className="sliderCaptionTitle">Harvest International School</div>
+                                                <div className="sliderCaptionTitle">Kabiraa The Preschool</div>
                                                 <div className="sliderCaptionSubTitle">Bengaluru</div>
                                             </div>
                                         </a>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="swiper-slide">
+                                <SwiperSlide className="swiper-slide">
+                                    <div >
                                         <a href="https://www.skoolz.in/home/view-school?profileId=132&d=16.8">
-                                            <img src={skoolslogo} className="sliderImage" alt="sliderImage" />
+                                            <img src={school2} className="sliderImage" alt="sliderImage" />
                                             <div className="sliderCaption">
-                                                <div className="sliderCaptionTitle">BGS International Academia School</div>
-                                                <div className="sliderCaptionSubTitle">Nityanandanagar,Bengaluru</div>
+                                                <div className="sliderCaptionTitle">Gurukulam Koramangala</div>
+                                                <div className="sliderCaptionSubTitle">Bengaluru</div>
                                             </div>
                                         </a>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="swiper-slide">
+                                <SwiperSlide className="swiper-slide">
+                                    <div >
                                         <a href="https://www.skoolz.in/home/view-school?profileId=82&d=25.2">
-                                            <img src={skoolslogo} className="sliderImage" alt="sliderImage" />
+                                            <img src={school3} className="sliderImage" alt="sliderImage" />
                                             <div className="sliderCaption">
-                                                <div className="sliderCaptionTitle">Basil woods</div>
-                                                <div className="sliderCaptionSubTitle">Lakshmipura Cross ,MS Palaya Road,Bengaluru</div>
+                                                <div className="sliderCaptionTitle">Little kidz Preschool Andrahalli</div>
+                                                <div className="sliderCaptionSubTitle">Andrahalli Main Road,Bengaluru</div>
                                             </div>
                                         </a>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="swiper-slide">
+                                <SwiperSlide className="swiper-slide">
+                                    <div >
                                         <a href="https://www.skoolz.in/home/view-school?profileId=690&d=32.9">
-                                            <img src={skoolslogo} className="sliderImage" alt="sliderImage" />
+                                            <img src={school4} className="sliderImage" alt="sliderImage" />
                                             <div className="sliderCaption">
-                                                <div className="sliderCaptionTitle">Candor International School</div>
-                                                <div className="sliderCaptionSubTitle">Koppa-harapanhalli Road,Bengaluru</div>
+                                                <div className="sliderCaptionTitle">Headsmart Preschool</div>
+                                                <div className="sliderCaptionSubTitle">Marathahalli,Bengaluru</div>
                                             </div>
                                         </a>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="swiper-slide">
-                                        <a href="https://www.skoolz.in/home/view-school?profileId=52&d=36.9">
-                                            <img src={skoolslogo} style={{ "width": "100%" }} className="sliderImage" alt="sliderImage" />
-                                            <div className="sliderCaption">
-                                                <div className="sliderCaptionTitle">Glentree Academy Sarjapur</div>
-                                                <div className="sliderCaptionSubTitle">Sarjapur Road,Halanayakanahalli,Bengaluru</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
+                               
+                                {/* <SwiperSlide>
                                     <div className="swiper-slide">
                                         <a href="https://www.skoolz.in/home/view-school?profileId=128&d=47.1">
                                             <img src={skoolslogo} className="sliderImage" alt="sliderImage" />
@@ -231,7 +226,7 @@ const Schools = () => {
                                             </div>
                                         </a>
                                     </div>
-                                </SwiperSlide>
+                                </SwiperSlide> */}
                             </div>
                         </div>
                     </Swiper>
