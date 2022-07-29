@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Header.css"
 import skoolzlogo from "../../Assets/Images/skoolz.PNG"
-import searcIcon from "../../Assets/Images/white-search-icon.jpg"
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faSearch} from '@fortawesome/free-solid-svg-icons'
+import "./Header.css"
 const Header = ()=>{
     const [flag, setFlag] = useState("");
     const [display,setDisplay]=useState(false);
@@ -30,7 +30,7 @@ const Header = ()=>{
                                     <img src="~/skoolz/assets/img/icon/search_location.svg" alt="location" />
                                 </div>
                                 <button type="submit" className="search-icon">
-                                    <img src={{searcIcon}} alt="search" />
+                                <FontAwesomeIcon icon={faSearch}  style={{"color":"white"}}/>
                                 </button>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ const Header = ()=>{
                                         <img src="~/skoolz/assets/img/icon/search_location.svg" alt="location" />
                                     </div>
                                     <button type="submit" className="search-icon">
-                                        <img src="~/skoolz/assets/img/icon/search.svg" alt="search" />
+                                    <FontAwesomeIcon icon={faSearch}  style={{"color":"white"}}/>
                                     </button>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@ const Header = ()=>{
                                         <img src="~/skoolz/assets/img/icon/search_location.svg" alt="location" />
                                     </div>
                                     <button type="submit" className="search-icon">
-                                        <img src={{searcIcon}} alt="search" />
+                                    <FontAwesomeIcon icon={faSearch}  style={{"color":"white"}}/>
                                     </button>
                                 </div>
                             </div>
@@ -168,7 +168,7 @@ const Header = ()=>{
                                         <img src="~/skoolz/assets/img/icon/search_location.svg" alt="location" />
                                     </div>
                                     <button type="submit" className="search-icon">
-                                        <img src="~/skoolz/assets/img/icon/search.svg" alt="search" />
+                                    <FontAwesomeIcon icon={faSearch}  style={{"color":"white"}}/>
                                     </button>
                                 </div>
                             </form>

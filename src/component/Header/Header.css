@@ -13,7 +13,7 @@
 }
 
 .logo img {
-    height: 70px;
+    height: 37px;
 }
 
 .baseContainer {
@@ -547,13 +547,15 @@
     .menuCloseIcon {
         position: absolute;
         right: 10px;
-        top: 0px;
-        /* background-image: url('../../Assets/svg/close.svg'); */
+        top: 15px;
         color: white;
         width: 40px;
-        /* width: 62px;
-        height: 66px; */
         background-repeat: no-repeat;
+    }
+
+    .logo img {
+        height: 37px;
+        margin-top: 20px;
     }
 
 }

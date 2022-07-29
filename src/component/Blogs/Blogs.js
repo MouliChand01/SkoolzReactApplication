@@ -1,8 +1,4 @@
 import React, { useState ,useEffect} from "react";
-import "./Blogs.css";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import blogtrand1 from "../../Assets/Images/CBSE vs ICSE vs IB vs IGCSE vs State Board_11zon.jpg";
 import blogtrand2 from "../../Assets/Images/Various Types of Preschool_11zon.jpg";
 import blogtrand3 from "../../Assets/Images/CBSE schools Banglore_11zon.jpg";
@@ -12,9 +8,15 @@ import bloglatest3 from "../../Assets/Images/Best PreSchools in Delhi.png";
 import bloglatest4 from "../../Assets/Images/Best Montessori schools in Delhi.png";
 import bloglatest5 from "../../Assets/Images/ICSE schools banglore.jpg";
 import bloglatest6 from "../../Assets/Images/blog10_thumb.jpg";
-import skoolzlogo from "../../Assets/Images/skoolz.PNG"
+import skoolzlogo from "../../Assets/Images/skoolz.PNG";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "./Blogs.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const Blogs = () => {
     const [trending, setTrending] = useState(true);
@@ -463,7 +465,7 @@ const Blogs = () => {
                         More Blogs On Various Topics
                         <a className="joinOurNetworkButton" href="/blog/index" style={{ "textDecoration": "none" }}>
                             <div>
-                                Click Here<span className="registerSchoolIcon"></span>
+                                Click Here &nbsp; <FontAwesomeIcon icon={faLongArrowAltRight}/>
                             </div>
                         </a>
 

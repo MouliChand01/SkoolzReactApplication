@@ -1,10 +1,12 @@
 import React,{useEffect,useState} from "react";
-import './AwardsAndRecognitions.css'
+import './AwardsAndRecognitions.css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import award1 from "../../Assets/Images/Best-Edutech-Award-2021.jpeg"
-import award2 from "../../Assets/Images/Startup-Certificate-Xergy.jpg"
-import skoolzlogo from "../../Assets/Images/skoolz.PNG"
+import award1 from "../../Assets/Images/Best-Edutech-Award-2021.jpeg";
+import award2 from "../../Assets/Images/Startup-Certificate-Xergy.jpg";
+import skoolzlogo from "../../Assets/Images/skoolz.PNG";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -127,7 +129,7 @@ const AwardsAndRecognitions = () => {
                         More Awards &amp; Recognitions
                         <a class="joinOurNetworkButton" href="/Awards/index" style={{ "textDecoration": "none" }}>
                             <div>
-                                Click Here<span class="registerSchoolIcon"></span>
+                                Click Here &nbsp; <FontAwesomeIcon icon={faLongArrowAltRight}/>
                             </div>
                         </a>
                     </div>

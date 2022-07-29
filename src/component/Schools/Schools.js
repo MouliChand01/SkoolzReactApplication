@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
-import "./Schools.css"
+import "./Schools.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import school1 from "../../Assets/Images/CoverPicture_1.jpg"
-import school2 from "../../Assets/Images/CoverPicture_2.jpg"
-import school3 from "../../Assets/Images/CoverPicture_3.jpg"
-import school4 from "../../Assets/Images/CoverPicture_4.jpg"
+import school1 from "../../Assets/Images/CoverPicture_1.jpg";
+import school2 from "../../Assets/Images/CoverPicture_2.jpg";
+import school3 from "../../Assets/Images/CoverPicture_3.jpg";
+import school4 from "../../Assets/Images/CoverPicture_4.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,12 +17,12 @@ const Schools = () => {
     let [trending, setTrending] = useState(true);
     let [selected, setSelected] = useState(true);
 
-    const changebtn=(val)=>{
-        if(val === "nearMe"){
+    const changebtn = (val) => {
+        if (val === "nearMe") {
             setTrending(!trending)
             setSelected(!selected)
         }
-        else{
+        else {
             setTrending(!trending)
             setSelected(!selected)
         }
@@ -119,7 +121,7 @@ const Schools = () => {
                                         </a>
                                     </div>
                                 </SwiperSlide>
-                               
+
                                 {/* <SwiperSlide>
                                     <div className="swiper-slide">
                                         <a href="https://www.skoolz.in/home/view-school?profileId=128&d=47.1">
@@ -248,7 +250,10 @@ const Schools = () => {
                         <h1>
                             More Schools
                         </h1>
-                        <div className="MoreschoolsHome"></div><a target="_blank" href="https://www.skoolz.in/home/search" className="joinOurNetworkButton"><div>Search<span className="registerSchoolIcon"></span></div></a>
+                        <div className="MoreschoolsHome"></div><a target="_blank" href="https://www.skoolz.in/home/search" className="joinOurNetworkButton">
+                            <div>Search&nbsp; <FontAwesomeIcon icon={faLongArrowAltRight}/>
+                            </div>
+                            </a>
                     </div>
                 </div>
             </div>

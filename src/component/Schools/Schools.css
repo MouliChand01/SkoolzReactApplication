@@ -24,6 +24,7 @@
     background: rgba(0, 0, 0, .7);
     width: 100%;
     line-height: 12px;
+    width: 346px;
 }
 
 .sliderCaptionTitle {
@@ -214,6 +215,7 @@
         background: rgba(0, 0, 0, .7);
         width: 100%;
         line-height: 5px;
+        
     }
 
     .sliderCaptionTitle {

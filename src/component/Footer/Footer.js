@@ -1,5 +1,8 @@
 import React from "react";
 import skoolzlogo from "../../Assets/Images/skoolz.PNG"
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faFacebook,faTwitter,faLinkedin,faYoutube,faInstagram} from '@fortawesome/free-brands-svg-icons'
+import {faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 import './Footer.css'
 const FooterComponent = () => {
     return (
@@ -8,7 +11,7 @@ const FooterComponent = () => {
             <div className="joinOurNetwork">
                 <div className="joinOurNetworkText">
                     Call Us &nbsp;&#64;&nbsp; 7760755882 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OR
-                    <div className="callUsHomeButton"></div><button className="joinOurNetworkButton applyBtn joinOurNetworkButton callBackBtn" data-toggle="modal" data-backdrop="static" data-target="#ContactUsFormSchoolModal" style={{"padding-bottom":"50px"}}>Get a Call Back</button>
+                    <div className="callUsHomeButton"></div><button className="joinOurNetworkButton applyBtn joinOurNetworkButton callBackBtn" data-toggle="modal" data-backdrop="static" data-target="#ContactUsFormSchoolModal" style={{"padding-bottom":"50px"}}>Get a Call Back &nbsp; <FontAwesomeIcon icon={faLongArrowAltRight}/></button>
                 </div>
             </div>
             <br />
@@ -18,7 +21,7 @@ const FooterComponent = () => {
                     <h1>
                         Partner With Us
                     </h1>
-                    <div className="joinOurNetworkOfBestSchoolsHomeButton"></div><a target="_blank" href="https://partners.skoolz.in" style={{"textDecoration":"None"}}className="joinOurNetworkButton"><div className="registerButton">Register<span className="registerSchoolIcon"></span></div></a>
+                    <div className="joinOurNetworkOfBestSchoolsHomeButton"></div><a target="_blank" href="https://partners.skoolz.in" style={{"textDecoration":"None"}}className="joinOurNetworkButton"><div className="registerButton">Register &nbsp; <FontAwesomeIcon icon={faLongArrowAltRight}/><span className="registerSchoolIcon"> </span></div></a>
                 </div>
             </div>
             <br />
@@ -151,28 +154,28 @@ const FooterComponent = () => {
                             <li>
                                 <a target="_blank" href="https://www.facebook.com/Skoolzsearch">
                                     <span className="iconSocial iconFb">
-                                        <img src="~/skoolz/assets/img/fbFooter.svg" />
+                                      <FontAwesomeIcon icon={faFacebook}/>
                                     </span>Facebook
                                 </a>
                             </li>
                             <li>
                                 <a target="_blank" href="https://twitter.com/skoolzsearch">
                                     <span className="iconSocial iconTw">
-                                        <img src="~/skoolz/assets/img/twitterFooter.svg" />
+                                    <FontAwesomeIcon icon={faTwitter}/>
                                     </span>Twitter
                                 </a>
                             </li>
                             <li>
                                 <a target="_blank" href="https://www.linkedin.com/company/skoolz-in">
                                     <span className="iconSocial iconIn">
-                                        <img src="~/skoolz/assets/img/icon/linkedin.svg" />
+                                    <FontAwesomeIcon icon={faLinkedin}/>
                                     </span>Linkedin
                                 </a>
                             </li>
                             <li>
                                 <a target="_blank" href="https://www.instagram.com/skoolzsearch/">
                                     <span className="iconSocial iconIn">
-                                        <img src="~/skoolz/assets/img/instagramFooter.svg" />
+                                    <FontAwesomeIcon icon={faInstagram}/>
                                     </span>Instagram
                                 </a>
                             </li>
@@ -180,7 +183,7 @@ const FooterComponent = () => {
                             <li>
                                 <a target="_blank" href="https://www.youtube.com/channel/UClbFOYaHWdLlae_mCKTp6VQ">
                                     <span className="iconSocial iconIn">
-                                        <img src="~/skoolz/assets/img/icon/youtube.svg" />
+                                    <FontAwesomeIcon icon={faYoutube}/>
                                     </span>YouTube
                                 </a>
                             </li>
@@ -224,11 +227,11 @@ const FooterComponent = () => {
                         <li><a href="https://www.skoolz.in/blog/kids" asp-action="Kids" style={{ "color": "rgba(255, 255, 255, .8)" }}>Kids Arena</a></li>
                     </ul>
                     <div className="footerSS">
-                        <a target="_blank" href="https://www.facebook.com/Skoolzsearch"><img src="~/skoolz/assets/img/fbFooter.svg" alt="facebook" /></a>
-                        <a target="_blank" href="#0"><img src="~/skoolz/assets/img/twitterFooter.svg" alt="twitter" /></a>
-                        <a target="_blank" href="https://www.instagram.com/skoolzsearch/"><img src="~/skoolz/assets/img/instagramFooter.svg" alt="instagram" /></a>
-                        <a target="_blank" href="https://www.linkedin.com/company/skoolz-in"><img src="~/skoolz/assets/img/icon/linkedin.svg" alt="Linkedin" /></a>
-                        <a target="_blank" href="https://www.youtube.com/channel/UClbFOYaHWdLlae_mCKTp6VQ"><img src="~/skoolz/assets/img/icon/youtube.svg" alt="youtube" /></a>
+                        <a target="_blank" href="https://www.facebook.com/Skoolzsearch"> <FontAwesomeIcon icon={faFacebook} style={{"color":"white"}}/></a>
+                        <a target="_blank" href="#0"> <FontAwesomeIcon icon={faTwitter} style={{"color":"white"}}/></a>
+                        <a target="_blank" href="https://www.instagram.com/skoolzsearch/"><FontAwesomeIcon icon={faInstagram} style={{"color":"white"}}/></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/skoolz-in"><FontAwesomeIcon icon={faLinkedin} style={{"color":"white"}} /></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UClbFOYaHWdLlae_mCKTp6VQ"><FontAwesomeIcon icon={faYoutube} style={{"color":"white"}}/></a>
                     </div>
                 </div>
             </div>
