@@ -13,7 +13,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const Schools = () => {
     let [mywindow, setMywindow] = useState({});
     let [trending, setTrending] = useState(true);
-    let [selected, setSelected] = useState(false)
+    let [selected, setSelected] = useState(true);
+
+    const changebtn=(val)=>{
+        if(val === "nearMe"){
+            setTrending(!trending)
+            setSelected(!selected)
+        }
+        else{
+            setTrending(!trending)
+            setSelected(!selected)
+        }
+    }
     let resizeId;
     useEffect(() => {
         window.addEventListener("resize", function () {
@@ -237,7 +248,6 @@ const Schools = () => {
                         <h1>
                             More Schools
                         </h1>
-                        {/* <a href="register.html"><div className="joinOurNetworkButton">Register School<span className="registerSchoolIcon"></span></div></a> */}
                         <div className="MoreschoolsHome"></div><a target="_blank" href="https://www.skoolz.in/home/search" className="joinOurNetworkButton"><div>Search<span className="registerSchoolIcon"></span></div></a>
                     </div>
                 </div>

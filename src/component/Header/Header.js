@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css"
 import skoolzlogo from "../../Assets/Images/skoolz.PNG"
+import searcIcon from "../../Assets/Images/white-search-icon.jpg"
 
 const Header = ()=>{
     const [flag, setFlag] = useState("");
@@ -29,7 +30,7 @@ const Header = ()=>{
                                     <img src="~/skoolz/assets/img/icon/search_location.svg" alt="location" />
                                 </div>
                                 <button type="submit" className="search-icon">
-                                    <img src="~/skoolz/assets/img/icon/search.svg" alt="search" />
+                                    <img src={{searcIcon}} alt="search" />
                                 </button>
                             </div>
                         </div>
@@ -111,7 +112,7 @@ const Header = ()=>{
                                         <img src="~/skoolz/assets/img/icon/search_location.svg" alt="location" />
                                     </div>
                                     <button type="submit" className="search-icon">
-                                        <img src="~/skoolz/assets/img/icon/search.svg" alt="search" />
+                                        <img src={{searcIcon}} alt="search" />
                                     </button>
                                 </div>
                             </div>
