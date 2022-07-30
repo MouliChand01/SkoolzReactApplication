@@ -11,7 +11,7 @@ import ev5 from "../../Assets/Images/SSThome.png";
 import ev6 from "../../Assets/Images/cool chills image for main page.jpg";
 import skoolslogo from "../../Assets/Images/skoolz.PNG";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import {faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -317,7 +317,7 @@ const EvetsAndWeninars = () => {
                     More Webinars / Events / Workshops
                     <a class="joinOurNetworkButton">
                         <div>
-                            Click Here&nbsp; <FontAwesomeIcon icon={faLongArrowAltRight}/>
+                            Click Here&nbsp; <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                         </div>
                     </a>
                 </div>

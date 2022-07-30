@@ -5,7 +5,7 @@ import parent3 from "../../Assets/Images/Punith_Gowda.png"
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import {faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -120,7 +120,7 @@ const Testimonials = () => {
                         <div class="viewMoreTestimonialsHomeButton"></div>
                         <a asp-controller="Testimonial" asp-action="Index" style={{ "textDecoration": "None" }} class="joinOurNetworkButton">
                             <div>
-                                Click here &nbsp; <FontAwesomeIcon icon={faLongArrowAltRight}/>
+                                Click here &nbsp; <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                             </div>
                         </a>
                     </div>

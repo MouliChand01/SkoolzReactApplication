@@ -6,7 +6,7 @@ import award1 from "../../Assets/Images/Best-Edutech-Award-2021.jpeg";
 import award2 from "../../Assets/Images/Startup-Certificate-Xergy.jpg";
 import skoolzlogo from "../../Assets/Images/skoolz.PNG";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import {faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -129,7 +129,7 @@ const AwardsAndRecognitions = () => {
                         More Awards &amp; Recognitions
                         <a class="joinOurNetworkButton" href="/Awards/index" style={{ "textDecoration": "none" }}>
                             <div>
-                                Click Here &nbsp; <FontAwesomeIcon icon={faLongArrowAltRight}/>
+                                Click Here &nbsp; <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                             </div>
                         </a>
                     </div>

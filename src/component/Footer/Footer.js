@@ -2,7 +2,7 @@ import React from "react";
 import skoolzlogo from "../../Assets/Images/skoolz.PNG"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebook,faTwitter,faLinkedin,faYoutube,faInstagram} from '@fortawesome/free-brands-svg-icons'
-import {faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
+import {faLongArrowAltRight,faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons'
 import './Footer.css'
 const FooterComponent = () => {
     return (
@@ -11,7 +11,7 @@ const FooterComponent = () => {
             <div className="joinOurNetwork">
                 <div className="joinOurNetworkText">
                     Call Us &nbsp;&#64;&nbsp; 7760755882 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OR
-                    <div className="callUsHomeButton"></div><button className="joinOurNetworkButton applyBtn joinOurNetworkButton callBackBtn" data-toggle="modal" data-backdrop="static" data-target="#ContactUsFormSchoolModal" style={{"padding-bottom":"50px"}}>Get a Call Back &nbsp; <FontAwesomeIcon icon={faLongArrowAltRight}/></button>
+                    <div className="callUsHomeButton"></div><button className="joinOurNetworkButton applyBtn joinOurNetworkButton callBackBtn" data-toggle="modal" data-backdrop="static" data-target="#ContactUsFormSchoolModal" style={{"padding-bottom":"50px"}}>Get a Call Back &nbsp; <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></button>
                 </div>
             </div>
             <br />
@@ -21,7 +21,7 @@ const FooterComponent = () => {
                     <h1>
                         Partner With Us
                     </h1>
-                    <div className="joinOurNetworkOfBestSchoolsHomeButton"></div><a target="_blank" href="https://partners.skoolz.in" style={{"textDecoration":"None"}}className="joinOurNetworkButton"><div className="registerButton">Register &nbsp; <FontAwesomeIcon icon={faLongArrowAltRight}/><span className="registerSchoolIcon"> </span></div></a>
+                    <div className="joinOurNetworkOfBestSchoolsHomeButton"></div><a target="_blank" href="https://partners.skoolz.in" style={{"textDecoration":"None"}}className="joinOurNetworkButton"><div className="registerButton">Register &nbsp; <FontAwesomeIcon icon={faArrowUpRightFromSquare}/><span className="registerSchoolIcon"> </span></div></a>
                 </div>
             </div>
             <br />

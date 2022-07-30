@@ -10,7 +10,7 @@ import bloglatest5 from "../../Assets/Images/ICSE schools banglore.jpg";
 import bloglatest6 from "../../Assets/Images/blog10_thumb.jpg";
 import skoolzlogo from "../../Assets/Images/skoolz.PNG";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import {faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Blogs.css";
@@ -465,7 +465,7 @@ const Blogs = () => {
                         More Blogs On Various Topics
                         <a className="joinOurNetworkButton" href="/blog/index" style={{ "textDecoration": "none" }}>
                             <div>
-                                Click Here &nbsp; <FontAwesomeIcon icon={faLongArrowAltRight}/>
+                                Click Here &nbsp; <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                             </div>
                         </a>
 

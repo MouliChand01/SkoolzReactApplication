@@ -6,6 +6,19 @@
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 10px;
 }
 
+.webHeader{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index: 99;
+}
+.mobileHeader{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index: 99;
+}
+
 .header .logo {
     min-height: 76px;
     line-height: 76px;
@@ -497,6 +510,19 @@
         float: left;
         /*background-size: 100%;*/
         /*background-repeat: no-repeat;*/
+    }
+
+    .webHeader{
+        position: fixed;
+        top:0px;
+        left: 0px;
+        z-index: 99;
+    }
+    .mobileHeader{
+        position: fixed;
+        top:0px;
+        left: 0px;
+        z-index: 99;
     }
 
     .mobileHeader .headerSearchBox {
