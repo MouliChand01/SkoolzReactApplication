@@ -10,6 +10,7 @@ import Homeimage from './component/Homeimage/Homeimage';
 import Schools from './component/Schools/Schools';
 import EvetsAndWeninars from './component/EventsAndWebinars/EventsAndWebinars';
 
+
 function App() {
   return (
     <div className="App">

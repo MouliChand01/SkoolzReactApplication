@@ -104,7 +104,7 @@
         line-height: 36px;
     }
      .webSkoolzRecord {
-        transform: translate(-50%, -100%);
+        transform: translate(-50%, 0%);
     }
     
     .recordItems .itemListTitle {
