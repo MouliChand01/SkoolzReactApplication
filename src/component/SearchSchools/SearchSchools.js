@@ -12,10 +12,10 @@ const SearchSchools = () => {
             <br /><br /><br />
             <div className="container grid">
                 <div className="row">
-                    <div className="col-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3 SearchFilter">
                         <ListFilter />
                     </div>
-                    <div className="col-9">
+                    <div className="col-md-6 col-lg-8 col-xl-9 cardFilter">
                         <CardFilter />
                     </div>
                 </div>

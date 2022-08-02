@@ -140,12 +140,12 @@ const ListFilter = () => {
     ]
     return (
         <div>
-            <div className="container searchFilters">
+            <div className="searchFilters">
                 Search Filters <a href="#" className="clearFilters"> Clear All </a>
             </div>
-            <div className="container filterCard">
-                <div className="row">
-                    <div className="card">
+            <div className="filterCard">
+                <div className="">
+                    <div className="sidebar-card">
                         {data.map((e, index) => (
                             <div>
                                 <div key={index} className="filterTitle">{e.title}</div>

@@ -1,6 +1,4 @@
-.cardFilterData{
-    margin: -70px 0px 0px -305px;
-}
+
 .starIcon{
     color: #FA802E;
     font-size: 20px;
@@ -42,8 +40,6 @@
 }
 
 .BB {
-    margin-right: -13px;
-    margin-left: 16px;
     height: 45px;
     line-height: 3px;
     padding: 0px 9px 0px 7px;
@@ -64,16 +60,7 @@ a {
 .mx-3 {
     margin-right: 1rem!important;
 }
-.btnGroup{
-    margin: 35px 16px 0px 45px;
-    float: right;
-}
-.cardGroup{
-    margin-top: 80px;
-    margin-left: 300px;
-    height: 275px;
-    width: 1062px;
-}
+
 
 .card-body {
     flex: 1 1 auto;
@@ -95,17 +82,18 @@ a {
     max-width: 100px !important;
     background-color: #35a84f;
     border: none;
-    padding: 3px 6px;
+    padding: 2px 6px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
     margin: auto;
     border-radius: 27px;
     color: black;
     margin-left: 4px;
+    width: 85px;
 }
 
 @media (min-width: 992px){
@@ -152,16 +140,26 @@ a {
 }
 
 .buttons{
-    margin: 0px 0px 0px -202px;
-    padding: 0px 10px;
+   padding: 0px 10px;
 }
 
 .schoolDetails h5{
     font-weight: bold;
-    padding-right: 264px;
 }
 
 .schoolDetails h6{
     padding-right: 90px;
     margin: 20px 0px 32px 30px;
+}
+@media screen and (max-width: 991px){
+    .grid{
+        margin-top:200px;
+    }
+.starIcon{
+    border-right: none;
+    margin-bottom: 10px;
+}
+.buttons > button{
+    margin-bottom: 10px;
+}
 }

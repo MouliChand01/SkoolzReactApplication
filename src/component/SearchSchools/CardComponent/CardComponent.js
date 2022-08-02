@@ -88,7 +88,7 @@ const CardFilter = () => {
     return (
         <div>
             <div className='container cardFilter'>
-                <div className='row'>
+                <div className='row mb-3'>
                     <div className='col-12 col-md-12 col-lg-9 buttons'>
                         <button className='btn-selected button col-lg-1'>Schools</button>
                         <button className='buttonHobby'>Hobby classes</button>
@@ -97,26 +97,31 @@ const CardFilter = () => {
 
                 </div>
                 {schoolData && schoolData.map((data) => {
-                    return <div className='row'>
-                        <div className='col-8 cardFilterData'>
+                    return <div className='mb-3'>
+                        <div className='cardFilterData'>
                             <div className='card cardGroup'>
-                                <div className='card-body'>
-                                    <img src={skoolslogo} style={{ "height": "260px", "width": "424px", "float": "left","marginRight": "12px" }} />
-                                    <div className='schoolDetails'>
+                                <div className='card-body p-2'>
+                                    <div className="row">
+                                        <div className="col-lg-4 d-flex align-items-center">
+                                        <img className="img-fluid px-2" src={skoolslogo} />
+                                        </div>
+                                        <div className="col-lg-8">
+                                        
+                                        <div className='schoolDetails mt-3 mb-2'>
                                         <h5>{data.schoolname}</h5>
                                         <h6>{data.address}</h6>
                                         <div className='row'>
-                                            <div className='col-6 col-md-4 starIcon'>
+                                            <div className='col-6 col-lg-4 starIcon'>
                                                 Montessori
                                                 <br />
                                                 <span style={{ "color": "black" }}>Pre-School Type</span>
                                             </div>
-                                            <div className='col-6 col-md-4 starIcon'>
+                                            <div className='col-6 col-lg-4 starIcon'>
                                                 Co-Ed
                                                 <br />
                                                 <span style={{ "color": "black" }}>Pre-School Type</span>
                                             </div>
-                                            <div className='col-6 col-md-4 starIcon1'>
+                                            <div className='col-6 col-lg-4 starIcon1'>
                                                 Rs.
                                                 <br />
                                                 <span style={{ "color": "black" }}>Pre-School Type</span>
@@ -129,6 +134,9 @@ const CardFilter = () => {
                                         <button className='applyBtn'>Book Appointment</button>
                                         <button className='callmeBtn1 BB'>CALL</button>
                                     </div>
+                                    </div>
+                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
