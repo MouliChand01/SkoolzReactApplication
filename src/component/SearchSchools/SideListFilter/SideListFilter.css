@@ -1,0 +1,35 @@
+
+/* *{
+    font-family: 'MontserratSemiBold';
+} */
+
+button{
+    background-color: white;
+    color: black;
+    border-radius: 13px;
+    border: 1px solid gray;
+    margin: 7px;
+}
+.filterTitle{
+    text-align: left;
+    font-size: larger;
+    font-weight: 700;
+    display: table-cell;
+    border-bottom: 2px solid #D6712D;
+    margin: 5px;
+    padding: 5px 0px;
+}
+.searchFilters {
+    font-weight: 600;
+    text-align: left;
+}
+.searchFilters .clearFilters{
+    font-weight: 600;
+    color: #34A853;
+    text-decoration: none;
+    float: right;
+    margin-left: 60px;
+} 
+.filterCard{
+    margin: 15px 0px 0px 0px;
+}

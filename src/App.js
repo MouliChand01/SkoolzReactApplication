@@ -9,19 +9,21 @@ import Header from './component/Header/Header';
 import Homeimage from './component/Homeimage/Homeimage';
 import Schools from './component/Schools/Schools';
 import EvetsAndWeninars from './component/EventsAndWebinars/EventsAndWebinars';
+import SearchSchools from './component/SearchSchools/SearchSchools';
 
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      {/* <Header/>
       <Homeimage/>
       <Schools/>
       <EvetsAndWeninars/>
       <Blogs/>
       <AwardsAndRecognitions/> 
       <Testimonials/> 
-      <FooterComponent/> 
+      <FooterComponent/>  */}
+      <SearchSchools/>
     </div>
   );
 }
