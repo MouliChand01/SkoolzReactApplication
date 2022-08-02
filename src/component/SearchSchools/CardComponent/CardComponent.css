@@ -65,8 +65,14 @@ a {
     margin-right: 1rem!important;
 }
 .btnGroup{
-    margin: 60px 16px 0px 0px;
+    margin: 35px 16px 0px 45px;
     float: right;
+}
+.cardGroup{
+    margin-top: 80px;
+    margin-left: 300px;
+    height: 275px;
+    width: 1062px;
 }
 
 .card-body {
@@ -75,7 +81,7 @@ a {
 }
 .schoolDetails{
     cursor: pointer;
-    padding-left: 0px;
+    text-align: left;
 }
 
 .btn-selected {
@@ -147,6 +153,7 @@ a {
 
 .buttons{
     margin: 0px 0px 0px -202px;
+    padding: 0px 10px;
 }
 
 .schoolDetails h5{

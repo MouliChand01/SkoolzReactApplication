@@ -21,7 +21,7 @@ button{
 }
 .searchFilters {
     font-weight: 600;
-    text-align: left;
+    
 }
 .searchFilters .clearFilters{
     font-weight: 600;
@@ -32,4 +32,8 @@ button{
 } 
 .filterCard{
     margin: 15px 0px 0px 0px;
+    text-align: left;
+}
+.adds{
+    height: 150px;
 }

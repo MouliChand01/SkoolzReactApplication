@@ -103,6 +103,38 @@ const ListFilter = () => {
                     schooltype: "CCTv Surveillance"
                 }
             ]
+        },{
+            id: 4,
+            title: "Fees(Annual)",
+            items: [
+                {
+                    schooltype: ">₹20,000"
+                },
+                {
+                    schooltype: ">₹20,000 - >₹30,000"
+                },
+                {
+                    schooltype: ">₹30,000 - >₹50,000"
+                },
+                {
+                    schooltype: ">₹50,000 - >₹80,000"
+                },
+                {
+                    schooltype: "₹80,000 - ₹1,20,000"
+                },
+                {
+                    schooltype: "₹1,20,000 - ₹1,70,000"
+                },
+                {
+                    schooltype: "₹1,70,000 - ₹2,30,000"
+                },
+                {
+                    schooltype: "₹2,30,000 - ₹3,00,000"
+                },
+                {
+                    schooltype: "₹3 Lakh+"
+                }
+            ]
         }
 
     ]
@@ -118,11 +150,17 @@ const ListFilter = () => {
                             <div>
                                 <div key={index} className="filterTitle">{e.title}</div>
                                 {e.items.length ? e.items.map((schooltype, id) => (
-                                    <button key={id}>{schooltype.schooltype}</button>
+                                    <button key={id} style={{"padding":"0px 10px"}}>{schooltype.schooltype}</button>
                                 )) : null}
                                 <hr />
                             </div>
                         ))}
+                    </div>
+                    <br/><br/>
+                    <div className="card">
+                      <div className="adds">
+                              <p>Add's will be plced here</p> 
+                      </div>
                     </div>
                 </div>
             </div>
