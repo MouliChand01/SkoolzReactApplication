@@ -2,6 +2,16 @@ import React from "react";
 import "./SideListFilter.css"
 
 const ListFilter = () => {
+    // let wrap = document.getElementById('#wrap')
+    // wrap.addEventListener("scroll",(event)=>{
+    //     if(wrap.scrollTop > 500){
+    //         wrap.classList.add("fix-sidebar")
+    //         console.log(wrap.scrollTop)
+    //     }
+    //     else{
+    //         wrap.classList.remove("fix-sidebar")
+    //     }
+    // })
     let data = [
         {
             id: 0,
@@ -135,7 +145,8 @@ const ListFilter = () => {
                     schooltype: "₹3 Lakh+"
                 }
             ]
-        }
+        },
+       
 
     ]
     return (

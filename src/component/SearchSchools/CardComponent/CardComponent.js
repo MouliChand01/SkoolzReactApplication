@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import skoolslogo from "../../../Assets/Images/skoolz.PNG"
 import "./CardComponent.css"
 
@@ -103,40 +103,39 @@ const CardFilter = () => {
                                 <div className='card-body p-2'>
                                     <div className="row">
                                         <div className="col-lg-4 d-flex align-items-center">
-                                        <img className="img-fluid px-2" src={skoolslogo} />
+                                            <img className="img-fluid px-2" src={skoolslogo} />
                                         </div>
                                         <div className="col-lg-8">
-                                        
-                                        <div className='schoolDetails mt-3 mb-2'>
-                                        <h5>{data.schoolname}</h5>
-                                        <h6>{data.address}</h6>
-                                        <div className='row'>
-                                            <div className='col-6 col-lg-4 starIcon'>
-                                                Montessori
-                                                <br />
-                                                <span style={{ "color": "black" }}>Pre-School Type</span>
-                                            </div>
-                                            <div className='col-6 col-lg-4 starIcon'>
-                                                Co-Ed
-                                                <br />
-                                                <span style={{ "color": "black" }}>Pre-School Type</span>
-                                            </div>
-                                            <div className='col-6 col-lg-4 starIcon1'>
-                                                Rs.
-                                                <br />
-                                                <span style={{ "color": "black" }}>Pre-School Type</span>
-                                            </div>
+                                            <div className='schoolDetails mt-3 mb-2'>
+                                                <h5>{data.schoolname}</h5>
+                                                <h6>{data.address}</h6>
+                                                <div className='row'>
+                                                    <div className='col-6 col-lg-4  starIcon'>
+                                                        Montessori
+                                                        <br />
+                                                        <span style={{ "color": "black" }}>Pre-School Type</span>
+                                                    </div>
+                                                    <div className='col-6 col-lg-4 starIcon'>
+                                                        Co-Ed
+                                                        <br />
+                                                        <span style={{ "color": "black" }}>Pre-School Type</span>
+                                                    </div>
+                                                    <div className='col-6 col-lg-4 starIcon1'>
+                                                        Rs.
+                                                        <br />
+                                                        <span style={{ "color": "black" }}>Pre-School Type</span>
+                                                    </div>
 
+                                                </div>
+                                            </div>
+                                            <div className='btnGroup'>
+                                                <a className='compareBtn mx-3'>+Compare</a>
+                                                <button className='applyBtn'>Book Appointment</button>
+                                                <button className='callmeBtn1 BB'>CALL</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className='btnGroup'>
-                                        <a className='compareBtn mx-3'>+Compare</a>
-                                        <button className='applyBtn'>Book Appointment</button>
-                                        <button className='callmeBtn1 BB'>CALL</button>
-                                    </div>
-                                    </div>
-                                    </div>
-                                   
+
                                 </div>
                             </div>
                         </div>

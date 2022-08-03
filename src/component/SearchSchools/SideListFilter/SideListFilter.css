@@ -21,6 +21,8 @@ button{
 }
 .searchFilters {
     font-weight: 600;
+    padding: 6px 2px;
+    text-align: left;
     
 }
 .searchFilters .clearFilters{
@@ -33,13 +35,22 @@ button{
 .filterCard{
     margin: 15px 0px 0px 0px;
     text-align: left;
+    
 }
 .adds{
     height: 150px;
 }
 .sidebar-card{
+    background: #fff;
+    /* padding: 34px 0 2px; */
     padding: 20px;    
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 0.25rem;
+    box-shadow: 0px 4px 4px rgb(149 149 149 / 10%);
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
 
 }
+/* .fix-sidebar{
+position: fixed;
+} */
