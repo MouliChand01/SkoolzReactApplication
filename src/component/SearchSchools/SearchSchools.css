@@ -1,9 +1,37 @@
 .grid{
     margin-top: 35px;
 }
+.schoolSearch{
+    background-color: #f8f8f8;
+    width: 100%;
+}
+.hidenIcons .filterIcon button, .hidenIcons .chatIcon button{
+    background-color: #35a84f;
+    color: #fff;
+}
+.hidenIcons{
+    display: none;
+}
+
+
 
 @media only screen and (max-width: 768px) {
     .grid{
         margin-top: 100px;
+    }
+    .SearchFilter{
+        display: none;
+    }
+    .hidenIcons{
+        display: flex;
+    }
+    .modelbox{
+        position: relative;
+    }
+    .modelFilter{
+        position: absolute;
+        top:20px;
+        z-index: 999;
+
     }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import skoolzlogo from "../../Assets/Images/skoolz.PNG"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebook,faTwitter,faLinkedin,faYoutube,faInstagram} from '@fortawesome/free-brands-svg-icons'
-import {faLongArrowAltRight,faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons'
+import {faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons'
 import './Footer.css'
 const FooterComponent = () => {
     return (

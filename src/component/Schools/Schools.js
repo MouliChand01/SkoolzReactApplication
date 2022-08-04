@@ -7,6 +7,7 @@ import school1 from "../../Assets/Images/CoverPicture_1.jpg";
 import school2 from "../../Assets/Images/CoverPicture_2.jpg";
 import school3 from "../../Assets/Images/CoverPicture_3.jpg";
 import school4 from "../../Assets/Images/CoverPicture_4.jpg";
+import skoolslogo from "../../Assets/Images/skoolz.PNG"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { Pagination, Navigation } from "swiper";

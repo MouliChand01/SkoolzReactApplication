@@ -97,7 +97,7 @@ const CardFilter = () => {
 
                 </div>
                 {schoolData && schoolData.map((data) => {
-                    return <div className='mb-3'>
+                    return <div className='mb-2'>
                         <div className='cardFilterData'>
                             <div className='card cardGroup'>
                                 <div className='card-body p-2'>
@@ -106,7 +106,7 @@ const CardFilter = () => {
                                             <img className="img-fluid px-2" src={skoolslogo} />
                                         </div>
                                         <div className="col-lg-8">
-                                            <div className='schoolDetails mt-3 mb-2'>
+                                            <div className='schoolDetails mt-2 mb-2'>
                                                 <h5>{data.schoolname}</h5>
                                                 <h6>{data.address}</h6>
                                                 <div className='row'>

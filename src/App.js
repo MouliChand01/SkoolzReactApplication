@@ -10,6 +10,7 @@ import Homeimage from './component/Homeimage/Homeimage';
 import Schools from './component/Schools/Schools';
 import EvetsAndWeninars from './component/EventsAndWebinars/EventsAndWebinars';
 import SearchSchools from './component/SearchSchools/SearchSchools';
+import ListFilter from './component/SearchSchools/SideListFilter/SideListFilter';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Testimonials/> 
       <FooterComponent/>  */}
       <SearchSchools/>
+      {/* <ListFilter /> */}
     </div>
   );
 }

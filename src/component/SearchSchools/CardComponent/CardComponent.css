@@ -1,38 +1,36 @@
+.starIcon {
+    color: #FA802E;
+    font-size: 20px;
+    border-right: 3px solid rgba(0, 0, 0, .1);
+    line-height: 24px;
+    font-family: MontserratSemiBold;
+}
 
-.starIcon{
-    color: #FA802E;
-    font-size: 20px;
-    border-right: 3px solid rgba(0,0,0,.1);
-    line-height: 24px;
-    font-family: MontserratSemiBold;
-}
-.starIcon1{
+.starIcon1 {
     color: #FA802E;
     font-size: 20px;
     line-height: 24px;
     font-family: MontserratSemiBold;
 }
+
 .applyBtn:hover {
     box-shadow: inset 0 -3.25em 0 0 #34a853;
     color: #ffffff;
     border: 1px solid #34A853;
 }
+
 .callmeBtn1:hover {
     box-shadow: inset 0 -3.25em 0 0 #fff;
     color: #34a853 !important;
     border: 1px solid #34a853;
 }
+
 .callmeBtn1 {
     color: #ffffff !important;
-    /* cursor: pointer; */
     text-decoration: none;
-    /* height: 25px; */
     border-radius: 27px;
     min-width: 115px;
     text-align: center;
-    /* padding-left: 5px;
-    padding-right: 20px;
-    padding-bottom: 20px; */
     transition: 0.25s;
     box-shadow: none;
     background: #34A853;
@@ -58,7 +56,7 @@ a {
 }
 
 .mx-3 {
-    margin-right: 1rem!important;
+    margin-right: 1rem !important;
 }
 
 
@@ -66,7 +64,8 @@ a {
     flex: 1 1 auto;
     padding: 0rem 0rem;
 }
-.schoolDetails{
+
+.schoolDetails {
     cursor: pointer;
     text-align: left;
 }
@@ -95,13 +94,22 @@ a {
     margin-left: 4px;
     width: 85px;
 }
-
-@media (min-width: 992px){
-.col-lg-1 {
-    /* -ms-flex: 0 0 8.333333%; */
-    flex: 0 0 8.333333%;
-    /* max-width: 8.333333%; */
+.cardGroup{
+    background: #fff;
+    /* padding: 34px 0 2px; */
+    padding: 0px;    
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    box-shadow: 0px 4px 4px rgb(149 149 149 / 10%);
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
 }
+
+@media (min-width: 992px) {
+    .col-lg-1 {
+         flex: 0 0 8.333333%;
+       }
+    
 }
 
 .buttonHobby {
@@ -121,6 +129,7 @@ a {
     margin-left: 10px;
     margin-right: 0px;
 }
+
 .buttonTuition {
     max-width: 150px !important;
     background-color: #35a84f;
@@ -139,29 +148,39 @@ a {
     margin-right: 0px;
 }
 
-.buttons{
-   padding: 2px 10px;
-   text-align: left;
+.buttons {
+    padding: 2px 10px;
+    text-align: left;
 }
 
-.schoolDetails h5{
+.schoolDetails h5 {
     font-weight: bold;
 }
 
-.schoolDetails h6{
+.schoolDetails h6 {
     padding-right: 90px;
     margin: 20px 0px 32px 0px;
 }
 
-@media screen and (max-width: 991px){
-    .grid{
-        margin-top:200px;
+@media screen and (max-width: 991px) {
+    .grid {
+        margin-top: 200px;
     }
-.starIcon{
-    border-right: none;
-    margin-bottom: 10px;
+
+    .starIcon {
+        border-right: none;
+        margin-bottom: 10px;
+    }
+
+    .buttons>button {
+        margin-bottom: 10px;
+    }
 }
-.buttons > button{
-    margin-bottom: 10px;
-}
+@media only screen and (max-width: 768px){
+    .btnGroup .callmeBtn1, .btnGroup .applyBtn {
+        width: 100%;
+        margin-top: 16px;
+        padding: 2px 0px;
+    }
+    
 }
