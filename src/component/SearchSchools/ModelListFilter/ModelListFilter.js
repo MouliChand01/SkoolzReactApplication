@@ -1,17 +1,9 @@
-import React from "react";
-import "./SideListFilter.css"
+import React, { useState } from "react";
+import "./ModelListFilter.css"
 
-const ListFilter = () => {
-    // let wrap = document.getElementById('#wrap')
-    // wrap.addEventListener("scroll",(event)=>{
-    //     if(wrap.scrollTop > 500){
-    //         wrap.classList.add("fix-sidebar")
-    //         console.log(wrap.scrollTop)
-    //     }
-    //     else{
-    //         wrap.classList.remove("fix-sidebar")
-    //     }
-    // })
+const ModelListFilter = ({Closemodel}) => {
+    
+  
     let data = [
         {
             id: 0,
@@ -151,8 +143,10 @@ const ListFilter = () => {
     ]
     return (
         <div>
+           
             <div className="searchFilters">
-                Search Filters <a href="#" className="clearFilters"> Clear All </a>
+                <button onClick={()=>Closemodel()}> close Model</button>
+                <a href="#" className="clearFilters"> Clear All </a>
             </div>
             <div className="filterCard">
                 <div className="">
@@ -179,4 +173,4 @@ const ListFilter = () => {
     )
 }
 
-export default ListFilter;
+export default ModelListFilter;

@@ -175,6 +175,10 @@ a {
     .buttons>button {
         margin-bottom: 10px;
     }
+    .buttons {
+        padding: 12px 10px;
+        text-align: left;
+    }
 }
 @media only screen and (max-width: 768px){
     .btnGroup .callmeBtn1, .btnGroup .applyBtn {
@@ -182,5 +186,9 @@ a {
         margin-top: 16px;
         padding: 2px 0px;
     }
+.buttons {
+    padding: 6px 10px;
+    text-align: left;
+}
     
 }

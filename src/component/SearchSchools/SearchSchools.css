@@ -1,31 +1,62 @@
-.grid{
+.grid {
     margin-top: 35px;
 }
-.schoolSearch{
+
+.schoolSearch {
     background-color: #f8f8f8;
     width: 100%;
 }
-.hidenIcons .filterIcon button, .hidenIcons .chatIcon button{
+
+.hidenIcons .filterIcon button,
+.hidenIcons .chatIcon button {
     background-color: #35a84f;
     color: #fff;
 }
-.hidenIcons{
+
+.hidenIcons {
     display: none;
 }
 
-
-
+.schools-container {
+    display: flex;
+}
+.SearchFilter {
+    align-self: flex-end;
+    position: sticky;
+    bottom: 0;
+}
+.schoolSearch.hide{
+    height: 100vh;
+    overflow: hidden;
+}
+.model.show{
+    position: sticky;
+    z-index: 999999999999;
+    height: calc(100vh - 100px);
+    top: 85px;
+}
+.modal-dialog {
+    height: 100%;
+    pointer-events: all;
+}
+.modal-content{
+    height: 100%;
+    overflow-y: scroll;
+}
 @media only screen and (max-width: 768px) {
-    .grid{
+    .grid {
         margin-top: 100px;
     }
-    .SearchFilter{
+
+    .SearchFilter {
         display: none;
     }
-    .hidenIcons{
+
+    .hidenIcons {
         display: flex;
     }
-    .modelbox{
+
+    /* .modelbox{
         position: relative;
     }
     .modelFilter{
@@ -33,5 +64,5 @@
         top:20px;
         z-index: 999;
 
-    }
+    } */
 }

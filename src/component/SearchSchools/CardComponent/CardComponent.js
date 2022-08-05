@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import skoolslogo from "../../../Assets/Images/skoolz.PNG"
+import school1 from "../../../Assets/Images/school_CoverPicture2.png"
 import "./CardComponent.css"
 
 const CardFilter = () => {
@@ -103,7 +104,7 @@ const CardFilter = () => {
                                 <div className='card-body p-2'>
                                     <div className="row">
                                         <div className="col-lg-4 d-flex align-items-center">
-                                            <img className="img-fluid px-2" src={skoolslogo} />
+                                            <img className="img-fluid px-2" src={school1} />
                                         </div>
                                         <div className="col-lg-8">
                                             <div className='schoolDetails mt-2 mb-2'>
