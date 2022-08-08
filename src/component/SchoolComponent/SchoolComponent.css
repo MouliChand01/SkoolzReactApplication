@@ -163,6 +163,24 @@ ul {
     padding: 0;
     list-style: none;
 }
+.basicInfoSection .circleImage {
+    display: inline-block;
+    margin-right: 25px;
+}
+.basicInfoSection li .titleBasic {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: MontserratRegular;
+    color: rgba(0, 0, 0, .7);
+}
+.basicInfoSection li .titleBasic .subBasicTitle {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: MontserratSemiBold;
+    display: block;
+    font-weight: 600;
+}
 
 .contentSliderNav ul.sectionNavigator {
     margin: 0;
