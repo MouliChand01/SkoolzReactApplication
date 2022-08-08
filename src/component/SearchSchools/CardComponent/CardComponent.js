@@ -130,7 +130,7 @@ const CardFilter = () => {
                                                 </div>
                                             </div>
                                             <div className='btnGroup'>
-                                                <a className='compareBtn mx-3'>+Compare</a>
+                                                <a className='compareBtn mx-3' style={{"color":" #35a84f"}}>+Compare</a>
                                                 <button className='applyBtn'>Book Appointment</button>
                                                 <button className='callmeBtn1 BB'>CALL</button>
                                             </div>

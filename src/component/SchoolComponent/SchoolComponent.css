@@ -1,0 +1,240 @@
+.schoolContainer {
+    background-color: #f8f8f8;
+    width: 100%;
+}
+.textRight{
+    text-align: right;
+}
+
+/* .product-images-slider  .swiper-slide{
+     
+        padding-top: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+.product-images-slider  img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    
+
+    .swiper-button-prev {
+        left: 0;
+        color: #000;
+    }
+
+    .swiper-button-next {
+        right: 0;
+        color: #000;
+    }
+
+.product-images-slider-thumbs  .swiper-slide  {
+
+        cursor: pointer;
+        border: 1px solid #dddbdb;
+}
+.product-images-slider-thumbs .thumb-active {
+            border-color: #ff0000;
+        }
+
+.product-images-slider-thumbs .wrapper {
+        width: 100%;
+        padding-top: 100%;
+        overflow: hidden;
+        position: relative;
+        }
+ .product-images-slider-thumbs img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        } */
+.detailsSection ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.subTitle {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.detailsSection {
+    display: block;
+    margin-top: 22px;
+}
+
+.detailsSection .basicDetails li .rev {
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.detailsSection .basicDetails ul li {
+    padding: 0 20px;
+}
+
+.detailsSection ul li {
+    display: inline-block;
+    padding: 0 7px;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(0, 0, 0, .4);
+}
+
+.detailsSection .serchButtons {
+    margin-top: 24px;
+    display: flex;
+    margin-bottom: 24px;
+    position: initial;
+    right: 17px;
+    bottom: 17px;
+}
+
+.BA {
+    margin-right: 20px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0px 20px 0px 20px;
+    font-size: 16px;
+}
+
+.applyBtn {
+    color: #34A853;
+    cursor: pointer;
+    text-decoration: none;
+    height: 45px;
+    border-radius: 27px;
+    min-width: 120px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.25s;
+    box-shadow: none;
+    background: #ffffff;
+    border: 1px solid #34A853;
+    outline: none !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.applyBtn1 {
+    color: #ffffff !important;
+    cursor: pointer;
+    text-decoration: none;
+    height: 45px;
+    border-radius: 27px;
+    min-width: 120px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.25s;
+    box-shadow: none;
+    background: #34A853;
+    border: 1px solid #34A853;
+}
+
+.contentSlideWrapper {
+    display: block;
+    margin-top: 30px;
+}
+
+.contentSlideWrapper ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contentSliderNav ul.sectionNavigator {
+    margin: 0;
+    padding: 0;
+    border-bottom: 4px solid #bcbcbc;
+    display: block;
+}
+
+.contentSliderNav ul.sectionNavigator li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.contentSliderNav ul.sectionNavigator li.active a {
+    border-bottom: 3px solid #34A853;
+    color: #34A853;
+}
+
+.sliderContent {
+    border-radius: 6px;
+    background: #fff;
+    margin-top: 35px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgb(147 146 146 / 10%);
+    border-radius: 6px;
+    border: 1px solid #F1F0F0;
+}
+
+.sectionTitle {
+    position: relative;
+    border-bottom: 2px solid #D6712D;
+    width: auto;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 31px;
+    position: relative;
+    font-family: 'MontserratSemiBold';
+    padding: 0 0 12px 0;
+    color: rgba(0, 0, 0, 0.8);;
+}
+
+.aboutUsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.aboutUsSection {
+    line-height: 25px;
+}
+
+@media (min-width: 576px) {
+    .detailsSection {
+        text-align: right !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .classbaseContainer {
+        padding-top: 87px;
+    }
+}

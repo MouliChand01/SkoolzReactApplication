@@ -161,7 +161,7 @@ const ListFilter = () => {
                             <div>
                                 <div key={index} className="filterTitle">{e.title}</div>
                                 {e.items.length ? e.items.map((schooltype, id) => (
-                                    <button key={id} style={{ "padding": "0px 10px" }}>{schooltype.schooltype}</button>
+                                    <button key={id} style={{ "padding": "3px 12px" }}>{schooltype.schooltype}</button>
                                 )) : null}
                                 <hr />
                             </div>

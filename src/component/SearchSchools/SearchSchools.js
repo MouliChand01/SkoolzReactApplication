@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FooterComponent from "../Footer/Footer";
-import Header from "../Header/Header";
+import HeaderComponent from "../Header/Header";
 import ModelListFilter from "./ModelListFilter/ModelListFilter";
 import CardFilter from "./CardComponent/CardComponent";
 import ListFilter from "./SideListFilter/SideListFilter";
@@ -22,7 +22,7 @@ const SearchSchools = () => {
     return (
         <div>
             <div className="schoolSearch">
-                <Header />
+                <HeaderComponent />
                 <br /><br /><br />
                 {display && (
                     <div className={`model ${display && 'show'}`} modelFilter id="modelFilter">
@@ -38,10 +38,10 @@ const SearchSchools = () => {
                 <div className="container grid">
                     <div className="row schools-container">
                         
-                        <div className="col-md-12 col-lg-4 col-xl-3 SearchFilter">
+                        <div className="col-md-12 col-lg-4 col-xl-3 SearchFilter searchFilterPad">
                             <ListFilter />
                         </div>
-                        <div className="col-md-12 col-lg-8 col-xl-9 cardFilter">
+                        <div className="col-md-12 col-lg-8 col-xl-9 cardFilter" >
                             <CardFilter />
                         </div>
                         <div className="hidenIcons">

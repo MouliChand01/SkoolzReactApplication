@@ -3,7 +3,7 @@ import skoolzlogo from "../../Assets/Images/skoolz.PNG"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
 import "./Header.css"
-const Header = ()=>{
+const HeaderComponent = ()=>{
     const [flag, setFlag] = useState("");
     const [display,setDisplay]=useState(false);
 
@@ -181,4 +181,4 @@ const Header = ()=>{
 
     )
 }
-export default Header ;
+export default HeaderComponent ;

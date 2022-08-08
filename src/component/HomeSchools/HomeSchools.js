@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./Schools.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -12,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "./HomeSchools.css"
 
 const Schools = () => {
     let [mywindow, setMywindow] = useState({});
