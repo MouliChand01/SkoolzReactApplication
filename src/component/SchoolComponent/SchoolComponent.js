@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Thumbs } from 'swiper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faEnvelope, faPhone, faGlobe, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 // import schooltype from "../../Assets/svg/typeofschool.svg";
 import "./SchoolComponent.css";
 
@@ -61,7 +61,7 @@ const SearchSchoolComponent = (props) => {
                             </div>
                             <div className="row">
                                 <div className="col-12 col-md-3 col-lg-3">
-                                    <span>0.2 Km</span>
+                                    <span><FontAwesomeIcon icon={faLocationDot}/>&nbsp;<strong>0.2 Km</strong></span>
                                 </div>
                                 <div className="col-12 col-md-9 col-lg-9  detailsSection">
                                     <ul className="basicDetails">
@@ -69,7 +69,7 @@ const SearchSchoolComponent = (props) => {
                                             <div className="reviewDetails">
                                                 <div className="reviewIcon">
                                                     <FontAwesomeIcon icon={faStar} style={{ "color": "gold" }} /> &nbsp;0
-                                                    <span>"(0)"</span>
+                                                    <span>(0)</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -235,7 +235,7 @@ const SearchSchoolComponent = (props) => {
                                                     <div className="titleBasic">School Strength
                                                         <span className="subBasicTitle">NA</span>
                                                     </div>
-                                                </li>   
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -254,27 +254,128 @@ const SearchSchoolComponent = (props) => {
                                             <div className="progressBarContainer">
                                                 <div className="progressCustom">
                                                     <div className="progressLabel">Infrastructure</div>
-                                                    <div className="progress" style={{"height":"4px"}}>
+                                                    <div className="progress" style={{ "height": "4px" }}>
                                                         <div className="progress-bar"></div>
                                                     </div>
                                                     <div className="progressValue">0</div>
                                                 </div>
-
+                                                <div className="progressCustom">
+                                                    <div className="progressLabel">Sports</div>
+                                                    <div className="progress" style={{ "height": "4px" }}>
+                                                        <div className="progress-bar"></div>
+                                                    </div>
+                                                    <div className="progressValue">0</div>
+                                                </div>
+                                                <div className="progressCustom">
+                                                    <div className="progressLabel">Academics</div>
+                                                    <div className="progress" style={{ "height": "4px" }}>
+                                                        <div className="progress-bar"></div>
+                                                    </div>
+                                                    <div className="progressValue">0</div>
+                                                </div>
+                                                <div className="progressCustom">
+                                                    <div className="progressLabel">Faculty</div>
+                                                    <div className="progress" style={{ "height": "4px" }}>
+                                                        <div className="progress-bar"></div>
+                                                    </div>
+                                                    <div className="progressValue">0</div>
+                                                </div>
+                                                <div className="progressCustom">
+                                                    <div className="progressLabel">Facilities</div>
+                                                    <div className="progress" style={{ "height": "4px" }}>
+                                                        <div className="progress-bar"></div>
+                                                    </div>
+                                                    <div className="progressValue">0</div>
+                                                </div>
+                                                <div className="progressCustom">
+                                                    <div className="progressLabel">Safety</div>
+                                                    <div className="progress" style={{ "height": "4px" }}>
+                                                        <div className="progress-bar"></div>
+                                                    </div>
+                                                    <div className="progressValue">0</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
                                 <div className="col-md-4 contentRightWrapperslides">
+                                    <div className="sliderContent">
+                                        <div className="sectionTitle SearchTitle">Latest Updates
+                                        </div>
+                                    </div>
+                                    <div className="sliderContent" id="timings">
+                                        <div className="sectionTitle SearchTitle">Distinguished Alumni
+                                            <div className="sectionContent">
+                                                <div className="row"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="sliderContent" id="fee">
+                                        <div className="sectionTitle SearchTitle">Fee Details
+                                            <div className="sectionContent">
+                                                <div className="row"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="sliderContent" id="brochar">
+                                        <div className="sectionTitle SearchTitle">Brochure Document
+                                            <div className="sectionContent">
+                                                {/* <a className="actionButton" href="" style={{"color":"#34A853"}}>Download Brochure</a> */}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="sliderContent" id="contact">
+                                        <div className="sectionTitle SearchTitle">Contact Information
+                                            <div className="sectionContent">
+                                                <ul className="contactDetail">
+                                                    <li>
+                                                        <a href="">
+                                                            <span className="icon">
+                                                                <FontAwesomeIcon icon={faEnvelope} style={{ "color": "green" }} />&nbsp;
+                                                            </span>
+                                                            <span className="text">deekshacorp@gmail.com</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <span className="icon">
+                                                            <FontAwesomeIcon icon={faPhone} style={{ "color": "green" }} />&nbsp;
+                                                        </span>
+                                                        <a href="">
+                                                            <button className="callmeBtn1 BB callmeBtnTransparent" id="callBtn">CALL</button>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <span className="icon">
+                                                            <FontAwesomeIcon icon={faGlobe} style={{ "color": "green" }} />&nbsp;
+                                                        </span>
+                                                        <a href=""  style={{"color":"rgba(0,0,0,0.7)","flexWrap":"wrap","fontSize":"16px"}}>
+                                                            https://www.deekshaschools.com/campus1.html
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <span className="icon">
+                                                            <FontAwesomeIcon icon={faLocationDot} style={{ "color": "green" }} />&nbsp;
+                                                        </span>
+                                                        <span className="text">Plot No., 107, Lalitha Nagar, Adikmet, Hyderabad, Telangana, , Hyderabad, Telangana, 500044</span>
+                                                    </li>
+                                                </ul>
+                                                <div className="iconFooter">
+                                                    <ul className="socialIconFooter">
+                                                     <li><FontAwesomeIcon icon={faFacebook}/></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <br /><br />
                 <FooterComponent />
             </div>
-        </div>
+        </div >
     )
 }
 
