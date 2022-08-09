@@ -2,10 +2,12 @@
     background-color: #f8f8f8;
     width: 100%;
 }
-.textRight{
+
+.textRight {
     text-align: right;
 }
-.baseContainer .breadcrumb a{
+
+.baseContainer .breadcrumb a {
     color: #34A853;
 }
 
@@ -119,7 +121,7 @@ ul {
     font-size: 16px;
 }
 
-.applyBtn {
+.searchButton .applyBtn {
     color: #34A853;
     cursor: pointer;
     text-decoration: none;
@@ -140,7 +142,7 @@ ul {
     background-color: transparent !important;
 }
 
-.applyBtn1 {
+.searchButton .applyBtn1 {
     color: #ffffff !important;
     cursor: pointer;
     text-decoration: none;
@@ -155,21 +157,6 @@ ul {
     background: #34A853;
     border: 1px solid #34A853;
 }
-/* .serchButton .applyBtn1:hover{
-    color:#34A853 !important;
-    cursor: pointer;
-    text-decoration: none;
-    height: 45px;
-    border-radius: 27px;
-    min-width: 120px;
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    transition: 0.25s;
-    box-shadow: none;
-    background:  #ffffff;
-    border: 1px solid #34A853;
-} */
 
 .contentSlideWrapper {
     display: block;
@@ -181,10 +168,12 @@ ul {
     padding: 0;
     list-style: none;
 }
+
 .basicInfoSection .circleImage {
     display: inline-block;
     margin-right: 25px;
 }
+
 .basicInfoSection li .titleBasic {
     display: inline-block;
     font-size: 16px;
@@ -192,6 +181,7 @@ ul {
     font-family: MontserratRegular;
     color: rgba(0, 0, 0, .7);
 }
+
 .basicInfoSection li .titleBasic .subBasicTitle {
     font-size: 16px;
     line-height: 18px;
@@ -248,7 +238,8 @@ a {
     position: relative;
     font-family: 'MontserratSemiBold';
     padding: 0 0 12px 0;
-    color: rgba(0, 0, 0, 0.8);;
+    color: rgba(0, 0, 0, 0.8);
+    ;
 }
 
 .aboutUsSection {
@@ -262,21 +253,28 @@ a {
 .aboutUsSection {
     line-height: 25px;
 }
+
 .sectionContent .review {
     margin: 0 0 20px;
     display: block;
     position: relative;
     top: -8px;
 }
+ #basic_information .sectionContent{
+    display: flex;
+}
+
 .progressBarContainer {
     display: flex;
     flex-wrap: wrap;
 }
+
 .progressBarContainer .progressCustom {
     width: 48%;
     float: left;
     margin-bottom: 20px;
 }
+
 .progressCustom .progressLabel {
     font-size: 18px;
     line-height: 27px;
@@ -285,11 +283,13 @@ a {
     float: left;
     min-width: 126px;
 }
+
 .progressCustom .progress {
     float: left;
     width: 44%;
     margin: 10px 10px 10px 26px;
 }
+
 .progress {
     display: -ms-flexbox;
     display: flex;
@@ -300,28 +300,38 @@ a {
     background-color: #e9ecef;
     border-radius: .25rem;
 }
+
 .progressCustom .progressValue {
     float: left;
     font-size: 18px;
     line-height: 24px;
     color: rgba(0, 0, 0, .8);
 }
-.float-right {
-    float: right!important;
+.svg{
+    height: 80px;
+    width: 68px;
 }
-#callBtn{
+
+.float-right {
+    float: right !important;
+}
+
+#callBtn {
     margin-bottom: -13px;
     margin-top: 16px;
 }
+
 .contactDetail li .icon {
     display: inline;
 }
+
 .contactDetail li span {
     float: left;
     margin-top: 15px;
 }
+
 .contactDetail li .text {
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
     font-size: 16px;
     line-height: 24px;
     font-family: MontserratSemiBold;
@@ -331,26 +341,47 @@ a {
     word-break: break-word;
 }
 
-@media only screen and (max-width: 768px){
-.schoolSearch.schoolSearchDetail.detailapageNew ul.basicDetailSearchDetail li {
-    margin-top: 5px;
-    float: left;
-    width: 50%;
-    padding: 0 20px 0 0;
-    border-color: rgba(0, 0, 0, 0.1);
+.sectionContent .iconFooter {
+    display: block;
 }
-/* .schoolSearch .searchDetailSection ul li:last-child, .schoolSearch .searchDetailSection ul li:first-child {
-    padding: 0px !important;
-} */
+
+.sectionContent .iconFooter .socialIconFooter {
+    margin: 0 auto !important;
+    text-align: center;
 }
+
+.iconFooter .socialIconFooter a {
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+
+
 @media (min-width: 576px) {
     .detailsSection {
         text-align: right !important;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .classbaseContainer {
-        padding-top: 87px;
+@media only screen and (max-width: 768px) {
+
+    .detailsSection .searchButton .applyBtn,
+    .detailsSection .searchButton .applyBtn1 {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .BA {
+        margin-right: 6px;
+    }
+
+    .contentSliderNav ul.sectionNavigator {
+        white-space: nowrap;
+        overflow: auto;
+    }
+    .schoolDetailsComponent {
+        padding-top: 158px;
     }
 }

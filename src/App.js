@@ -10,17 +10,12 @@ import Homeimage from './component/HomeImage/Homeimage';
 import Schools from './component/HomeSchools/HomeSchools';
 import EvetsAndWeninars from './component/EventsAndWebinars/EventsAndWebinars';
 import SearchSchools from './component/SearchSchools/SearchSchools';
-import SearchSchoolComponent from './component/SchoolComponent/SchoolComponent';
+import DeatailsSchoolComponent from './component/DetailsSchoolComponent/DetailsSchoolComponent';
 import {productImages} from './Assets'
 import {productsThumbs} from './Assets'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/thumbs'
-
-
-
-
-
 
 function App() {
   return (
@@ -36,7 +31,7 @@ function App() {
 
       {/* <SearchSchools/> */}
 
-      <SearchSchoolComponent  images={productImages} productsThumbs={productsThumbs}/>
+      <DeatailsSchoolComponent  images={productImages} productsThumbs={productsThumbs}/>
      </div>
   );
 }
