@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Thumbs } from 'swiper';
+import SchoolsImageSlide from "./SchoolsImageSlider/SchoolsImageSlide";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faLinkedin, faWhatsapp, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faStar, faEnvelope, faPhone, faGlobe, faLocationDot } from '@fortawesome/free-solid-svg-icons';
@@ -18,14 +17,12 @@ import "./DetailsSchoolComponent.css";
 
 
 
-
-const DeatailsSchoolComponent = (props) => {
-    const [activeThumb, setActiveThumb] = useState()
+const DeatailsSchoolComponent = () => {
     return (
         <div>
             <div className="schoolDetailsComponent">
                 <HeaderComponent />
-                <br />
+                <br /><br /><br /><br />
                 <div className="schoolbaseContainer">
                     <div className="breadcrumb-container">
                         <div className="baseContainer">
@@ -40,8 +37,8 @@ const DeatailsSchoolComponent = (props) => {
                     </div>
                     <div className="baseContainer" style={{ "textAlign": "left" }}>
                         <div className="row">
-                            <div className="sliderMainContainer col-md-12">
-                                <h1 style={{ "textAlign": "center" }}>SwiperSlide tumbs</h1>
+                            <div className="sliderMainContainer col-md-12" >
+                                   <SchoolsImageSlide/>      
                             </div>
                         </div>
                         <div className="row">
@@ -163,95 +160,92 @@ const DeatailsSchoolComponent = (props) => {
                                         <div className="sliderContent" id="basic_information">
                                             <div className="sectionTitle SearchTitle">Basic Information</div>
                                             <div className="sectionContent col-md-12">
-                                            <ul className="basicInfoSection col-md-6">
-                                                <li className="mb-3">
-                                                    <div className="circleImage">
-                                                        <span>
-                                                            <img src={circleImage} className="svg" ></img>
-                                                        </span>
-                                                    </div>
-                                                    <div className="titleBasic">Type of School
-                                                        <span className="subBasicTitle">Co-Ed</span>
-                                                    </div>
-                                                </li>
-                                                <li className="mb-3">
-                                                    <div className="circleImage">
-                                                        <span>
-                                                            <img src={tutionFees} className="svg"></img>
-                                                        </span>
-                                                    </div>
-                                                    <div className="titleBasic">Annual Fees
-                                                        <span className="subBasicTitle">NA</span>
-                                                    </div>
-                                                </li>
-                                                <li className="mb-3">
-                                                    <div className="circleImage">
-                                                        <span>
-                                                            <img src={minAge} className="svg"></img>
-                                                        </span>
-                                                    </div>
-                                                    <div className="titleBasic">Min Age for Day School
-                                                        <span className="subBasicTitle">NA</span>
-                                                    </div>
-                                                </li>
-                                                <li className="mb-3">
-                                                    <div className="circleImage">
-                                                        <span>
-                                                            <img src={hindi} className="svg"></img>
-                                                        </span>
-                                                    </div>
-                                                    <div className="titleBasic">Language of Instruction
-                                                        <span className="subBasicTitle">English</span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <ul className="basicInfoSection col-md-6">
+                                                <ul className="basicInfoSection col-md-6">
+                                                    <li className="mb-3">
+                                                        <div className="circleImage">
+                                                            <span>
+                                                                <img src={circleImage} className="svg" ></img>
+                                                            </span>
+                                                        </div>
+                                                        <div className="titleBasic">Type of School
+                                                            <span className="subBasicTitle">Co-Ed</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className="mb-3">
+                                                        <div className="circleImage">
+                                                            <span>
+                                                                <img src={tutionFees} className="svg"></img>
+                                                            </span>
+                                                        </div>
+                                                        <div className="titleBasic">Annual Fees
+                                                            <span className="subBasicTitle">NA</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className="mb-3">
+                                                        <div className="circleImage">
+                                                            <span>
+                                                                <img src={minAge} className="svg"></img>
+                                                            </span>
+                                                        </div>
+                                                        <div className="titleBasic">Min Age for Day School
+                                                            <span className="subBasicTitle">NA</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className="mb-3">
+                                                        <div className="circleImage">
+                                                            <span>
+                                                                <img src={hindi} className="svg"></img>
+                                                            </span>
+                                                        </div>
+                                                        <div className="titleBasic">Language of Instruction
+                                                            <span className="subBasicTitle">English</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul className="basicInfoSection col-md-6">
+                                                    <li className="mb-3">
+                                                        <div className="circleImage">
+                                                            <span>
+                                                                <img src={preSchool} className="svg"></img>
+                                                            </span>
+                                                        </div>
+                                                        <div className="titleBasic">PreSchool Type
+                                                            <span className="subBasicTitle">Montessori</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className="mb-3">
+                                                        <div className="circleImage">
+                                                            <span>
+                                                                <img src={girlsImage} className="svg"></img>
+                                                            </span>
+                                                        </div>
+                                                        <div className="titleBasic">Grade - Pre-School
+                                                            <span className="subBasicTitle">PreSchool</span>
+                                                        </div>
+                                                    </li>
+                                                    <li className="mb-3">
+                                                        <div className="circleImage">
+                                                            <span>
+                                                                <img src={minageBoarding} className="svg"></img>
+                                                            </span>
+                                                        </div>
+                                                        <div className="titleBasic">Min Age for Boarding School
+                                                            <span className="subBasicTitle">NA</span>
+                                                        </div>
+                                                    </li>
 
-                                                <li className="mb-3">
-                                                    <div className="circleImage">
-                                                        <span>
-                                                            <img src={preSchool} className="svg"></img>
-                                                        </span>
-                                                    </div>
-                                                    <div className="titleBasic">PreSchool Type
-                                                        <span className="subBasicTitle">Montessori</span>
-                                                    </div>
-                                                </li>
-                                                <li className="mb-3">
-                                                    <div className="circleImage">
-                                                        <span>
-                                                            <img src={girlsImage} className="svg"></img>
-                                                        </span>
-                                                    </div>
-                                                    <div className="titleBasic">Grade - Pre-School
-                                                        <span className="subBasicTitle">PreSchool</span>
-                                                    </div>
-                                                </li>
-
-
-                                                <li className="mb-3">
-                                                    <div className="circleImage">
-                                                        <span>
-                                                            <img src={minageBoarding} className="svg"></img>
-                                                        </span>
-                                                    </div>
-                                                    <div className="titleBasic">Min Age for Boarding School
-                                                        <span className="subBasicTitle">NA</span>
-                                                    </div>
-                                                </li>
-
-                                                <li className="mb-3">
-                                                    <div className="circleImage">
-                                                        <span>
-                                                            <img src={establishment} className="svg"></img>
-                                                        </span>
-                                                    </div>
-                                                    <div className="titleBasic">Establishment Year
-                                                        <span className="subBasicTitle">2004</span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                                    <li className="mb-3">
+                                                        <div className="circleImage">
+                                                            <span>
+                                                                <img src={establishment} className="svg"></img>
+                                                            </span>
+                                                        </div>
+                                                        <div className="titleBasic">Establishment Year
+                                                            <span className="subBasicTitle">2004</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                         <div className="sliderContent" id="reviews">
                                             <div className="sectionTitle SearchTitle">Reviews</div>
@@ -326,21 +320,44 @@ const DeatailsSchoolComponent = (props) => {
                                             </div>
                                         </div>
                                         <div className="sliderContent" id="fee">
-                                            <div className="sectionTitle SearchTitle">Fee Details
-                                                <div className="sectionContent">
-                                                    <div className="row"></div>
+                                            <div className="sectionTitle SearchTitle">Fee Details</div>
+                                                <div className="sectionContent col-md-12">
+                                                    <ul className="basicInfoSection col-md-6">
+                                                        <li className="mb-3">
+                                                            <div className="circleImage">
+                                                                <span>
+                                                                    <img src={circleImage} className="svg" ></img>
+                                                                </span>
+                                                            </div>
+                                                            <div className="titleBasic">Type of School
+                                                                <span className="subBasicTitle">Co-Ed</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul className="basicInfoSection col-md-6">
+                                                        <li className="mb-3">
+                                                            <div className="circleImage">
+                                                                <span>
+                                                                    <img src={circleImage} className="svg" ></img>
+                                                                </span>
+                                                            </div>
+                                                            <div className="titleBasic">Type of School
+                                                                <span className="subBasicTitle">Co-Ed</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
                                                 </div>
-                                            </div>
+
                                         </div>
                                         <div className="sliderContent" id="brochar">
-                                            <div className="sectionTitle SearchTitle">Brochure Document
+                                            <div className="sectionTitle SearchTitle">Brochure Document</div>
                                                 <div className="sectionContent">
-                                                    {/* <a className="actionButton" href="" style={{"color":"#34A853"}}>Download Brochure</a> */}
+                                                    <a className="actionButton" href="" style={{"color":"#34A853"}}>Download Brochure</a>
                                                 </div>
-                                            </div>
+
                                         </div>
                                         <div className="sliderContent" id="contact">
-                                            <div className="sectionTitle SearchTitle">Contact Information
+                                            <div className="sectionTitle SearchTitle">Contact Information</div>
                                                 <div className="sectionContent">
                                                     <ul className="contactDetail">
                                                         <li>
@@ -363,9 +380,8 @@ const DeatailsSchoolComponent = (props) => {
                                                             <span className="icon">
                                                                 <FontAwesomeIcon icon={faGlobe} style={{ "color": "green" }} />&nbsp;
                                                             </span>
-                                                            <a href="" style={{ "color": "rgba(0,0,0,0.7)", "flexWrap": "wrap", "fontSize": "16px" }}>
-                                                                https://www.deekshaschools.com/campus1.html
-                                                            </a>
+                                                            <span><a href="" className="text"> https://www.deekshaschools.com/campus.html</a></span>
+                                                            
                                                         </li>
                                                         <li>
                                                             <span className="icon">
@@ -376,15 +392,14 @@ const DeatailsSchoolComponent = (props) => {
                                                     </ul>
                                                     <div className="iconFooter">
                                                         <ul className="socialIconFooter">
-                                                            <li><a><FontAwesomeIcon icon={faFacebook} style={{"color":"#34A853"}}/></a></li>
-                                                            <li><a><FontAwesomeIcon icon={faTwitter}  style={{"color":"#34A853"}}/></a></li>
-                                                            <li><a><FontAwesomeIcon icon={faYoutube}  style={{"color":"#34A853"}}/></a></li>
-                                                            <li><a><FontAwesomeIcon icon={faLinkedin}  style={{"color":"#34A853"}}/></a></li>
-                                                            <li><a><FontAwesomeIcon icon={faInstagram} style={{"color":"#34A853"}} /></a></li>
+                                                            <li><a><FontAwesomeIcon icon={faFacebook} style={{ "color": "#34A853" }} /></a></li>
+                                                            <li><a><FontAwesomeIcon icon={faTwitter} style={{ "color": "#34A853" }} /></a></li>
+                                                            <li><a><FontAwesomeIcon icon={faYoutube} style={{ "color": "#34A853" }} /></a></li>
+                                                            <li><a><FontAwesomeIcon icon={faLinkedin} style={{ "color": "#34A853" }} /></a></li>
+                                                            <li><a><FontAwesomeIcon icon={faInstagram} style={{ "color": "#34A853" }} /></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

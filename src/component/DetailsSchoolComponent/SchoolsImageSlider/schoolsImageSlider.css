@@ -1,0 +1,80 @@
+.carousel {
+    position: relative;
+    z-index: 10 !important;
+    
+}
+
+.carousel-indicators {
+    z-index: 9999 !important;
+    width: 100px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    top: 0 !important;
+    left: inherit;
+    padding: 0;
+    bottom: inherit;
+    right: 0;
+    opacity: 1 !important;
+}
+
+.carousel-indicators button {
+    position: relative;
+    margin: 0;
+    padding: 0 !important;
+    width: 100px !important;
+    height: 100px !important;
+    overflow: hidden;
+    opacity: 1 !important;
+    border-radius: 0% !important;
+}
+
+.carousel-indicators button:before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    right: 0;
+    opacity: 1;
+}
+.carousel-item img {
+    height: 470px;
+    width: 100% !important;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-indicators button:nth-child(1)::before {
+    background-image: url(../../../Assets/Images/DeekshaSchool.jpg);
+    background-size: cover;
+}
+
+.carousel-indicators button:nth-child(2)::before {
+    background-image: url(../../../Assets/Images/DeekshaSchool1.jpg);
+    background-size: cover;
+}
+
+.carousel-indicators button:nth-child(3)::before {
+    background-image: url(../../../Assets/Images/DeekshaSchool2.jpg);
+    background-size: cover;
+}
+
+.carousel-indicators button:nth-child(3)::before {
+    background-image: url(../../../Assets/Images/DeekshaSchool3.jpg);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel-indicators {
+        display: none;
+    }
+
+    .carousel-item img {
+        height: 200px;
+        width: auto !important;
+        display: block;
+        margin: 0 auto;
+    }
+
+}

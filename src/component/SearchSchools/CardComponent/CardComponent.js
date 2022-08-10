@@ -84,6 +84,38 @@ const CardFilter = () => {
             address: "Plot No., 110, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500047",
             section: "Montessori",
             type: "Pre-School Type"
+        },
+        {
+            id: 10,
+            schoolname: "ACADEMIC PLAY SCHOOL",
+            Image: 'skoolslogo',
+            address: "Plot No., 110, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500047",
+            section: "Montessori",
+            type: "Pre-School Type"
+        },
+        {
+            id: 11,
+            schoolname: "BACHPAN PLAY SCHOOL",
+            Image: 'skoolslogo',
+            address: "Plot No., 108, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500045",
+            section: "Montessori",
+            type: "Pre-School Type"
+        },
+        {
+            id: 12,
+            schoolname: "SMART KIDZ",
+            Image: 'skoolslogo',
+            address: "Plot No., 109, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500046",
+            section: "Montessori",
+            type: "Pre-School Type"
+        },
+        {
+            id: 13,
+            schoolname: "OJAS PLAY SCHOOL",
+            Image: 'skoolslogo',
+            address: "Plot No., 110, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500047",
+            section: "Montessori",
+            type: "Pre-School Type"
         }
     ])
     return (
@@ -136,7 +168,6 @@ const CardFilter = () => {
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
