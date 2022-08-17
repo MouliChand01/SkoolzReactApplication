@@ -37,8 +37,8 @@ const DeatailsSchoolComponent = () => {
                     </div>
                     <div className="baseContainer" style={{ "textAlign": "left" }}>
                         <div className="row">
-                            <div className="sliderMainContainer col-md-12" >
-                                   <SchoolsImageSlide/>      
+                            <div className="sliderMainContainer col-md-12 " >
+                                <SchoolsImageSlide />
                             </div>
                         </div>
                         <div className="row">
@@ -124,13 +124,13 @@ const DeatailsSchoolComponent = () => {
                                 <div className="row">
                                     <div className="contentLeftWrapperslides  col-md-8">
                                         <div className="sliderContent" id="overview">
-                                            <div className="sectionTitle SearchTitle">About School</div>
+                                            <div className="sectionTitle SearchTitle"><b>About School</b></div>
                                             <div className="sectionContent aboutUsSection">
                                                 Why DEEKSHA is the right place for your child 1. Curriculum crafted by Experts 2. Personalized Care & Education 3.Teaching and Training Excellence 4. Transparency and Safety 5. Supportive environment 6. High Quality Fun 7. Health and nutrition 8. Best hygiene practices 9. Parent Communication
                                             </div>
                                         </div>
                                         <div className="sliderContent" id="gallery">
-                                            <div className="sectionTitle SearchTitle">Gallery</div>
+                                            <div className="sectionTitle SearchTitle"><b>Gallery</b></div>
                                             <div className="row">
                                                 <div className="col-6 col-md-2 schoolGallary gallleryThumb">
                                                     <a className="gallleryThumb">
@@ -150,7 +150,7 @@ const DeatailsSchoolComponent = () => {
                                             </div>
                                         </div>
                                         <div className="sliderContent" id="Awards_Recognition">
-                                            <div className="sectionTitle SearchTitle">Awards & Recognition</div>
+                                            <div className="sectionTitle SearchTitle"><b>Awards & Recognition</b></div>
                                             <div className="sectionContent">
                                                 <div className="row">
 
@@ -158,7 +158,7 @@ const DeatailsSchoolComponent = () => {
                                             </div>
                                         </div>
                                         <div className="sliderContent" id="basic_information">
-                                            <div className="sectionTitle SearchTitle">Basic Information</div>
+                                            <div className="sectionTitle SearchTitle"><b>Basic Information</b></div>
                                             <div className="sectionContent col-md-12">
                                                 <ul className="basicInfoSection col-md-6">
                                                     <li className="mb-3">
@@ -248,7 +248,7 @@ const DeatailsSchoolComponent = () => {
                                             </div>
                                         </div>
                                         <div className="sliderContent" id="reviews">
-                                            <div className="sectionTitle SearchTitle">Reviews</div>
+                                            <div className="sectionTitle SearchTitle"><b>Reviews</b></div>
                                             <a className="applyBtn BA float-right" id="reviewButton">Write A Review </a>
                                             <div className="sectionContent">
                                                 <div className="review">
@@ -309,56 +309,56 @@ const DeatailsSchoolComponent = () => {
                                     </div>
                                     <div className="col-md-4 contentRightWrapperslides">
                                         <div className="sliderContent">
-                                            <div className="sectionTitle SearchTitle">Latest Updates
+                                            <div className="sectionTitle SearchTitle"><b>Latest Updates</b>
                                             </div>
                                         </div>
                                         <div className="sliderContent" id="timings">
-                                            <div className="sectionTitle SearchTitle">Distinguished Alumni
+                                            <div className="sectionTitle SearchTitle"><b>Distinguished Alumni</b>
                                                 <div className="sectionContent">
                                                     <div className="row"></div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="sliderContent" id="fee">
-                                            <div className="sectionTitle SearchTitle">Fee Details</div>
-                                                <div className="sectionContent col-md-12">
-                                                    <ul className="basicInfoSection col-md-6">
-                                                        <li className="mb-3">
-                                                            <div className="circleImage">
-                                                                <span>
-                                                                    <img src={circleImage} className="svg" ></img>
-                                                                </span>
-                                                            </div>
-                                                            <div className="titleBasic">Type of School
-                                                                <span className="subBasicTitle">Co-Ed</span>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                    <ul className="basicInfoSection col-md-6">
-                                                        <li className="mb-3">
-                                                            <div className="circleImage">
-                                                                <span>
-                                                                    <img src={circleImage} className="svg" ></img>
-                                                                </span>
-                                                            </div>
-                                                            <div className="titleBasic">Type of School
-                                                                <span className="subBasicTitle">Co-Ed</span>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                            <div className="sectionTitle SearchTitle"><b>Fee Details</b></div>
+                                            <div className="sectionContent col-md-12">
+                                                <ul className="basicInfoSection col-md-6">
+                                                    <li className="mb-3">
+                                                        <div className="circleImage">
+                                                            <span>
+                                                                <img src={circleImage} className="svg" ></img>
+                                                            </span>
+                                                        </div>
+                                                        <div className="titleBasic">Type of School
+                                                            <span className="subBasicTitle">Co-Ed</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul className="basicInfoSection col-md-6">
+                                                    <li className="mb-3">
+                                                        <div className="circleImage">
+                                                            <span>
+                                                                <img src={circleImage} className="svg" ></img>
+                                                            </span>
+                                                        </div>
+                                                        <div className="titleBasic">Type of School
+                                                            <span className="subBasicTitle">Co-Ed</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
 
                                         </div>
                                         <div className="sliderContent" id="brochar">
-                                            <div className="sectionTitle SearchTitle">Brochure Document</div>
-                                                <div className="sectionContent">
-                                                    <a className="actionButton" href="" style={{"color":"#34A853"}}>Download Brochure</a>
-                                                </div>
+                                            <div className="sectionTitle SearchTitle"><b>Brochure Document</b></div>
+                                            <div className="sectionContent">
+                                                <a className="actionButton" href="" style={{ "color": "#34A853" }}>Download Brochure</a>
+                                            </div>
 
                                         </div>
                                         <div className="sliderContent" id="contact">
-                                            <div className="sectionTitle SearchTitle">Contact Information</div>
-                                                <div className="sectionContent">
+                                            <div className="sectionTitle SearchTitle"><b>Contact Information</b></div>
+                                            {/* <div className="sectionContent">
                                                     <ul className="contactDetail">
                                                         <li>
                                                             <a href="">
@@ -399,7 +399,76 @@ const DeatailsSchoolComponent = () => {
                                                             <li><a><FontAwesomeIcon icon={faInstagram} style={{ "color": "#34A853" }} /></a></li>
                                                         </ul>
                                                     </div>
+                                                </div> */}
+                                            <div>
+                                                <ul>
+                                                    <div className="col-md-12 d-flex mb-3">
+                                                        <li className="col-md-1">
+                                                            <a href="">
+                                                                <span className="icon">
+                                                                    <FontAwesomeIcon icon={faEnvelope} style={{ "color": "green" }} />&nbsp;
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li className="col-md-11">
+                                                            <a href="">
+                                                                <span className="text">deekshacorp@gmail.com</span>
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div className="col-md-12 d-flex mb-3">
+                                                        <li className="col-md-1">
+                                                            <a href="">
+                                                                <span className="icon">
+                                                                    <FontAwesomeIcon icon={faPhone} style={{ "color": "green" }} />&nbsp;
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li className="col-md-11">
+                                                            <a href="">
+                                                                <button className="callmeBtn1 BB callmeBtnTransparent m-0">CALL</button>
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div className="col-md-12 d-flex mb-3">
+                                                        <li className="col-md-1">
+                                                            <a href="">
+                                                                <span className="icon">
+                                                                    <FontAwesomeIcon icon={faGlobe} style={{ "color": "green" }} />&nbsp;
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li className="col-md-11">
+                                                            <a href="" style={{ "color": "rgba(0,0,0,0.7)", "flexWrap": "wrap", "fontSize": "14px" }}>
+                                                                https://www.deekshaschools.com/campus1.html
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div className="col-md-12 d-flex mb-3">
+                                                        <li className="col-md-1">
+                                                            <a href="">
+                                                                <span className="icon">
+                                                                    <FontAwesomeIcon icon={faLocationDot} style={{ "color": "green" }} />&nbsp;
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li className="col-md-11">
+                                                            <a href="">
+                                                                <span className="text">Plot No., 107, Lalitha Nagar, Adikmet, Hyderabad, Telangana, , Hyderabad, Telangana, 500044</span>
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div className="iconFooter" >
+                                                    <ul className="socialIconFooter d-flex">
+                                                        <li><a><FontAwesomeIcon icon={faFacebook} style={{ "color": "#34A853" }} /></a></li>
+                                                        <li><a><FontAwesomeIcon icon={faTwitter} style={{ "color": "#34A853" }} /></a></li>
+                                                        <li><a><FontAwesomeIcon icon={faYoutube} style={{ "color": "#34A853" }} /></a></li>
+                                                        <li><a><FontAwesomeIcon icon={faLinkedin} style={{ "color": "#34A853" }} /></a></li>
+                                                        <li><a><FontAwesomeIcon icon={faInstagram} style={{ "color": "#34A853" }} /></a></li>
+                                                    </ul>
                                                 </div>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
