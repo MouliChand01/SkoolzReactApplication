@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import SchoolsImageSlide from "./SchoolsImageSlider/SchoolsImageSlide";
@@ -14,56 +14,15 @@ import minageBoarding from "../../Assets/svg/minimumageboardingschool.svg"
 import hindi from "../../Assets/svg/hindilanguage.svg"
 import establishment from "../../Assets/svg/establishment year.svg"
 import "./DetailsSchoolComponent.css";
-// import {bookmarkLinks} from '../../Assets/index'
 
 
 
 const DeatailsSchoolComponent = () => {
-    const [bookmarkLinks, setbookmarkLinks]= useState([
-        {
-            id:1,
-            name:'OVERVIEW',
-            link:'overview'
-        },
-        {
-            id:2,
-            name:'GALLERY',
-            link:'gallery'
-        },
-        {
-            id:3,
-            name:'BASIC INFORMATION',
-            link:'basic_information'
-        },
-        {
-            id:4,
-            name:'FEES',
-            link:'fee'
-        },
-        {
-            id:5,
-            name:'CONTACT',
-            link:'contact'
-        },
-        {
-            id:6,
-            name:'REVIEWS',
-            link:'reviews'
-        },
-    ])
-    const [isActive,setIsActive] = useState(false)
-    const linkRef = useRef()
-
-    const isLinkActive = (e) => {
-        // linkRef.current.className('active')
-        e.currentTarget.classList.add('active')
-        // setIsActive(current => !current)
-    }
     return (
         <div>
             <div className="schoolDetailsComponent">
                 <HeaderComponent />
-                <br /><br /><br /><br /><br />
+                <br /><br /><br /><br />
                 <div className="schoolbaseContainer">
                     <div className="breadcrumb-container">
                         <div className="baseContainer">
@@ -78,11 +37,10 @@ const DeatailsSchoolComponent = () => {
                     </div>
                     <div className="baseContainer" style={{ "textAlign": "left" }}>
                         <div className="row">
-                            <div className="sliderMainContainer col-md-12" >
-                                   <SchoolsImageSlide/>      
+                            <div className="sliderMainContainer col-md-12 " >
+                                <SchoolsImageSlide />
                             </div>
                         </div>
-                        <br/>
                         <div className="row">
                             <div className="col-12 col-md-12 col-lg-12">
                                 <div className="row">
@@ -114,7 +72,7 @@ const DeatailsSchoolComponent = () => {
                                         <ul className="basicDetails">
                                             <li>
                                                 <div className="reviewDetails">
-                                                    <div className="startIcon">
+                                                    <div className="reviewIcon">
                                                         <FontAwesomeIcon icon={faStar} style={{ "color": "gold" }} /> &nbsp;0
                                                         <span>(0)</span>
                                                     </div>
@@ -122,7 +80,7 @@ const DeatailsSchoolComponent = () => {
                                             </li>
                                             <li>
                                                 <div className="details">
-                                                    <div className="startIcon">
+                                                    <div className="reviewIcon">
                                                         Montessori
                                                         <span className="rev">Pre-School Type</span>
                                                     </div>
@@ -130,7 +88,7 @@ const DeatailsSchoolComponent = () => {
                                             </li>
                                             <li>
                                                 <div className="details">
-                                                    <div className="startIcon">
+                                                    <div className="reviewIcon">
                                                         Co-Ed
                                                         <span className="rev">Gender Classification</span>
                                                     </div>
@@ -138,7 +96,7 @@ const DeatailsSchoolComponent = () => {
                                             </li>
                                             <li>
                                                 <div className="details">
-                                                    <div className="startIcon">
+                                                    <div className="reviewIcon">
                                                         Rs.
                                                         <span className="rev">Annual Fees</span>
                                                     </div>
@@ -156,212 +114,52 @@ const DeatailsSchoolComponent = () => {
                         <div className="contentSlideWrapper">
                             <div className="contentSliderNav">
                                 <ul className="sectionNavigator">
-                                   {
-                                    bookmarkLinks.map(item=> (
-                                        <li key={item.id}>{isActive}<a className={isActive ? 'active':''} ref={linkRef} onClick={isLinkActive} href={`#${item.link}`}>{item.name}</a></li>
-                                    ))
-                                   }
+                                    <li className="active"><a>OVERVIEW</a></li>
+                                    <li><a href="#gallery">GALLERY</a></li>
+                                    <li><a href="#basic_information">BASIC INFORMATION</a></li>
+                                    <li><a>FEES</a></li>
+                                    <li><a>CONTACT</a></li>
+                                    <li><a href="#reviews">REVIEWS</a></li>
                                 </ul>
                                 <div className="row">
                                     <div className="contentLeftWrapperslides  col-md-8">
                                         <div className="sliderContent" id="overview">
-                                            <div className="sectionTitle SearchTitle">About School</div>
+                                            <div className="sectionTitle SearchTitle"><b>About School</b></div>
                                             <div className="sectionContent aboutUsSection">
                                                 Why DEEKSHA is the right place for your child 1. Curriculum crafted by Experts 2. Personalized Care & Education 3.Teaching and Training Excellence 4. Transparency and Safety 5. Supportive environment 6. High Quality Fun 7. Health and nutrition 8. Best hygiene practices 9. Parent Communication
                                             </div>
                                         </div>
-                                        <div className="sliderContent" id="gallery">
-                                            <div className="sectionTitle SearchTitle">Gallery</div>
-                                            <div className="row">
-                                                <div className="col-6 col-md-2 schoolGallary gallleryThumb">
-                                                    <a className="gallleryThumb">
-                                                        <img src="" alt="Thumb1" />
-                                                    </a>
-                                                </div>
-                                                <div className="col-6 col-md-2 schoolGallary gallleryThumb">
-                                                    <a className="gallleryThumb">
-                                                        <img src="" alt="Thumb2" />
-                                                    </a>
-                                                </div>
-                                                <div className="col-6 col-md-2 schoolGallary gallleryThumb">
-                                                    <a className="gallleryThumb">
-                                                        <img src="" alt="Thumb3" />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="sliderContent" id="Awards_Recognition">
-                                            <div className="sectionTitle SearchTitle">Awards & Recognition</div>
-                                            <div className="sectionContent">
+                                        <div data-bs-spy="scroll">
+                                            <div className="sliderContent" id="gallery">
+                                                <div className="sectionTitle SearchTitle"><b>Gallery</b></div>
                                                 <div className="row">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="sliderContent" id="basic_information">
-                                            <div className="sectionTitle SearchTitle">Basic Information</div>
-                                            <div className="sectionContent col-md-12">
-                                                <ul className="basicInfoSection col-md-6">
-                                                    <li className="mb-3">
-                                                        <div className="circleImage">
-                                                            <span>
-                                                                <img src={circleImage} className="svg" ></img>
-                                                            </span>
-                                                        </div>
-                                                        <div className="titleBasic">Type of School
-                                                            <span className="subBasicTitle">Co-Ed</span>
-                                                        </div>
-                                                    </li>
-                                                    <li className="mb-3">
-                                                        <div className="circleImage">
-                                                            <span>
-                                                                <img src={tutionFees} className="svg"></img>
-                                                            </span>
-                                                        </div>
-                                                        <div className="titleBasic">Annual Fees
-                                                            <span className="subBasicTitle">NA</span>
-                                                        </div>
-                                                    </li>
-                                                    <li className="mb-3">
-                                                        <div className="circleImage">
-                                                            <span>
-                                                                <img src={minAge} className="svg"></img>
-                                                            </span>
-                                                        </div>
-                                                        <div className="titleBasic">Min Age for Day School
-                                                            <span className="subBasicTitle">NA</span>
-                                                        </div>
-                                                    </li>
-                                                    <li className="mb-3">
-                                                        <div className="circleImage">
-                                                            <span>
-                                                                <img src={hindi} className="svg"></img>
-                                                            </span>
-                                                        </div>
-                                                        <div className="titleBasic">Language of Instruction
-                                                            <span className="subBasicTitle">English</span>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <ul className="basicInfoSection col-md-6">
-                                                    <li className="mb-3">
-                                                        <div className="circleImage">
-                                                            <span>
-                                                                <img src={preSchool} className="svg"></img>
-                                                            </span>
-                                                        </div>
-                                                        <div className="titleBasic">PreSchool Type
-                                                            <span className="subBasicTitle">Montessori</span>
-                                                        </div>
-                                                    </li>
-                                                    <li className="mb-3">
-                                                        <div className="circleImage">
-                                                            <span>
-                                                                <img src={girlsImage} className="svg"></img>
-                                                            </span>
-                                                        </div>
-                                                        <div className="titleBasic">Grade - Pre-School
-                                                            <span className="subBasicTitle">PreSchool</span>
-                                                        </div>
-                                                    </li>
-                                                    <li className="mb-3">
-                                                        <div className="circleImage">
-                                                            <span>
-                                                                <img src={minageBoarding} className="svg"></img>
-                                                            </span>
-                                                        </div>
-                                                        <div className="titleBasic">Min Age for Boarding School
-                                                            <span className="subBasicTitle">NA</span>
-                                                        </div>
-                                                    </li>
-
-                                                    <li className="mb-3">
-                                                        <div className="circleImage">
-                                                            <span>
-                                                                <img src={establishment} className="svg"></img>
-                                                            </span>
-                                                        </div>
-                                                        <div className="titleBasic">Establishment Year
-                                                            <span className="subBasicTitle">2004</span>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="sliderContent" id="reviews">
-                                            <div className="sectionTitle SearchTitle">Reviews</div>
-                                            <a className="applyBtn BA float-right" id="reviewButton">Write A Review </a>
-                                            <div className="sectionContent">
-                                                <div className="review">
-                                                    <div className="startIcon">
-                                                        <FontAwesomeIcon icon={faStar} style={{ "color": "gold" }} />0
-                                                        <a>
-                                                            <span className="rev">(0 reviews)</span>
+                                                    <div className="col-6 col-md-2 schoolGallary gallleryThumb">
+                                                        <a className="gallleryThumb">
+                                                            <img src="" alt="Thumb1" />
+                                                        </a>
+                                                    </div>
+                                                    <div className="col-6 col-md-2 schoolGallary gallleryThumb">
+                                                        <a className="gallleryThumb">
+                                                            <img src="" alt="Thumb2" />
+                                                        </a>
+                                                    </div>
+                                                    <div className="col-6 col-md-2 schoolGallary gallleryThumb">
+                                                        <a className="gallleryThumb">
+                                                            <img src="" alt="Thumb3" />
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div className="progressBarContainer">
-                                                    <div className="progressCustom">
-                                                        <div className="progressLabel">Infrastructure</div>
-                                                        <div className="progress" style={{ "height": "4px" }}>
-                                                            <div className="progress-bar"></div>
-                                                        </div>
-                                                        <div className="progressValue">0</div>
-                                                    </div>
-                                                    <div className="progressCustom">
-                                                        <div className="progressLabel">Sports</div>
-                                                        <div className="progress" style={{ "height": "4px" }}>
-                                                            <div className="progress-bar"></div>
-                                                        </div>
-                                                        <div className="progressValue">0</div>
-                                                    </div>
-                                                    <div className="progressCustom">
-                                                        <div className="progressLabel">Academics</div>
-                                                        <div className="progress" style={{ "height": "4px" }}>
-                                                            <div className="progress-bar"></div>
-                                                        </div>
-                                                        <div className="progressValue">0</div>
-                                                    </div>
-                                                    <div className="progressCustom">
-                                                        <div className="progressLabel">Faculty</div>
-                                                        <div className="progress" style={{ "height": "4px" }}>
-                                                            <div className="progress-bar"></div>
-                                                        </div>
-                                                        <div className="progressValue">0</div>
-                                                    </div>
-                                                    <div className="progressCustom">
-                                                        <div className="progressLabel">Facilities</div>
-                                                        <div className="progress" style={{ "height": "4px" }}>
-                                                            <div className="progress-bar"></div>
-                                                        </div>
-                                                        <div className="progressValue">0</div>
-                                                    </div>
-                                                    <div className="progressCustom">
-                                                        <div className="progressLabel">Safety</div>
-                                                        <div className="progress" style={{ "height": "4px" }}>
-                                                            <div className="progress-bar"></div>
-                                                        </div>
-                                                        <div className="progressValue">0</div>
-                                                    </div>
-                                                </div>
                                             </div>
-                                        </div>
-
-                                    </div>
-                                    <div className="col-md-4 contentRightWrapperslides">
-                                        <div className="sliderContent">
-                                            <div className="sectionTitle SearchTitle">Latest Updates
-                                            </div>
-                                        </div>
-                                        <div className="sliderContent" id="timings">
-                                            <div className="sectionTitle SearchTitle">Distinguished Alumni
+                                            <div className="sliderContent" id="Awards_Recognition">
+                                                <div className="sectionTitle SearchTitle"><b>Awards & Recognition</b></div>
                                                 <div className="sectionContent">
-                                                    <div className="row"></div>
+                                                    <div className="row">
+
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="sliderContent" id="fee">
-                                            <div className="sectionTitle SearchTitle">Fee Details</div>
+                                            <div className="sliderContent" id="basic_information">
+                                                <div className="sectionTitle SearchTitle"><b>Basic Information</b></div>
                                                 <div className="sectionContent col-md-12">
                                                     <ul className="basicInfoSection col-md-6">
                                                         <li className="mb-3">
@@ -374,31 +172,194 @@ const DeatailsSchoolComponent = () => {
                                                                 <span className="subBasicTitle">Co-Ed</span>
                                                             </div>
                                                         </li>
+                                                        <li className="mb-3">
+                                                            <div className="circleImage">
+                                                                <span>
+                                                                    <img src={tutionFees} className="svg"></img>
+                                                                </span>
+                                                            </div>
+                                                            <div className="titleBasic">Annual Fees
+                                                                <span className="subBasicTitle">NA</span>
+                                                            </div>
+                                                        </li>
+                                                        <li className="mb-3">
+                                                            <div className="circleImage">
+                                                                <span>
+                                                                    <img src={minAge} className="svg"></img>
+                                                                </span>
+                                                            </div>
+                                                            <div className="titleBasic">Min Age for Day School
+                                                                <span className="subBasicTitle">NA</span>
+                                                            </div>
+                                                        </li>
+                                                        <li className="mb-3">
+                                                            <div className="circleImage">
+                                                                <span>
+                                                                    <img src={hindi} className="svg"></img>
+                                                                </span>
+                                                            </div>
+                                                            <div className="titleBasic">Language of Instruction
+                                                                <span className="subBasicTitle">English</span>
+                                                            </div>
+                                                        </li>
                                                     </ul>
                                                     <ul className="basicInfoSection col-md-6">
                                                         <li className="mb-3">
                                                             <div className="circleImage">
                                                                 <span>
-                                                                    <img src={circleImage} className="svg" ></img>
+                                                                    <img src={preSchool} className="svg"></img>
                                                                 </span>
                                                             </div>
-                                                            <div className="titleBasic">Type of School
-                                                                <span className="subBasicTitle">Co-Ed</span>
+                                                            <div className="titleBasic">PreSchool Type
+                                                                <span className="subBasicTitle">Montessori</span>
+                                                            </div>
+                                                        </li>
+                                                        <li className="mb-3">
+                                                            <div className="circleImage">
+                                                                <span>
+                                                                    <img src={girlsImage} className="svg"></img>
+                                                                </span>
+                                                            </div>
+                                                            <div className="titleBasic">Grade - Pre-School
+                                                                <span className="subBasicTitle">PreSchool</span>
+                                                            </div>
+                                                        </li>
+                                                        <li className="mb-3">
+                                                            <div className="circleImage">
+                                                                <span>
+                                                                    <img src={minageBoarding} className="svg"></img>
+                                                                </span>
+                                                            </div>
+                                                            <div className="titleBasic">Min Age for Boarding School
+                                                                <span className="subBasicTitle">NA</span>
+                                                            </div>
+                                                        </li>
+
+                                                        <li className="mb-3">
+                                                            <div className="circleImage">
+                                                                <span>
+                                                                    <img src={establishment} className="svg"></img>
+                                                                </span>
+                                                            </div>
+                                                            <div className="titleBasic">Establishment Year
+                                                                <span className="subBasicTitle">2004</span>
                                                             </div>
                                                         </li>
                                                     </ul>
                                                 </div>
+                                            </div>
+                                            <div className="sliderContent" id="reviews">
+                                                <div className="sectionTitle SearchTitle"><b>Reviews</b></div>
+                                                <a className="applyBtn BA float-right" id="reviewButton">Write A Review </a>
+                                                <div className="sectionContent">
+                                                    <div className="review">
+                                                        <div className="startIcon">
+                                                            <FontAwesomeIcon icon={faStar} style={{ "color": "gold" }} />0
+                                                            <a>
+                                                                <span className="rev">(0 reviews)</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div className="progressBarContainer">
+                                                        <div className="progressCustom">
+                                                            <div className="progressLabel">Infrastructure</div>
+                                                            <div className="progress" style={{ "height": "4px" }}>
+                                                                <div className="progress-bar"></div>
+                                                            </div>
+                                                            <div className="progressValue">0</div>
+                                                        </div>
+                                                        <div className="progressCustom">
+                                                            <div className="progressLabel">Sports</div>
+                                                            <div className="progress" style={{ "height": "4px" }}>
+                                                                <div className="progress-bar"></div>
+                                                            </div>
+                                                            <div className="progressValue">0</div>
+                                                        </div>
+                                                        <div className="progressCustom">
+                                                            <div className="progressLabel">Academics</div>
+                                                            <div className="progress" style={{ "height": "4px" }}>
+                                                                <div className="progress-bar"></div>
+                                                            </div>
+                                                            <div className="progressValue">0</div>
+                                                        </div>
+                                                        <div className="progressCustom">
+                                                            <div className="progressLabel">Faculty</div>
+                                                            <div className="progress" style={{ "height": "4px" }}>
+                                                                <div className="progress-bar"></div>
+                                                            </div>
+                                                            <div className="progressValue">0</div>
+                                                        </div>
+                                                        <div className="progressCustom">
+                                                            <div className="progressLabel">Facilities</div>
+                                                            <div className="progress" style={{ "height": "4px" }}>
+                                                                <div className="progress-bar"></div>
+                                                            </div>
+                                                            <div className="progressValue">0</div>
+                                                        </div>
+                                                        <div className="progressCustom">
+                                                            <div className="progressLabel">Safety</div>
+                                                            <div className="progress" style={{ "height": "4px" }}>
+                                                                <div className="progress-bar"></div>
+                                                            </div>
+                                                            <div className="progressValue">0</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div className="col-md-4 contentRightWrapperslides">
+                                        <div className="sliderContent">
+                                            <div className="sectionTitle SearchTitle"><b>Latest Updates</b>
+                                            </div>
+                                        </div>
+                                        <div className="sliderContent" id="timings">
+                                            <div className="sectionTitle SearchTitle"><b>Distinguished Alumni</b>
+                                                <div className="sectionContent">
+                                                    <div className="row"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="sliderContent" id="fee">
+                                            <div className="sectionTitle SearchTitle"><b>Fee Details</b></div>
+                                            <div className="sectionContent col-md-12">
+                                                <ul className="basicInfoSection col-md-6">
+                                                    <li className="mb-3">
+                                                        <div className="circleImage">
+                                                            <span>
+                                                                <img src={circleImage} className="svg" ></img>
+                                                            </span>
+                                                        </div>
+                                                        <div className="titleBasic">Type of School
+                                                            <span className="subBasicTitle">Co-Ed</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul className="basicInfoSection col-md-6">
+                                                    <li className="mb-3">
+                                                        <div className="circleImage">
+                                                            <span>
+                                                                <img src={circleImage} className="svg" ></img>
+                                                            </span>
+                                                        </div>
+                                                        <div className="titleBasic">Type of School
+                                                            <span className="subBasicTitle">Co-Ed</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
 
                                         </div>
                                         <div className="sliderContent" id="brochar">
-                                            <div className="sectionTitle SearchTitle">Brochure Document</div>
-                                                <div className="sectionContent">
-                                                    <a className="actionButton" href="" style={{"color":"#34A853"}}>Download Brochure</a>
-                                                </div>
+                                            <div className="sectionTitle SearchTitle"><b>Brochure Document</b></div>
+                                            <div className="sectionContent">
+                                                <a className="actionButton" href="" style={{ "color": "#34A853" }}>Download Brochure</a>
+                                            </div>
 
                                         </div>
                                         <div className="sliderContent" id="contact">
-                                            <div className="sectionTitle SearchTitle">Contact Information</div>
+                                            <div className="sectionTitle SearchTitle"><b>Contact Information</b></div>
                                             <div>
                                                 <ul>
                                                     <div className="col-md-12 d-flex mb-3">
@@ -458,14 +419,14 @@ const DeatailsSchoolComponent = () => {
                                                         </li>
                                                     </div>
                                                     <div className="iconFooter" >
-                                                    <ul className="socialIconFooter d-flex">
-                                                        <li><a><FontAwesomeIcon icon={faFacebook} style={{ "color": "#34A853" }} /></a></li>
-                                                        <li><a><FontAwesomeIcon icon={faTwitter} style={{ "color": "#34A853" }} /></a></li>
-                                                        <li><a><FontAwesomeIcon icon={faYoutube} style={{ "color": "#34A853" }} /></a></li>
-                                                        <li><a><FontAwesomeIcon icon={faLinkedin} style={{ "color": "#34A853" }} /></a></li>
-                                                        <li><a><FontAwesomeIcon icon={faInstagram} style={{ "color": "#34A853" }} /></a></li>
-                                                    </ul>
-                                                </div>
+                                                        <ul className="socialIconFooter d-flex">
+                                                            <li><a><FontAwesomeIcon icon={faFacebook} style={{ "color": "#34A853" }} /></a></li>
+                                                            <li><a><FontAwesomeIcon icon={faTwitter} style={{ "color": "#34A853" }} /></a></li>
+                                                            <li><a><FontAwesomeIcon icon={faYoutube} style={{ "color": "#34A853" }} /></a></li>
+                                                            <li><a><FontAwesomeIcon icon={faLinkedin} style={{ "color": "#34A853" }} /></a></li>
+                                                            <li><a><FontAwesomeIcon icon={faInstagram} style={{ "color": "#34A853" }} /></a></li>
+                                                        </ul>
+                                                    </div>
                                                 </ul>
                                             </div>
                                         </div>
