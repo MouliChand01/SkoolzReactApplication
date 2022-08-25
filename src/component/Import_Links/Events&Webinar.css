@@ -1,0 +1,84 @@
+ul{
+    padding: 0;
+}
+.eventsAndWebinar .card {
+    text-align: justify;
+}
+
+.eventsAndWebinar .headLinks {
+    text-align: left;
+
+}
+
+.eventsAndWebinar .eventDiscription p {
+    font-size: small;
+    color: gray;
+}
+
+.eventsAndWebinar .headLinks a :hover {
+    color: green;
+
+}
+
+.eventsAndWebinar .headerPart h1 {
+    color: green;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.cardFooter img {
+    width: 100px;
+    align-items: flex-start;
+}
+
+.cardFooter {
+    border-top: 1px solid gray;
+}
+
+.img-fuild {
+    height: 250px;
+    width: 500px;
+}
+
+.eventsAndWebinar .QuicklinksListOne .QuicklinksButtonGroup,
+.eventsAndWebinar .QuicklinksListTwo .QuicklinksButtonGroup {
+    list-style: none;
+}
+
+.QuicklinksButton {
+    background: rgba(52, 168, 79, 1);
+    color: #fff;
+    border-radius: 50rem;
+    padding: 0.375rem 0.75rem;
+    border: none !important;
+    width: 100%;
+}
+.QuicklinksButton:hover {
+    background: #FF6700;
+    color: #fff;
+    
+}
+.eventsAndWebinar .highlightText{
+    font-weight: 600;
+    font-size: 30px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    color: #FF6700;
+    font-family: MontserratSemiBold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+.card > div > div{
+    position: relative;
+}
+.cardFooter{
+    position: absolute;
+    bottom: 0px;
+    width: calc(100% - 28px);
+}
+@media only screen and (max-width: 768px) {
+    .eventsAndWebinar {
+        margin-top: 150px;
+    }
+
+}

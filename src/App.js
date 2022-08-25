@@ -12,9 +12,11 @@ import Schools from './component/HomeSchools/HomeSchools';
 import EvetsAndWeninars from './component/EventsAndWebinars/EventsAndWebinars';
 import SearchSchools from './component/SearchSchools/SearchSchools';
 import DeatailsSchoolComponent from './component/DetailsSchoolComponent/DetailsSchoolComponent';
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/thumbs'
+import About_usComponent from './component/Import_Links/About_us_Skoolz';
+import Events_WebinarComponent from './component/Import_Links/Events&Webinar';
+// import 'swiper/css'
+// import 'swiper/css/navigation'
+// import 'swiper/css/thumbs'
 
 function App() {
   return (
@@ -30,7 +32,11 @@ function App() {
 
       {/* <SearchSchools/> */}
 
-      <DeatailsSchoolComponent/>
+      {/* <DeatailsSchoolComponent/> */}
+
+       {/* <About_usComponent/> */}
+
+       <Events_WebinarComponent/>
 
      </div>
   );

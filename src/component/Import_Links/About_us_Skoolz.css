@@ -1,0 +1,85 @@
+.joinOurNetwork {
+    min-height: 132px;
+    background: linear-gradient(90deg,#34A853 0%, #044816 104.58%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.highLight{
+    color: #34A853;
+    font-size: larger;
+}
+.team-photo img{
+    max-width:200px;
+}
+
+.team-round.full-border {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.keyBenefits .card{
+    height:100%;
+}
+ .card p{
+   text-transform: capitalize;
+}
+.aboutUsSection .title, .teamMembers .title{
+    font-family: MontserratSemiBold;
+    font-size: 2rem;
+    text-align: center;
+    color: #FF6700;
+}
+.teamMembers a{
+    color: #34A853;
+    font-weight: 400;
+}
+.teamMembers .team-contact a{
+    color: #34A853;
+    font-weight: 700;
+}
+.teamMembers{
+    width: 100%;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+.middleLine em {
+    width: 60px;
+    height: 2px;
+    background-color: #34A853;
+    display: block;
+    margin: auto;
+}
+.middleLine {
+    width: 120px;
+    height: 2px;
+    background-color: #e1e1e1;
+    display: block;
+    margin: auto;
+}
+.team-photo{
+    max-height: 200px;
+    overflow: hidden;
+    /* border-radius: 50%; */
+}
+
+@media only screen and (max-width: 768px) {
+    .mobileHeader {
+        display: block;
+        height: 160px;
+        background: #ffffff;
+        padding-top: 21px;
+        margin: auto;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        box-shadow: rgb(0 0 0 / 12%) 0px 1px 10px;
+    }
+    .AboutSkoolz{
+        margin-top: 100px;
+    }
+}

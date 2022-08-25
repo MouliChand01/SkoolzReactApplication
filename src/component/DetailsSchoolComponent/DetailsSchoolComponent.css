@@ -8,7 +8,7 @@
 }
 
 .baseContainer .breadcrumb a {
-    color: #34A853;
+    color: #0b0c0c;
 }
 
 .detailsSection ul {
@@ -157,9 +157,10 @@ ul {
 }
 
 a {
-    color: #007bff;
+    color:gray;
     text-decoration: none;
     background-color: transparent;
+    font-weight: 500;
 }
 
 .contentSliderNav ul.sectionNavigator li.active a {
@@ -202,6 +203,16 @@ a {
     justify-content: center;
     align-items: flex-start;
     text-align: justify;
+}
+.detailsSection .basicDetails .startIcon{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: MontserratSemiBold;
+    color: rgba(0, 0, 0, .8);
+}
+.detailsSection .basicDetails .rev{
+    color: rgba(0, 0, 0, .6);
+    font-family: MontserratRegular;
 }
 
 .aboutUsSection {

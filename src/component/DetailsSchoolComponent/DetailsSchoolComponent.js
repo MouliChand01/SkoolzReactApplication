@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import SchoolsImageSlide from "./SchoolsImageSlider/SchoolsImageSlide";
@@ -14,15 +14,56 @@ import minageBoarding from "../../Assets/svg/minimumageboardingschool.svg"
 import hindi from "../../Assets/svg/hindilanguage.svg"
 import establishment from "../../Assets/svg/establishment year.svg"
 import "./DetailsSchoolComponent.css";
+// import {bookmarkLinks} from '../../Assets/index'
 
 
 
 const DeatailsSchoolComponent = () => {
+    const [bookmarkLinks, setbookmarkLinks]= useState([
+        {
+            id:1,
+            name:'OVERVIEW',
+            link:'overview'
+        },
+        {
+            id:2,
+            name:'GALLERY',
+            link:'gallery'
+        },
+        {
+            id:3,
+            name:'BASIC INFORMATION',
+            link:'basic_information'
+        },
+        {
+            id:4,
+            name:'FEES',
+            link:'fee'
+        },
+        {
+            id:5,
+            name:'CONTACT',
+            link:'contact'
+        },
+        {
+            id:6,
+            name:'REVIEWS',
+            link:'reviews'
+        },
+    ])
+    const [isActive,setIsActive] = useState(false)
+    const linkRef = useRef()
+
+    const isLinkActive = (e) => {
+        // linkRef.current.className('active')
+        e.currentTarget.classList.add('active')
+        // setIsActive(current => !current)
+    }
     return (
         <div>
             <div className="schoolDetailsComponent">
                 <HeaderComponent />
-                <br /><br /><br /><br />
+                <br /><br /><br /><br /><br />
                 <div className="schoolbaseContainer">
                     <div className="breadcrumb-container">
                         <div className="baseContainer">
@@ -41,6 +82,7 @@ const DeatailsSchoolComponent = () => {
                                    <SchoolsImageSlide/>      
                             </div>
                         </div>
+                        <br/>
                         <div className="row">
                             <div className="col-12 col-md-12 col-lg-12">
                                 <div className="row">
@@ -72,7 +114,7 @@ const DeatailsSchoolComponent = () => {
                                         <ul className="basicDetails">
                                             <li>
                                                 <div className="reviewDetails">
-                                                    <div className="reviewIcon">
+                                                    <div className="startIcon">
                                                         <FontAwesomeIcon icon={faStar} style={{ "color": "gold" }} /> &nbsp;0
                                                         <span>(0)</span>
                                                     </div>
@@ -80,7 +122,7 @@ const DeatailsSchoolComponent = () => {
                                             </li>
                                             <li>
                                                 <div className="details">
-                                                    <div className="reviewIcon">
+                                                    <div className="startIcon">
                                                         Montessori
                                                         <span className="rev">Pre-School Type</span>
                                                     </div>
@@ -88,7 +130,7 @@ const DeatailsSchoolComponent = () => {
                                             </li>
                                             <li>
                                                 <div className="details">
-                                                    <div className="reviewIcon">
+                                                    <div className="startIcon">
                                                         Co-Ed
                                                         <span className="rev">Gender Classification</span>
                                                     </div>
@@ -96,7 +138,7 @@ const DeatailsSchoolComponent = () => {
                                             </li>
                                             <li>
                                                 <div className="details">
-                                                    <div className="reviewIcon">
+                                                    <div className="startIcon">
                                                         Rs.
                                                         <span className="rev">Annual Fees</span>
                                                     </div>
@@ -114,12 +156,11 @@ const DeatailsSchoolComponent = () => {
                         <div className="contentSlideWrapper">
                             <div className="contentSliderNav">
                                 <ul className="sectionNavigator">
-                                    <li className="active"><a>OVERVIEW</a></li>
-                                    <li><a>GALLERY</a></li>
-                                    <li><a>BASIC INFORMATION</a></li>
-                                    <li><a>FEES</a></li>
-                                    <li><a>CONTACT</a></li>
-                                    <li><a>REVIEWS</a></li>
+                                   {
+                                    bookmarkLinks.map(item=> (
+                                        <li key={item.id}>{isActive}<a className={isActive ? 'active':''} ref={linkRef} onClick={isLinkActive} href={`#${item.link}`}>{item.name}</a></li>
+                                    ))
+                                   }
                                 </ul>
                                 <div className="row">
                                     <div className="contentLeftWrapperslides  col-md-8">
@@ -358,48 +399,75 @@ const DeatailsSchoolComponent = () => {
                                         </div>
                                         <div className="sliderContent" id="contact">
                                             <div className="sectionTitle SearchTitle">Contact Information</div>
-                                                <div className="sectionContent">
-                                                    <ul className="contactDetail">
-                                                        <li>
+                                            <div>
+                                                <ul>
+                                                    <div className="col-md-12 d-flex mb-3">
+                                                        <li className="col-md-1">
                                                             <a href="">
                                                                 <span className="icon">
                                                                     <FontAwesomeIcon icon={faEnvelope} style={{ "color": "green" }} />&nbsp;
                                                                 </span>
+                                                            </a>
+                                                        </li>
+                                                        <li className="col-md-11">
+                                                            <a href="">
                                                                 <span className="text">deekshacorp@gmail.com</span>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <span className="icon">
-                                                                <FontAwesomeIcon icon={faPhone} style={{ "color": "green" }} />&nbsp;
-                                                            </span>
+                                                    </div>
+                                                    <div className="col-md-12 d-flex mb-3">
+                                                        <li className="col-md-1">
                                                             <a href="">
-                                                                <button className="callmeBtn1 BB callmeBtnTransparent" id="callBtn">CALL</button>
+                                                                <span className="icon">
+                                                                    <FontAwesomeIcon icon={faPhone} style={{ "color": "green" }} />&nbsp;
+                                                                </span>
                                                             </a>
                                                         </li>
-                                                        <li>
-                                                            <span className="icon">
-                                                                <FontAwesomeIcon icon={faGlobe} style={{ "color": "green" }} />&nbsp;
-                                                            </span>
-                                                            <span><a href="" className="text"> https://www.deekshaschools.com/campus.html</a></span>
-                                                            
+                                                        <li className="col-md-11">
+                                                            <a href="">
+                                                                <button className="callmeBtn1 BB callmeBtnTransparent m-0">CALL</button>
+                                                            </a>
                                                         </li>
-                                                        <li>
-                                                            <span className="icon">
-                                                                <FontAwesomeIcon icon={faLocationDot} style={{ "color": "green" }} />&nbsp;
-                                                            </span>
-                                                            <span className="text">Plot No., 107, Lalitha Nagar, Adikmet, Hyderabad, Telangana, , Hyderabad, Telangana, 500044</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div className="iconFooter">
-                                                        <ul className="socialIconFooter">
-                                                            <li><a><FontAwesomeIcon icon={faFacebook} style={{ "color": "#34A853" }} /></a></li>
-                                                            <li><a><FontAwesomeIcon icon={faTwitter} style={{ "color": "#34A853" }} /></a></li>
-                                                            <li><a><FontAwesomeIcon icon={faYoutube} style={{ "color": "#34A853" }} /></a></li>
-                                                            <li><a><FontAwesomeIcon icon={faLinkedin} style={{ "color": "#34A853" }} /></a></li>
-                                                            <li><a><FontAwesomeIcon icon={faInstagram} style={{ "color": "#34A853" }} /></a></li>
-                                                        </ul>
                                                     </div>
+                                                    <div className="col-md-12 d-flex mb-3">
+                                                        <li className="col-md-1">
+                                                            <a href="">
+                                                                <span className="icon">
+                                                                    <FontAwesomeIcon icon={faGlobe} style={{ "color": "green" }} />&nbsp;
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li className="col-md-11">
+                                                            <a href="" style={{ "color": "rgba(0,0,0,0.7)", "flexWrap": "wrap", "fontSize": "14px" }}>
+                                                                https://www.deekshaschools.com/campus1.html
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div className="col-md-12 d-flex mb-3">
+                                                        <li className="col-md-1">
+                                                            <a href="">
+                                                                <span className="icon">
+                                                                    <FontAwesomeIcon icon={faLocationDot} style={{ "color": "green" }} />&nbsp;
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li className="col-md-11">
+                                                            <a href="">
+                                                                <span className="text">Plot No., 107, Lalitha Nagar, Adikmet, Hyderabad, Telangana, , Hyderabad, Telangana, 500044</span>
+                                                            </a>
+                                                        </li>
+                                                    </div>
+                                                    <div className="iconFooter" >
+                                                    <ul className="socialIconFooter d-flex">
+                                                        <li><a><FontAwesomeIcon icon={faFacebook} style={{ "color": "#34A853" }} /></a></li>
+                                                        <li><a><FontAwesomeIcon icon={faTwitter} style={{ "color": "#34A853" }} /></a></li>
+                                                        <li><a><FontAwesomeIcon icon={faYoutube} style={{ "color": "#34A853" }} /></a></li>
+                                                        <li><a><FontAwesomeIcon icon={faLinkedin} style={{ "color": "#34A853" }} /></a></li>
+                                                        <li><a><FontAwesomeIcon icon={faInstagram} style={{ "color": "#34A853" }} /></a></li>
+                                                    </ul>
                                                 </div>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
