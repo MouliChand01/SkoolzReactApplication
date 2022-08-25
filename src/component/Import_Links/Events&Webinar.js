@@ -8,7 +8,7 @@ import './Events&Webinar.css'
 const Events_WebinarComponent = () => {
     return (
         <div>
-            {console.log(EventsAndWebinar)}
+            {/* {console.log(EventsAndWebinar)} */}
             <HeaderComponent />
             <br /><br /><br /><br /><br />
             <div className="eventsAndWebinar baseContainer">
@@ -16,14 +16,13 @@ const Events_WebinarComponent = () => {
                     <div className="col-lg-12 col-md-12 mb-3">
                         <div className="headerPart my-4">
                             <h1>Events/Webinar/Workshop</h1>
-                        </div>
-                        
+                        </div>                      
                     </div>
                     <div className="row">
                     <div className="col-lg-9 col-md-12 col-sm-12 mb-3">
                     <div className="headLinks">
                             <span><a href="#">Home &nbsp;&gt;&nbsp;</a><a href="#">Events</a></span>
-                        </div>
+                    </div>
                     {
                         EventsAndWebinar.map((val, index) => (
                             <div className=" p-3">

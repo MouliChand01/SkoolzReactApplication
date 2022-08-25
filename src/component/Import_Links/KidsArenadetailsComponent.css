@@ -1,0 +1,36 @@
+ul{
+    padding: 0;
+}
+.KidsArenadetails .QuicklinksListOne .QuicklinksButtonGroup,
+.KidsArenadetails .QuicklinksListTwo .QuicklinksButtonGroup {
+    list-style: none;
+}
+.KidsArenadetails .highlightText{
+    font-weight: 600;
+    font-size: 30px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    color: #FF6700;
+    font-family: MontserratSemiBold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+.KidsArenadetails .card{
+    text-align: left;
+}
+.KidsArenadetails .card .eventTitle{
+    font-weight:1000;
+}
+.KidsArenadetails .card .eventText{
+    text-align: justify;
+}
+
+.KidsArenadetails .studentdetails .card{
+    background-color:#f7f7f7 ;
+}
+.KidsArenadetails .headLinks{
+    text-align: left;
+}
+
+
+

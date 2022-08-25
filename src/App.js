@@ -2,6 +2,12 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 import FooterComponent from './component/Footer/Footer';
 import Testimonials from './component/Testimonials/Testimonials';
 import AwardsAndRecognitions from './component/AwardsAndRecognitions/AwardsAndRecognitions';
@@ -14,31 +20,40 @@ import SearchSchools from './component/SearchSchools/SearchSchools';
 import DeatailsSchoolComponent from './component/DetailsSchoolComponent/DetailsSchoolComponent';
 import About_usComponent from './component/Import_Links/About_us_Skoolz';
 import Events_WebinarComponent from './component/Import_Links/Events&Webinar';
+import KidsArenaComponent from './component/Import_Links/Kids_Arena';
+import KidsArenadetailsComponent from './component/Import_Links/KidsArenadetailsComponent';
 // import 'swiper/css'
 // import 'swiper/css/navigation'
 // import 'swiper/css/thumbs'
 
 function App() {
   return (
+  <BrowserRouter>
     <div className="App">
-      {/* <HeaderComponent/>
-      <Homeimage/>
-      <Schools/>
-      <EvetsAndWeninars/>
-      <Blogs/>
-      <AwardsAndRecognitions/> 
-      <Testimonials/> 
-      <FooterComponent/>  */}
+      {/* 
+        <HeaderComponent/>
+        <Homeimage/>
+        <Schools/>
+        <EvetsAndWeninars/>
+        <Blogs/>
+        <AwardsAndRecognitions/> 
+        <Testimonials/> 
+        <FooterComponent/>  */}
 
-      {/* <SearchSchools/> */}
-
-      {/* <DeatailsSchoolComponent/> */}
+      {/* 
+         <SearchSchools/>
+         <DeatailsSchoolComponent/> */}
 
        {/* <About_usComponent/> */}
-
-       <Events_WebinarComponent/>
+       {/* <Events_WebinarComponent/> */}
+       
+       <Routes>
+        <Route path="/kids-arena" element={<KidsArenaComponent/>} />
+        <Route path="/kids-arena/:id" element={<KidsArenadetailsComponent /> } />
+       </Routes>
 
      </div>
+     </BrowserRouter>
   );
 }
 

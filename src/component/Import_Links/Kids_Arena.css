@@ -1,0 +1,53 @@
+.kidsArena .headLinks {
+    text-align: left;
+}
+
+.kidsArena .card {
+    text-align: left;
+}
+
+.kidsArena .card .eventDiscription {
+    text-align: justify;
+}
+
+.kidsArena .card .cardFooter {
+    margin-bottom: 0;
+}
+
+.kidsArena .headerPart h1 {
+    color: green;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.kidsArena .highlightText {
+    font-weight: 600;
+    font-size: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    color: #FF6700;
+    font-family: MontserratSemiBold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.kidsArena .kidsArenaRightSide {
+    text-align: left;
+}
+
+.kidsArena .kidsArenaRightSide h5 {
+    font-weight: 500;
+}
+
+.kidsArena .kidsArenaRightSide .recentLinks .recentImageLink {
+    height: 100px;
+    width: 80px;
+}
+.recentLinks a{
+    color: black !important;
+}
+.kidsArena .eventContent{
+    position: relative;
+    overflow: hidden;
+    height: calc(100% - 48px);
+}

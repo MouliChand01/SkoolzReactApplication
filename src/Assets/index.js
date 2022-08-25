@@ -315,3 +315,152 @@ export const EventsAndWebinar=[
         eventImageUrl:Event42
     }
 ]
+
+import KidsArena1 from '../Assets/Images/blog7.jpg'
+import KidsArena2 from '../Assets/Images/blog6.jpg'
+import KidsArena3 from '../Assets/Images/blog9.jpg'
+import KidsArenaStudent from '../Assets/Images/Smruthi.jpg'
+
+export const KidsArena=[
+    {
+        id:1,
+        eventTitle:"Who Invented The Bulb",
+        eventText:"Do you all know who invented the bulb? Well, it was, Thomas Edison. His teacher told him that he was stupid and could not do anything. So his mother started to teach him at home, till his mother was in enormous pain and went to the hospital. The doctors could not operate at night due to unavailability of light. This incident immensely saddened Thomas. So from that night, he tried many times to make a bulb but was always unsuccessful. Thomas Edison made 1,000 unsuccessful attempts in making a bulb.",
+        eventImageUrl:KidsArena1,
+        studentName:"Smruthi",
+        studentImg:KidsArenaStudent,
+        studentClass:"Class IV Student",
+        content:[{
+            contentHeader:"Who Invented The Bulb",
+            content:"Do you all know who invented the bulb? Well, it was, Thomas Edison. His teacher told him that he was stupid and could not do anything. So his mother started to teach him at home, till his mother was in enormous pain and went to the hospital. The doctors could not operate at night due to unavailability of light. This incident immensely saddened Thomas. So from that night, he tried many times to make a bulb but was always unsuccessful. Thomas Edison made 1,000 unsuccessful attempts in making a bulb."
+           },
+           {
+            contentHeader:" ",
+            content:"Once his laboratory caught a massive fire. He asked his son to get his mother and her friends so that they could see such fire never after. He calmly said all the rubbish were burnt and he would start everything fresh again."
+           },
+           {
+            contentHeader:" ",
+            content:"One fine day finally, he was successful in making a bulb. Thomas Edison had an arduous journey in creating a bulb. If he had not invented the bulb, we would have no light, so thanks from my side to Thomas. His attempts have also taught something, do you know what? Yes, it taught us to never give up. Share some old stories like these friends!"
+           },
+           {
+            contentHeader:" ",
+            content:"THANK YOU!!"
+           }
+        ]
+    },
+    {
+        id:2,
+        eventTitle:"The Famous Food of South India",
+        eventText:"The famous South Indian dishes in Karnataka are Mysore Masala Dosa, Chiroti, and the classic Bisi Bale Bath. There are many other South Indian states and delicious dishes too! But now, I am going to tell you all about Karnataka's famous South Indian food.",
+        eventImageUrl:KidsArena2,
+        studentName:"Smruthi",
+        studentImg:KidsArenaStudent,
+        studentClass:"Class IV Student",
+        content:[{
+            contentHeader:"The Famous Food Of South India",
+            content:"Hello everyone, today I am going to share some yummy South Indian dishes. So let's go"
+           },
+           {
+            contentHeader:" ",
+            content:"The famous South Indian dishes in Karnataka are Mysore Masala Dosa, Chiroti, and the classic Bisi Bale Bath. There are many other South Indian states and delicious dishes too! But now, I am going to tell you all about Karnataka's famous South Indian food."
+           },
+           {
+            contentHeader:"Masala Dosa",
+            content:"Is a variation of the famous South Indian food dosa, which has its origins in Tuluva Mangalorean cuisine of Karnataka. It is made from rice, lentils, potato, methi, and curry leaves, and served with chutneys and sambar and has potatoes in it, and it has carbohydrates, proteins, fats, a few vitamins and minerals. It is usually consumed as a quick snack or a part of any meal of the day. I like it. How about you all?"
+           },{
+            contentHeader:"Chiroti",
+            content:"It is mostly a delicacy served in Karnataka and Maharashtra. It is served with hot badam milk or regular milk with powdered sugar. It is served on many occasions and functions such as marriages. It contains carbohydrates and fats. I have not yet tasted it till now. But you can tell me how it is."
+           },
+           {
+            contentHeader:"Bisi Bale Bath",
+            content:"It is sometimes served with a mixture. It is prepared with cooked rice, dal, variety vegetables and spices. It is very nutritious and rich in carbohydrates, proteins, vitamins and minerals and little fat. It is very delicious when it is served hot with ghee and mixture. This dish is prepared in functions such as receptions and get-togethers. It is a lip-smacking delicacy."
+           },
+           {
+            contentHeader:" ",
+            content:"All these dishes are fantastic. Why don't you all also share some popular food of North, West, East and South India?"
+           },
+           {
+            contentHeader:" ",
+            content:"THANK YOU!!"
+           }
+        ]
+    },
+    {
+        id:3,
+        eventTitle:"Beauty Tips",
+        eventText:"Hey there everyone, today I am going share few beauty tips. So, now what are we waiting for, let's start. Firstly I am going to tell you about Natural Beauty tips.",
+        eventImageUrl:KidsArena3,
+        studentName:"Smruthi",
+        studentImg:KidsArenaStudent,
+        studentClass:"Class IV Student",
+        content:[{
+            contentHeader:"Beauty Tips",
+            content:"Hey there everyone, today I am going share few beauty tips. So, now what are we waiting for, let's start. Firstly I am going to tell you about Natural Beauty tips."
+           },
+           {
+            contentHeader:"Cucumber",
+            content:"Cucumber's anti-inflammatory effects help in reducing puffiness. The high water content, which is present in the cucumber also helps in hydrating skin. It acts as a coolant that decreases the flow of blood to the eyes. It also gives relief to tired eyes. Together they can soothe the skin around our eyes and take the edge of swelling."
+           },
+           {
+            contentHeader:"Papaya",
+            content:"Papaya helps to remove dead skin. The enzyme papain in papayas acts an intense exfoliator and helps to remove the dead skin cells, which can make our skin lighter and supple. Also, the abundance of beta-carotene with the plant compounds present in the papaya increase the skin to glow and complexion."
+           },{
+            contentHeader:"Gram Flour",
+            content:"Gram flour helps to reduce tan. Turmeric is a natural skin lightening and also as an antiseptic. To remove the tanned skin, we need to add half tablespoon of turmeric, two tablespoons of gram flour and come up with a thick paste by adding cold milk, rose water and apply and cold milk too."
+           },
+           {
+            contentHeader:"Tomato",
+            content:"Tomato control excess oil--Tomato pulp or the tomato juice will help to decrease oiliness in our skin and brightens the skin. It also cleanses and shrinks pores, but this humble fruit's superpower is preventing acne by unclogging pores."
+           },
+           {
+            contentHeader:"Aloevera Gel",
+            content:"Alovera Gel to remove pimples-- Alovera Gel is capable of removing the pimples on our face."
+           },
+           {
+            contentHeader:"Tea tree oil",
+            content:"Tea tree oil is a popular choice of treating acne as it is an anti-inflammatory and antimicrobial properties. It calms redness, swelling, and inflammation, and also can reduce acne scars and leave us with smooth and clear skin.So, everyone these were a few NATURAL Beauty tips, so now lets start with man made things used to beautify our skin."
+           },
+           {
+            contentHeader:"Eyeliner",
+            content:"Eyeliner is a thin stick with a soft tip at its top and also comes with some bottles, when we apply it, leaves a black mark on our eyes."
+           },
+           {
+            contentHeader:"Lipstick",
+            content:"Lipstick is colour at the top and has a bottle at the bottom. It is used to make our lips look beautiful. On applying, it leaves a. It is widespread, and many people use it. We even get lip gloss."
+           },
+           {
+            contentHeader:"Foundation",
+            content:"Foundation is a cream or a powder applied to the skin to create an even skin tone and cover flaws. Some foundations are also used to moisturize, as sunscreen, astringent or base layer for more complex cosmetics, it can even change the skin colour."
+           },
+           {
+            contentHeader:"Makeup Brushes",
+            content:"Make- up brushes are used to apply any powder to the skin. They come in different shapes, sizes and have different thickness."
+           },
+           {
+            contentHeader:"Creams",
+            content:"Creams are used to moist the skin and sometimes can change our skin tone as well. Sun creams protect us from harsh sunlight."
+           },
+           {
+            contentHeader:"Powder",
+            content:"Powder is used to brighten our skin and also to change our skin tone. It is also called as compact."
+           },
+           {
+            contentHeader:"Nailpolish",
+            content:"Nail polish is used to paint our nails."
+           },
+           {
+            contentHeader:"Eye Shadow",
+            content:"Eye shadow is a colourful or plain powder which is applied on our eyes to make them look beautiful."
+           },
+           {
+            contentHeader:" ",
+            content:"So, everyone, these were a few beauty tips from my side, now why don't you all also write a few lines on beauty?"
+           },
+           {
+            contentHeader:" ",
+            content:"THANK YOU!!"
+           }
+        ]
+    }
+]
+
