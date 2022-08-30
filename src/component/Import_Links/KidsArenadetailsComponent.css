@@ -31,6 +31,12 @@ ul{
 .KidsArenadetails .headLinks{
     text-align: left;
 }
+.KidsArenadetails .headLinks a{
+    color: black;
+}
+.KidsArenadetails .headLinks a:hover{
+    color:rgba(52, 168, 79, 1);
+}
 
 
 

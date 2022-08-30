@@ -22,15 +22,17 @@ import About_usComponent from './component/Import_Links/About_us_Skoolz';
 import Events_WebinarComponent from './component/Import_Links/Events&Webinar';
 import KidsArenaComponent from './component/Import_Links/Kids_Arena';
 import KidsArenadetailsComponent from './component/Import_Links/KidsArenadetailsComponent';
+import RegistrationKidsEvent from './component/Import_Links/RegistrationKidsEvent';
+import EventsWebinardetailsComponent from './component/Import_Links/EventsWebinardetailsComponent';
 // import 'swiper/css'
 // import 'swiper/css/navigation'
 // import 'swiper/css/thumbs'
 
 function App() {
   return (
-  <BrowserRouter>
-    <div className="App">
-      {/* 
+    <BrowserRouter>
+      <div className="App">
+        {/* 
         <HeaderComponent/>
         <Homeimage/>
         <Schools/>
@@ -40,20 +42,25 @@ function App() {
         <Testimonials/> 
         <FooterComponent/>  */}
 
-      {/* 
+        {/* 
          <SearchSchools/>
-         <DeatailsSchoolComponent/> */}
+         <DeatailsSchoolComponent/> 
 
-       {/* <About_usComponent/> */}
-       {/* <Events_WebinarComponent/> */}
+        {/* <About_usComponent/> */}
+
+        <Routes>
+          <Route path="/" element={<Events_WebinarComponent />} />
+          <Route path="/events-webnair" element={<EventsWebinardetailsComponent />} />
+
+          <Route path="/kids-arena" element={<KidsArenaComponent />} />
+          <Route path="/kids-arena/:id" element={<KidsArenadetailsComponent />} />
+        </Routes>
+
        
-       <Routes>
-        <Route path="/kids-arena" element={<KidsArenaComponent/>} />
-        <Route path="/kids-arena/:id" element={<KidsArenadetailsComponent /> } />
-       </Routes>
 
-     </div>
-     </BrowserRouter>
+
+      </div>
+    </BrowserRouter>
   );
 }
 

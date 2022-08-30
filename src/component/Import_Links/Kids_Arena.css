@@ -23,12 +23,15 @@
 .kidsArena .highlightText {
     font-weight: 600;
     font-size: 30px;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid #80808087 !important;
     color: #FF6700;
     font-family: MontserratSemiBold;
     padding-bottom: 10px;
     padding-top: 10px;
     text-align: center;
+}
+.kidsArena .card .cardImage{
+    height:100%;
 }
 
 .kidsArena .kidsArenaRightSide {
@@ -50,4 +53,21 @@
     position: relative;
     overflow: hidden;
     height: calc(100% - 48px);
+}
+.kidsArena .card .eventsLink a{
+    color: black !important;
+}
+.kidsArena .card .eventsLink a:hover{
+    color:rgba(52, 168, 79, 1) !important;
+}
+.kidsArena .cardcontainer {
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 5%) !important;
+    border: none !important;
+}
+
+.kidsArena .headLinks a{
+    color: black;
+}
+.kidsArena .headLinks a:hover{
+    color:rgba(52, 168, 79, 1);
 }

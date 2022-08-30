@@ -1,0 +1,38 @@
+ul{
+    padding: 0;
+}
+.EventsWebinardetails .QuicklinksListOne .QuicklinksButtonGroup,
+.EventsWebinardetails .QuicklinksListTwo .QuicklinksButtonGroup {
+    list-style: none;
+}
+.EventsWebinardetails .detailsContainer .card{
+    text-align: left;
+}
+.EventsWebinardetails .headLinks{
+    text-align: left;
+}
+.EventsWebinardetails .eventName{
+    color: #FF6700;
+    font-weight: 900;
+}
+.EventsWebinardetails .eventHeader{
+    color: #FF6700;
+}
+.EventsWebinardetails .QuicklinksListOne .highlightText,
+.EventsWebinardetails .QuicklinksListTwo .highlightText
+{
+    font-weight: 600;
+    font-size: 30px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    color: #FF6700;
+    font-family: MontserratSemiBold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+.EventsWebinardetails .headLinks a{
+    color: black;
+}
+.EventsWebinardetails .headLinks a:hover{
+    color:rgba(52, 168, 79, 1);
+}
