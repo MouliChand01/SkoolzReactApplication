@@ -5,17 +5,17 @@ ul{
 .EventsWebinardetails .QuicklinksListTwo .QuicklinksButtonGroup {
     list-style: none;
 }
-.EventsWebinardetails .detailsContainer .card{
-    text-align: left;
-}
+.EventsWebinardetails .detailsContainer .card,
 .EventsWebinardetails .headLinks{
     text-align: left;
 }
+
 .EventsWebinardetails .eventName{
     color: #FF6700;
     font-weight: 900;
 }
-.EventsWebinardetails .eventHeader{
+.EventsWebinardetails .card .eventHeader,
+.EventsWebinardetails .splcontent{
     color: #FF6700;
 }
 .EventsWebinardetails .QuicklinksListOne .highlightText,
