@@ -17,7 +17,7 @@ const EventsWebinardetailsComponent = () => {
     //     }
     // },[location.state.eventContentType]);
 
-    console.log(location);
+    // console.log(location);
 
     return (
         <div>
@@ -42,38 +42,66 @@ const EventsWebinardetailsComponent = () => {
                         <div className="col-lg-9 col-sm-12 col-md-12">
                             {eventType === "webinars" ? (
                                 <div className="card">
-                                    <div className="row">
-                                        <img
-                                            className="img-fluid"
-                                            src={location.state.eventImageUrl}
-                                        />
+                                <div className="row">
+                                    <img
+                                        className="img-fluid"
+                                        src={location.state.eventImageUrl}
+                                    />
+                                </div>
+                                <div className="row">
+                                    <div className="eventName m-2">
+                                        <strong>
+                                            <h1>{location.state.eventName}</h1>
+                                        </strong>
                                     </div>
-                                    <div className="row">
-                                        <div className="eventName m-2">
-                                            <strong>
-                                                <h1>{location.state.eventName}</h1>
-                                            </strong>
-                                        </div>
-                                    </div>
-                                    {
-                                        location.state.content &&
-                                        location.state.content.map((val, index) => (
-                                            <div key={index} className="contantDataDis m-2">
-                                                {val.contentDis.map((val1, index1) => (
+                                </div>
+                                {
+                                    location.state.content &&
+                                    location.state.content.map((val) => (
+                                        <div className="contantDataDis m-2">
+                                            <div>
+                                                {val.datadis.map((val1) => (
+                                                    <p>{val1}</p>
+                                                ))}
+                                            </div>
+                                            <div>
+                                                {val.targetData.map((val2, index) => (
                                                     <div>
-                                                        <div>
-                                                            <h6><strong>{val1.header}</strong></h6>
+                                                        <h6><strong>{val2.header}</strong></h6>
+                                                        <p className="m-3">{val2.data}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            <div className="card Innercard m-3">
+                                                {val.speakercard.map((val4, index) => (
+                                                    <div className="row">
+                                                        <div className="col-lg-3 col-6 speakerimg">
+                                                            <img className="img-fluid" src={val4.speakerimg} />
                                                         </div>
-                                                        {val1.content.map((val2)=>
-                                                        <div>
-                                                            <p>{val2}</p>
-                                                        </div>)}
+                                                        <div className="col-lg-9 col-6 speakerdetails">
+                                                            <div>
+                                                                <h4>Speaker:</h4>
+                                                                <p><strong>{val4.speakerName}</strong></p>
+                                                                <p>{val4.speakerText}</p>
+                                                            </div>
+                                                        </div>
                                                     </div>
 
                                                 ))}
                                             </div>
-                                        ))}
-                                </div>
+                                            <div>
+                                                <h6><strong>Aboutspeaker :</strong></h6>
+                                                <div className="m-4">
+                                                    {val.Aboutspeaker.map((val3) => (
+                                                        <ul>
+                                                            <li>{val3}</li>
+                                                        </ul>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                            </div>
                             ) : (
                                 <div className="card">
                                     <div className="row">

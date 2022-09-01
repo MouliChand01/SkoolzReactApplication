@@ -144,7 +144,7 @@ const About_usComponent = () => {
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12">
                         <div className="card m-2">
-                            <div className="team-photo">
+                            <div className="team-photo m-2">
                                 <img src={leader2} />
                             </div>
                             <div className="team-description">

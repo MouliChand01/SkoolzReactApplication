@@ -47,7 +47,7 @@ const Testimonials = () => {
                                 <SwiperSlide className="swiper-slide indexBlogs">
                                     <div className="indexBlogs">
                                         <div className="row">
-                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn;" }}>
+                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animationName": "fadeIn;" }}>
                                                 <div>
                                                     <div className="card-body">
 
@@ -66,7 +66,7 @@ const Testimonials = () => {
                                 <SwiperSlide>
                                     <div className="indexBlogs">
                                         <div className="row">
-                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn;" }}>
+                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animationName": "fadeIn;" }}>
                                                 <div>
                                                     <div className="card-body">
                                                         <p className="card-text text-justify paddingP">
@@ -87,7 +87,7 @@ const Testimonials = () => {
                                 <SwiperSlide>
                                     <div className="indexBlogs">
                                         <div className="row">
-                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn;" }}>
+                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animationName": "fadeIn;" }}>
                                         
                                                     <div>
                                                         <div className="card-body">

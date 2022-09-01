@@ -3,6 +3,7 @@ import skoolzlogo from "../../Assets/Images/skoolz.PNG"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
 import "./Header.css"
+import { Link } from "react-router-dom";
 const HeaderComponent = ()=>{
     const [flag, setFlag] = useState("");
     const [display,setDisplay]=useState(false);
@@ -111,15 +112,15 @@ const HeaderComponent = ()=>{
                                     <div className="location-icon">
                                         <img src="~/skoolz/assets/img/icon/search_location.svg" alt="location" />
                                     </div>
-                                    <button type="submit" className="search-icon">
+                                    <Link to={'/home/search'} type="submit" className="search-icon" style={{"lineHeight":"37px"}}>
                                     <FontAwesomeIcon icon={faSearch}  style={{"color":"white"}}/>
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <nav className="navbar navbar-expand-lg schoolLoggedOutUser">
-                        <ul className="navbar-nav mr-auto">
+                        <ul className="navbar-nav mr-auto m-0">
                            
                             <li className="nav-item">
     

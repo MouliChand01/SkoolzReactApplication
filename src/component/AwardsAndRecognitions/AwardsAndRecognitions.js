@@ -71,7 +71,7 @@ const AwardsAndRecognitions = () => {
                                                                 <div className="boldTitle" style={{ "fontSize": "15px" }}>Skoolz founder Mr Srinivas received the award.</div>
 
                                                             </div>
-                                                            <ul style={{ "margin-bottom": "-50px" }}>
+                                                            <ul style={{ "marginBottom": "-50px" }}>
                                                                 <li>
                                                                     <div className="thumb"><img src={skoolzlogo} alt="skoolz" /></div>
                                                                 </li>
@@ -106,7 +106,7 @@ const AwardsAndRecognitions = () => {
                                                             <div>
                                                                 <div className="boldTitle" style={{ "fontSize": "15px" }}>Date of Recognition: <span>21st Oct 2021</span></div>
                                                             </div>
-                                                            <ul style={{ "margin-bottom": "-50px" }}>
+                                                            <ul style={{ "marginBottom": "-50px" }}>
                                                                 <li>
                                                                     <div className="thumb"><img src={skoolzlogo} alt="skoolz" /></div>
                                                                 </li>

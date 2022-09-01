@@ -45,6 +45,8 @@ import KidsArena2 from "../Assets/Images/blog6.jpg";
 import KidsArena3 from "../Assets/Images/blog9.jpg";
 import KidsArenaStudent from "../Assets/Images/Smruthi.jpg";
 
+import eventspeaker from '../Assets/Images/Basic-skillsto-nurture-Speaker (1).png'
+
 export const productsThumbs = [
   require("./Images/DeekshaSchool.jpg"),
   require("./Images/DeekshaSchool1.jpg"),
@@ -525,14 +527,13 @@ export const EventsAndWebinar = [
       "Insight into the types of Motor skills and cognitive development in Early childhood and methods to ensure ideal growth in these aspects.",
     eventImageUrl: Event42,
     eventContentType: "webinars",
-    content: [{
-      contentDis: [{
-        testdata: {
-          header: "",
-          content: ["Zero to Six are considered as the formative years. Parents need to take conscious initiatives to instill three crucial skills during this period that include Motor skills, Language & communication skills and Social & Emotional Skills.",
-            "The session focuses on the importance of formative years and a description of each of these skills and HOME-SCHOOLING approaches to nurture these skills in children and strengthen the cognition from early childhood.",
-            "The parents will get insight into types of motor skills and the importance of cognitive development in early childhood. The methods to ensure ideal growth in these aspects will also be discussed in detail. The session also covers Nutrition for children between the ages of 3-12 and how it plays a vital role in their overall development and addresses the nutrition demands on building immunity."]
-        },
+    content: [
+      {
+        datadis: [
+          "Zero to Six are considered as the formative years. Parents need to take conscious initiatives to instill three crucial skills during this period that include Motor skills, Language & communication skills and Social & Emotional Skills.",
+          "The session focuses on the importance of formative years and a description of each of these skills and HOME-SCHOOLING approaches to nurture these skills in children and strengthen the cognition from early childhood.",
+          "The parents will get insight into types of motor skills and the importance of cognitive development in early childhood. The methods to ensure ideal growth in these aspects will also be discussed in detail. The session also covers Nutrition for children between the ages of 3-12 and how it plays a vital role in their overall development and addresses the nutrition demands on building immunity.",
+        ],
         targetData: [{
           header: "TARGET AUDIENCE:",
           data: "Parents of children aged 1 to 3",
@@ -554,14 +555,22 @@ export const EventsAndWebinar = [
         {
           header: "MODE (ONLINE/OFFLINE):",
           data: "Online",
-        }]
-      }
-      ]
-    }]
+        },],
+        takeaWay: ["Child Growth Manual"],
+        speakercard: [
+          {
+            speakerimg: eventspeaker,
+            speakerName: "Kiran Sidde",
+            speakerText: "Founder, Edushrine Academic Services",
+          },
+        ],
+        Aboutspeaker: ["Edushrine Academic Services - Professional Coaching Institute for NTSE/ OLYMPIADS/NEET/JEE", "RITE - Regional Institute for Teenage Empowerment(#Self-Reliant Teenager)", "Parent-Child counseling and Career Guidance ", " Authored Amazon best seller Fiction Novel", " VIDYARTHI-BETAL - Contemporary tales for Parents , Teachers and Teens"]
+      },
+    ]
   },
 ];
 
-import eventspeaker from '../Assets/Images/Basic-skillsto-nurture-Speaker (1).png'
+
 export const KidsArena = [
   {
     id: 1,

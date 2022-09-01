@@ -15,17 +15,17 @@ const Homeimage =()=>{
                         <div className="row">
                             <div className="col-4 itemList">
                                 <div className="text-info rightBorder">3000+</div>
-                                <div className="itemListTitle rightBorder" style={{"word-break":"break-all"}}>Schools</div>
+                                <div className="itemListTitle rightBorder">Schools</div>
 
                             </div>
                             <div className="col-4 itemList">
                                 <div className="text-primary rightBorder">100+</div>
-                                <div className="itemListTitle rightBorder" style={{"word-break":"break-all"}}>Hobby Classes</div>
+                                <div className="itemListTitle rightBorder" >Hobby Classes</div>
 
                             </div>
                             <div className="col-4 itemList">
                                 <div className="text-success">Just Launched</div>
-                                <div className="itemListTitle" style={{"word-break":"break-all"}}>Tuition Classes</div>
+                                <div className="itemListTitle" >Tuition Classes</div>
 
                             </div>
                         </div>

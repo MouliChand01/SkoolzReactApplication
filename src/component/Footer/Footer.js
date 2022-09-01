@@ -4,6 +4,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebook,faTwitter,faLinkedin,faYoutube,faInstagram} from '@fortawesome/free-brands-svg-icons'
 import {faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons'
 import './Footer.css'
+import { Link } from "react-router-dom";
 const FooterComponent = () => {
     return (
         <div>
@@ -11,7 +12,7 @@ const FooterComponent = () => {
             <div className="joinOurNetwork">
                 <div className="joinOurNetworkText">
                     Call Us &nbsp;&#64;&nbsp; 7760755882 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OR
-                    <div className="callUsHomeButton"></div><button className="joinOurNetworkButton applyBtn joinOurNetworkButton callBackBtn" data-toggle="modal" data-backdrop="static" data-target="#ContactUsFormSchoolModal" style={{"padding-bottom":"50px"}}>Get a Call Back &nbsp; <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></button>
+                    <div className="callUsHomeButton"></div><button className="joinOurNetworkButton applyBtn joinOurNetworkButton callBackBtn" data-toggle="modal" data-backdrop="static" data-target="#ContactUsFormSchoolModal" style={{"paddingBottom":"50px"}}>Get a Call Back &nbsp; <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></button>
                 </div>
             </div>
             <br />
@@ -139,10 +140,10 @@ const FooterComponent = () => {
                             <li className="webFooterContent1Title">
                                 IMPORTANT LINKS
                             </li>
-                            <li><a href="https://www.skoolz.in/" asp-action="About">About Skoolz</a></li>
-                            <li><a href="https://www.skoolz.in/blog/index" asp-action="Blogs">Blogs</a></li>
-                            <li><a href="https://www.skoolz.in/events" asp-action="Events">Events / Webinar</a></li>
-                            <li><a href="https://www.skoolz.in/blog/kids" asp-action="Kids">Kids Arena</a></li>
+                            <li><Link to="/about-us">About Skoolz</Link></li>
+                            <li><Link to="/blogs">Blogs</Link></li>
+                            <li><Link to="/events-webinar">Events / Webinar</Link></li>
+                            <li><Link to="/kids-arena">Kids Arena</Link></li>
                         </ul>
                     </div>
                     <div className="col-md-4 webFooterCenter">

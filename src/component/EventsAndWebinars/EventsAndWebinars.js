@@ -52,7 +52,7 @@ const EvetsAndWeninars = () => {
                                 <SwiperSlide className="swiper-slide indexBlogs">
                                     <div className="indexBlogs">
                                         <div className="row">
-                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": " fadeIn" }}>
+                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animationName": " fadeIn" }}>
                                                 <div className="row no-gutters .ht-st">
                                                     <div className="col-lg-5">
                                                         <figure>
@@ -95,7 +95,7 @@ const EvetsAndWeninars = () => {
                                 <SwiperSlide className="swiper-slide indexBlogs">
                                     <div className="indexBlogs">
                                         <div className="row">
-                                            <article className="blog indexBlog fadeIn" style={{ "visibility": " visible", "animation-name": "fadeIn" }}>
+                                            <article className="blog indexBlog fadeIn" style={{ "visibility": " visible", "animationName": "fadeIn" }}>
                                                 <div className="row no-gutters .ht-st">
                                                     <div className="col-lg-5">
                                                         <figure>
@@ -138,7 +138,7 @@ const EvetsAndWeninars = () => {
                                 <SwiperSlide className="swiper-slide indexBlogs">
                                     <div className="indexBlogs">
                                         <div className="row">
-                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn" }}>
+                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animationName": "fadeIn" }}>
                                                 <div className="row no-gutters .ht-st">
                                                     <div className="col-lg-5">
                                                         <figure>
@@ -181,7 +181,7 @@ const EvetsAndWeninars = () => {
                                 <SwiperSlide className="swiper-slide indexBlogs">
                                     <div className="indexBlogs">
                                         <div className="row">
-                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn" }}>
+                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animationName": "fadeIn" }}>
                                                 <div className="row no-gutters .ht-st">
                                                     <div className="col-lg-5">
                                                         <figure>
@@ -224,7 +224,7 @@ const EvetsAndWeninars = () => {
                                 <SwiperSlide className="swiper-slide indexBlogs">
                                     <div className="indexBlogs">
                                         <div className="row">
-                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn" }}>
+                                            <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animationName": "fadeIn" }}>
                                                 <div className="row no-gutters .ht-st">
                                                     <div className="col-lg-5">
                                                         <figure>
@@ -267,7 +267,7 @@ const EvetsAndWeninars = () => {
                                 <SwiperSlide className="swiper-slide indexBlogs">
                                 <div className="indexBlogs">
                                 <div className="row">
-                                    <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animation-name": "fadeIn" }}>
+                                    <article className="blog indexBlog fadeIn" style={{ "visibility": "visible", "animationName": "fadeIn" }}>
                                         <div className="row no-gutters ht-st">
                                             <div className="col-lg-5">
                                                 <figure>
