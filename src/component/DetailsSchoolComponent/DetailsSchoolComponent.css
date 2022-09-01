@@ -28,7 +28,7 @@ ul {
 }
 
 .subTitle {
-    font-family: MontserratRegular;
+     ;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -156,14 +156,14 @@ ul {
     display: inline-block;
     font-size: 16px;
     line-height: 24px;
-    font-family: MontserratRegular;
+     ;
     color: rgba(0, 0, 0, .7);
 }
 
 .basicInfoSection li .titleBasic .subBasicTitle {
     font-size: 16px;
     line-height: 18px;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     display: block;
     font-weight: 600;
 }
@@ -257,7 +257,7 @@ a {
     font-size: 18px;
     line-height: 27px;
     color: rgba(0, 0, 0, .7);
-    font-family: MontserratRegular;
+     ;
     float: left;
     min-width: 126px;
 }
@@ -312,7 +312,7 @@ a {
     color: rgba(0, 0, 0, 0.7);
     font-size: 16px;
     line-height: 24px;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     width: calc(100% - 32px);
     padding-left: 15px;
     box-sizing: border-box;

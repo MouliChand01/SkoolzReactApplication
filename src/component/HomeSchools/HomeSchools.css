@@ -10,7 +10,7 @@
 .topSchoolSectionTitle {
     margin-top: 64px;
     margin-bottom: 47px;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     font-weight: 600;
     font-size: 36px;
     color: #012F4F;
@@ -34,7 +34,7 @@
     font-size: 22px;
     line-height: 28px;
     color: #ffffff;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     overflow: hidden;
     /* width: 100px;*/
     display: -webkit-box;
@@ -53,7 +53,7 @@
     color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
     line-height: 20px;
-    font-family: MontserratRegular;
+     ;
 }
 
 .sliderImage {
@@ -75,7 +75,7 @@
 
 .joinOurNetworkText {
     display: flex;
-    font-family: MontserratRegular;
+     ;
     font-size: 2.5rem;
     color: #ffffff;
     font-weight: 600;
@@ -85,7 +85,7 @@
 .joinOurNetworkButton {
     height: 54px;
     line-height: 54px;
-    font-family: MontserratRegular;
+     ;
     font-size: 18px;
     color: #ffffff;
     margin-left: 100px;
@@ -224,7 +224,7 @@
         padding-top: 5px;
         font-size: 16px;
         color: #ffffff;
-        font-family: MontserratSemiBold;
+         font-weight: 600;
     }
 
     .sliderCaptionSubTitle {
@@ -236,7 +236,7 @@
         color: rgba(255, 255, 255, 0.7);
         font-weight: 500;
         line-height: 20px;
-        font-family: MontserratRegular;
+         ;
     }
     
     .joinOurNetwork {
@@ -252,7 +252,7 @@
         margin: auto;
         width: 100%;
         display: block;
-        font-family: MontserratRegular;
+         ;
         font-size: 2.5rem;
         color: rgba(255, 255, 255, .8);
         font-weight: 600;
@@ -261,7 +261,7 @@
     .joinOurNetworkButton {
         margin: auto;
         width: 60%;
-        font-family: MontserratRegular;
+         ;
         font-size: 25px;
         color: #ffffff;
         margin-left: 10%;

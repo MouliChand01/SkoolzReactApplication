@@ -1,5 +1,5 @@
 /* @font-face {
-    font-family: 'MontserratRegular';
+     ;
     src: local('Mont'), url(./fonts/Montserrat-Regular.ttf) format('truetype');
 }
 
@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: MontserratRegular !important;
+      !important;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -89,7 +89,7 @@ body {
 
 .schoolMainHome .swiper-container-blogs h1 {
     font-size: 20px;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     text-align: left;
     padding-top: 16px;
 }
@@ -97,7 +97,7 @@ body {
 .schoolMainHome .swiper-container-blogs p {
     font-size: 16px;
     color: rgba(0, 0, 0, .8);
-    font-family: MontserratRegular;
+     ;
     text-align: left;
     margin-top: 20px;
     padding-right: 10px;
@@ -189,7 +189,7 @@ body {
 .topSchoolSectionTitle {
     margin-top: 64px;
     margin-bottom: 47px;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     font-weight: 600;
     font-size: 36px;
     color: #012F4F;
@@ -314,7 +314,7 @@ article.blog .post_info small {
 article.blog .post_info p {
     font-size: 14px;
     color: rgba(0, 0, 0, .6);
-    font-family: MontserratRegular;
+     ;
     text-align: justify;
 }
 
@@ -324,7 +324,7 @@ article.blog .post_info h3 {
 
 article.blog .post_info h3 a {
     color: #0a0a0a;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     text-decoration: none;
 }
 

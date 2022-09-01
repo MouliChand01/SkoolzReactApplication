@@ -21,7 +21,7 @@
 .schoolMainHome .swiper-container-ev1 p {
     font-size: 16px;
     color: rgba(0, 0, 0, .8);
-    font-family: MontserratRegular;
+     ;
     text-align: left;
     margin-top: 20px;
     padding-right: 10px;
@@ -94,7 +94,7 @@
 .topSchoolSectionTitleawards {
     margin-top: 64px;
     margin-bottom: 47px;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     font-weight: 600;
     font-size: 36px;
     color: #012F4F;

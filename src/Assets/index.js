@@ -60,24 +60,24 @@ export const EventsAndWebinar = [
       "The arts such as dance, music, and painting enrich the essence of our nation. Painting has not been far behind dance and music as elements of our culture over the years.",
     eventImageUrl: Event1,
     content: [{
-      contentDis:[
+      contentDis: [
         {
-          header:" ",
-          content:["The arts such as dance, music, and painting enrich the essence of our nation.","Painting has not been far behind dance and music as elements of our culture over the years","Painting many aspects of Indian culture, history, and heritage has helped many painters establish themselves. Dancers have frequently been brought to life on canvas by both novice and seasoned artists.","Debabrata Pal, at the extremely young age of 25 has accomplished what most others can only imagine. He is a master at adding life and colors to his storytelling."]
-        },
-        // {
-        //   splcontent:["Children will participate in an interactive zoom meeting with Debabrata Pal."]
-        // },
-        {
-          header:"About the guest speaker:   ",
-          content:["Debabrata Pal is a renowned Visual Storyteller, Canvas Dancer, Handloom Designer, theatre actor and Odissi Dancer who has been recognised as one of the 50 Top Young Artistes of India. Recently received Rastriya Kala Snaman for his unique style work by Government of India.","He has had the privileged to share the stage with Padma Vibhushan Guru Sonal Manshing, Padmashree Smt. Hema Malini, Padmashree Guru Ileana Chirtist, Padmashree Dr. Pt. Puru Dadheech, Padmashree Kailash Kher, recently share stage with legend actor Amitabh Bachchan, Padmashri Usha Uttap, performance at Jodhpur Palace & many other renowned artists.He has had the privileged to share the stage with Padma Vibhushan Guru Sonal Manshing, Padmashree Smt. Hema Malini, Padmashree Guru Ileana Chirtist, Padmashree Dr. Pt. Puru Dadheech, Padmashree Kailash Kher, recently share stage with legend actor Amitabh Bachchan, Padmashri Usha Uttap, performance at Jodhpur Palace & many other renowned artists.","He has performed on many stages across India, and has presented his talk regarding 'Fine Art in Natyasastra' at various universities and institutions across India, USA, London"]
+          header: " ",
+          content: ["The arts such as dance, music, and painting enrich the essence of our nation.", "Painting has not been far behind dance and music as elements of our culture over the years", "Painting many aspects of Indian culture, history, and heritage has helped many painters establish themselves. Dancers have frequently been brought to life on canvas by both novice and seasoned artists.", "Debabrata Pal, at the extremely young age of 25 has accomplished what most others can only imagine. He is a master at adding life and colors to his storytelling."]
         },
         {
-          header:"About the Host: ",
-          content:["Debabrata Pal is a renowned Visual Storyteller, Canvas Dancer, Handloom Designer, theatre actor and Odissi Dancer who has been recognised as one of the 50 Top Young Artistes of India. Recently received Rastriya Kala Snaman for his unique style work by Government of India.","He has had the privileged to share the stage with Padma Vibhushan Guru Sonal Manshing, Padmashree Smt. Hema Malini, Padmashree Guru Ileana Chirtist, Padmashree Dr. Pt. Puru Dadheech, Padmashree Kailash Kher, recently share stage with legend actor Amitabh Bachchan, Padmashri Usha Uttap, performance,"]
+          splcontent: ["Children will participate in an interactive zoom meeting with Debabrata Pal."]
+        },
+        {
+          header: "About the guest speaker:   ",
+          content: ["Debabrata Pal is a renowned Visual Storyteller, Canvas Dancer, Handloom Designer, theatre actor and Odissi Dancer who has been recognised as one of the 50 Top Young Artistes of India. Recently received Rastriya Kala Snaman for his unique style work by Government of India.", "He has had the privileged to share the stage with Padma Vibhushan Guru Sonal Manshing, Padmashree Smt. Hema Malini, Padmashree Guru Ileana Chirtist, Padmashree Dr. Pt. Puru Dadheech, Padmashree Kailash Kher, recently share stage with legend actor Amitabh Bachchan, Padmashri Usha Uttap, performance at Jodhpur Palace & many other renowned artists.He has had the privileged to share the stage with Padma Vibhushan Guru Sonal Manshing, Padmashree Smt. Hema Malini, Padmashree Guru Ileana Chirtist, Padmashree Dr. Pt. Puru Dadheech, Padmashree Kailash Kher, recently share stage with legend actor Amitabh Bachchan, Padmashri Usha Uttap, performance at Jodhpur Palace & many other renowned artists.", "He has performed on many stages across India, and has presented his talk regarding 'Fine Art in Natyasastra' at various universities and institutions across India, USA, London"]
+        },
+        {
+          header: "About the Host: ",
+          content: ["Debabrata Pal is a renowned Visual Storyteller, Canvas Dancer, Handloom Designer, theatre actor and Odissi Dancer who has been recognised as one of the 50 Top Young Artistes of India. Recently received Rastriya Kala Snaman for his unique style work by Government of India.", "He has had the privileged to share the stage with Padma Vibhushan Guru Sonal Manshing, Padmashree Smt. Hema Malini, Padmashree Guru Ileana Chirtist, Padmashree Dr. Pt. Puru Dadheech, Padmashree Kailash Kher, recently share stage with legend actor Amitabh Bachchan, Padmashri Usha Uttap, performance,"]
         }
       ]
-    }]    
+    }]
   },
   {
     id: 2,
@@ -86,17 +86,17 @@ export const EventsAndWebinar = [
       "Lal Bahadur Shastri was an Indian statesman who served as the second prime minister of India. He devoted himself to the struggle for freedom with feverish energy.",
     eventImageUrl: Event2,
     content: [{
-      contentDis:[
+      contentDis: [
         {
-          header:" ",
-          content:["Lal Bahadur Shastri was an Indian statesman who served as the second prime minister of India. He devoted himself to the struggle for freedom with feverish energy. He led many defiant campaigns and played a constructive role in the country's development.","Let's remember him who served Bharat Mata his entire life.","This weekend let Mrs. Kalpana Mohan guide you as you pay your respects to this great freedom fighter.","Mrs. Kalpana Mohan brings stories of our heritage alive, children’s imagination will soar, and their understanding of the world will expand in a fun, engaging way.","Don’t miss out on this FREE exclusive Sunday Story Time"]
+          header: " ",
+          content: ["Lal Bahadur Shastri was an Indian statesman who served as the second prime minister of India. He devoted himself to the struggle for freedom with feverish energy. He led many defiant campaigns and played a constructive role in the country's development.", "Let's remember him who served Bharat Mata his entire life.", "This weekend let Mrs. Kalpana Mohan guide you as you pay your respects to this great freedom fighter.", "Mrs. Kalpana Mohan brings stories of our heritage alive, children’s imagination will soar, and their understanding of the world will expand in a fun, engaging way.", "Don’t miss out on this FREE exclusive Sunday Story Time"]
         },
-        // {
-        //   splcontent:["Children will participate in an interactive zoom meeting with Mrs. Kalpana Mohan, where she will bring the stories to life."]
-        // },
         {
-          header:"About the guest speaker:   ",
-          content:["Mrs. Kalpana Mohan, an Educationist and Academic Consultant, is a teacher by profession","hailing from Bangalore, India with 35 years of teaching and administrative experience to go with.","She served as the Principal of Vidyashilp Academy, for over 18 years."]
+          splcontent: ["Children will participate in an interactive zoom meeting with Mrs. Kalpana Mohan, where she will bring the stories to life."]
+        },
+        {
+          header: "About the guest speaker:   ",
+          content: ["Mrs. Kalpana Mohan, an Educationist and Academic Consultant, is a teacher by profession", "hailing from Bangalore, India with 35 years of teaching and administrative experience to go with.", "She served as the Principal of Vidyashilp Academy, for over 18 years."]
         }
       ]
     }]
@@ -108,24 +108,24 @@ export const EventsAndWebinar = [
       "On this Independence Day, let's remember Netaji Subhash Chandra Bose, one of the most iconic leaders of all time.",
     eventImageUrl: Event3,
     content: [{
-      contentDis:[
-        // {
-        //   splcontent:[" “Freedom is not given, it is taken” "]
-        // },
+      contentDis: [
         {
-          header:" ",
-          content:["On this Independence Day, let's remember Netaji Subhash Chandra Bose, one of the most iconic leaders of all time. He not only played a huge role in India's freedom struggle with the British but whose patriotism and ideologies inspired generations after him.","He is also known for establishing the Azad Hind Fauj and took over the leadership of the Azad Hind Fauj during World War II.","Not only was the first government of independent Bharat formed under his leadership, but the Azad Hind Fauj also succeeded in liberating some parts of Northeast Bharat.","Spend a day with your child learning about the freedom fighter, Netaji Subhash Chandra Bose with our guest Col. Rajmeet Singh YSM & Brigadier (retired) RS Chikara on 15th August 2022.","Children will participate in an interactive zoom meeting with Col. Rajmeet Singh YSM and Brigadier (retired) RS Chikara."]
+          splcontent: [" “Freedom is not given, it is taken” "]
         },
         {
-          header:"About the guest speaker:   ",
-          content:["Col. Rajmeet Singh YSM , is a 4th Generation Officer and a proud veteran. He was awarded the coveted Yudh Sewa Medal in 2017 & has five Commendations to his credit. He has trained with the FBI, GSG9, GIGN & state police special teams while serving with the elite National Security Guard in Counter Terrorism, Counter Hijack, VIP Security & Sky Marshalling Operations . He has served with the Assam Rifles in Nagaland & Manipur and commanded the 1st RR, the oldest Rashtriya Rifles Batallion in Kashmir.","An avid photographer, aspiring chef and an active randonneur, who enjoys riding every day.","Brigadier (retired) RS Chikara, Vice President INA Trust."]
+          header: " ",
+          content: ["On this Independence Day, let's remember Netaji Subhash Chandra Bose, one of the most iconic leaders of all time. He not only played a huge role in India's freedom struggle with the British but whose patriotism and ideologies inspired generations after him.", "He is also known for establishing the Azad Hind Fauj and took over the leadership of the Azad Hind Fauj during World War II.", "Not only was the first government of independent Bharat formed under his leadership, but the Azad Hind Fauj also succeeded in liberating some parts of Northeast Bharat.", "Spend a day with your child learning about the freedom fighter, Netaji Subhash Chandra Bose with our guest Col. Rajmeet Singh YSM & Brigadier (retired) RS Chikara on 15th August 2022.", "Children will participate in an interactive zoom meeting with Col. Rajmeet Singh YSM and Brigadier (retired) RS Chikara."]
         },
         {
-          header:"About the Host: ",
-          content:["Mrs. Nidhi Kumar, Director Media Management, Skoolz & Celebrity show host on India’s public broadcaster DD NEWS and DD NATIONAL, Ministry of Science and Technology , Media lead and mbassador for Mitron App and Advisory board. Media Red Carpet entertainers, Trustee Netaji. She has spearheaded many environmental projects and is a motivational speaker for young Indians."]
+          header: "About the guest speaker:   ",
+          content: ["Col. Rajmeet Singh YSM , is a 4th Generation Officer and a proud veteran. He was awarded the coveted Yudh Sewa Medal in 2017 & has five Commendations to his credit. He has trained with the FBI, GSG9, GIGN & state police special teams while serving with the elite National Security Guard in Counter Terrorism, Counter Hijack, VIP Security & Sky Marshalling Operations . He has served with the Assam Rifles in Nagaland & Manipur and commanded the 1st RR, the oldest Rashtriya Rifles Batallion in Kashmir.", "An avid photographer, aspiring chef and an active randonneur, who enjoys riding every day.", "Brigadier (retired) RS Chikara, Vice President INA Trust."]
+        },
+        {
+          header: "About the Host: ",
+          content: ["Mrs. Nidhi Kumar, Director Media Management, Skoolz & Celebrity show host on India’s public broadcaster DD NEWS and DD NATIONAL, Ministry of Science and Technology , Media lead and mbassador for Mitron App and Advisory board. Media Red Carpet entertainers, Trustee Netaji. She has spearheaded many environmental projects and is a motivational speaker for young Indians."]
         }
       ]
-    }]   
+    }]
   },
   {
     id: 4,
@@ -141,21 +141,21 @@ export const EventsAndWebinar = [
       "In terms of mental and physical challenges, mountaineers must maintain a constant focus, be determined, and be able to overcome failure.",
     eventImageUrl: Event5,
     content: [{
-      contentDis:[
+      contentDis: [
         {
-          header:" ",
-          content:["In terms of mental and physical challenges, mountaineers must maintain a constant focus, be determined, and be able to overcome failure.","Enrol your kids to enjoy the adventure ride with our special guest, Ms. Sangeeta S Bahl, who will enlighten them on endurance, resilience, mental strength, and stability during mountain climbing.","Spend a day with your child learning how mountain climbing helps in building endurance, resilience, mental strength, and stability with our guest Ms. Sangeeta S Bahl on 14th Aug 2022."]
-        },
-        // {
-        //   splcontent:[" Children will participate in an interactive zoom meeting with Ms. Sangeeta S Bahl. "]
-        // },
-        {
-          header:"About the guest speaker:   ",
-          content:["Sangeeta S Bahl, hailing from the Indian state of Jammu and Kashmir who scaled the world’s tallest mountain peak Mount Everest in May, 2018 and became the oldest Indian woman to have scaled the world’s tallest peak at the age of 53. Also, a former Miss India finalist, Everester, Entrepreneur, Author, Vegan Humanitarian at IMPACT IMAGE CONSULTANTS Opc Pvt Ltd, Impact Mountaineering and Impact Women Power Association."]
+          header: " ",
+          content: ["In terms of mental and physical challenges, mountaineers must maintain a constant focus, be determined, and be able to overcome failure.", "Enrol your kids to enjoy the adventure ride with our special guest, Ms. Sangeeta S Bahl, who will enlighten them on endurance, resilience, mental strength, and stability during mountain climbing.", "Spend a day with your child learning how mountain climbing helps in building endurance, resilience, mental strength, and stability with our guest Ms. Sangeeta S Bahl on 14th Aug 2022."]
         },
         {
-          header:"About the Host: ",
-          content:["Ms. Nidhi Kumar,","Director Media Management, Skoolz & Celebrity show host on India’s public broadcaster DD NEWS and DD NATIONAL, Ministry of Science and Technology, Media lead and ambassador for Mitron App and Advisory board. Media Red Carpet entertainers, Trustee Netaji. She has spearheaded many environmental projects and is a motivational speaker for young Indians."]
+          splcontent: [" Children will participate in an interactive zoom meeting with Ms. Sangeeta S Bahl. "]
+        },
+        {
+          header: "About the guest speaker:   ",
+          content: ["Sangeeta S Bahl, hailing from the Indian state of Jammu and Kashmir who scaled the world’s tallest mountain peak Mount Everest in May, 2018 and became the oldest Indian woman to have scaled the world’s tallest peak at the age of 53. Also, a former Miss India finalist, Everester, Entrepreneur, Author, Vegan Humanitarian at IMPACT IMAGE CONSULTANTS Opc Pvt Ltd, Impact Mountaineering and Impact Women Power Association."]
+        },
+        {
+          header: "About the Host: ",
+          content: ["Ms. Nidhi Kumar,", "Director Media Management, Skoolz & Celebrity show host on India’s public broadcaster DD NEWS and DD NATIONAL, Ministry of Science and Technology, Media lead and ambassador for Mitron App and Advisory board. Media Red Carpet entertainers, Trustee Netaji. She has spearheaded many environmental projects and is a motivational speaker for young Indians."]
         }
       ]
     }]
@@ -167,21 +167,21 @@ export const EventsAndWebinar = [
       "Cultural values can significantly influence education and social change. Education imparts the cultural values necessary to live together successfully. Culture can change society's personality & for kids to achieve harmony and peace in the future, they need to develop a strong personality.",
     eventImageUrl: Event6,
     content: [{
-      contentDis:[
+      contentDis: [
         {
-          header:" ",
-          content:["Cultural values can significantly influence education and social change. Education imparts the cultural values necessary to live together successfully. Culture can change society's personality & for kids to achieve harmony and peace in the future, they need to develop a strong personality.","Spend a day with your child learning how Strong Culture ensures a Progressive Society with our guest Maj. Rakesh Sharma, Shaurya Chakra (retd) on 7th Aug 2022."]
-        },
-        // {
-        //   splcontent:["Children will participate in an interactive zoom meeting with Maj. Rakesh Sharma, Shaurya Chakra (retd)."]
-        // },
-        {
-          header:"About the guest speaker:   ",
-          content:["Maj Rakesh Sharma got enrolled in Indian Army in 1995. He actively participated in Operation Vijay (Kargil war) in 1999. Besides earning 'Shaurya Chakra' he has also earned Operation Vijay Star (1999), Operation Vijay Medal (1999), Operation Rakshak (2000), Operation Prakaram (2001).","Besides, he has been a prominent guest speaker and an invitee to many educational institutes and organizations like DPS, Atul School, MIT, GMR to name a few.","He has also been a prominent panellist in many Industry and academia seminars and webinars. He carries a rich experience in working in various domains like Telecom, Construction. Have created trained and led many successful teams of various levels."]
+          header: " ",
+          content: ["Cultural values can significantly influence education and social change. Education imparts the cultural values necessary to live together successfully. Culture can change society's personality & for kids to achieve harmony and peace in the future, they need to develop a strong personality.", "Spend a day with your child learning how Strong Culture ensures a Progressive Society with our guest Maj. Rakesh Sharma, Shaurya Chakra (retd) on 7th Aug 2022."]
         },
         {
-          header:"About the Host: ",
-          content:["Ms. Nidhi Kumar,","Director Media Management, Skoolz & Celebrity show host on India’s public broadcaster DD NEWS and DD NATIONAL, Ministry of Science and Technology, Media lead and ambassador for Mitron App and Advisory board. Media Red Carpet entertainers, Trustee Netaji. She has spearheaded many environmental projects and is a motivational speaker for young Indians."]
+          splcontent: ["Children will participate in an interactive zoom meeting with Maj. Rakesh Sharma, Shaurya Chakra (retd)."]
+        },
+        {
+          header: "About the guest speaker:   ",
+          content: ["Maj Rakesh Sharma got enrolled in Indian Army in 1995. He actively participated in Operation Vijay (Kargil war) in 1999. Besides earning 'Shaurya Chakra' he has also earned Operation Vijay Star (1999), Operation Vijay Medal (1999), Operation Rakshak (2000), Operation Prakaram (2001).", "Besides, he has been a prominent guest speaker and an invitee to many educational institutes and organizations like DPS, Atul School, MIT, GMR to name a few.", "He has also been a prominent panellist in many Industry and academia seminars and webinars. He carries a rich experience in working in various domains like Telecom, Construction. Have created trained and led many successful teams of various levels."]
+        },
+        {
+          header: "About the Host: ",
+          content: ["Ms. Nidhi Kumar,", "Director Media Management, Skoolz & Celebrity show host on India’s public broadcaster DD NEWS and DD NATIONAL, Ministry of Science and Technology, Media lead and ambassador for Mitron App and Advisory board. Media Red Carpet entertainers, Trustee Netaji. She has spearheaded many environmental projects and is a motivational speaker for young Indians."]
         }
       ]
     }]
@@ -193,24 +193,24 @@ export const EventsAndWebinar = [
       "Chhatrapati Shivaji Maharaj, the greatest ruler of India of all time, was a Maratha warrior who defied the Mughals and is now a symbol of Hindu pride.",
     eventImageUrl: Event7,
     content: [{
-      contentDis:[
+      contentDis: [
         {
-          header:" ",
-          content:["Chhatrapati Shivaji Maharaj, the greatest ruler of India of all time, was a Maratha warrior who defied the Mughals and is now a symbol of Hindu pride.","He founded the Hindu Kingdom against all odds fighting the mighty Moghuls thus teaching us to be brave and face the toughest of challenges. He always thought ahead of time and was true visionary. His moral virtues were exceptionally high.","Mrs. Kalpana Mohan brings stories of our heritage alive, children’s imagination will soar, and their understanding of the world will expand in a fun, engaging way.","Don’t miss out on this free exclusive Sunday Story Time."]
+          header: " ",
+          content: ["Chhatrapati Shivaji Maharaj, the greatest ruler of India of all time, was a Maratha warrior who defied the Mughals and is now a symbol of Hindu pride.", "He founded the Hindu Kingdom against all odds fighting the mighty Moghuls thus teaching us to be brave and face the toughest of challenges. He always thought ahead of time and was true visionary. His moral virtues were exceptionally high.", "Mrs. Kalpana Mohan brings stories of our heritage alive, children’s imagination will soar, and their understanding of the world will expand in a fun, engaging way.", "Don’t miss out on this free exclusive Sunday Story Time."]
         },
-        // {
-        //   splcontent:["Children will participate in an interactive zoom meeting with Mrs. Kalpana Mohan.where she will bring the stories to life."]
-        // },
         {
-          header:"About the guest speaker:   ",
-          content:["Mrs. Kalpana Mohan, an Educationist and Academic Consultant, is a teacher by profession hailing from Bangalore, India, with 35 years of teaching and administrative experience to go with. She served as the Principal of Vidyashilp Academy for over 18 years.","Age limit:3 Years to 8 Years. "]
+          splcontent: ["Children will participate in an interactive zoom meeting with Mrs. Kalpana Mohan.where she will bring the stories to life."]
         },
-        // {
-        //   splcontent:["Register Today for Free Zoom Meeting"]
-        // },
         {
-          header:" ",
-          content:["Date & Day: 31st July 2022, Sunday ","Time: 10:00 AM – 10:45 AM","Please WhatsApp on 9742974283 for any clarifications and concerns.","Regards,","Team Skoolz."]
+          header: "About the guest speaker:   ",
+          content: ["Mrs. Kalpana Mohan, an Educationist and Academic Consultant, is a teacher by profession hailing from Bangalore, India, with 35 years of teaching and administrative experience to go with. She served as the Principal of Vidyashilp Academy for over 18 years.", "Age limit:3 Years to 8 Years. "]
+        },
+        {
+          splcontent: ["Register Today for Free Zoom Meeting"]
+        },
+        {
+          header: " ",
+          content: ["Date & Day: 31st July 2022, Sunday ", "Time: 10:00 AM – 10:45 AM", "Please WhatsApp on 9742974283 for any clarifications and concerns.", "Regards,", "Team Skoolz."]
         }
       ]
     }]
@@ -222,21 +222,21 @@ export const EventsAndWebinar = [
       "It would be best if you did not hesitate to invest in quality self-defence classes. These will give your children physical and mental strength, confidence, and self-control. It also improves posture, teaches responsibility, and gives you a better sense of self.",
     eventImageUrl: Event8,
     content: [{
-      contentDis:[
+      contentDis: [
         {
-          header:" ",
-          content:['"Physically fit and mentally strong kids will build a better society."',"It would be best if you did not hesitate to invest in quality self-defence classes. These will give your children physical and mental strength, confidence, and self-control. It also improves posture, teaches responsibility, and gives you a better sense of self.","Take advantage of this fantastic opportunity to learn self-defence and martial arts with Ms. Kiran Uniyal this Sunday."]
-        },
-        // {
-        //   splcontent:["Every session will be different and interactive. So don't miss out on this free exclusive Fish Tank session."]
-        // },
-        {
-          header:"About the guest speaker:   ",
-          content:["Ms. Kiran Deoli Uniyal is the first Indian female to have 12 World Records in Martial Arts speed elbow strikes and kicks.","She is a trained Taekwondo and Krav Maga practitioner. She is the wife of Col Sunil Uniyal and a native of Uttrakhand, India. The 47-years-old Martial Arts Practitioner and philanthropist is also a mother of two children."]
+          header: " ",
+          content: ['"Physically fit and mentally strong kids will build a better society."', "It would be best if you did not hesitate to invest in quality self-defence classes. These will give your children physical and mental strength, confidence, and self-control. It also improves posture, teaches responsibility, and gives you a better sense of self.", "Take advantage of this fantastic opportunity to learn self-defence and martial arts with Ms. Kiran Uniyal this Sunday."]
         },
         {
-          header:"About the Host: ",
-          content:["Ms. Nidhi Kumar,","Director Media Management, Skoolz & Celebrity show host on India’s public broadcaster DD NEWS and DD NATIONAL, Ministry of Science and Technology, Media lead and ambassador for Mitron App and Advisory board. Media Red Carpet entertainers, Trustee Netaji. She has spearheaded many environmental projects and is a motivational speaker for young Indians. "]
+          splcontent: ["Every session will be different and interactive. So don't miss out on this free exclusive Fish Tank session."]
+        },
+        {
+          header: "About the guest speaker:   ",
+          content: ["Ms. Kiran Deoli Uniyal is the first Indian female to have 12 World Records in Martial Arts speed elbow strikes and kicks.", "She is a trained Taekwondo and Krav Maga practitioner. She is the wife of Col Sunil Uniyal and a native of Uttrakhand, India. The 47-years-old Martial Arts Practitioner and philanthropist is also a mother of two children."]
+        },
+        {
+          header: "About the Host: ",
+          content: ["Ms. Nidhi Kumar,", "Director Media Management, Skoolz & Celebrity show host on India’s public broadcaster DD NEWS and DD NATIONAL, Ministry of Science and Technology, Media lead and ambassador for Mitron App and Advisory board. Media Red Carpet entertainers, Trustee Netaji. She has spearheaded many environmental projects and is a motivational speaker for young Indians. "]
         }
       ]
     }]
@@ -248,24 +248,24 @@ export const EventsAndWebinar = [
       "Panchatantra is a well-known collection of animal-based fables. However, a story is more than just a story; it is written with the value of exploring a new world and teaching lessons that will last a lifetime.",
     eventImageUrl: Event9,
     content: [{
-      contentDis:[
+      contentDis: [
         {
-          header:" ",
-          content:["Join us for Sunday Story Time with Mrs. Kalpana Mohan. As she brings stories of our heritage alive, children's imagination will soar, and their understanding of the world will expand in a fun, engaging way.","Panchatantra is a well-known collection of animal-based fables. However, a story is more than just a story; it is written with the value of exploring a new world and teaching lessons that will last a lifetime.","Every session will be different and interactive. So don't miss out on this free exclusive Sunday Story Time."]
+          header: " ",
+          content: ["Join us for Sunday Story Time with Mrs. Kalpana Mohan. As she brings stories of our heritage alive, children's imagination will soar, and their understanding of the world will expand in a fun, engaging way.", "Panchatantra is a well-known collection of animal-based fables. However, a story is more than just a story; it is written with the value of exploring a new world and teaching lessons that will last a lifetime.", "Every session will be different and interactive. So don't miss out on this free exclusive Sunday Story Time."]
         },
-        // {
-        //   splcontent:["Children will participate in an interactive zoom meeting with Mrs. Kalpana Mohan."]
-        // },
         {
-          header:"About the guest speaker:   ",
-          content:["Mrs. Kalpana Mohan, an Educationist and Academic Consultant, is a teacher by profession hailing from Bangalore, India, with 35 years of teaching and administrative experience to go with it. She served as the Principal of Vidyashilp Academy for over 18 years. ","Age limit:3 Years to 8 Years. "]
+          splcontent: ["Children will participate in an interactive zoom meeting with Mrs. Kalpana Mohan."]
         },
-        // {
-        //   splcontent:["Register Today for Free Zoom Meeting"]
-        // },
         {
-          header:" ",
-          content:["Date & Day: 17th July 2022, Sunday ","Time: 10:00 AM – 10:45 AM"]
+          header: "About the guest speaker:   ",
+          content: ["Mrs. Kalpana Mohan, an Educationist and Academic Consultant, is a teacher by profession hailing from Bangalore, India, with 35 years of teaching and administrative experience to go with it. She served as the Principal of Vidyashilp Academy for over 18 years. ", "Age limit:3 Years to 8 Years. "]
+        },
+        {
+          splcontent: ["Register Today for Free Zoom Meeting"]
+        },
+        {
+          header: " ",
+          content: ["Date & Day: 17th July 2022, Sunday ", "Time: 10:00 AM – 10:45 AM"]
         }
       ]
     }]
@@ -284,24 +284,24 @@ export const EventsAndWebinar = [
       "Join us for Sunday Story Time with Mrs. Kalpana Mohan. As she brings stories of our heritage alive, children's imagination will soar, and their understanding of the world will expand in a fun, engaging way. ",
     eventImageUrl: Event11,
     content: [{
-      contentDis:[
+      contentDis: [
         {
-          header:" ",
-          content:["Join us for Sunday Story Time with Mrs. Kalpana Mohan. As she brings stories of our heritage alive, children's imagination will soar, and their understanding of the world will expand in a fun, engaging way.","Every session will be different and interactive. So don't miss out on this free exclusive Sunday Story Time."]
+          header: " ",
+          content: ["Join us for Sunday Story Time with Mrs. Kalpana Mohan. As she brings stories of our heritage alive, children's imagination will soar, and their understanding of the world will expand in a fun, engaging way.", "Every session will be different and interactive. So don't miss out on this free exclusive Sunday Story Time."]
         },
-        // {
-        //   splcontent:["Children will participate in an interactive zoom meeting with Mrs. Kalpana Mohan."]
-        // },
         {
-          header:"About the guest speaker:   ",
-          content:["Mrs. Kalpana Mohan, an Educationist and Academic Consultant, is a teacher by profession hailing from Bangalore, India, with 35 years of teaching and administrative experience to go with it. She served as the Principal of Vidyashilp Academy for over 18 years. ","Age limit:3 Years to 8 Years. "]
+          splcontent: ["Children will participate in an interactive zoom meeting with Mrs. Kalpana Mohan."]
         },
-        // {
-        //   splcontent:["Register Today for Free Zoom Meeting"]
-        // },
         {
-          header:" ",
-          content:["Date & Day: 3rd July 2022, Sunday","Time: 10:00 AM – 10:45 AM"]
+          header: "About the guest speaker",
+          content: ["Mrs. Kalpana Mohan, an Educationist and Academic Consultant, is a teacher by profession hailing from Bangalore, India, with 35 years of teaching and administrative experience to go with it. She served as the Principal of Vidyashilp Academy for over 18 years. ", "Age limit:3 Years to 8 Years. "]
+        },
+        {
+          splcontent: ["Register Today for Free Zoom Meeting"]
+        },
+        {
+          header: " ",
+          content: ["Date & Day: 3rd July 2022, Sunday", "Time: 10:00 AM – 10:45 AM"]
         }
       ]
     }]
@@ -525,13 +525,14 @@ export const EventsAndWebinar = [
       "Insight into the types of Motor skills and cognitive development in Early childhood and methods to ensure ideal growth in these aspects.",
     eventImageUrl: Event42,
     eventContentType: "webinars",
-    content: [
-      {
-        datadis: [
-          "Zero to Six are considered as the formative years. Parents need to take conscious initiatives to instill three crucial skills during this period that include Motor skills, Language & communication skills and Social & Emotional Skills.",
-          "The session focuses on the importance of formative years and a description of each of these skills and HOME-SCHOOLING approaches to nurture these skills in children and strengthen the cognition from early childhood.",
-          "The parents will get insight into types of motor skills and the importance of cognitive development in early childhood. The methods to ensure ideal growth in these aspects will also be discussed in detail. The session also covers Nutrition for children between the ages of 3-12 and how it plays a vital role in their overall development and addresses the nutrition demands on building immunity.",
-        ],
+    content: [{
+      contentDis: [{
+        testdata: {
+          header: "",
+          content: ["Zero to Six are considered as the formative years. Parents need to take conscious initiatives to instill three crucial skills during this period that include Motor skills, Language & communication skills and Social & Emotional Skills.",
+            "The session focuses on the importance of formative years and a description of each of these skills and HOME-SCHOOLING approaches to nurture these skills in children and strengthen the cognition from early childhood.",
+            "The parents will get insight into types of motor skills and the importance of cognitive development in early childhood. The methods to ensure ideal growth in these aspects will also be discussed in detail. The session also covers Nutrition for children between the ages of 3-12 and how it plays a vital role in their overall development and addresses the nutrition demands on building immunity."]
+        },
         targetData: [{
           header: "TARGET AUDIENCE:",
           data: "Parents of children aged 1 to 3",
@@ -553,18 +554,10 @@ export const EventsAndWebinar = [
         {
           header: "MODE (ONLINE/OFFLINE):",
           data: "Online",
-        },],
-        takeaWay: ["Child Growth Manual"],
-        speakercard: [
-          {
-            speakerimg: eventspeaker,
-            speakerName: "Kiran Sidde",
-            speakerText: "Founder, Edushrine Academic Services",
-          },
-        ],
-        Aboutspeaker: ["Edushrine Academic Services - Professional Coaching Institute for NTSE/ OLYMPIADS/NEET/JEE", "RITE - Regional Institute for Teenage Empowerment(#Self-Reliant Teenager)", "Parent-Child counseling and Career Guidance ", " Authored Amazon best seller Fiction Novel", " VIDYARTHI-BETAL - Contemporary tales for Parents , Teachers and Teens"]
-      },
-    ],
+        }]
+      }
+      ]
+    }]
   },
 ];
 

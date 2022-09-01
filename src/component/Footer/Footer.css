@@ -65,7 +65,7 @@
 .joinOurNetworkButton1 {
     height: 54px;
     line-height: 54px;
-    font-family: MontserratRegular;
+    
     font-size: 18px;
     margin-left: 100px;
     padding-left: 0px;
@@ -78,7 +78,7 @@
 
 .joinOurNetworkText {
     display: flex;
-    font-family: MontserratRegular;
+    
     font-size: 2.5rem;
     color: #ffffff;
     font-weight: 600;
@@ -127,7 +127,7 @@
     text-align: left;
     color: #ffffff;
     font-size: 20px;
-    font-family: MontserratRegular;
+    
 }
 
 .webFooterCenter {
@@ -195,7 +195,7 @@
 .joinOurNetworkButton {
     height: 54px;
     line-height: 54px;
-    font-family: MontserratRegular;
+    
     font-size: 18px;
     color: #ffffff;
     margin-left: 100px;
@@ -271,7 +271,7 @@
     .joinOurNetworkButton1 {
         margin: auto;
         width: 60%;
-        font-family: MontserratRegular;
+        
         font-size: 25px;
         color: #ffffff;
         margin-left: 10%;
@@ -288,7 +288,7 @@
         margin: auto;
         width: 100%;
         display: block;
-        font-family: MontserratRegular;
+        
         font-size: 2.5rem;
         color: rgba(255, 255, 255, .8);
         font-weight: 600;
@@ -318,7 +318,7 @@
         color: rgba(255, 255, 255, .8);
         font-size: 16px;
         font-weight: 600;
-        font-family: MontserratRegular;
+        
         padding-top: 20px;
         /*min-height: 376px;*/
         float: left;
@@ -329,7 +329,7 @@
         font-weight: 500;
         font-size: 12px;
         text-align: center;
-        font-family: MontserratRegular;
+        
     }
 
     .mobileFooterContent1List {
@@ -344,7 +344,7 @@
         padding-top: 14px;
         /* font-size: 14px;*/
         font-size: 14px;
-        font-family: MontserratSemiBold;
+        font-weight: 600;
     }
 
     .mobileFooterContent1List li a {
@@ -382,7 +382,7 @@
     .joinOurNetworkButton {
         margin: auto;
         width: 60%;
-        font-family: MontserratRegular;
+        
         font-size: 25px;
         color: #ffffff;
         margin-left: 10%;

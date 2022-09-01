@@ -26,7 +26,7 @@
    text-transform: capitalize;
 }
 .aboutUsSection .title, .teamMembers .title{
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     font-size: 2rem;
     text-align: center;
     color: #FF6700;

@@ -175,14 +175,14 @@
     color: #000000;
     height: 100%;
     display: block;
-    font-family: MontserratRegular;
+     ;
 }
 
 .loggedInButton a {
     color: #000000;
     height: 100%;
     display: block;
-    font-family: MontserratRegular;
+     ;
 }
 
 .loggedInButton a:hover {
@@ -191,7 +191,7 @@
     display: block;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);
     background: #F4F4F4;
-    font-family: MontserratSemiBold;
+    font-weight: 300;
 }
 
 .loggedInButton:hover,
@@ -213,7 +213,7 @@
 .logoutButton:hover {
     border: 0;
     background: transparent;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     color: rgba(0, 0, 0, .7);
     text-align: left;
     width: 100%;
@@ -231,7 +231,7 @@
 .logoutButton:hover {
     border: 0;
     background: transparent;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     color: #ffffff;
     text-align: center;
     width: 100%;
@@ -270,7 +270,7 @@
     background-color: #f2f2f2;
     box-sizing: border-box;
     color: rgba(0, 0, 0, .8);
-    font-family: 'MontserratRegular';
+     ;
 }
 
 .headerSearchBarWeb>.input-group .autocomplete-items div:hover {
@@ -309,14 +309,14 @@
 
 .loginButton {
     min-height: 45px;
-    width: 158px;
+    width: 184px;
     height: 45px;
     color: #ffffff !important;
     line-height: 45px;
     text-align: center;
     background: rgba(52, 168, 79, 1);
     border-radius: 27px;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     margin-top: 0;
     display: flex;
     justify-content: center;
@@ -476,7 +476,7 @@
     color: rgba(0, 0, 0, .8);
     font-size: 16px;
     line-height: 20px;
-    font-family: 'MontserratRegular';
+     ;
 }
 
 

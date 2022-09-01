@@ -19,7 +19,7 @@
 .topSchoolSectionTitle {
     margin-top: 64px;
     margin-bottom: 47px;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     font-weight: 600;
     font-size: 36px;
     color: #012F4F;
@@ -30,7 +30,7 @@
 .topSchoolSectionTitleawards {
     margin-top: 64px;
     margin-bottom: 47px;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     font-weight: 600;
     font-size: 36px;
     color: #012F4F;
@@ -41,7 +41,7 @@
 .topSchoolSectionTitleTestimonial {
     margin-top: 64px;
     margin-bottom: 47px;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     font-weight: 600;
     font-size: 36px;
     color: #012F4F;
@@ -231,7 +231,7 @@
 
 .joinOurNetworkText {
     display: flex;
-    font-family: MontserratRegular;
+     ;
     font-size: 2.5rem;
     color: #ffffff;
     font-weight: 600;
@@ -245,7 +245,7 @@
 .joinOurNetworkButton {
     height: 54px;
     line-height: 54px;
-    font-family: MontserratRegular;
+     ;
     font-size: 18px;
     color: #ffffff;
     margin-left: 100px;
@@ -295,7 +295,7 @@
 
 .schoolMainHome .swiper-container-evTestimonial h1 {
     font-size: 20px;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
     text-align: left;
     padding-top: 16px;
 }
@@ -303,7 +303,7 @@
 .schoolMainHome .swiper-container-evTestimonial p {
     font-size: 17px;
     color: rgba(0, 0, 0, .8);
-    font-family: MontserratRegular;
+     ;
     text-align: left;
     margin-top: 20px;
     padding-right: 10px;
@@ -401,7 +401,7 @@ article.blog figure {
         margin: auto;
         width: 100%;
         display: block;
-        font-family: MontserratRegular;
+         ;
         font-size: 2.5rem;
         color: rgba(255, 255, 255, .8);
         font-weight: 600;
@@ -411,7 +411,7 @@ article.blog figure {
     .joinOurNetworkButton {
         margin: auto;
         width: 60%;
-        font-family: MontserratRegular;
+         ;
         font-size: 25px;
         color: #ffffff;
         margin-left: 10%;
@@ -588,7 +588,7 @@ article.blog .post_info small {
 article.blog .post_info p {
     font-size: 14px;
     color: rgba(0, 0, 0, .6);
-    font-family: MontserratRegular;
+     ;
 }
 
 article.blog .post_info h3 {
@@ -597,7 +597,7 @@ article.blog .post_info h3 {
 
 article.blog .post_info h3 a {
     color: #000000;
-    font-family: MontserratSemiBold;
+     font-weight: 600;
 }
 
 article.blog .post_info h3 a:hover {

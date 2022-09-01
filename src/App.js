@@ -55,6 +55,7 @@ function App() {
           <Route path="/kids-arena" element={<KidsArenaComponent />} />
           <Route path="/kids-arena/:id" element={<KidsArenadetailsComponent />} />
         </Routes>
+        
 
        
 
