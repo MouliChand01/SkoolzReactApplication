@@ -22,7 +22,7 @@ const DeatailsSchoolComponent = () => {
         <div>
             <div className="schoolDetailsComponent">
                 <HeaderComponent />
-                <br /><br /><br /><br />
+                <br /><br/><br/><br/>
                 <div className="schoolbaseContainer">
                     <div className="breadcrumb-container">
                         <div className="baseContainer">

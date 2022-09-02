@@ -141,7 +141,7 @@ const CardFilter = () => {
                                         <div className="col-lg-8">
                                             <div className='schoolDetails mt-2 mb-2'>
                                                 <h5>{data.schoolname}</h5>
-                                                <h6>{data.address}</h6>
+                                                <div className="schoolAddress my-3">{data.address}</div>
                                                 <div className='row'>
                                                     <div className='col-6 col-lg-4  starIcon'>
                                                         Montessori
@@ -151,12 +151,12 @@ const CardFilter = () => {
                                                     <div className='col-6 col-lg-4 starIcon'>
                                                         Co-Ed
                                                         <br />
-                                                        <span style={{ "color": "black" }}>Pre-School Type</span>
+                                                        <span style={{ "color": "black" }}>School Classification</span>
                                                     </div>
-                                                    <div className='col-6 col-lg-4 starIcon1'>
+                                                    <div className='col-6 col-lg-4 starIcon'>
                                                         Rs.
                                                         <br />
-                                                        <span style={{ "color": "black" }}>Pre-School Type</span>
+                                                        <span style={{ "color": "black" }}>Annual Fees</span>
                                                     </div>
 
                                                 </div>

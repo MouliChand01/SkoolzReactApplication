@@ -124,10 +124,10 @@ const AwardsAndRecognitions = () => {
                     </Swiper>
                 </div>
 
-                <div class="joinOurNetwork">
-                    <div class="joinOurNetworkText">
+                <div className="joinOurNetwork">
+                    <div className="joinOurNetworkText">
                         More Awards &amp; Recognitions
-                        <a class="joinOurNetworkButton" href="/Awards/index" style={{ "textDecoration": "none" }}>
+                        <a className="joinOurNetworkButton" href="/Awards/index" style={{ "textDecoration": "none" }}>
                             <div>
                                 Click Here &nbsp; <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                             </div>

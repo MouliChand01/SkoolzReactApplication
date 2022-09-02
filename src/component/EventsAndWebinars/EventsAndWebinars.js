@@ -32,7 +32,7 @@ const EvetsAndWeninars = () => {
     }, [mywindow])
     return (
         <div>
-            <div class="schoolMainHome">
+            <div className="schoolMainHome">
                 <div className="baseContainer topSchoolSection" style={{ "display": "inline-block" }}>
                     <div className="topSchoolSectionTitle"><a><p style={{ "color": "#FF6700" }}> Events/Webinars/Workshops</p></a></div>
                     <Swiper slidesPerView={mywindow.width && mywindow.width < 768 ? 1 : 2}
@@ -312,10 +312,10 @@ const EvetsAndWeninars = () => {
                     </Swiper>
                 </div >
             </div>
-            <div class="joinOurNetwork">
-                <div class="joinOurNetworkText">
+            <div className="joinOurNetwork">
+                <div className="joinOurNetworkText">
                     More Webinars / Events / Workshops
-                    <a class="joinOurNetworkButton">
+                    <a className="joinOurNetworkButton">
                         <div>
                             Click Here&nbsp; <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                         </div>

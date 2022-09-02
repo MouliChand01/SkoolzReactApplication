@@ -20,19 +20,19 @@ const HeaderComponent = ()=>{
         <div>
         {flag === 0 ? (
             <div className="header baseContainer webHeader">
-                <div className="logo"><a><img src={skoolzlogo} alt="logo" /></a></div>
+                <div className="logo"><Link to={'/'}><img src={skoolzlogo} alt="logo" /></Link></div>
                 <div className="headerSearchBar headerSearchBarWeb1">
                     <div className="input-group">
                         <div className="fullSearchBox">
-                            <input id="searchText" type="search" autoComplete="nope" className="form-control headerSearchBox"
+                            <input id="searchText" type="search" autoComplete="nope" className="headerSearchBox"
                                 data-content="Type school name or location" placeholder="Enter location & search for nearby Schools & Hobby classes" />
                             <div className="input-group-append search-goup">
                                 <div className="location-icon">
                                     <img src="~/skoolz/assets/img/icon/search_location.svg" alt="location" />
                                 </div>
-                                <button type="submit" className="search-icon">
+                                <Link to={'/home/search'} type="submit" className="search-icon">
                                 <FontAwesomeIcon icon={faSearch}  style={{"color":"white"}}/>
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -55,19 +55,19 @@ const HeaderComponent = ()=>{
                 </nav>
             </div>) : flag === 1 ? (
                 <div className="header baseContainer webHeader">
-                    <div className="logo"><a><img src={skoolzlogo} alt="logo" /></a></div>
+                    <div className="logo"><Link to={'/'}><img src={skoolzlogo} alt="logo" /></Link></div>
                     <div className="headerSearchBar headerSearchBarWeb1 searchtextSignedIn">
                         <div className="input-group">
                             <div className="fullSearchBox">
-                                <input id="searchText" type="search" className="form-control headerSearchBox"
+                                <input id="searchText" type="search" className="headerSearchBox"
                                     data-content="Type school name or location" placeholder="Enter school name or location or enable location access " />
                                 <div className="input-group-append search-goup">
                                     <div className="location-icon">
                                         <img src="~/skoolz/assets/img/icon/search_location.svg" alt="location" />
                                     </div>
-                                    <button type="submit" className="search-icon">
+                                    <Link to={'/home/search'} type="submit" className="search-icon">
                                     <FontAwesomeIcon icon={faSearch}  style={{"color":"white"}}/>
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -102,11 +102,11 @@ const HeaderComponent = ()=>{
             ) : (
             <div>
                 <div className="header baseContainer webHeader">
-                    <div className="logo"><a><img src={skoolzlogo} alt="logo" /></a></div>
+                    <div className="logo"><Link to={'/'}><img src={skoolzlogo} alt="logo" /></Link></div>
                     <div className="headerSearchBar headerSearchBarWeb">
                         <div className="input-group">
                             <div className="fullSearchBox">
-                                <input id="searchText" type="search" autoComplete="nope" className="form-control headerSearchBox"
+                                <input id="searchText" type="search" autoComplete="nope" className="headerSearchBox"
                                     data-content="Type school name or location" placeholder="Enter location & search for nearby Schools & Hobby classes" />
                                 <div className="input-group-append search-goup">
                                     <div className="location-icon">
@@ -136,7 +136,7 @@ const HeaderComponent = ()=>{
                     </nav>
                 </div>
                 <div className="mobileHeaderSection1 mobileHeader">
-                    <div className="logo"><a><img src={skoolzlogo} alt="logo" /></a></div>
+                    <div className="logo"><Link to={'/'}><img src={skoolzlogo} alt="logo" /></Link></div>
                     <div className="mobileHeaderMenuButton" data-toggle="collapse" data-target="#navbarSupportedContent" onClick={Toggle}></div>
                     <div className="mobileHeaderProfileButton" >
                         {display && (
@@ -162,15 +162,15 @@ const HeaderComponent = ()=>{
                     <div className="headerSearchBar">
                         <div className="input-group">
                             <form>
-                                <input type="search" className="form-control headerSearchBox" id="mobSearchText" autoComplete="nope"
+                                <input type="search" className="headerSearchBox" id="mobSearchText" autoComplete="nope"
                                     data-content="Type school name or location" placeholder="Enter school name or location " />
                                 <div className="input-group-append search-goup">
                                     <div className="location-icon">
                                         <img src="~/skoolz/assets/img/icon/search_location.svg" alt="location" />
                                     </div>
-                                    <button type="submit" className="search-icon">
+                                     <Link to={'/home/search'} type="submit" className="search-icon">
                                     <FontAwesomeIcon icon={faSearch}  style={{"color":"white"}}/>
-                                    </button>
+                                    </Link>
                                 </div>
                             </form>
                         </div>

@@ -22,9 +22,6 @@ const EventsWebinardetailsComponent = () => {
     return (
         <div>
             <HeaderComponent />
-            <br />
-            <br />
-            <br />
             <div className="EventsWebinardetails baseContainer mt-4">
                 <div className="detailsContainer">
                     <div className="row">

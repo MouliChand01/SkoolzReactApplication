@@ -35,99 +35,99 @@ const FooterComponent = () => {
                         <a data-attr-filter="cbse" target="_blank" className="top_boarding" href="/home/search/ahmedabad/cbse-schools-in-ahmedabad">CBSE schools Ahmedabad</a> <span> | </span>
                         <a data-attr-filter="icse" target="_blank" className="top_boarding" href="/home/search/ahmedabad/icse-schools-in-ahmedabad">Best ICSE schools in Ahmedabad</a> <span> | </span>
                         <a data-attr-filter="ib" target="_blank" className="top_boarding" href="/home/search/ahmedabad/ib-schools-in-ahmedabad">Best IB schools in Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="ib" target="_blank" class="top_boarding" href="/home/search/ahmedabad/international-schools-in-ahmedabad">Best international schools in Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="stateboard" target="_blank" class="top_boarding" href="/home/search/ahmedabad/stateboard-schools-in-ahmedabad">State Board Schools in Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="preschool" target="_blank" class="top_boarding" href="/home/search/ahmedabad/playchools-in-ahmedabad">Best Play Schools In Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="preschool" target="_blank" class="top_boarding" href="/home/search/ahmedabad/preschools-in-ahmedabad">Best Preschools In Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="playway" target="_blank" class="top_boarding" href="/home/search/ahmedabad/play-way-schools-in-ahmedabad">Best Play Way Schools In Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="montessori" target="_blank" class="top_boarding" href="/home/search/ahmedabad/montessori-schools-in-ahmedabad">Best Montessori Schools in Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="dayschool" target="_blank" class="top_boarding" href="/home/search/ahmedabad/day-schools-in-ahmedabad">Best Day Schools in Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="boardingschool" target="_blank" class="top_boarding" href="/home/search/ahmedabad/boarding-schools-in-ahmedabad">Boarding Schools in Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="daycumboardingschool" target="_blank" class="top_boarding" href="/home/search/ahmedabad/day-cum-boarding-schools-in-ahmedabad">Best Day Cum Boarding Schools in Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="onlineschool" target="_blank" class="top_boarding" href="/home/search/ahmedabad/online-schools-in-ahmedabad">Best online Schools In Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="boys" target="_blank" class="top_boarding" href="/home/search/ahmedabad/boys-schools-in-ahmedabad">Best Boys Schools In Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="girls" target="_blank" class="top_boarding" href="/home/search/ahmedabad/girls-schools-in-ahmedabad">Best Girls Schools In Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="coed" target="_blank" class="top_boarding" href="/home/search/ahmedabad/co-ed-schools-in-ahmedabad">Best Co-Ed Schools In Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="stembased" target="_blank" class="top_boarding" href="/home/search/ahmedabad/stem-based-schools-in-ahmedabad">Best STEM Based Schools In  Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="daycare" target="_blank" class="top_boarding" href="/home/search/ahmedabad/daycare-schools-in-ahmedabad">Best Schools with Day Care In Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="lowfee" target="_blank" class="top_boarding" href="/home/search/ahmedabad/lowest-fee-schools-in-ahmedabad">Best Schools with Lowest Fee In Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="mediumfee" target="_blank" class="top_boarding" href="/home/search/ahmedabad/medium-schools-fee-in-ahmedabad">Best Schools with Medium Fee In Ahmedabad</a> <span> | </span>
-                        <a data-attr-filter="highfee" target="_blank" class="top_boarding" href="/home/search/ahmedabad/highest-schools-fee-in-ahmedabad">Best Schools with Highest Fee In Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="ib" target="_blank" className="top_boarding" href="/home/search/ahmedabad/international-schools-in-ahmedabad">Best international schools in Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="stateboard" target="_blank" className="top_boarding" href="/home/search/ahmedabad/stateboard-schools-in-ahmedabad">State Board Schools in Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="preschool" target="_blank" className="top_boarding" href="/home/search/ahmedabad/playchools-in-ahmedabad">Best Play Schools In Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="preschool" target="_blank" className="top_boarding" href="/home/search/ahmedabad/preschools-in-ahmedabad">Best Preschools In Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="playway" target="_blank" className="top_boarding" href="/home/search/ahmedabad/play-way-schools-in-ahmedabad">Best Play Way Schools In Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="montessori" target="_blank" className="top_boarding" href="/home/search/ahmedabad/montessori-schools-in-ahmedabad">Best Montessori Schools in Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="dayschool" target="_blank" className="top_boarding" href="/home/search/ahmedabad/day-schools-in-ahmedabad">Best Day Schools in Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="boardingschool" target="_blank" className="top_boarding" href="/home/search/ahmedabad/boarding-schools-in-ahmedabad">Boarding Schools in Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="daycumboardingschool" target="_blank" className="top_boarding" href="/home/search/ahmedabad/day-cum-boarding-schools-in-ahmedabad">Best Day Cum Boarding Schools in Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="onlineschool" target="_blank" className="top_boarding" href="/home/search/ahmedabad/online-schools-in-ahmedabad">Best online Schools In Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="boys" target="_blank" className="top_boarding" href="/home/search/ahmedabad/boys-schools-in-ahmedabad">Best Boys Schools In Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="girls" target="_blank" className="top_boarding" href="/home/search/ahmedabad/girls-schools-in-ahmedabad">Best Girls Schools In Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="coed" target="_blank" className="top_boarding" href="/home/search/ahmedabad/co-ed-schools-in-ahmedabad">Best Co-Ed Schools In Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="stembased" target="_blank" className="top_boarding" href="/home/search/ahmedabad/stem-based-schools-in-ahmedabad">Best STEM Based Schools In  Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="daycare" target="_blank" className="top_boarding" href="/home/search/ahmedabad/daycare-schools-in-ahmedabad">Best Schools with Day Care In Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="lowfee" target="_blank" className="top_boarding" href="/home/search/ahmedabad/lowest-fee-schools-in-ahmedabad">Best Schools with Lowest Fee In Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="mediumfee" target="_blank" className="top_boarding" href="/home/search/ahmedabad/medium-schools-fee-in-ahmedabad">Best Schools with Medium Fee In Ahmedabad</a> <span> | </span>
+                        <a data-attr-filter="highfee" target="_blank" className="top_boarding" href="/home/search/ahmedabad/highest-schools-fee-in-ahmedabad">Best Schools with Highest Fee In Ahmedabad</a> <span> | </span>
                     </div>
                     <div className="col-md-12 pt-10">
                         <span className="footer-top-boarding"> Bengaluru :</span>
-                        <a data-attr-filter="top" target="_blank" class="top_boarding" href="/home/search/bengaluru/top-schools-in-bengaluru">Schools In Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="cbse" target="_blank" class="top_boarding" href="/home/search/bengaluru/cbse-schools-in-bengaluru">CBSE schools Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="icse" target="_blank" class="top_boarding" href="/home/search/bengaluru/icse-schools-in-bengaluru">Best ICSE schools in Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="ib" target="_blank" class="top_boarding" href="/home/search/bengaluru/ib-schools-in-bengaluru">Best IB schools in Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="ib" target="_blank" class="top_boarding" href="/home/search/bengaluru/international-schools-in-bengaluru">Best international schools in Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="stateboard" target="_blank" class="top_boarding" href="/home/search/bengaluru/stateboard-schools-in-bengaluru">State Board Schools in Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="preschool" target="_blank" class="top_boarding" href="/home/search/bengaluru/playchools-in-bengaluru">Best Play Schools In Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="preschool" target="_blank" class="top_boarding" href="/home/search/bengaluru/preschools-in-bengaluru">Best Preschools In Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="playway" target="_blank" class="top_boarding" href="/home/search/bengaluru/play-way-schools-in-bengaluru">Best Play Way Schools In Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="montessori" target="_blank" class="top_boarding" href="/home/search/bengaluru/montessori-schools-in-bengaluru">Best Montessori Schools in Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="dayschool" target="_blank" class="top_boarding" href="/home/search/bengaluru/day-schools-in-bengaluru">Best Day Schools in Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="boardingschool" target="_blank" class="top_boarding" href="/home/search/bengaluru/boarding-schools-in-bengaluru">Boarding Schools in Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="daycumboardingschool" target="_blank" class="top_boarding" href="/home/search/bengaluru/day-cum-boarding-schools-in-bengaluru">Best Day Cum Boarding Schools in Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="onlineschool" target="_blank" class="top_boarding" href="/home/search/bengaluru/online-schools-in-bengaluru">Best online Schools In Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="boys" target="_blank" class="top_boarding" href="/home/search/bengaluru/boys-schools-in-bengaluru">Best Boys Schools In Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="girls" target="_blank" class="top_boarding" href="/home/search/bengaluru/girls-schools-in-bengaluru">Best Girls Schools In Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="coed" target="_blank" class="top_boarding" href="/home/search/bengaluru/co-ed-schools-in-bengaluru">Best Co-Ed Schools In Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="stembased" target="_blank" class="top_boarding" href="/home/search/bengaluru/stem-based-schools-in-bengaluru">Best STEM Based Schools In  Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="daycare" target="_blank" class="top_boarding" href="/home/search/bengaluru/daycare-schools-in-bengaluru">Best Schools with Day Care In Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="lowfee" target="_blank" class="top_boarding" href="/home/search/bengaluru/lowest-fee-schools-in-bengaluru">Best Schools with Lowest Fee In Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="mediumfee" target="_blank" class="top_boarding" href="/home/search/bengaluru/medium-schools-fee-in-bengaluru">Best Schools with Medium Fee In Bengaluru</a> <span> | </span>
-                        <a data-attr-filter="highfee" target="_blank" class="top_boarding" href="/home/search/bengaluru/highest-schools-fee-in-bengaluru">Best Schools with Highest Fee In Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="top" target="_blank" className="top_boarding" href="/home/search/bengaluru/top-schools-in-bengaluru">Schools In Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="cbse" target="_blank" className="top_boarding" href="/home/search/bengaluru/cbse-schools-in-bengaluru">CBSE schools Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="icse" target="_blank" className="top_boarding" href="/home/search/bengaluru/icse-schools-in-bengaluru">Best ICSE schools in Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="ib" target="_blank" className="top_boarding" href="/home/search/bengaluru/ib-schools-in-bengaluru">Best IB schools in Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="ib" target="_blank" className="top_boarding" href="/home/search/bengaluru/international-schools-in-bengaluru">Best international schools in Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="stateboard" target="_blank" className="top_boarding" href="/home/search/bengaluru/stateboard-schools-in-bengaluru">State Board Schools in Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="preschool" target="_blank" className="top_boarding" href="/home/search/bengaluru/playchools-in-bengaluru">Best Play Schools In Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="preschool" target="_blank" className="top_boarding" href="/home/search/bengaluru/preschools-in-bengaluru">Best Preschools In Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="playway" target="_blank" className="top_boarding" href="/home/search/bengaluru/play-way-schools-in-bengaluru">Best Play Way Schools In Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="montessori" target="_blank" className="top_boarding" href="/home/search/bengaluru/montessori-schools-in-bengaluru">Best Montessori Schools in Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="dayschool" target="_blank" className="top_boarding" href="/home/search/bengaluru/day-schools-in-bengaluru">Best Day Schools in Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="boardingschool" target="_blank" className="top_boarding" href="/home/search/bengaluru/boarding-schools-in-bengaluru">Boarding Schools in Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="daycumboardingschool" target="_blank" className="top_boarding" href="/home/search/bengaluru/day-cum-boarding-schools-in-bengaluru">Best Day Cum Boarding Schools in Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="onlineschool" target="_blank" className="top_boarding" href="/home/search/bengaluru/online-schools-in-bengaluru">Best online Schools In Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="boys" target="_blank" className="top_boarding" href="/home/search/bengaluru/boys-schools-in-bengaluru">Best Boys Schools In Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="girls" target="_blank" className="top_boarding" href="/home/search/bengaluru/girls-schools-in-bengaluru">Best Girls Schools In Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="coed" target="_blank" className="top_boarding" href="/home/search/bengaluru/co-ed-schools-in-bengaluru">Best Co-Ed Schools In Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="stembased" target="_blank" className="top_boarding" href="/home/search/bengaluru/stem-based-schools-in-bengaluru">Best STEM Based Schools In  Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="daycare" target="_blank" className="top_boarding" href="/home/search/bengaluru/daycare-schools-in-bengaluru">Best Schools with Day Care In Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="lowfee" target="_blank" className="top_boarding" href="/home/search/bengaluru/lowest-fee-schools-in-bengaluru">Best Schools with Lowest Fee In Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="mediumfee" target="_blank" className="top_boarding" href="/home/search/bengaluru/medium-schools-fee-in-bengaluru">Best Schools with Medium Fee In Bengaluru</a> <span> | </span>
+                        <a data-attr-filter="highfee" target="_blank" className="top_boarding" href="/home/search/bengaluru/highest-schools-fee-in-bengaluru">Best Schools with Highest Fee In Bengaluru</a> <span> | </span>
                     </div>
                     <div className="col-md-12 pt-10">
                         <span className="footer-top-boarding"> Chennai :</span>
-                        <a data-attr-filter="top" target="_blank" class="top_boarding" href="/home/search/chennai/top-schools-in-chennai">Schools In Chennai</a> <span> | </span>
-                        <a data-attr-filter="cbse" target="_blank" class="top_boarding" href="/home/search/chennai/cbse-schools-in-chennai">CBSE schools Chennai</a> <span> | </span>
-                        <a data-attr-filter="icse" target="_blank" class="top_boarding" href="/home/search/chennai/icse-schools-in-chennai">Best ICSE schools in Chennai</a> <span> | </span>
-                        <a data-attr-filter="ib" target="_blank" class="top_boarding" href="/home/search/chennai/ib-schools-in-chennai">Best IB schools in Chennai</a> <span> | </span>
-                        <a data-attr-filter="ib" target="_blank" class="top_boarding" href="/home/search/chennai/international-schools-in-chennai">Best international schools in Chennai</a> <span> | </span>
-                        <a data-attr-filter="stateboard" target="_blank" class="top_boarding" href="/home/search/chennai/stateboard-schools-in-chennai">State Board Schools in Chennai</a> <span> | </span>
-                        <a data-attr-filter="preschool" target="_blank" class="top_boarding" href="/home/search/chennai/playchools-in-chennai">Best Play Schools In Chennai</a> <span> | </span>
-                        <a data-attr-filter="preschool" target="_blank" class="top_boarding" href="/home/search/chennai/preschools-in-chennai">Best Preschools In Chennai</a> <span> | </span>
-                        <a data-attr-filter="playway" target="_blank" class="top_boarding" href="/home/search/chennai/play-way-schools-in-chennai">Best Play Way Schools In Chennai</a> <span> | </span>
-                        <a data-attr-filter="montessori" target="_blank" class="top_boarding" href="/home/search/chennai/montessori-schools-in-chennai">Best Montessori Schools in Chennai</a> <span> | </span>
-                        <a data-attr-filter="dayschool" target="_blank" class="top_boarding" href="/home/search/chennai/day-schools-in-chennai">Best Day Schools in Chennai</a> <span> | </span>
-                        <a data-attr-filter="boardingschool" target="_blank" class="top_boarding" href="/home/search/chennai/boarding-schools-in-chennai">Boarding Schools in Chennai</a> <span> | </span>
-                        <a data-attr-filter="daycumboardingschool" target="_blank" class="top_boarding" href="/home/search/chennai/day-cum-boarding-schools-in-chennai">Best Day Cum Boarding Schools in Chennai</a> <span> | </span>
-                        <a data-attr-filter="onlineschool" target="_blank" class="top_boarding" href="/home/search/chennai/online-schools-in-chennai">Best online Schools In Chennai</a> <span> | </span>
-                        <a data-attr-filter="boys" target="_blank" class="top_boarding" href="/home/search/chennai/boys-schools-in-chennai">Best Boys Schools In Chennai</a> <span> | </span>
-                        <a data-attr-filter="girls" target="_blank" class="top_boarding" href="/home/search/chennai/girls-schools-in-chennai">Best Girls Schools In Chennai</a> <span> | </span>
-                        <a data-attr-filter="coed" target="_blank" class="top_boarding" href="/home/search/chennai/co-ed-schools-in-chennai">Best Co-Ed Schools In Chennai</a> <span> | </span>
-                        <a data-attr-filter="stembased" target="_blank" class="top_boarding" href="/home/search/chennai/stem-based-schools-in-chennai">Best STEM Based Schools In  Chennai</a> <span> | </span>
-                        <a data-attr-filter="daycare" target="_blank" class="top_boarding" href="/home/search/chennai/daycare-schools-in-chennai">Best Schools with Day Care In Chennai</a> <span> | </span>
-                        <a data-attr-filter="lowfee" target="_blank" class="top_boarding" href="/home/search/chennai/lowest-fee-schools-in-chennai">Best Schools with Lowest Fee In Chennai</a> <span> | </span>
-                        <a data-attr-filter="mediumfee" target="_blank" class="top_boarding" href="/home/search/chennai/medium-schools-fee-in-chennai">Best Schools with Medium Fee In Chennai</a> <span> | </span>
-                        <a data-attr-filter="highfee" target="_blank" class="top_boarding" href="/home/search/chennai/highest-schools-fee-in-chennai">Best Schools with Highest Fee In Chennai</a> <span> | </span>
+                        <a data-attr-filter="top" target="_blank" className="top_boarding" href="/home/search/chennai/top-schools-in-chennai">Schools In Chennai</a> <span> | </span>
+                        <a data-attr-filter="cbse" target="_blank" className="top_boarding" href="/home/search/chennai/cbse-schools-in-chennai">CBSE schools Chennai</a> <span> | </span>
+                        <a data-attr-filter="icse" target="_blank" className="top_boarding" href="/home/search/chennai/icse-schools-in-chennai">Best ICSE schools in Chennai</a> <span> | </span>
+                        <a data-attr-filter="ib" target="_blank" className="top_boarding" href="/home/search/chennai/ib-schools-in-chennai">Best IB schools in Chennai</a> <span> | </span>
+                        <a data-attr-filter="ib" target="_blank" className="top_boarding" href="/home/search/chennai/international-schools-in-chennai">Best international schools in Chennai</a> <span> | </span>
+                        <a data-attr-filter="stateboard" target="_blank" className="top_boarding" href="/home/search/chennai/stateboard-schools-in-chennai">State Board Schools in Chennai</a> <span> | </span>
+                        <a data-attr-filter="preschool" target="_blank" className="top_boarding" href="/home/search/chennai/playchools-in-chennai">Best Play Schools In Chennai</a> <span> | </span>
+                        <a data-attr-filter="preschool" target="_blank" className="top_boarding" href="/home/search/chennai/preschools-in-chennai">Best Preschools In Chennai</a> <span> | </span>
+                        <a data-attr-filter="playway" target="_blank" className="top_boarding" href="/home/search/chennai/play-way-schools-in-chennai">Best Play Way Schools In Chennai</a> <span> | </span>
+                        <a data-attr-filter="montessori" target="_blank" className="top_boarding" href="/home/search/chennai/montessori-schools-in-chennai">Best Montessori Schools in Chennai</a> <span> | </span>
+                        <a data-attr-filter="dayschool" target="_blank" className="top_boarding" href="/home/search/chennai/day-schools-in-chennai">Best Day Schools in Chennai</a> <span> | </span>
+                        <a data-attr-filter="boardingschool" target="_blank" className="top_boarding" href="/home/search/chennai/boarding-schools-in-chennai">Boarding Schools in Chennai</a> <span> | </span>
+                        <a data-attr-filter="daycumboardingschool" target="_blank" className="top_boarding" href="/home/search/chennai/day-cum-boarding-schools-in-chennai">Best Day Cum Boarding Schools in Chennai</a> <span> | </span>
+                        <a data-attr-filter="onlineschool" target="_blank" className="top_boarding" href="/home/search/chennai/online-schools-in-chennai">Best online Schools In Chennai</a> <span> | </span>
+                        <a data-attr-filter="boys" target="_blank" className="top_boarding" href="/home/search/chennai/boys-schools-in-chennai">Best Boys Schools In Chennai</a> <span> | </span>
+                        <a data-attr-filter="girls" target="_blank" className="top_boarding" href="/home/search/chennai/girls-schools-in-chennai">Best Girls Schools In Chennai</a> <span> | </span>
+                        <a data-attr-filter="coed" target="_blank" className="top_boarding" href="/home/search/chennai/co-ed-schools-in-chennai">Best Co-Ed Schools In Chennai</a> <span> | </span>
+                        <a data-attr-filter="stembased" target="_blank" className="top_boarding" href="/home/search/chennai/stem-based-schools-in-chennai">Best STEM Based Schools In  Chennai</a> <span> | </span>
+                        <a data-attr-filter="daycare" target="_blank" className="top_boarding" href="/home/search/chennai/daycare-schools-in-chennai">Best Schools with Day Care In Chennai</a> <span> | </span>
+                        <a data-attr-filter="lowfee" target="_blank" className="top_boarding" href="/home/search/chennai/lowest-fee-schools-in-chennai">Best Schools with Lowest Fee In Chennai</a> <span> | </span>
+                        <a data-attr-filter="mediumfee" target="_blank" className="top_boarding" href="/home/search/chennai/medium-schools-fee-in-chennai">Best Schools with Medium Fee In Chennai</a> <span> | </span>
+                        <a data-attr-filter="highfee" target="_blank" className="top_boarding" href="/home/search/chennai/highest-schools-fee-in-chennai">Best Schools with Highest Fee In Chennai</a> <span> | </span>
                     </div>
                     <div className="col-md-12 pt-10">
                         <span className="footer-top-boarding"> Delhi :</span>
-                        <a data-attr-filter="top" target="_blank" class="top_boarding" href="/home/search/delhi/top-schools-in-delhi">Schools In Delhi</a> <span> | </span>
-                        <a data-attr-filter="cbse" target="_blank" class="top_boarding" href="/home/search/delhi/cbse-schools-in-delhi">CBSE schools Delhi</a> <span> | </span>
-                        <a data-attr-filter="icse" target="_blank" class="top_boarding" href="/home/search/delhi/icse-schools-in-delhi">Best ICSE schools in Delhi</a> <span> | </span>
-                        <a data-attr-filter="ib" target="_blank" class="top_boarding" href="/home/search/delhi/ib-schools-in-delhi">Best IB schools in Delhi</a> <span> | </span>
-                        <a data-attr-filter="ib" target="_blank" class="top_boarding" href="/home/search/delhi/international-schools-in-delhi">Best international schools in Delhi</a> <span> | </span>
-                        <a data-attr-filter="stateboard" target="_blank" class="top_boarding" href="/home/search/delhi/stateboard-schools-in-delhi">State Board Schools in Delhi</a> <span> | </span>
-                        <a data-attr-filter="preschool" target="_blank" class="top_boarding" href="/home/search/delhi/playchools-in-delhi">Best Play Schools In Delhi</a> <span> | </span>
-                        <a data-attr-filter="preschool" target="_blank" class="top_boarding" href="/home/search/delhi/preschools-in-delhi">Best Preschools In Delhi</a> <span> | </span>
-                        <a data-attr-filter="playway" target="_blank" class="top_boarding" href="/home/search/delhi/play-way-schools-in-delhi">Best Play Way Schools In Delhi</a> <span> | </span>
-                        <a data-attr-filter="montessori" target="_blank" class="top_boarding" href="/home/search/delhi/montessori-schools-in-delhi">Best Montessori Schools in Delhi</a> <span> | </span>
-                        <a data-attr-filter="dayschool" target="_blank" class="top_boarding" href="/home/search/delhi/day-schools-in-delhi">Best Day Schools in Delhi</a> <span> | </span>
-                        <a data-attr-filter="boardingschool" target="_blank" class="top_boarding" href="/home/search/delhi/boarding-schools-in-delhi">Boarding Schools in Delhi</a> <span> | </span>
-                        <a data-attr-filter="daycumboardingschool" target="_blank" class="top_boarding" href="/home/search/delhi/day-cum-boarding-schools-in-delhi">Best Day Cum Boarding Schools in Delhi</a> <span> | </span>
-                        <a data-attr-filter="onlineschool" target="_blank" class="top_boarding" href="/home/search/delhi/online-schools-in-delhi">Best online Schools In Delhi</a> <span> | </span>
-                        <a data-attr-filter="boys" target="_blank" class="top_boarding" href="/home/search/delhi/boys-schools-in-delhi">Best Boys Schools In Delhi</a> <span> | </span>
-                        <a data-attr-filter="girls" target="_blank" class="top_boarding" href="/home/search/delhi/girls-schools-in-delhi">Best Girls Schools In Delhi</a> <span> | </span>
-                        <a data-attr-filter="coed" target="_blank" class="top_boarding" href="/home/search/delhi/co-ed-schools-in-delhi">Best Co-Ed Schools In Delhi</a> <span> | </span>
-                        <a data-attr-filter="stembased" target="_blank" class="top_boarding" href="/home/search/delhi/stem-based-schools-in-delhi">Best STEM Based Schools In  Delhi</a> <span> | </span>
-                        <a data-attr-filter="daycare" target="_blank" class="top_boarding" href="/home/search/delhi/daycare-schools-in-delhi">Best Schools with Day Care In Delhi</a> <span> | </span>
-                        <a data-attr-filter="lowfee" target="_blank" class="top_boarding" href="/home/search/delhi/lowest-fee-schools-in-delhi">Best Schools with Lowest Fee In Delhi</a> <span> | </span>
-                        <a data-attr-filter="mediumfee" target="_blank" class="top_boarding" href="/home/search/delhi/medium-schools-fee-in-delhi">Best Schools with Medium Fee In Delhi</a> <span> | </span>
-                        <a data-attr-filter="highfee" target="_blank" class="top_boarding" href="/home/search/delhi/highest-schools-fee-in-delhi">Best Schools with Highest Fee In Delhi</a> <span> | </span>
+                        <a data-attr-filter="top" target="_blank" className="top_boarding" href="/home/search/delhi/top-schools-in-delhi">Schools In Delhi</a> <span> | </span>
+                        <a data-attr-filter="cbse" target="_blank" className="top_boarding" href="/home/search/delhi/cbse-schools-in-delhi">CBSE schools Delhi</a> <span> | </span>
+                        <a data-attr-filter="icse" target="_blank" className="top_boarding" href="/home/search/delhi/icse-schools-in-delhi">Best ICSE schools in Delhi</a> <span> | </span>
+                        <a data-attr-filter="ib" target="_blank" className="top_boarding" href="/home/search/delhi/ib-schools-in-delhi">Best IB schools in Delhi</a> <span> | </span>
+                        <a data-attr-filter="ib" target="_blank" className="top_boarding" href="/home/search/delhi/international-schools-in-delhi">Best international schools in Delhi</a> <span> | </span>
+                        <a data-attr-filter="stateboard" target="_blank" className="top_boarding" href="/home/search/delhi/stateboard-schools-in-delhi">State Board Schools in Delhi</a> <span> | </span>
+                        <a data-attr-filter="preschool" target="_blank" className="top_boarding" href="/home/search/delhi/playchools-in-delhi">Best Play Schools In Delhi</a> <span> | </span>
+                        <a data-attr-filter="preschool" target="_blank" className="top_boarding" href="/home/search/delhi/preschools-in-delhi">Best Preschools In Delhi</a> <span> | </span>
+                        <a data-attr-filter="playway" target="_blank" className="top_boarding" href="/home/search/delhi/play-way-schools-in-delhi">Best Play Way Schools In Delhi</a> <span> | </span>
+                        <a data-attr-filter="montessori" target="_blank" className="top_boarding" href="/home/search/delhi/montessori-schools-in-delhi">Best Montessori Schools in Delhi</a> <span> | </span>
+                        <a data-attr-filter="dayschool" target="_blank" className="top_boarding" href="/home/search/delhi/day-schools-in-delhi">Best Day Schools in Delhi</a> <span> | </span>
+                        <a data-attr-filter="boardingschool" target="_blank" className="top_boarding" href="/home/search/delhi/boarding-schools-in-delhi">Boarding Schools in Delhi</a> <span> | </span>
+                        <a data-attr-filter="daycumboardingschool" target="_blank" className="top_boarding" href="/home/search/delhi/day-cum-boarding-schools-in-delhi">Best Day Cum Boarding Schools in Delhi</a> <span> | </span>
+                        <a data-attr-filter="onlineschool" target="_blank" className="top_boarding" href="/home/search/delhi/online-schools-in-delhi">Best online Schools In Delhi</a> <span> | </span>
+                        <a data-attr-filter="boys" target="_blank" className="top_boarding" href="/home/search/delhi/boys-schools-in-delhi">Best Boys Schools In Delhi</a> <span> | </span>
+                        <a data-attr-filter="girls" target="_blank" className="top_boarding" href="/home/search/delhi/girls-schools-in-delhi">Best Girls Schools In Delhi</a> <span> | </span>
+                        <a data-attr-filter="coed" target="_blank" className="top_boarding" href="/home/search/delhi/co-ed-schools-in-delhi">Best Co-Ed Schools In Delhi</a> <span> | </span>
+                        <a data-attr-filter="stembased" target="_blank" className="top_boarding" href="/home/search/delhi/stem-based-schools-in-delhi">Best STEM Based Schools In  Delhi</a> <span> | </span>
+                        <a data-attr-filter="daycare" target="_blank" className="top_boarding" href="/home/search/delhi/daycare-schools-in-delhi">Best Schools with Day Care In Delhi</a> <span> | </span>
+                        <a data-attr-filter="lowfee" target="_blank" className="top_boarding" href="/home/search/delhi/lowest-fee-schools-in-delhi">Best Schools with Lowest Fee In Delhi</a> <span> | </span>
+                        <a data-attr-filter="mediumfee" target="_blank" className="top_boarding" href="/home/search/delhi/medium-schools-fee-in-delhi">Best Schools with Medium Fee In Delhi</a> <span> | </span>
+                        <a data-attr-filter="highfee" target="_blank" className="top_boarding" href="/home/search/delhi/highest-schools-fee-in-delhi">Best Schools with Highest Fee In Delhi</a> <span> | </span>
                     </div>
                 </div>
             </div>

@@ -61,72 +61,72 @@ const About_usComponent = () => {
                         <div className="col-lg-12 my-2">
                             <h1 className="title"> 8 Key Benefits for Parents</h1>
                         </div>
-                        <div class="col-md-6 col-lg-4 col-sm-12 mb-3">
-                            <div class="card px-2 py-5 d-flex">
-                                <p class="m-0 text-center" >
+                        <div className="col-md-6 col-lg-4 col-sm-12 mb-3">
+                            <div className="card px-2 py-5 d-flex">
+                                <p className="m-0 text-center" >
                                     Everything that parents need to know about the educators.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 col-sm-12 mb-3">
-                            <div class="card px-2 py-5 d-flex">
-                                <p class="m-0 text-center" >
+                        <div className="col-md-6 col-lg-4 col-sm-12 mb-3">
+                            <div className="card px-2 py-5 d-flex">
+                                <p className="m-0 text-center" >
                                     Everything that parents need to know about the educators.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 col-sm-12 mb-3">
-                            <div class="card px-2 py-5 d-flex">
-                                <p class="m-0 text-center" >
+                        <div className="col-md-6 col-lg-4 col-sm-12 mb-3">
+                            <div className="card px-2 py-5 d-flex">
+                                <p className="m-0 text-center" >
                                     Everything that parents need to know about the educators.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 col-sm-12 mb-3">
-                            <div class="card px-2 py-5 d-flex">
-                                <p class="m-0 text-center" >
+                        <div className="col-md-6 col-lg-4 col-sm-12 mb-3">
+                            <div className="card px-2 py-5 d-flex">
+                                <p className="m-0 text-center" >
                                     Everything that parents need to know about the educators.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 col-sm-12 mb-3">
-                            <div class="card px-2 py-5 d-flex">
-                                <p class="m-0 text-center" >
+                        <div className="col-md-6 col-lg-4 col-sm-12 mb-3">
+                            <div className="card px-2 py-5 d-flex">
+                                <p className="m-0 text-center" >
                                     Everything that parents need to know about the educators.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 col-sm-12 mb-3">
-                            <div class="card px-2 py-5 d-flex">
-                                <p class="m-0 text-center" >
+                        <div className="col-md-6 col-lg-4 col-sm-12 mb-3">
+                            <div className="card px-2 py-5 d-flex">
+                                <p className="m-0 text-center" >
                                     Everything that parents need to know about the educators.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 col-sm-12 mb-3">
-                            <div class="card px-2 py-5 d-flex">
-                                <p class="m-0 text-center" >
+                        <div className="col-md-6 col-lg-4 col-sm-12 mb-3">
+                            <div className="card px-2 py-5 d-flex">
+                                <p className="m-0 text-center" >
                                     Everything that parents need to know about the educators.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 col-sm-12 mb-3">
-                            <div class="card px-2 py-5 d-flex">
-                                <p class="m-0 text-center" >
+                        <div className="col-md-6 col-lg-4 col-sm-12 mb-3">
+                            <div className="card px-2 py-5 d-flex">
+                                <p className="m-0 text-center" >
                                     Everything that parents need to know about the educators.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <span class="middleLine mt-5 mb-2"><em></em></span>
+                <span className="middleLine mt-5 mb-2"><em></em></span>
             </div>
             <div className="teamMembers baseContaine">
                 <div className="row">
                     <div className="col-lg-12 m-2">
                         <h1 className="title">Team on a Mission</h1>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div className="col-md-6 col-lg-4 col-sm-12">
                         <div className="card m-2">
                             <div className="team-photo">
                                 <img src={leader1} />
@@ -142,7 +142,7 @@ const About_usComponent = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div className="col-md-6 col-lg-4 col-sm-12">
                         <div className="card m-2">
                             <div className="team-photo m-2">
                                 <img src={leader2} />
@@ -158,7 +158,7 @@ const About_usComponent = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div className="col-md-6 col-lg-4 col-sm-12">
                         <div className="card m-2"><div className="team-photo">
                             <img src={leader3} />
                         </div>
@@ -173,7 +173,7 @@ const About_usComponent = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div className="col-md-6 col-lg-4 col-sm-12">
                         <div className="card m-2">
                             <div className="team-photo">
                                 <img className="img-fluid" src={leader4} />
@@ -189,7 +189,7 @@ const About_usComponent = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div className="col-md-6 col-lg-4 col-sm-12">
                         <div className="card m-2">
                             <div className="team-photo">
                                 <img className="img-fluid" src={leader5} />
@@ -205,7 +205,7 @@ const About_usComponent = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div className="col-md-6 col-lg-4 col-sm-12">
                         <div className="card m-2">
                             <div className="team-photo">
                                 <img className="img-fluid" src={leader6} />

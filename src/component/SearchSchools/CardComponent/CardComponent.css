@@ -1,16 +1,19 @@
 .starIcon {
     color: #FA802E;
-    font-size: 20px;
+    font-size: 14px;
     border-right: 3px solid rgba(0, 0, 0, .1);
     line-height: 24px;
-     font-weight: 600;
+    font-weight: 600;
 }
 
-.starIcon1 {
+.starIcon span {
     color: #FA802E;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 24px;
-     font-weight: 600;
+     font-weight: 300;
+}
+.cardFilterData .schoolDetails .schoolAddress{
+    font-size: 16px;
 }
 
 .applyBtn:hover {

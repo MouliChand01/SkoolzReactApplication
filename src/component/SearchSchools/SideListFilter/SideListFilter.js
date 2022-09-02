@@ -155,7 +155,7 @@ const ListFilter = () => {
                 Search Filters <a href="#" className="clearFilters"> Clear All </a>
             </div>
             <div className="filterCard">
-                <div className="">
+                <div>
                     <div className="sidebar-card">
                         {data.map((e, index) => (
                             <div>
@@ -167,10 +167,14 @@ const ListFilter = () => {
                             </div>
                         ))}
                     </div>
-                    <br /><br />
-                    <div className="card">
-                        <div className="adds">
-                            <p>Add's will be plced here</p>
+                    <div className="card mt-3">
+                        <div className="adds d-flex  justify-content-center  align-items-center">
+                            <p>Ad's will be plced here</p>
+                        </div>
+                    </div>
+                    <div className="card mt-3">
+                        <div className="adds d-flex  justify-content-center  align-items-center">
+                            <p>Ad's will be plced here</p>
                         </div>
                     </div>
                 </div>

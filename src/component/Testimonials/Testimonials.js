@@ -114,11 +114,11 @@ const Testimonials = () => {
                     </Swiper>
                 </div>
 
-                <div class="joinOurNetwork" id="contactRedirect">
-                    <div class="joinOurNetworkText">
+                <div className="joinOurNetwork" id="contactRedirect">
+                    <div className="joinOurNetworkText">
                         More Testimonials
-                        <div class="viewMoreTestimonialsHomeButton"></div>
-                        <a asp-controller="Testimonial" asp-action="Index" style={{ "textDecoration": "None" }} class="joinOurNetworkButton">
+                        <div className="viewMoreTestimonialsHomeButton"></div>
+                        <a asp-controller="Testimonial" asp-action="Index" style={{ "textDecoration": "None" }} className="joinOurNetworkButton">
                             <div>
                                 Click here &nbsp; <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                             </div>

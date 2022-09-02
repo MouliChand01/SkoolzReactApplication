@@ -5,6 +5,9 @@
 .kidsArena .card {
     text-align: left;
 }
+.kidsArena .kidsArena{
+    font-weight: 600;
+}
 
 .kidsArena .card .eventDiscription {
     text-align: justify;

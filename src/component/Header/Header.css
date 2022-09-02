@@ -4,19 +4,20 @@
     background: #ffffff;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 10px;
+    z-index: 999;
 }
 
 .webHeader{
     position: fixed;
     top:0px;
     left: 0px;
-    z-index: 99;
+    z-index: 999;
 }
 .mobileHeader{
     position: fixed;
     top:0px;
     left: 0px;
-    z-index: 99;
+    z-index: 999;
 }
 
 .header .logo {
@@ -72,7 +73,12 @@
     background: #F2F2F2;
     border: 0px solid #ECEBEB;
     border-radius: 6px;
+    border: none;
+    outline: none;
 }
+
+
+
 
 .location-icon {
     border-radius: 6px;
@@ -476,23 +482,21 @@
     color: rgba(0, 0, 0, .8);
     font-size: 16px;
     line-height: 20px;
-     ;
 }
 
-
-
-
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .baseContainer {
         width: 100%;
         padding-right: 17px;
         padding-left: 17px;
     }
-
-    /* .webHeader {
+    .mobileHeader {
+        position: relative;
+        padding-bottom: 80px;
+    }
+    .webHeader {
         display: none;
-    } */
+    }
     .headerSearchBox {
         height: 45px;
     }
@@ -516,7 +520,7 @@
         position: fixed;
         top:0px;
         left: 0px;
-        z-index: 99;
+        z-index: 9999;
     }
     .mobileHeader{
         position: fixed;

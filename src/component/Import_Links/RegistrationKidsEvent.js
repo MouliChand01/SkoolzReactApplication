@@ -70,7 +70,7 @@ const RegistrationKidsEvent = () => {
                             <Form.Control className="formControl" type="email" placeholder="Enter Parent Email"></Form.Control>
                         </Form.Group>
                     </Row>
-                    <Row className="formFooter">
+                    <div className="formFooter">
                         <div className="my-3 m-2">
                                <h1><strong>We promise to respect <br/>your data.</strong></h1>
                         </div>
@@ -83,7 +83,7 @@ const RegistrationKidsEvent = () => {
                         <div className="my-3 m-3">
                              <Button type="button" className="RegisterBtn">Register</Button>
                         </div>
-                    </Row>
+                    </div>
                 </Form>
             </div>
         </div>

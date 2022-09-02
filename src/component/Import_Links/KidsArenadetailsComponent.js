@@ -24,7 +24,7 @@ const KidsArenadetailsComponent = () => {
     return (
         <div>
             <HeaderComponent />
-            <br /><br /><br /><br />
+            <br/><br/>
             <div className="KidsArenadetails baseContainer mt-4">
                 {data && (
                     <div className="detailsContainer">
@@ -55,12 +55,12 @@ const KidsArenadetailsComponent = () => {
                                     <div className="studentdetails m-3">
                                         <div className="card">
                                             <div className="row">
-                                                <div className="col-3 studentImage">
+                                                <div className="col-lg-3 col-6 studentImage">
                                                     <div className="m-3">
                                                         <img className="img-fluid" src={data.studentImg} />
                                                     </div>
                                                 </div>
-                                                <div className="col-9 studenData">
+                                                <div className="col-lg-9 col-6 studenData">
                                                     <div className="my-2">
                                                         <h2>Posted by:</h2>
                                                         <h2>{data.studentName}</h2>

@@ -13,7 +13,6 @@ const KidsArenaComponent = () => {
         <div>
             {console.log(KidsArena)}
             <HeaderComponent />
-            <br /><br /> <br /><br />
             <div className="kidsArena baseContainer">
                 <div className="row">
                     <div className="col-lg-12 col-md-12 mb-3">
@@ -25,7 +24,7 @@ const KidsArenaComponent = () => {
                 </div>
                 <div className="row">
                     <div className="col-lg-9 col-sm-12 col-md-12 mt-2">
-                        <div className="headLinks my-4 mx-3">
+                        <div className="headLinks my-3 mx-3">
                             <span><a href="#">Home &nbsp;&gt;&nbsp;</a><a href="#">Blogs</a></span>
                         </div>
                         {KidsArena.map((val, index) => (
@@ -41,9 +40,9 @@ const KidsArenaComponent = () => {
                                         <div className="col-lg-6 col-sm-12 col-md-12 d-flex flex-column align-content-between">
                                             <div className="d-flex align-items-start flex-column eventContent mb-2">
                                                 <div className="eventsLink my-1">
-                                                    <h5><strong><Link to={`/kids-arena/${val.id}`}>{val.eventTitle}</Link></strong></h5>
+                                                    <h5><Link to={`/kids-arena/${val.id}`}>{val.eventTitle}</Link></h5>
                                                 </div>
-                                                <div className="eventDiscription  m-1">
+                                                <div className="eventDiscription  m-2">
                                                     <p>{val.eventText}</p>
                                                 </div>
                                             </div>
@@ -56,7 +55,7 @@ const KidsArenaComponent = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="col-lg-3 col-sm-12 col-md-12 mt-4">
+                    <div className="col-lg-3 col-sm-12 col-md-12 mt-3">
                         <div className="kidsArenaRightSide">
                             <div className="title">
                                 <h5>Recent Post</h5>
@@ -72,7 +71,7 @@ const KidsArenaComponent = () => {
                                         </div>
                                         <div className="col-8">
                                             <div className="recentTextLink">
-                                                <a href="#"><strong>{value.eventTitle}</strong></a>
+                                                <a href="#">{value.eventTitle}</a>
                                             </div>
                                         </div>
                                     </div>

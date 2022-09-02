@@ -149,7 +149,7 @@ const ModelListFilter = ({Closemodel}) => {
                 <a href="#" className="clearFilters"> Clear All </a>
             </div>
             <div className="filterCard">
-                <div className="">
+                <div>
                     <div className="sidebar-card">
                         {data.map((e, index) => (
                             <div>
