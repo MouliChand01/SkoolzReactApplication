@@ -24,7 +24,6 @@ const KidsArenadetailsComponent = () => {
     return (
         <div>
             <HeaderComponent />
-            <br/><br/>
             <div className="KidsArenadetails baseContainer mt-4">
                 {data && (
                     <div className="detailsContainer">

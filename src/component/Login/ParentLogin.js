@@ -1,79 +1,74 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faLinkedin, faGoogle } from '@fortawesome/free-brands-svg-icons'
+import { faUser, faLock } from '@fortawesome/free-solid-svg-icons'
 import './ParentLogin.css'
+import { Link } from "react-router-dom";
 
 
 const ParentLoginComp = () => {
-    const [activeStatus, setActiveStatus] = useState(true);
-
-    const toggleStatus = () => {
-        setActiveStatus(prevState => !prevState)
-    }
     return (
-        <div className="ParentLogin">
-            <HeaderComponent />
-            <br /><br />
-            <div className="heroImagecontainer mt-5">
-                <div className="container mt-5" id="container">
-
-                    <div className={`form-container sign-up-container mt-2 ${!activeStatus && 'active'}`}>
-                        <form action="#">
-                            <div className="social-container">
-                                <a href="#" className="social"><FontAwesomeIcon icon={faFacebook} /></a>
-                                <a href="#" className="social"><FontAwesomeIcon icon={faGoogle} /></a>
-                                <a href="#" className="social"><FontAwesomeIcon icon={faLinkedin} /></a>
+        <div>
+            <HeaderComponent />  
+            <div className="parentLoginContainer">
+                <div className="heroImage">
+                    <div className="col-12">
+                        <div className="card loginCard mt-5">
+                            <div className="cardLogo d-flex"><FontAwesomeIcon className="fa-2xl" icon={faUser} /></div>
+                            <div className="card-header">
+                                <h4 className="title text-center m-3">Parent Login To Search, Compare, Apply For The Best School</h4>
                             </div>
-                            <input className="formcontrol" type="email" placeholder="Email" />
-                            <input className="formcontrol" type="tel" placeholder="Mobile Number" />
-                            <input className="formcontrol" type="password" placeholder="Password" />
-                            <input className="formcontrol" type="password" placeholder="Re- enter Password" />
-                            <div className="form-check">
-                                <input className="form-check-input" for="checkboxSignIn" type="checkbox" value="I Remember me" />
-                                <label className="form-check-label">I have read and agree to the
-                                    <a href="#">Terms & Conditions</a>
-                                </label>
+                            <div className="card-body mb-1">
+                                <form>
+                                    <div className="px-2">
+                                        <div class="input-group flex-nowrap my-4">
+                                            <span class="input-group-text" style={{"backgroundColor":"#fff","border":"none"}} ><FontAwesomeIcon icon={faUser} /></span>
+                                            <input type="mail" class="form-control" placeholder="Username" aria-label="Username" />
+                                        </div>
+                                        <div class="input-group flex-nowrap my-4">
+                                            <span class="input-group-text" style={{"backgroundColor":"#fff","border":"none"}}><FontAwesomeIcon icon={faLock} /></span>
+                                            <input type="password" class="form-control" placeholder="Password"  aria-describedby="passwordHelpBlock" />
+                                        </div>
+                                        <button className="parentLoginBtn">Login</button>
+                                        <div>
+                                            <div className="row">
+                                                <div className="col-6">
+                                                    <div class="form-check">
+                                                        <a href="#">
+                                                            <input type="checkbox" class="form-check-input" id="check1" value="Remember me" />
+                                                            <label class="form-check-label" for="check1">Remember me</label>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div className="col-6">
+                                                    <div className="forgetpassword">
+                                                        <Link to="/forgot-password">Forgot Password ?</Link>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <p className="text-center m-2">OR</p>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-6">
+                                                    <div className="googleBtn">
+                                                    Sign In with Google account
+                                                    </div>
+                                                  
+                                                </div>
+                                                <div className="col-6 ">
+                                                    <div className="facebookBtn">
+                                                    Sign In with Facebook account
+                                                    </div>                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            
-                            <button className="btn btn-info btn-rounded" >Sign up</button>
-                        </form>
-                    </div>
-
-                    <div className={`form-container sign-up-container mt-2 ${activeStatus && 'active'}`}>
-                        <form action="#">
-                            {/* <h1 className="font-weight-bold">Sign in</h1> */}
-                            <div className="social-container">
-                                <a href="#" className="social"><FontAwesomeIcon icon={faFacebook} /></a>
-                                <a href="#" className="social"><FontAwesomeIcon icon={faGoogle} /></a>
-                                <a href="#" className="social"><FontAwesomeIcon icon={faLinkedin} /></a>
-                            </div>
-                            <span>or use your account</span>
-                            <input className="formcontrol" type="email" placeholder="Email" />
-                            <input className="formcontrol" type="password" placeholder="Password" />
-                            <div className="form-check">
-                                <input className="form-check-input" for="checkboxSignIn" type="checkbox" value="I Remember me" />
-                                <label className="form-check-label">&nbsp;&nbsp;Remember me</label>
-                            </div>
-                            <div className="mt-1">
-                                <span><a href="#">Forgot password?</a></span>
-                            </div>
-                            <button className="btn btn-info btn-rounded" >Sign In</button>
-                        </form>
-                    </div>
-
-                    <div className="overlay-container">
-                        <div className="overlay">
-                            <div className={`overlay-panel overlay-left mt-2 ${!activeStatus && 'active'}`}>
-                                <h1>Good to see you!</h1>
-                                <p>You already have an account? <br />Sign in!</p>
-                                <button className="but" id="signIn" onClick={toggleStatus}>Sign In</button>
-                            </div>
-                            <div className={`overlay-panel overlay-right mt-2 ${activeStatus && 'active'}`}>
-                                <h1>Hello, Parent !</h1>
-                                <p>You don't have account yet? Don't worry! You still can join us</p>
-                                <button className="but" id="signUp" onClick={toggleStatus}>Sign Up</button>
+                            <div className="card-footer m-4">
+                                Not registered yet?  &nbsp; <Link to='/register' className="register">Register</Link>
                             </div>
                         </div>
                     </div>
@@ -83,4 +78,4 @@ const ParentLoginComp = () => {
         </div>
     )
 }
-export default ParentLoginComp;
+export default ParentLoginComp

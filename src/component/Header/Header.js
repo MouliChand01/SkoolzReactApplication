@@ -129,7 +129,7 @@ const HeaderComponent = ()=>{
 
                            
                             <li className="nav-item">
-                                <a className="nav-link loginButton" style={{ "fontSize": "20px" }}>Parent Login</a>
+                                <Link to={'/login'} className="nav-link loginButton" style={{ "fontSize": "20px" }}>Parent Login</Link>
                                 
                             </li>
                         </ul>

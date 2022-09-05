@@ -11,6 +11,8 @@ import EventsWebinardetailsComponent from './component/Import_Links/EventsWebina
 import SkoolzHomepageComponent from './component/SkoolzHomePage/SkoolzHomePage';
 import SearchSchools from './component/SearchSchools/SearchSchools';
 import ParentLoginComp from './component/Login/ParentLogin';
+import ParentRegistrationComp from './component/Login/ParentRegistr';
+import ForgotPassword from './component/Login/ForgotPassword';
 
 // import 'swiper/css'
 // import 'swiper/css/navigation'
@@ -35,7 +37,10 @@ function App() {
           <Route path="/kids-arena/:id" element={<KidsArenadetailsComponent />} />
 
           <Route path="/school-details" element={<DeatailsSchoolComponent/>}/>
+
           <Route path="/login" element={<ParentLoginComp/>}/>
+          <Route path="/register" element={<ParentRegistrationComp/>}/>
+          <Route path="/forgot-password" element={<ForgotPassword/>}/>
           
         </Routes>
 

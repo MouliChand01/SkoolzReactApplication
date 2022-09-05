@@ -1,208 +1,121 @@
-/* .ParentLogin .heroImagecontainer{
-    background-image: url('../../Assets/Images/happy-family-using-laptop.jpg');
-}  */
-
- .ParentLogin .heroImagecontainer p {
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    margin: 20px 0 30px;
+.parentLoginContainer .heroImage::before,
+.registercontainer .heroImage::before,
+.passwordContainer .heroImage::before{
+    background-image: url('../../Assets/Images/Skoolz-Hero-Image.jpg');
+    position: absolute;
+    content: '';
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 }
 
-.ParentLogin .heroImagecontainer a {
-    color: #333;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 15px 0;
+.parentLoginContainer .heroImage,
+.registercontainer .heroImage,
+.passwordContainer .heroImage{
+   background-color: rgba(0, 0, 0, .5);
+   position: relative;
+   padding: 77px 0 50px;
 }
 
-
-.ParentLogin .but {
-    border-radius: 20px;
-    border: 1px solid #FFFFFF;
-    background-color: #FF6700;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 14px 35px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+.parentLoginContainer .googleBtn{
+    background-color: #DD4B39;
+    cursor: pointer;
+    text-align: center;
+    font-size: small;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 3px;
     
 }
-.ParentLogin .btn-info{
-    color: rgb(247, 242, 242);
-    background-color:  #FF6700;
-    border-color: #FF6700;
-}
-.ParentLogin .btn-info:hover{
-    color: rgb(250, 248, 248);
-    background-color:  #f7690b;
-    border-color: #ebe5e1;
-}
-
-.ParentLogin form {
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 50px;
-    height: 100%;
+.parentLoginContainer .facebookBtn{
+    background-color: #3A5A97;
+    cursor: pointer;
     text-align: center;
+    font-size: small;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 3px;
 }
 
-.ParentLogin .heroImagecontainer .formcontrol {
-    background-color: #eee;
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
+.parentLoginContainer .loginCard,
+.registercontainer .registerCard,
+.passwordContainer .forgetpassCard{
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    border-radius: 24px;
+    width:358px;
+    margin: 0 auto;
+    font-size: 14px;
 }
-
-.ParentLogin .social-container {
-    margin: 5px ;
-}
-
-.ParentLogin .social-container a {
-    border: 1px solid #dddddd;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
-    height: 40px;
-    width: 40px;
-}
-
-.ParentLogin .container {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    position: relative;
-    overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
-}
-
-.ParentLogin .form-container {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    transition: all 0.6s ease-in-out;
-}
-
-.ParentLogin .sign-in-container {
-    left: 0;
-    width: 50%;
-    z-index: 2;
-}
-
-.ParentLogin .sign-up-container {
-    left: 0;
-    width: 50%;
-    opacity: 0;
-    z-index: 1;
-    transform: translateX(-100%);
-}
-
-.ParentLogin .sign-up-container.active {
-    opacity: 1;
-    transform: translateX(0);
-}
-.ParentLogin .container.right-panel-active .sign-in-container {
-    transform: translateX(100%);
-}
-
-.ParentLogin .container.right-panel-active .sign-up-container {
-    transform: translateX(100%);
-    opacity: 1;
-    z-index: 5;
-    animation: show 0.6s;
-}
-
-@keyframes show {
-    0%,
-    49.99% {
-        opacity: 0;
-        z-index: 1;
-    }
-
-    50%,
-    100% {
-        opacity: 1;
-        z-index: 5;
-    }
-}
-.ParentLogin .overlay-container {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    transition: transform 0.6s ease-in-out;
-    z-index: 100;
-}
-
-.ParentLogin .container.right-panel-active .overlay-container {
-    transform: translateX(-100%);
-}
-
-.ParentLogin .overlay {
-    background: #FF6700;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 0;
+.parentLoginBtn,
+.parentRegisterBtn{
     color: #ffffff;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 27px;
+    min-width: 120px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 0.25s ease;
+    box-shadow: none;
+    background: #34A853;
+    border: none;
+}
+.parentLoginBtn:hover,
+.parentRegisterBtn:hover{
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 27px;
+    min-width: 120px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 0.25s ease;
+    box-shadow: none;
+    border:1px solid #34A84F;
+    color: #34A853;
+}
+.title{
+    color: #34A84F;
+    font-weight: 600;
+}
+.parentLoginContainer a{
+    color:gainsboro;
+}
+.parentLoginContainer .register,
+.registercontainer .Login{
+    color:#34A84F;
+}
+.parentLoginContainer .loginCard .cardLogo,
+.registercontainer .registerCard .cardLogo,
+.passwordContainer .forgetpassCard .cardLogo{
     position: relative;
-    left: -100%;
-    height: 100%;
-    width: 200%;
-    transform: translateX(0);
-    transition: transform 0.6s ease-in-out;
-}
-
-.ParentLogin .container.right-panel-active .overlay {
-    transform: translateX(50%);
-}
-
-.ParentLogin .overlay-panel {
-    position: absolute;
-    display: flex;
+    left: 144px;
+    top: -32px;
+    background-color: #34A84F;
+    height: 70px;
+    width: 70px;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    top: 0;
-    height: 100%;
-    width: 50%;
-    transform: translateX(0);
-    transition: transform 0.6s ease-in-out;
+    border-radius: 50%;
+}
+.parentLoginContainer .card-footer,
+.registercontainer .card-footer,
+.passwordContainer .card-footer{
+    border-top: 1px solid gainsboro;
+}
+.loginCard .form-control,
+.registerCard .form-control{
+    border: none;
 }
 
-.ParentLogin .overlay-left {
-    transform: translateX(-20%);
+.loginCard .form-control:focus,
+.registerCard .form-control:focus{
+    box-shadow: none;
+    outline: none;
 }
 
-.ParentLogin .overlay-right {
-    right: 0;
-    transform: translateX(0);
-}
-
-.ParentLogin  .overlay-left,
-.ParentLogin  .overlay-right {
-    right:inherit !important;
-    opacity: 0;
-    transition: all .3s ease;
-    transform: translateX(100%) !important;
-}
-
-.ParentLogin  .overlay-left.active,
-.ParentLogin  .overlay-right.active {
-    right:0;
-    opacity: 1;
-    transition: all .3s ease;
-    transform: translateX(100%) !important;
-}
