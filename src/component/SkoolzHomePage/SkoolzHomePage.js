@@ -1,6 +1,6 @@
 import React from "react";
 import AwardsAndRecognitions from "../AwardsAndRecognitions/AwardsAndRecognitions";
-import Blogs from "../Blogs/Blogs";
+import Blogs from "../Blogs/BlogsComponent";
 import EvetsAndWeninars from "../EventsAndWebinars/EventsAndWebinars";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";

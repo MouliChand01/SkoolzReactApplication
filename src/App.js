@@ -13,6 +13,7 @@ import SearchSchools from './component/SearchSchools/SearchSchools';
 import ParentLoginComp from './component/Login/ParentLogin';
 import ParentRegistrationComp from './component/Login/ParentRegistr';
 import ForgotPassword from './component/Login/ForgotPassword';
+import BlogsComp from './component/Import_Links/BlogsComp';
 
 // import 'swiper/css'
 // import 'swiper/css/navigation'
@@ -36,7 +37,10 @@ function App() {
           <Route path="/kids-arena" element={<KidsArenaComponent />} />
           <Route path="/kids-arena/:id" element={<KidsArenadetailsComponent />} />
 
+          <Route path="/blogs" element={<BlogsComp/>} />
+
           <Route path="/school-details" element={<DeatailsSchoolComponent/>}/>
+
 
           <Route path="/login" element={<ParentLoginComp/>}/>
           <Route path="/register" element={<ParentRegistrationComp/>}/>

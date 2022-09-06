@@ -16,13 +16,13 @@ const ForgotPassword =()=>{
                         <div className="card forgetpassCard mt-5">
                             <div className="cardLogo d-flex"><FontAwesomeIcon className="fa-2xl" icon={faUser} /></div>
                             <div className="card-header">
-                                <h4 className="title text-center m-3">Forgot Your Password? Enter Your Email To Retrieve Email</h4>
+                                <h3 className="title text-center m-3">Forgot Your Password? Enter Your Email To Retrieve Email</h3>
                             </div>
                             <div className="card-body mb-1">
                                 <form>
                                     <div className="px-2">
                                         <div class="input-group flex-nowrap my-4">
-                                            <span class="input-group-text" style={{ "backgroundColor": "#fff", "border": "none" }} ><FontAwesomeIcon icon={faEnvelope} /></span>
+                                            <span class="input-group-text" style={{ "backgroundColor":"rgb(235, 234, 234)", "border": "none" }} ><FontAwesomeIcon icon={faEnvelope} /></span>
                                             <input type="mail" class="form-control" placeholder="Username" aria-label="Username" />
                                         </div>
                                         <button className="parentRegisterBtn">Reset Password</button>

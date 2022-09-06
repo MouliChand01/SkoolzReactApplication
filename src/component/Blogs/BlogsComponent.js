@@ -13,12 +13,12 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./Blogs.css";
+import "./BlogsComponent.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-const Blogs = () => {
+const BlogsComponent = () => {
     const [trending, setTrending] = useState(true);
     const [seleted, setSelected] = useState(true);
     const OnTranding = (val) => {
@@ -476,4 +476,4 @@ const Blogs = () => {
         </div >
     )
 }
-export default Blogs;
+export default BlogsComponent;

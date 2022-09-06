@@ -17,17 +17,17 @@ const ParentLoginComp = () => {
                         <div className="card loginCard mt-5">
                             <div className="cardLogo d-flex"><FontAwesomeIcon className="fa-2xl" icon={faUser} /></div>
                             <div className="card-header">
-                                <h4 className="title text-center m-3">Parent Login To Search, Compare, Apply For The Best School</h4>
+                                <h3 className="title text-center m-3">Parent Login To Search, Compare, Apply For The Best School</h3>
                             </div>
                             <div className="card-body mb-1">
                                 <form>
                                     <div className="px-2">
                                         <div class="input-group flex-nowrap my-4">
-                                            <span class="input-group-text" style={{"backgroundColor":"#fff","border":"none"}} ><FontAwesomeIcon icon={faUser} /></span>
+                                            <span class="input-group-text" style={{"backgroundColor":"rgb(235, 234, 234)","border":"none"}} ><FontAwesomeIcon icon={faUser} /></span>
                                             <input type="mail" class="form-control" placeholder="Username" aria-label="Username" />
                                         </div>
                                         <div class="input-group flex-nowrap my-4">
-                                            <span class="input-group-text" style={{"backgroundColor":"#fff","border":"none"}}><FontAwesomeIcon icon={faLock} /></span>
+                                            <span class="input-group-text" style={{"backgroundColor":"rgb(235, 234, 234)","border":"none"}}><FontAwesomeIcon icon={faLock} /></span>
                                             <input type="password" class="form-control" placeholder="Password"  aria-describedby="passwordHelpBlock" />
                                         </div>
                                         <button className="parentLoginBtn">Login</button>

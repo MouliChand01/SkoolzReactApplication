@@ -1,29 +1,4 @@
-/* @font-face {
-     ;
-    src: local('Mont'), url(./fonts/Montserrat-Regular.ttf) format('truetype');
-}
 
-@font-face {
-    font-family: 'MontserratSemiBold';
-    src: local('Mont'), url(./fonts/Montserrat-SemiBold.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'MontserratBold';
-    src: local('Mont'), url(./fonts/Montserrat-Bold.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: "MontserratBlack";
-    src: local("Mont"), url(./fonts/Montserrat-Black.ttf) format("truetype");
-}
-
-body {
-      !important;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-} */
 .schoolMainHome .topSchoolSection.topSchoolBlog .swiper-slide {
     transition: 1s;
     transform: scale(1.0);
