@@ -23,6 +23,10 @@
     border: none !important;
     outline: none !important;
 }
+.BlogsContainer .btn-content button{
+    background-color: #FFF;
+    color: black;
+}
 .BlogsContainer .QuicklinksListOne ul,
 .BlogsContainer .QuicklinksListTwo ul{
     list-style: none;

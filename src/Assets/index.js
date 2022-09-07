@@ -745,3 +745,46 @@ export const KidsArena = [
     ],
   },
 ];
+
+export const LoadBlogs =[
+  {
+    id:1,
+    schoolType:["Pre-schools"],
+    schoolCity:["Bangalore","Chennai","Mumbai","Hyderabad"],
+    blogName:"The Shower1 of Blessings from NEP to Early Childhood Care and Education",
+    blogDes:"In 2008, when I was working as a principal for a private school, I happened to substitute an invigilator for a Class-8 English unit test. Peeking into Students' answer scripts always makes invigilation less dull.",
+
+  },
+  {
+    id:2,
+    schoolType:["Pre-schools","Education","Parenting"],
+    schoolCity:["Bangalore","Hyderabad"],
+    blogName:"The Shower2 chennai pre-school of Blessings from NEP to Early Childhood Care and Education",
+    blogDes:"In 2008, when I was working as a principal for a private school, I happened to substitute an invigilator for a Class-8 English unit test. Peeking into Students' answer scripts always makes invigilation less dull.",
+
+  },
+  {
+    id:3,
+    schoolType:["Pre-schools","Education","Parenting"],
+    schoolCity:["Bangalore"],
+    blogName:"The Shower3 Pre-school of Blessings from NEP to Early Childhood Care and Education",
+    blogDes:"In 2008, when I was working as a principal for a private school, I happened to substitute an invigilator for a Class-8 English unit test. Peeking into Students' answer scripts always makes invigilation less dull.",
+
+  },
+  {
+    id:4,
+    schoolType:["Boards","Pre-schools","Education","Parenting"],
+    schoolCity:["Bangalore","Chennai","Mumbai","Hyderabad"],
+    blogName:"The Showe4 Bords of Blessings from NEP to Early Childhood Care and Education",
+    blogDes:"In 2008, when I was working as a principal for a private school, I happened to substitute an invigilator for a Class-8 English unit test. Peeking into Students' answer scripts always makes invigilation less dull.",
+
+  },
+  {
+    id:5,
+    schoolType:["Pre-schools","Boards"],
+    schoolCity:["Chennai","Mumbai","Hyderabad"],
+    blogName:"The Shower5 of Blessings from NEP to Early Childhood Care and Education",
+    blogDes:"In 2008, when I was working as a principal for a private school, I happened to substitute an invigilator for a Class-8 English unit test. Peeking into Students' answer scripts always makes invigilation less dull.",
+
+  }
+]
