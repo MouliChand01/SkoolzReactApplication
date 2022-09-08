@@ -14,7 +14,6 @@ const About_usComponent = () => {
         <div>
             {/* HeadePart */}
             <HeaderComponent />
-            <br /><br /><br />
             <div className="aboutUsSection baseContainer">
                 <div className="AboutSkoolz">
                     <div className="row">

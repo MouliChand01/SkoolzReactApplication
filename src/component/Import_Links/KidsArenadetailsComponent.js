@@ -3,6 +3,8 @@ import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import { KidsArena } from '../../Assets/index';
 import { useParams } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faLinkedin, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 import './KidsArenadetailsComponent.css';
 
 const KidsArenadetailsComponent = () => {
@@ -67,6 +69,17 @@ const KidsArenadetailsComponent = () => {
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div className="socalMediaIcons ms-auto px-3 pb-3">
+                                        <div>
+                                            <a>
+                                                <span> Share : &nbsp;</span>
+                                                <button className="faceBook" style={{ "backgroundColor": "#3B5998" }}><FontAwesomeIcon icon={faFacebookF} style={{ "color": "white" }} /></button>
+                                                <button className="whatesUp" style={{ "backgroundColor": "#1DA1F2" }}><FontAwesomeIcon icon={faWhatsapp} style={{ "color": "white" }} /></button>
+                                                <button className="Twiter" style={{ "backgroundColor": "#4DC247" }}><FontAwesomeIcon icon={faTwitter} style={{ "color": "white" }} /></button>
+                                                <button className="LinkedIn" style={{ "backgroundColor": "blue" }}><FontAwesomeIcon icon={faLinkedin} style={{ "color": "white" }} /></button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

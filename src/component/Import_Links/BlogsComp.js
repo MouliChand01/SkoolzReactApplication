@@ -1,7 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
-import { LoadBlogs } from '../../Assets/index'
+import { LoadBlogs } from '../../Assets/index';
+import { Link , useNavigate} from "react-router-dom";
+import skoolzLogo from '../../Assets/Images/skoolz.PNG';
 import './BlogsComp.css';
 
 const BlogsComp = () => {
@@ -65,25 +67,26 @@ const BlogsComp = () => {
     const [schoolSelected, setSchoolSelected] = useState(schoolTypeList);
     const [loadBlogs, setLoadBlogs] = useState(LoadBlogs);
     const [sortedBlogs, setSortedBlogs] = useState([]);
-    const [cityUpdate,setCityUpdate]=useState("Bangalore");
-    const [schoolUpdate,setSchoolUpdate]=useState("Pre-schools");
-    const[ role,setRole]=useState("Trending")
-  
-    useEffect(()=>{
+    const [cityUpdate, setCityUpdate] = useState("Bangalore");
+    const [schoolUpdate, setSchoolUpdate] = useState("Pre-schools");
+    const [role, setRole] = useState("Trending")
+    const navigate = useNavigate()
+
+    useEffect(() => {
         var data = []
-        loadBlogs.map((item,index)=>{
-            if(item.schoolType.includes(schoolUpdate) && item.schoolCity.includes(cityUpdate)){
-                    setSortedBlogs(data)
-                    data.push(item)
-                    setSortedBlogs(data)         
+        loadBlogs.map((item, index) => {
+            if (item.schoolType.includes(schoolUpdate) && item.schoolCity.includes(cityUpdate)) {
+                setSortedBlogs(data)
+                data.push(item)
+                setSortedBlogs(data)
             }
         })
-    },[cityUpdate,schoolUpdate])
+    }, [cityUpdate, schoolUpdate])
 
-    const onSelected = (e) => { 
+    const onSelected = (e) => {
         setTrending(!trending);
         setSelected(!selected);
-        setRole(e.target.value);       
+        setRole(e.target.value);
     };
 
     const onCitySelected = (val1) => {
@@ -93,12 +96,12 @@ const BlogsComp = () => {
         setCityUpdate(checked.name)
     };
 
-    const onSchoolTypeSelected = (val2) => { 
+    const onSchoolTypeSelected = (val2) => {
         const checked = schoolSelected[val2];
         let data = schoolSelected.map((val) => val.name === schoolSelected[val2].name ? { ...val, isSelected: !schoolSelected[val2].isSelected } : { ...val, isSelected: false });
         setSchoolSelected(data);
         setSchoolUpdate(checked.name)
-      
+
     }
 
     return (
@@ -125,21 +128,31 @@ const BlogsComp = () => {
                     </div>
                     <div className="btn-content text-center m-3 mb-5">
                         <div className="ButtonGroup btn-group shadow-lg  bg-white rounded-pill">
-                            <button type="button" value="Trending" className={`m-3 Trending ${trending ? "btnSelected" : ''}`} onClick={(event)=>onSelected(event)}>Trending</button>
-                            <button type="button" value="Latest" className={`m-3 Latest ${selected ? "btnSelected" : ''}`} onClick={(event)=>onSelected(event)}>Latest</button>
+                            <button type="button" value="Trending" className={`m-3 Trending ${trending ? "btnSelected" : ''}`} onClick={(event) => onSelected(event)}>Trending</button>
+                            <button type="button" value="Latest" className={`m-3 Latest ${selected ? "btnSelected" : ''}`} onClick={(event) => onSelected(event)}>Latest</button>
                         </div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-lg-9 col-md-12 col-sm-12">
                         {sortedBlogs.map((value, index) => (
-                            <div className="card" key={index}>
+                            <div className="card blogsCard my-2 m-2" key={index}>
                                 <div className="row">
                                     <div className="col-lg-6 col-sm-12 col-sm-12">
-                                        <h4 className="text-justfiy">{value.blogName}</h4> 
+                                        <img className="img-fluid p-4" src={value.blogImage} />
                                     </div>
-                                    <div className="col-lg-6 col-sm-12 col-sm-12">
-                                        
+                                    <div className="col-lg-6 col-sm-12 col-md-12 d-flex flex-column align-content-between">
+                                        <div className="d-flex align-items-start flex-column eventContent mb-2">
+                                            <div className="eventsLink m-2">
+                                                <h5><a><Link to="/blogs-details" state={sortedBlogs[index]} >{value.blogName}</Link></a></h5>
+                                            </div>
+                                            <div className="eventDiscription mt-3 m-2">
+                                                <p>{value.blogDes}</p>
+                                            </div>
+                                        </div>
+                                        <div className="cardFooter p-2 d-flex align-items-end">
+                                            <img src={skoolzLogo} />
+                                        </div>
                                     </div>
                                 </div>
                             </div>

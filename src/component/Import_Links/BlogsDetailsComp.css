@@ -1,0 +1,54 @@
+.blogsDetailsContainer .QuicklinksListOne ul,
+.blogsDetailsContainer .QuicklinksListTwo ul{
+    list-style: none;
+}
+.blogsDetailsContainer .QuicklinksListOne .highlightText,
+.blogsDetailsContainer .QuicklinksListTwo .highlightText{
+    font-weight: 600;
+    font-size: 30px;
+    border-bottom: 1px solid #80808087 !important;
+    color: #FF6700;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+.blogsDetailsContainer .detailsContainer{
+    text-align: left;
+}
+.blogsDetailsContainer .detailsContainer .card .splText{
+    width: 100%;
+    background-color: #126528;
+}
+.blogsDetailsContainer .detailsContainer .card .splText h6{
+    color: #fff;
+    text-align: center;
+}
+.blogsDetailsContainer .socalMediaIcons button{
+    margin: 0 3px;
+    width: 30px;
+    height: 30px;
+    transition: all .3s ease;
+}
+.blogsDetailsContainer .socalMediaIcons button:hover{
+    transform: translateY(-10px);
+    transition: all .3s ease;
+  
+}
+.blogsDetailsContainer .leaderCard{
+    background-color:#f7f7f7;;
+}
+.blogsDetailsContainer .detailsContainer a{
+    color: black;
+}
+.blogsDetailsContainer .detailsContainer a:hover{
+    color:#126528;
+    
+}
+
+@media only screen and (min-width: 991px) {
+    .blogsDetailsContainer {
+        margin-top: 120px;
+    }
+
+}

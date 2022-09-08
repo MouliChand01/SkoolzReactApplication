@@ -14,6 +14,7 @@ import ParentLoginComp from './component/Login/ParentLogin';
 import ParentRegistrationComp from './component/Login/ParentRegistr';
 import ForgotPassword from './component/Login/ForgotPassword';
 import BlogsComp from './component/Import_Links/BlogsComp';
+import BlogsDetailsComp from './component/Import_Links/BlogsDetailsComp';
 
 // import 'swiper/css'
 // import 'swiper/css/navigation'
@@ -23,9 +24,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-       
-        <Routes>
-          
+        <Routes>      
           <Route path="/" element={<SkoolzHomepageComponent/>}/>
           <Route path="/home/search" element={<SearchSchools/>}/>
 
@@ -38,16 +37,15 @@ function App() {
           <Route path="/kids-arena/:id" element={<KidsArenadetailsComponent />} />
 
           <Route path="/blogs" element={<BlogsComp/>} />
+          <Route path="/blogs-details" element={<BlogsDetailsComp/>} />
 
           <Route path="/school-details" element={<DeatailsSchoolComponent/>}/>
 
-
           <Route path="/login" element={<ParentLoginComp/>}/>
           <Route path="/register" element={<ParentRegistrationComp/>}/>
-          <Route path="/forgot-password" element={<ForgotPassword/>}/>
+          <Route path="/forgot-password" element={<ForgotPassword/>}/>   
           
         </Routes>
-
       </div>
     </BrowserRouter>
   );

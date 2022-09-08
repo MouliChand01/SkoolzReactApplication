@@ -36,6 +36,16 @@ ul{
 .EventsWebinardetails .headLinks a:hover{
     color:rgba(52, 168, 79, 1);
 }
+.EventsWebinardetails .socalMediaIcons button{
+    margin: 0 3px;
+    width: 30px;
+    height: 30px;
+    transition: all .3s ease;
+}
+.EventsWebinardetails .socalMediaIcons button:hover{
+    transform: translateY(-10px);
+    transition: all .3s ease;
+}
 @media screen and (min-width :768px) {
     .EventsWebinardetails .detailsContainer{
         margin-top: 100px;
