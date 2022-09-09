@@ -27,26 +27,13 @@
     background-color: #FFF;
     color: black;
 }
-.BlogsContainer .QuicklinksListOne ul,
-.BlogsContainer .QuicklinksListTwo ul{
-    list-style: none;
-}
-.BlogsContainer .QuicklinksListOne .highlightText , 
-.BlogsContainer .QuicklinksListTwo .highlightText {
-    font-weight: 600;
-    font-size: 30px;
-    border-bottom: 1px solid #80808087 !important;
-    color: #FF6700;
-    font-weight: 600;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    text-align: center;
-}
 .BlogsContainer .blogsCard{
     text-align: left;
 }
 .BlogsContainer .blogsCard .eventDiscription{
     text-align:justify;
+    font-size: 14px;
+    color: rgba(0,0,0,.6);
 }
 .BlogsContainer .blogsCard .eventsLink a{
     color: black;

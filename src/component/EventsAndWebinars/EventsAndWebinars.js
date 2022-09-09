@@ -14,6 +14,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 
 const EvetsAndWeninars = () => {
     let [mywindow, setMywindow] = useState({})
@@ -34,7 +35,7 @@ const EvetsAndWeninars = () => {
         <div>
             <div className="schoolMainHome">
                 <div className="baseContainer topSchoolSection" style={{ "display": "inline-block" }}>
-                    <div className="topSchoolSectionTitle"><a><p style={{ "color": "#FF6700" }}> Events/Webinars/Workshops</p></a></div>
+                    <div className="topSchoolSectionTitle"><a><Link to="./events-webinar"><p style={{ "color": "#FF6700" }}> Events/Webinars/Workshops</p></Link></a></div>
                     <Swiper slidesPerView={mywindow.width && mywindow.width < 768 ? 1 : 2}
                         spaceBetween={37}
                         slidesPerGroup={3}

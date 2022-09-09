@@ -1,5 +1,4 @@
 import React from "react";
-import './About_us_Skoolz.css';
 import leader1 from '../../Assets/Images/Srinivas.jpg'
 import leader2 from '../../Assets/Images/Sowmya.jpg'
 import leader3 from '../../Assets/Images/Pramil.jpg'
@@ -8,6 +7,7 @@ import leader5 from '../../Assets/Images/Sooryah.jpg'
 import leader6 from '../../Assets/Images/Kalpana-Mohan.jpg'
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
+import './About_us_Skoolz.css';
 
 const About_usComponent = () => {
     return (

@@ -124,12 +124,12 @@ const HeaderComponent = ()=>{
                            
                             <li className="nav-item">
     
-                                <a className="nav-link loginButton" target="_blank" href="https://www.partners.skoolz.in/" style={{ "fontSize": "20px" }}>Partner with us</a>
+                                <Link to={'/'} className="nav-link loginButton" style={{ "fontSize": "20px","font-weight":"500" }}>Partner with us</Link>
                             </li>
 
                            
                             <li className="nav-item">
-                                <Link to={'/login'} className="nav-link loginButton" style={{ "fontSize": "20px" }}>Parent Login</Link>
+                                <Link to={'/login'} className="nav-link loginButton" style={{ "fontSize": "20px","font-weight":"500" }}>Parent Login</Link>
                                 
                             </li>
                         </ul>

@@ -484,6 +484,7 @@
     line-height: 20px;
 }
 
+
 @media only screen and (max-width: 767px) {
     .baseContainer {
         width: 100%;

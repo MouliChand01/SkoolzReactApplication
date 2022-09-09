@@ -5,6 +5,7 @@ import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import { EventsAndWebinar } from '../../Assets/index'
 import './Events&Webinar.css'
+import QuickLinksComp from "../QuickLinks/QuickLinks";
 
 
 const Events_WebinarComponent = () => {
@@ -54,29 +55,7 @@ const Events_WebinarComponent = () => {
                         }
                     </div>
                     <div className="col-lg-3 col-md-12 col-sm-12">
-                        <div className="QuicklinksListOne">
-                            <h5 className="highlightText"> Quick links</h5>
-                            <ul className="QuicklinksButtonGroup">
-                                <li><button type="button" className="QuicklinksButton m-1">Home</button></li>
-                                <li><button type="button" className="QuicklinksButton m-1">School Search</button></li>
-                                <li><button type="button" className="QuicklinksButton m-1">Events/Webinar</button></li>
-                                <li><button type="button" className="QuicklinksButton m-1">Blogs</button></li>
-                                <li><button type="button" className="QuicklinksButton m-1">Awards & Recongnition</button></li>
-                                <li><button type="button" className="QuicklinksButton m-1">Contact Us</button></li>
-                                <li><button type="button" className="QuicklinksButton m-1">About Skoolz</button></li>
-                            </ul>
-                        </div>
-                        <div className="QuicklinksListTwo">
-                            <h5 className="highlightText">Quick schools<br /> search</h5>
-                            <ul className="QuicklinksButtonGroup">
-                                <li><button type="button" className="QuicklinksButton m-1">CBSE Schools in Bengaluru</button></li>
-                                <li><button type="button" className="QuicklinksButton m-1">ICSE Schools in Bengaluru</button></li>
-                                <li><button type="button" className="QuicklinksButton m-1">IGCES Schools in Bengaluru</button></li>
-                                <li><button type="button" className="QuicklinksButton m-1">Pre-School in Bengaluru</button></li>
-
-                            </ul>
-                        </div>
-
+                      <QuickLinksComp/>
                     </div>
                 </div>
             </div>

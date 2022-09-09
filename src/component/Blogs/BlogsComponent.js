@@ -17,6 +17,7 @@ import "./BlogsComponent.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 const BlogsComponent = () => {
     const [trending, setTrending] = useState(true);
@@ -48,7 +49,7 @@ const BlogsComponent = () => {
         <div>
             <div className="schoolMainHome">
                 <div className="baseContainer topSchoolSection">
-                    <div className="topSchoolSectionTitle"><a href="/blog/index" style={{ "textDecoration": "none" }}><p style={{ "color": "#FF6700" }}> Blogs </p></a></div>
+                    <div className="topSchoolSectionTitle"><a style={{ "textDecoration": "none" }}><Link to='./blogs'><p style={{ "color": "#FF6700" }}> Blogs </p></Link></a></div>
                     <div id="btn-content" className="text-center m-3 mb-5">
                         <div className="btn-group shadow-lg  bg-white rounded-pill" role="group" aria-label="Basic example">
                             <button type="submit" data-index="0" className={`btn-board-trendblogshome m-3 Trending ${seleted ? "btnSelected" : ''}`} onClick={() => OnTranding("Trending")}>Trending</button>
