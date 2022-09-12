@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation ,Link} from "react-router-dom";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,8 +20,8 @@ const BlogsDetailsComp = () => {
                         <div className="col-lg-12 col-sm-12 col-md-12 m-2">
                             <div className="headLinks">
                                 <span>
-                                    <a href="#">Home &nbsp;&gt;&nbsp;</a>
-                                    <a href="#">Blogs &nbsp;&gt;&nbsp;</a>
+                                    <Link to='/'><a>Home &nbsp;&gt;&nbsp;</a></Link>
+                                    <Link to='/blogs'><a>Blogs &nbsp;&gt;&nbsp;</a></Link>
                                     <a href="">{location.state.blogName}</a>
                                 </span>
                             </div>
@@ -29,7 +29,7 @@ const BlogsDetailsComp = () => {
                     </div>
                     <div className="row">
                         <div className="col-lg-9 col-sm-12 col-md-12">
-                            <div className="card">
+                            <div className="card blogDetalisCard">
                                 <div className="row">
                                     <img className="img-fluid p-4"
                                         src={location.state.blogImage} />

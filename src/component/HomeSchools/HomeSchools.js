@@ -16,16 +16,16 @@ import "./HomeSchools.css"
 const Schools = () => {
     let [mywindow, setMywindow] = useState({});
     let [trending, setTrending] = useState(true);
-    let [selected, setSelected] = useState(true);
+    let [selected, setSelected] = useState(false);
 
     const changebtn = (val) => {
         if (val === "nearMe") {
             setTrending(false)
-            setSelected(false)
+            setSelected(true)
         }
         else {
             setTrending(true)
-            setSelected(true)
+            setSelected(false)
         }
     }
     let resizeId;
@@ -54,9 +54,9 @@ const Schools = () => {
                         <button type="submit" data-value="4" className="btn-board-type m-3 ">Day Cum Boarding</button>
                     </div>
                     <div id="btn-content" className="text-center m-3 mb-5">
-                        <div className="btn-group shadow-lg  bg-white rounded-pill" role="group" aria-label="Basic example">
-                            <button type="submit" data-value="true" className={`btn-board-trend m-3 ${selected ? 'btn-selected' : ''}`} onClick={() => changebtn('Trending')}>Trending</button>
-                            <button type="submit" data-value="false" className={`btn-board-trend m-3 ${selected ? 'btn-selected' : ''}`} onClick={() => changebtn('nearMe')} >Near Me</button>
+                        <div className="btn-group shadow-lg  bg-white rounded-pill" role="group">
+                            <button type="submit" className={`btn-board-trend m-3 ${trending ? 'btn-selected' : ''}`} onClick={() => changebtn('Trending')}>Trending</button>
+                            <button type="submit" className={`btn-board-trend m-3 ${selected ? 'btn-selected' : ''}`} onClick={() => changebtn('nearMe')} >Near Me</button>
                         </div>
                     </div>
                     <Swiper slidesPerView={mywindow.width && mywindow.width < 768 ? 1 : 3}

@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import './Testimonials.css'
+import { Link } from "react-router-dom";
 
 const Testimonials = () => {
     let [mywindow, setMywindow] = useState({})
@@ -30,7 +31,7 @@ const Testimonials = () => {
         <div>
             <div className="schoolMainHome">
                 <div className="baseContainer topSchoolSection">
-                    <div className="topSchoolSectionTitleTestimonial"><a href="/testimonial/index" asp-controller="Testimonial" asp-action="Index" style={{ "textDecoration": "none" }}><p style={{ "color": "#FF6700" }}> Testimonials</p></a> </div>
+                    <div className="topSchoolSectionTitleTestimonial"><Link to='/testimonial/index'><a style={{ "textDecoration": "none" }}><p style={{ "color": "#FF6700" }}> Testimonials</p></a></Link></div>
                     <Swiper slidesPerView={mywindow.width && mywindow.width < 768 ? 1 : 2}
                         spaceBetween={35}
                         slidesPerGroup={3}

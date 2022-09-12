@@ -11,6 +11,8 @@
 
 .kidsArena .card .eventDiscription {
     text-align: justify;
+    font-size: small;
+    color: rgb(63, 62, 62);
 }
 
 .kidsArena .card .cardFooter {
@@ -59,13 +61,15 @@
 }
 .kidsArena .card .eventsLink a{
     color: black !important;
+    font-weight: 600;
 }
 .kidsArena .card .eventsLink a:hover{
     color:rgba(52, 168, 79, 1) !important;
 }
 .kidsArena .cardcontainer {
-    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 5%) !important;
-    border: none !important;
+   border: none;
+   box-shadow: 0 0 10px rgba(0,0,0,.2);
+   border-radius: 0;
 }
 
 .kidsArena .headLinks a{

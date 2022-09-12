@@ -1,5 +1,5 @@
 import React from "react";
-import AwardsAndRecognitions from "../AwardsAndRecognitions/AwardsAndRecognitions";
+import AwardsAndRecognitions from "../AwardsAndRecognitions/HomeAwards&Recognitions";
 import Blogs from "../Blogs/BlogsComponent";
 import EvetsAndWeninars from "../EventsAndWebinars/EventsAndWebinars";
 import FooterComponent from "../Footer/Footer";

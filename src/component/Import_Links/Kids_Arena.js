@@ -25,14 +25,14 @@ const KidsArenaComponent = () => {
                 <div className="row">
                     <div className="col-lg-9 col-sm-12 col-md-12 mt-2">
                         <div className="headLinks my-3 mx-3">
-                            <span><a href="#">Home &nbsp;&gt;&nbsp;</a><a href="#">Blogs</a></span>
+                            <span><Link to="/"><a>Home &nbsp;&gt;&nbsp;</a></Link><a href="#">KidsArena</a></span>
                         </div>
                         {KidsArena.map((val, index) => (
                             <div className="p-3" key={val.id}>
                                 <div className="card cardcontainer">
                                     <div className="row">
                                         <div className="col-lg-6 col-sm-12 col-md-12">
-                                            <div className="cardImage">
+                                            <div className="cardImage p-3">
                                                 <img className="img-fluid cardImage" src={val.eventImageUrl} />
                                             </div>
 

@@ -2,17 +2,22 @@ ul{
     padding: 0;
 }
 
-.KidsArenadetails .card{
+.KidsArenadetails .kidsDetailsCard{
     text-align: left;
 }
-.KidsArenadetails .card .eventTitle{
+.KidsArenadetails .kidsDetailsCard .eventTitle{
     font-weight:1000;
 }
-.KidsArenadetails .card .eventText{
+.KidsArenadetails .kidsDetailsCard .eventText{
     text-align: justify;
 }
+.KidsArenadetails .kidsDetailsCard{
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-.KidsArenadetails .studentdetails .card{
+.KidsArenadetails .studentdetails .kidsDetailsCard{
     background-color:#f7f7f7 ;
 }
 .KidsArenadetails .headLinks{

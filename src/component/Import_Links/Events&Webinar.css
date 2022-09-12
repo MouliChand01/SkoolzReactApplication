@@ -2,10 +2,10 @@ ul {
     padding: 0;
 }
 
-.eventsAndWebinar .card {
+.eventsAndWebinar .eventCard {
     text-align: left;
 }
-.eventsAndWebinar .card .eventContent .eventDiscription{
+.eventsAndWebinar .eventCard .eventContent .eventDiscription{
     text-align: justify;
 }
 
@@ -29,6 +29,11 @@ ul {
     font-weight: 900;
     font-size: xx-large;
 }
+.eventsAndWebinar .eventCard{
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 0;
+}
 
 .cardFooter img {
     width: 100px;
@@ -43,9 +48,6 @@ ul {
     height: 250px;
     width: 500px;
 }
-
-
-
 .QuicklinksButton {
     background: rgba(52, 168, 79, 1);
     color: #fff;
@@ -60,18 +62,15 @@ ul {
     color: #fff;
 
 }
-
-
-
-.eventsAndWebinar .card .eventsLink a {
+.eventsAndWebinar .eventCard .eventsLink a {
     color: black !important;
 }
 
-.eventsAndWebinar .card .eventsLink a:hover {
+.eventsAndWebinar .caeventCardrd .eventsLink a:hover {
     color: rgba(52, 168, 79, 1) !important;
 }
 
-.card>div>div {
+.eventCard>div>div {
     position: relative;
 }
 
@@ -86,10 +85,6 @@ ul {
 .eventsAndWebinar .headLinks a:hover{
     color:rgba(52, 168, 79, 1);
 }
-
-
-
-
 
 @media only screen and (max-width: 768px) {
     /* .eventsAndWebinar {

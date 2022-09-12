@@ -2,7 +2,7 @@ ul{
     padding: 0;
 }
 
-.EventsWebinardetails .detailsContainer .card,
+.EventsWebinardetails .detailsContainer .eventDetalisCard,
 .EventsWebinardetails .headLinks{
     text-align: left;
 }
@@ -11,9 +11,14 @@ ul{
     color: #FF6700;
     font-weight: 900;
 }
-.EventsWebinardetails .card .eventHeader,
+.EventsWebinardetails .eventDetalisCard .eventHeader,
 .EventsWebinardetails .splcontent{
     color: #FF6700;
+}
+.EventsWebinardetails .eventDetalisCard{
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .EventsWebinardetails .headLinks a{

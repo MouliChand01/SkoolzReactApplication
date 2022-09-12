@@ -15,6 +15,9 @@ import ParentRegistrationComp from './component/Login/ParentRegistr';
 import ForgotPassword from './component/Login/ForgotPassword';
 import BlogsComp from './component/Import_Links/BlogsComp';
 import BlogsDetailsComp from './component/Import_Links/BlogsDetailsComp';
+import TestimonialDetailsComp from './component/Testimonials/TestimonialDetails';
+import AwardAndRecognitionsComp from './component/AwardsAndRecognitions/AwardAndRecognitions';
+import AwardDetailsComp from './component/AwardsAndRecognitions/AwardDetailsComp';
 
 // import 'swiper/css'
 // import 'swiper/css/navigation'
@@ -33,6 +36,9 @@ function App() {
           <Route path="/events-webinar" element={<Events_WebinarComponent />}/>
           <Route path="/events-webinar-details" element={<EventsWebinardetailsComponent />}/>
 
+          <Route path="/awards" element={<AwardAndRecognitionsComp />}/>
+          <Route path="/awards/index" element={<AwardDetailsComp />}/>
+
           <Route path="/kids-arena" element={<KidsArenaComponent />} />
           <Route path="/kids-arena/:id" element={<KidsArenadetailsComponent />} />
 
@@ -40,6 +46,7 @@ function App() {
           <Route path="/blogs-details" element={<BlogsDetailsComp/>} />
 
           <Route path="/school-details" element={<DeatailsSchoolComponent/>}/>
+          <Route path="/testimonial/index" element={<TestimonialDetailsComp/>}/>
 
           <Route path="/login" element={<ParentLoginComp/>}/>
           <Route path="/register" element={<ParentRegistrationComp/>}/>

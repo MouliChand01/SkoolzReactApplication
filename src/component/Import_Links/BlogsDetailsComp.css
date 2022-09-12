@@ -1,14 +1,23 @@
 
-.blogsDetailsContainer .detailsContainer{
+.blogsDetailsContainer .blogDetalisCard, 
+.blogsDetailsContainer .headLinks {
     text-align: left;
 }
-.blogsDetailsContainer .detailsContainer .card .splText{
+.blogDetalisCard .contantDataDis{
+    text-align: justify;
+}
+.blogsDetailsContainer .detailsContainer .blogDetalisCard .splText{
     width: 100%;
     background-color: #126528;
 }
-.blogsDetailsContainer .detailsContainer .card .splText h6{
+.blogsDetailsContainer .detailsContainer .blogDetalisCard .splText h6{
     color: #fff;
     text-align: center;
+}
+.blogsDetailsContainer .blogDetalisCard{
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0,.2);
+    border-radius: 0;
 }
 .blogsDetailsContainer .socalMediaIcons button{
     margin: 0 3px;
@@ -24,10 +33,10 @@
 .blogsDetailsContainer .leaderCard{
     background-color:#f7f7f7;;
 }
-.blogsDetailsContainer .detailsContainer a{
+.blogsDetailsContainer .headLinks a {
     color: black;
 }
-.blogsDetailsContainer .detailsContainer a:hover{
+.blogsDetailsContainer .headLinks a:hover{
     color:#126528;
     
 }

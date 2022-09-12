@@ -25,12 +25,15 @@ const Events_WebinarComponent = () => {
                 <div className="row">
                     <div className="col-lg-9 col-md-12 col-sm-12 mb-3">
                         <div className="headLinks m-3">
-                            <span><a href="#">Home &nbsp;&gt;&nbsp;</a><a href="#">Events</a></span>
+                            <span>
+                                <Link to='/'><a>Home &nbsp;&gt;&nbsp;</a></Link>
+                                <Link to='/events-webinar'><a>Events</a></Link>
+                           </span>
                         </div>
                         {
                             EventsAndWebinar.map((val, index) => (
                                 <div className=" p-3">
-                                    <div className="card">
+                                    <div className="card eventCard">
                                         <div className="row align-items-stretch">
                                             <div className="col-lg-6 col-sm-12 col-md-12">
                                                 <img className="img-fluid" src={val.eventImageUrl} />

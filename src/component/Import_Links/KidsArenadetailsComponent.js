@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import { KidsArena } from '../../Assets/index';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faLinkedin, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 import './KidsArenadetailsComponent.css';
@@ -33,12 +33,10 @@ const KidsArenadetailsComponent = () => {
                         <div className="row">
                         <div className="col-lg-9 col-sm-12 col-md-12">
                                 <div className="headLinks mb-2">
-                                    <span><a href="#">Home &nbsp;&gt;&nbsp;</a><a href="#">Blogs &nbsp;&gt;&nbsp;</a><a href="">{data.eventTitle}</a></span>
-                                </div>
-                           
-                        
-                           
-                                <div className="card">
+                                    <span><Link to='/'><a>Home &nbsp;&gt;&nbsp;</a></Link>
+                                          <Link to='/kids-arena'><a>KidsArena &nbsp;&gt;&nbsp;</a></Link><a href="">{data.eventTitle}</a></span>
+                                </div>                          
+                                <div className="card kidsDetailsCard">
                                     <div className="m-3">
                                         <img className="img-fluid" src={data.eventImageUrl} />
                                     </div>

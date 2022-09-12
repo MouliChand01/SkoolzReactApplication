@@ -9,10 +9,10 @@ const QuickLinksComp = () => {
                 <h5 className="highlightText"> Quick links</h5>
                 <ul className="QuicklinksButtonGroup">
                     <li><Link to='/' className="QuicklinksButton m-1 my-2">Home</Link></li>
-                    <li><Link to='/' className="QuicklinksButton m-1 my-2">School Search</Link></li>
+                    <li><Link to='/home/search' className="QuicklinksButton m-1 my-2">School Search</Link></li>
                     <li><Link to='/events-webinar' className="QuicklinksButton m-1 my-2">Events/Webinar</Link></li>
                     <li><Link to='/blogs' className="QuicklinksButton m-1 my-2">Blogs</Link></li>
-                    <li><Link to='/' className="QuicklinksButton m-1 my-2">Awards & Recongnition</Link></li>
+                    <li><Link to='/awards' className="QuicklinksButton m-1 my-2">Awards & Recongnition</Link></li>
                     <li><Link to='/' className="QuicklinksButton m-1 my-2">Contact Us</Link></li>
                     <li><Link to='/about-us' className="QuicklinksButton m-1 my-2">About Skoolz</Link></li>
                 </ul>

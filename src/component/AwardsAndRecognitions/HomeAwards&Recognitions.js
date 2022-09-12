@@ -1,5 +1,4 @@
 import React,{useEffect,useState} from "react";
-import './AwardsAndRecognitions.css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import award1 from "../../Assets/Images/Best-Edutech-Award-2021.jpeg";
@@ -9,7 +8,10 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 import "swiper/css";
+import './HomeAwards&Recognitions.css'
+
 
 const AwardsAndRecognitions = () => {
     let [mywindow, setMywindow] = useState({})
@@ -30,7 +32,7 @@ const AwardsAndRecognitions = () => {
         <div>
             <div className="schoolMainHome">
                 <div className="baseContainer topSchoolSection">
-                    <div className="topSchoolSectionTitleawards"><a href="/Awards/index" style={{ "textDecoration": "none" }}><p style={{ "color": "#FF6700" }}> Awards &amp; Recognitions</p></a> </div>
+                    <div className="topSchoolSectionTitleawards"><Link to='/awards'><a style={{ "textDecoration": "none" }}><p style={{ "color": "#FF6700" }}> Awards &amp; Recognitions</p></a></Link></div>
                     <Swiper slidesPerView={mywindow.width && mywindow.width < 768 ? 1 : 2}
                         spaceBetween={30}
                         slidesPerGroup={3}

@@ -1,0 +1,35 @@
+.AwardAndRecognitionsContainer .headLinks ,
+.AwardAndRecognitionsContainer .AwardCard ,
+.AwardAndRecognitionsContainer .AwardContainer .awardCard{
+    text-align: left;
+}
+.AwardAndRecognitionsContainer .AwardContainer .awardsLink {
+    text-align: justify;
+}
+.AwardAndRecognitionsContainer .AwardContainer .awardDiscription {
+    font-size: small;
+}
+.AwardAndRecognitionsContainer .headerPart h1{
+    color: #34A853;
+    font-weight: 600;
+ }
+ .AwardAndRecognitionsContainer .awardCard{
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 0;
+ }
+ .AwardAndRecognitionsContainer .headLinks a,
+ .AwardAndRecognitionsContainer .awardCard .awardsLink a
+ {
+  color: black;
+ }
+ .AwardAndRecognitionsContainer .headLinks a:hover,
+ .AwardAndRecognitionsContainer .awardCard .awardsLink a:hover{
+    color: #34A853;
+   }
+
+@media screen and (min-width :768px) {
+    .AwardAndRecognitionsContainer{
+        margin-top: 100px;
+    }   
+}

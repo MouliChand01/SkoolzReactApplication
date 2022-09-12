@@ -10,6 +10,11 @@
     display: inline-block;
     margin: 5px 10px;
 } 
+.BlogsContainer .blogsCard{
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
 .BlogsContainer .ButtonGroup button{
     background: rgba(52, 168, 79, 1);
     color: #fff;

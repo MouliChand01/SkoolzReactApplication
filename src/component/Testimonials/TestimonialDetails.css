@@ -1,0 +1,37 @@
+.testimonialContainer .headLinks ,
+.testimonialContainer .testimonialCard {
+    text-align: left;
+}
+.testimonialContainer .headLinks a {
+    color: black;
+}
+.testimonialContainer .headLinks a:hover {
+    color:#34A853;
+}
+.testimonialContainer .testimonialCard p{
+    text-align: justify;
+}
+.testimonialContainer .testimonialCard .Parent{
+   color: #34A853;
+   font-weight: 600;
+   font-size: large;
+}
+.testimonialContainer .testimonialCard .parentPost{
+    color: #FF6700;
+
+}
+.testimonialContainer .headerPart{
+     text-align: center;
+    color: #34A853;
+}
+.testimonialContainer .headerPart h1{
+    font-weight: 800;
+}
+.testimonialContainer .parentImage img{
+    border-radius: 5px;
+}
+@media screen and (min-width :768px) {
+    .testimonialContainer{
+        margin-top: 100px;
+    }   
+}

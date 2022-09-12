@@ -1,0 +1,38 @@
+.awardDetailsContainer .awardData{
+    text-align: left;
+}
+ .awardsCard{
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 0;
+}
+.awardCard img{
+    max-height: 300px
+}
+.awardDetailsContainer .headLinks{
+    text-align: justify;
+}
+.awardDetailsContainer .headLinks a{
+    color: black;
+}
+.awardDetailsContainer .headLinks a:hover{
+    color: #34A853;
+}
+.awardDetailsContainer .awardData .awardHeader{
+    font-weight: 600;
+}
+.awardDetailsContainer .awardData .awardsplText{
+    font-weight: 600;
+    background-color: #126528;
+    color: #fff;
+    text-align: center;
+}
+.awardDetailsContainer .awardName{
+    text-align: justify;
+}
+
+@media screen and (min-width :768px) {
+    .awardDetailsContainer{
+        margin-top: 100px;
+    }   
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,17 +10,8 @@ import QuickLinksComp from "../QuickLinks/QuickLinks";
 
 const EventsWebinardetailsComponent = () => {
     const location = useLocation();
+    const [eventData ,setEventData]=useState(location.state)
     const [eventType, setEventType] = useState(location.state.eventContentType);
-
-
-    // useEffect(() => {
-    //     console.log("hiiuiy")
-    //     if(location?.state?.eventContentType){
-    //         setEventType(location.state.eventContentType);
-    //     }
-    // },[location.state.eventContentType]);
-
-    // console.log(location);
 
     return (
         <div>
@@ -31,9 +22,9 @@ const EventsWebinardetailsComponent = () => {
                         <div className="col-lg-12 col-sm-12 col-md-12 m-2">
                             <div className="headLinks">
                                 <span>
-                                    <a href="#">Home &nbsp;&gt;&nbsp;</a>
-                                    <a href="#">Blogs &nbsp;&gt;&nbsp;</a>
-                                    <a href="">{location.state.eventName}</a>
+                                    <Link to='/'><a>Home &nbsp;&gt;&nbsp;</a></Link>
+                                    <Link to='/events-webinar'><a>Events &nbsp;&gt;&nbsp;</a></Link>
+                                    <Link to='/events-webinar-details'><a>{eventData.eventName}</a></Link>
                                 </span>
                             </div>
                         </div>
@@ -41,23 +32,23 @@ const EventsWebinardetailsComponent = () => {
                     <div className="row">
                         <div className="col-lg-9 col-sm-12 col-md-12">
                             {eventType === "webinars" ? (
-                                <div className="card">
+                                <div className="card eventDetalisCard">
                                     <div className="row">
                                         <img
-                                            className="img-fluid"
-                                            src={location.state.eventImageUrl}
+                                            className="img-fluid p-4"
+                                            src={eventData.eventImageUrl}
                                         />
                                     </div>
                                     <div className="row">
                                         <div className="eventName m-2">
                                             <strong>
-                                                <h1>{location.state.eventName}</h1>
+                                                <h1>{eventData.eventName}</h1>
                                             </strong>
                                         </div>
                                     </div>
                                     {
-                                        location.state.content &&
-                                        location.state.content.map((val) => (
+                                        eventData.content &&
+                                        eventData.content.map((val) => (
                                             <div className="contantDataDis m-2">
                                                 <div>
                                                     {val.datadis.map((val1) => (
@@ -103,23 +94,23 @@ const EventsWebinardetailsComponent = () => {
                                         ))}
                                 </div>
                             ) : (
-                                <div className="card">
+                                <div className="card eventDetalisCard">
                                     <div className="row">
                                         <img
-                                            className="img-fluid"
-                                            src={location.state.eventImageUrl}
+                                            className="img-fluid p-4"
+                                            src={eventData.eventImageUrl}
                                         />
                                     </div>
                                     <div className="row">
                                         <div className="eventName m-2">
                                             <strong>
-                                                <h1>{location.state.eventName}</h1>
+                                                <h1>{eventData.eventName}</h1>
                                             </strong>
                                         </div>
                                     </div>
                                     {
-                                        location.state.content &&
-                                        location.state.content.map((val, index) => (
+                                        eventData.content &&
+                                        eventData.content.map((val, index) => (
                                             <div key={index}>
                                                 {val.contentDis.map((val1, index1) => (
                                                     <div key={index1}>
