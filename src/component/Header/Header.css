@@ -12,6 +12,8 @@
     top:0px;
     left: 0px;
     z-index: 999;
+    display: flex;
+    align-items: center;
 }
 .mobileHeader{
     position: fixed;
@@ -64,8 +66,6 @@
     font-weight: normal;
     font-size: 16px;
 }
-
-
 .headerSearchBox {
     height: 54px;
     width: 100%;
@@ -77,8 +77,39 @@
     outline: none;
 }
 
+.cart span{
+    background-color: #34A853;
+    color: #ECEBEB;
+}
+.dropdown button{
+    padding: 10px;
+    background-color: #fff;
+    color: #000000;
+    border: none;
+}
+.dropdown button:hover,
+.dropdown button:focus{
+    background-color: #F2F2F2;
+    color: #000000;
+}
 
-
+.logout button div{
+  display: none;
+}
+.logout button{
+ box-shadow:none !important;
+ width: 100% !important;
+ margin: 0px !important;
+}
+.logout button:hover{
+    background-color: #e9ecef !important;
+}
+.logout button span{
+    padding: 0px !important;
+    margin: 0px !important;
+    color: #212529;
+    font-size:16px;
+}
 
 .location-icon {
     border-radius: 6px;

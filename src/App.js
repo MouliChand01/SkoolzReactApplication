@@ -1,7 +1,7 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DeatailsSchoolComponent from './component/DetailsSchoolComponent/DetailsSchoolComponent';
 import About_usComponent from './component/Import_Links/About_us_Skoolz';
 import Events_WebinarComponent from './component/Import_Links/Events&Webinar';
@@ -18,43 +18,49 @@ import BlogsDetailsComp from './component/Import_Links/BlogsDetailsComp';
 import TestimonialDetailsComp from './component/Testimonials/TestimonialDetails';
 import AwardAndRecognitionsComp from './component/AwardsAndRecognitions/AwardAndRecognitions';
 import AwardDetailsComp from './component/AwardsAndRecognitions/AwardDetailsComp';
+import HobbyClassesComp from './component/Hobby Classes/HobbyClasses';
+import Fbcomp from './component/DummyTasks/facecom';
+import TuitionsClassComp from './component/TuitionsClasses/TuitionsClass';
 
-// import 'swiper/css'
-// import 'swiper/css/navigation'
-// import 'swiper/css/thumbs'
+
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Routes>      
-          <Route path="/" element={<SkoolzHomepageComponent/>}/>
-          <Route path="/home/search" element={<SearchSchools/>}/>
+      <BrowserRouter>
+        <div className="App">
+          <Routes>
+            {/* <Route path="/" element={<SkoolzHomepageComponent/>}/> */}
 
-          <Route path="/about-us" element={<About_usComponent/>}/>
+            <Route path="/home/search" element={<SearchSchools />} />
+            <Route path="/about-us" element={<About_usComponent />} />
 
-          <Route path="/events-webinar" element={<Events_WebinarComponent />}/>
-          <Route path="/events-webinar-details" element={<EventsWebinardetailsComponent />}/>
+            <Route path="/events-webinar" element={<Events_WebinarComponent />} />
+            <Route path="/events-webinar-details" element={<EventsWebinardetailsComponent />} />
 
-          <Route path="/awards" element={<AwardAndRecognitionsComp />}/>
-          <Route path="/awards/index" element={<AwardDetailsComp />}/>
+            <Route path="/awards" element={<AwardAndRecognitionsComp />} />
+            <Route path="/awards/index" element={<AwardDetailsComp />} />
 
-          <Route path="/kids-arena" element={<KidsArenaComponent />} />
-          <Route path="/kids-arena/:id" element={<KidsArenadetailsComponent />} />
+            <Route path="/kids-arena" element={<KidsArenaComponent />} />
+            <Route path="/kids-arena/:id" element={<KidsArenadetailsComponent />} />
 
-          <Route path="/blogs" element={<BlogsComp/>} />
-          <Route path="/blogs-details" element={<BlogsDetailsComp/>} />
+            <Route path="/blogs" element={<BlogsComp />} />
+            <Route path="/blogs-details" element={<BlogsDetailsComp />} />
 
-          <Route path="/school-details" element={<DeatailsSchoolComponent/>}/>
-          <Route path="/testimonial/index" element={<TestimonialDetailsComp/>}/>
+            <Route path="/school-details" element={<DeatailsSchoolComponent />} />
+            <Route path="/testimonial/index" element={<TestimonialDetailsComp />} />
 
-          <Route path="/login" element={<ParentLoginComp/>}/>
-          <Route path="/register" element={<ParentRegistrationComp/>}/>
-          <Route path="/forgot-password" element={<ForgotPassword/>}/>   
-          
-        </Routes>
-      </div>
-    </BrowserRouter>
+            <Route path="/" element={<ParentLoginComp />} />
+            <Route path="/register" element={<ParentRegistrationComp />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+
+            <Route path="/hobby" element={<HobbyClassesComp />} />
+
+
+            <Route path="/test" element={<Fbcomp />} />
+            
+          </Routes>
+        </div>
+      </BrowserRouter>
   );
 }
 

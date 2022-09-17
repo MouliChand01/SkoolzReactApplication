@@ -112,3 +112,20 @@
     outline: none;
 }
 
+.signIn button{
+   background-color: #DD4B39 !important;
+   color: #fff;
+   border-radius: 5px;
+   margin: 10px !important;
+}
+.signIn button:hover{
+   opacity: 1 !important;
+ }
+.signIn button div{
+    display: none;
+}
+.signIn button span{
+    color: #fff;
+    padding: 0px !important;
+    margin: 0px !important;
+}
