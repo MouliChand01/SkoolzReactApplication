@@ -112,7 +112,7 @@ const TuitionsClassComp = () => {
             </div>
             <div className="joinOurNetwork">
                 <div className="joinOurNetworkText">
-                    <h1>
+                    <h1 className="footerText">
                         More Schools
                     </h1>
                     <div className="MoreschoolsHome"></div><a target="_blank" href="https://www.skoolz.in/home/search" className="joinOurNetworkButton">

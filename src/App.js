@@ -21,6 +21,8 @@ import AwardDetailsComp from './component/AwardsAndRecognitions/AwardDetailsComp
 import HobbyClassesComp from './component/Hobby Classes/HobbyClasses';
 import Fbcomp from './component/DummyTasks/facecom';
 import TuitionsClassComp from './component/TuitionsClasses/TuitionsClass';
+import Banercomp from './component/DummyTasks/skoolz';
+import StudentProfileComp from './component/ParentLogin_Pages/Student Profile/StudentProfileComp';
 
 
 
@@ -53,11 +55,14 @@ function App() {
             <Route path="/register" element={<ParentRegistrationComp />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
 
-            <Route path="/hobby" element={<HobbyClassesComp />} />
-
+            <Route path="/baner" element={<Banercomp/>} />   
+            {/* this is homenew Baner */}
 
             <Route path="/test" element={<Fbcomp />} />
-            
+            {/* this is fb login and google api classcomp */}
+
+            <Route path="/stu" element={<StudentProfileComp/>} />
+
           </Routes>
         </div>
       </BrowserRouter>
