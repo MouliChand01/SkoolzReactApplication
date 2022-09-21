@@ -55,13 +55,17 @@ function App() {
             <Route path="/register" element={<ParentRegistrationComp />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
 
+
+            <Route path="/student/profile" element={<StudentProfileComp/>} />
+
+
             <Route path="/baner" element={<Banercomp/>} />   
             {/* this is homenew Baner */}
 
             <Route path="/test" element={<Fbcomp />} />
             {/* this is fb login and google api classcomp */}
 
-            <Route path="/stu" element={<StudentProfileComp/>} />
+           
 
           </Routes>
         </div>

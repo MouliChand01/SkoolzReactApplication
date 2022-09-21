@@ -94,7 +94,7 @@ const HeaderComponent = (props) => {
                                     {email}
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Student Profile</a></li>
+                                    <li><Link to="/student/profile"><a class="dropdown-item">Student Profile</a></Link></li>
                                     <li><a class="dropdown-item" href="#">Dashboard</a></li>
                                     <li><a class="dropdown-item" href="#">Shortlisted Schools</a></li>
                                     <li><a class="dropdown-item" href="#">Recive Updates</a></li>

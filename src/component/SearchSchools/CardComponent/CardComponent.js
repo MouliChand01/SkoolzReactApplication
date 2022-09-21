@@ -1,123 +1,11 @@
 import React, { useState } from "react";
 import skoolslogo from "../../../Assets/Images/skoolz.PNG"
 import school1 from "../../../Assets/Images/school_CoverPicture2.png"
+import SearchData from "../../../Assets/searchSchool.json"
 import "./CardComponent.css"
 
 const CardFilter = () => {
-    const [schoolData, setSchoolData] = useState([
-        {
-            id: 0,
-            schoolname: "DEEKSHA PLAY SCHOOL",
-            Image: 'skoolslogo',
-            address: "Plot No., 107, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500044",
-            section: "Montessori",
-            type: "Pre-School Type"
-        },
-        {
-            id: 1,
-            schoolname: "BACHPAN PLAY SCHOOL",
-            Image: 'skoolslogo',
-            address: "Plot No., 108, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500045",
-            section: "Montessori",
-            type: "Pre-School Type"
-        },
-        {
-            id: 2,
-            schoolname: "SMART KIDZ",
-            Image: 'skoolslogo',
-            address: "Plot No., 109, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500046",
-            section: "Montessori",
-            type: "Pre-School Type"
-        },
-        {
-            id: 3,
-            schoolname: "ACADEMIC PLAY SCHOOL",
-            Image: 'skoolslogo',
-            address: "Plot No., 110, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500047",
-            section: "Montessori",
-            type: "Pre-School Type"
-        },
-        {
-            id: 4,
-            schoolname: "BACHPAN PLAY SCHOOL",
-            Image: 'skoolslogo',
-            address: "Plot No., 108, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500045",
-            section: "Montessori",
-            type: "Pre-School Type"
-        },
-        {
-            id: 5,
-            schoolname: "SMART KIDZ",
-            Image: 'skoolslogo',
-            address: "Plot No., 109, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500046",
-            section: "Montessori",
-            type: "Pre-School Type"
-        },
-        {
-            id: 6,
-            schoolname: "ACADEMIC PLAY SCHOOL",
-            Image: 'skoolslogo',
-            address: "Plot No., 110, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500047",
-            section: "Montessori",
-            type: "Pre-School Type"
-        },
-        {
-            id: 7,
-            schoolname: "BACHPAN PLAY SCHOOL",
-            Image: 'skoolslogo',
-            address: "Plot No., 108, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500045",
-            section: "Montessori",
-            type: "Pre-School Type"
-        },
-        {
-            id: 8,
-            schoolname: "SMART KIDZ",
-            Image: 'skoolslogo',
-            address: "Plot No., 109, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500046",
-            section: "Montessori",
-            type: "Pre-School Type"
-        },
-        {
-            id: 9,
-            schoolname: "ACADEMIC PLAY SCHOOL",
-            Image: 'skoolslogo',
-            address: "Plot No., 110, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500047",
-            section: "Montessori",
-            type: "Pre-School Type"
-        },
-        {
-            id: 10,
-            schoolname: "ACADEMIC PLAY SCHOOL",
-            Image: 'skoolslogo',
-            address: "Plot No., 110, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500047",
-            section: "Montessori",
-            type: "Pre-School Type"
-        },
-        {
-            id: 11,
-            schoolname: "BACHPAN PLAY SCHOOL",
-            Image: 'skoolslogo',
-            address: "Plot No., 108, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500045",
-            section: "Montessori",
-            type: "Pre-School Type"
-        },
-        {
-            id: 12,
-            schoolname: "SMART KIDZ",
-            Image: 'skoolslogo',
-            address: "Plot No., 109, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500046",
-            section: "Montessori",
-            type: "Pre-School Type"
-        },
-        {
-            id: 13,
-            schoolname: "OJAS PLAY SCHOOL",
-            Image: 'skoolslogo',
-            address: "Plot No., 110, Lalitha Nagar, Adikmet, Hyderabad,Telangana,,Hyderabad,Telangana,500047",
-            section: "Montessori",
-            type: "Pre-School Type"
-        }
-    ])
+    const [schoolData, setSchoolData] = useState(SearchData)
     return (
         <div>
             <div className='container cardFilter'>
@@ -140,21 +28,21 @@ const CardFilter = () => {
                                         </div>
                                         <div className="col-lg-8">
                                             <div className='schoolDetails mt-2 mb-2'>
-                                                <h5>{data.schoolname}</h5>
-                                                <div className="schoolAddress my-3">{data.address}</div>
+                                                <h5>{data.schoolName}</h5>
+                                                <div className="schoolAddress my-3">{data.schoolAddress}</div>
                                                 <div className='row'>
                                                     <div className='col-6 col-lg-4  starIcon'>
-                                                        Montessori
+                                                        {data.schoolType}
                                                         <br />
                                                         <span style={{ "color": "black" }}>Pre-School Type</span>
                                                     </div>
                                                     <div className='col-6 col-lg-4 starIcon'>
-                                                        Co-Ed
+                                                        {data.schoolClassification}
                                                         <br />
                                                         <span style={{ "color": "black" }}>School Classification</span>
                                                     </div>
                                                     <div className='col-6 col-lg-4 starIcon'>
-                                                        Rs.
+                                                        {data.annualFees}
                                                         <br />
                                                         <span style={{ "color": "black" }}>Annual Fees</span>
                                                     </div>

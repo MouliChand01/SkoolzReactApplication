@@ -1,0 +1,86 @@
+.profileContainer .head {
+  text-align: left;
+}
+.profileContainer span{
+  color: #B10505;
+  margin: 4px;
+}
+.profileContainer .subHead {
+  text-align: left;
+  font-size: 35px;
+}
+.profileContainer ul {
+  border: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.profileContainer .nav-tabs .nav-item {
+  width: inherit !important;
+}
+.profileContainer .nav-item .nav-link,
+.profileContainer .nav-item .nav-link:hover {
+  cursor: pointer;
+}
+.profileContainer .nav-link {
+  color: rgb(92, 90, 90);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.profileContainer .radioBtnGroup .form-check {
+  display: inline-block;
+  margin: 15px;
+}
+.profileContainer Form .formControl {
+  border: 1px solid #ecebeb;
+  background: #f2f2f2;
+  height: 54px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.profileContainer Form {
+  text-align: left;
+}
+.profileContainer .profileCard {
+  border-radius: 0;
+}
+.profileCard .cardHeading1,
+.profileCard .cardHeading2,
+.profileCard .cardHeading3,
+.profileCard .cardHeading4 {
+  font-weight: 800;
+  margin: 19px;
+  text-align: left;
+  font-size: larger;
+}
+.profileCard .profileImgCard{
+  height: 180px !important;
+  border: 1px solid black;
+  margin: auto;
+  display: table;
+  background-color: #f2f2f2;
+}
+.profileCard img{
+    height: 180px;
+    width: 361px;
+}
+.profileCard .form-check-input {
+    width: 1.75em !important;
+    height: 1.75em !important;
+    margin: 5px !important;
+}
+.profileCard .form-check label{
+    margin: 7px;
+}
+table,thead{
+    border: 1px solid rgb(61, 61, 61);
+}
+table td a{
+    color: #34A853;
+}
+@media screen and (min-width: 768px) {
+  .profileContainer {
+    margin-top: 73px;
+    background-color: #f2f2f2;
+  }
+}
