@@ -1,181 +1,95 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./SideListFilter.css"
+import sidebarjson from '../../../Assets/sideBar.json'
 
 const ListFilter = () => {
-    // let wrap = document.getElementById('#wrap')
-    // wrap.addEventListener("scroll",(event)=>{
-    //     if(wrap.scrollTop > 500){
-    //         wrap.classList.add("fix-sidebar")
-    //         console.log(wrap.scrollTop)
-    //     }
-    //     else{
-    //         wrap.classList.remove("fix-sidebar")
-    //     }
-    // })
-    let data = [
-        {
-            id: 0,
-            title: "Schools type",
-            items: [
-                {
-                    schooltype: "Per-school"
-                },
-                {
-                    schooltype: "Day-school"
-                },
-                {
-                    schooltype: "Online-school"
-                },
-                {
-                    schooltype: "Board-school"
-                },
-                {
-                    schooltype: "DaycumBoarding-school"
-                }]
-        },
-        {
-            id: 1,
-            title: "Classification",
-            items: [
-                {
-                    schooltype: "Co-Ed"
-                },
-                {
-                    schooltype: "Boys"
-                },
-                {
-                    schooltype: "Girls"
-                }]
-        },
-        {
-            id: 2,
-            title: "Boards",
-            items: [
-                {
-                    schooltype: "CBSC"
-                },
-                {
-                    schooltype: "ICSE"
-                },
-                {
-                    schooltype: "State BOARD"
-                },
-                {
-                    schooltype: "IB"
-                },
-                {
-                    schooltype: "IGCSE"
-                },
-                {
-                    schooltype: "Not Applicable"
-                }]
-        },
-        {
-            id: 3,
-            title: "PreSchools Type",
-            items: [
-                {
-                    schooltype: "PlayWay"
-                },
-                {
-                    schooltype: "Montessori"
-                },
-                {
-                    schooltype: "Reggio-Emilia"
-                },
-                {
-                    schooltype: "Bank Street"
-                },
-                {
-                    schooltype: "STEM-Based"
-                },
-                {
-                    schooltype: "Walrdorf-Stiner"
-                },
-                {
-                    schooltype: "Not Applicable"
-                }]
-        },
-        {
-            id: 4,
-            title: "Facilities",
-            items: [
-                {
-                    schooltype: "Ac Classes"
-                },
-                {
-                    schooltype: "Transport"
-                },
-                {
-                    schooltype: "Day Care"
-                },
-                {
-                    schooltype: "CCTv Surveillance"
-                }
-            ]
-        }, {
-            id: 4,
-            title: "Fees(Annual)",
-            items: [
-                {
-                    schooltype: ">₹20,000"
-                },
-                {
-                    schooltype: ">₹20,000 - >₹30,000"
-                },
-                {
-                    schooltype: ">₹30,000 - >₹50,000"
-                },
-                {
-                    schooltype: ">₹50,000 - >₹80,000"
-                },
-                {
-                    schooltype: "₹80,000 - ₹1,20,000"
-                },
-                {
-                    schooltype: "₹1,20,000 - ₹1,70,000"
-                },
-                {
-                    schooltype: "₹1,70,000 - ₹2,30,000"
-                },
-                {
-                    schooltype: "₹2,30,000 - ₹3,00,000"
-                },
-                {
-                    schooltype: "₹3 Lakh+"
-                }
-            ]
-        },
 
+    const [data, setData] = useState(sidebarjson);
+    const [schoolFilter, setSchoolFilter] = useState([])
+    const [classificationFilter, setClassificationFilter] = useState([])
+    const [boardFilter, setBoardFilter] = useState([])
+    const [preSchoolTypeFilter, setPreSchoolTypeFilter] = useState([])
+    const [facilitiesFilter, setFacilitiesFilter] = useState([])
+    const { boards, classifications, preSchoolTypes, facilities, schoolTypes } = data[0];
 
-    ]
+    const onSelected = (type, id) => {
+        if (type === 'schoolTypes') {
+            if (schoolFilter.indexOf(id) === -1) {
+                schoolFilter.push(id)
+                let checkedData = [...schoolFilter]
+                setSchoolFilter(checkedData)
+            }
+            else if (schoolFilter.includes(id)) {
+                let index = schoolFilter.indexOf(id);
+                schoolFilter.splice(index, 1);
+                let schoolTypeData = [...schoolFilter]
+                setSchoolFilter(schoolTypeData)
+            }
+        };
+        if (type === 'classifications') {
+            if (classificationFilter.indexOf(id) === -1) {
+                classificationFilter.push(id)
+                let checkedData = [...classificationFilter]
+                setSchoolFilter(checkedData)
+            }
+            else if (classificationFilter.includes(id)) {
+                let index = classificationFilter.indexOf(id);
+                classificationFilter.splice(index, 1);
+                let schoolTypeData = [...classificationFilter]
+                setSchoolFilter(schoolTypeData)
+            }
+        }
+    }
     return (
+
         <div>
+            {console.log(schoolFilter,classificationFilter)}
+            {console.log(data)}
             <div className="searchFilters">
                 Search Filters <a href="#" className="clearFilters"> Clear All </a>
             </div>
-            <div className="filterCard">
-                <div>
-                    <div className="sidebar-card">
-                        {data.map((e, index) => (
-                            <div>
-                                <div key={index} className="filterTitle">{e.title}</div>
-                                {e.items.length ? e.items.map((schooltype, id) => (
-                                    <button key={id} style={{ "padding": "3px 12px" }}>{schooltype.schooltype}</button>
-                                )) : null}
-                                <hr />
-                            </div>
-                        ))}
+            <div>
+                <div className="sidebar-card mt-3">
+                    <div className="filterTitle">School Type</div>
+                    {
+                        schoolTypes && schoolTypes.map(ele =>
+                            <button style={{ "padding": "3px 12px" }} onClick={() => onSelected("schoolTypes", ele.id)}>{ele.displayName}</button>)
+                    }
+                    <hr />
+                    <div className="filterTitle">Classification</div>
+                    {
+                        classifications && classifications.map(ele =>
+                            <button style={{ "padding": "3px 12px" }} onClick={() => onSelected("classifications",ele.name)}>{ele.displayName}</button>)
+                    }
+                    <hr />
+                    <div className="filterTitle">Board</div>
+                    {
+                        boards && boards.map(ele =>
+                            <button style={{ "padding": "3px 12px" }} onClick={() => onSelected(ele.name)}>{ele.displayName}</button>)
+                    }
+                    <hr />
+                    <div className="filterTitle">PreSchool Type</div>
+                    {
+                        preSchoolTypes && preSchoolTypes.map(ele =>
+                            <button style={{ "padding": "3px 12px" }} onClick={() => onSelected(ele.name)}>{ele.displayName}</button>)
+                    }
+                    <hr />
+                    <div className="filterTitle">Facilities</div>
+                    {
+                        facilities && facilities.map(ele =>
+                            <button style={{ "padding": "3px 12px" }} onClick={() => onSelected(ele.name)}>{ele.displayName}</button>)
+                    }
+
+
+                </div>
+                <div className="card mt-3">
+                    <div className="adds d-flex  justify-content-center  align-items-center">
+                        <p>Ad's will be plced here</p>
                     </div>
-                    <div className="card mt-3">
-                        <div className="adds d-flex  justify-content-center  align-items-center">
-                            <p>Ad's will be plced here</p>
-                        </div>
-                    </div>
-                    <div className="card mt-3">
-                        <div className="adds d-flex  justify-content-center  align-items-center">
-                            <p>Ad's will be plced here</p>
-                        </div>
+                </div>
+                <div className="card mt-3">
+                    <div className="adds d-flex  justify-content-center  align-items-center">
+                        <p>Ad's will be plced here</p>
                     </div>
                 </div>
             </div>

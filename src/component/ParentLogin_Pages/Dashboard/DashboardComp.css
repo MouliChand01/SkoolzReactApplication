@@ -1,0 +1,60 @@
+.dashBoardContainer{
+    background-color: #F2F2F2;
+}
+.dashBoardContainer .highlight{
+    text-align: left;
+    font-weight: 600;
+    font-size:x-large;
+}
+.dashBoardContainer .subText{
+    text-align: left;
+    font-size: large;
+    font-weight: 500;
+}
+.dashBoardContainer .schoolCard,
+.dashBoardContainer .HobbyCard,
+.dashBoardContainer .ServiceCard,
+.dashBoardContainer .TutionCard{
+    text-align: left;
+    border-radius: 8px;
+}
+.PartnersCard .viewmoreBtn{
+    height: 54px;
+    border: 1px solid #34A853;
+    border-radius: 27px;
+    background: #ffffff;
+    padding-left: 31px;
+    padding-right: 31px;
+    color: #34A853;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    line-height: 54px;
+    transition: 0.2s;
+}
+.PartnersCard .viewmoreBtn:hover{
+    height: 54px;
+    border-radius: 27px;
+    color: #ffffff;
+    background-color: #34A853;
+    padding-left: 31px;
+    padding-right: 31px;
+    font-size: 16px;
+    font-family: MontserratSemiBold;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    line-height: 54px;
+    transition: 0.2s;
+}
+.dashBoardContainer table .superHead{
+    background-color: #F2F2F2;
+}
+@media only screen and (min-width: 991px) {
+    .dashBoardContainer {
+        margin-top: 77px;
+        margin-bottom: -10px;
+    }
+
+}

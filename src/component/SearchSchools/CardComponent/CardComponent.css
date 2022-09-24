@@ -100,7 +100,6 @@ a {
 }
 .cardGroup{
     background: #fff;
-    /* padding: 34px 0 2px; */
     padding: 0px;    
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 0.25rem;
@@ -108,13 +107,72 @@ a {
     border: 1px solid #EAEAEA;
     border-radius: 6px;
 }
-
-@media (min-width: 992px) {
-    .col-lg-1 {
-         flex: 0 0 8.333333%;
-       }
-    
+.Bookapp .modal-content{
+    height: auto !important;
+    overflow-y: inherit !important;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 20px;
+    color: #FFF;
 }
+.Bookapp .cardLogo{
+    position: absolute;
+    left: calc(50% - 35px);
+    background-color: #34A84F;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    top: 20px;
+}
+.Bookapp .modal-header{
+    border-bottom: none !important;
+}
+.Bookapp .modal-footer{
+    border-top: none !important;
+}
+.Bookapp .submitBtn{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 61px;
+    border-radius: 27px;
+    min-width: 120px;
+    transition: 0.25s;
+    box-shadow: none;
+    background: #34A853;
+}
+.modal-header .btn-close{
+    position: relative;
+}
+.modal-header .modal-title{
+    padding-top: 79px;
+    width: 100%;
+    text-align: center;
+    color: #34A84F;
+}
+.Bookapp .errorMsg{
+    color: red;
+    font-size: 14px;
+    margin-top: -17px;
+}
+.Bookapp .otpBtn{
+    font-size: 14px;
+    height: 40px;
+    background-color: #34A84F;
+    color: #FFF;
+}
+
+/* .modal-header .btn-close::before{
+    position: absolute;
+    content: '/f00d';
+    font-family: FontAwesome;
+    font-size: 24px;
+    color: #fff;
+    right: 0;
+    top:0;
+} */
+
+
 
 .buttonHobby {
     max-width: 150px !important;
@@ -165,7 +223,11 @@ a {
     padding-right: 90px;
     margin: 20px 0px 32px 0px;
 }
-
+@media (min-width: 992px) {
+    .col-lg-1 {
+         flex: 0 0 8.333333%;
+       }    
+}
 @media screen and (max-width: 991px) {
     .grid {
         margin-top: 200px;

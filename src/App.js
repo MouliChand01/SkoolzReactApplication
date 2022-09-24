@@ -23,6 +23,7 @@ import Fbcomp from './component/DummyTasks/facecom';
 import TuitionsClassComp from './component/TuitionsClasses/TuitionsClass';
 import Banercomp from './component/DummyTasks/skoolz';
 import StudentProfileComp from './component/ParentLogin_Pages/Student Profile/StudentProfileComp';
+import DashboardComp from './component/ParentLogin_Pages/Dashboard/DashboardComp';
 
 
 
@@ -57,6 +58,7 @@ function App() {
 
 
             <Route path="/student/profile" element={<StudentProfileComp/>} />
+            <Route path="/student/dashboard" element={<DashboardComp/>} />
 
 
             <Route path="/baner" element={<Banercomp/>} />   
@@ -65,6 +67,8 @@ function App() {
             <Route path="/test" element={<Fbcomp />} />
             {/* this is fb login and google api classcomp */}
 
+
+            
            
 
           </Routes>

@@ -1,0 +1,127 @@
+[{
+    "schoolTypes": [
+      {
+        "id": "1",
+        "name": "PreSchool",
+        "displayName": "Pre-School"
+      },
+      {
+        "id": "2",
+        "name": "DaySchool",
+        "displayName": "Day School"
+      },
+      {
+        "id": "3",
+        "name": "OnlineSchool",
+        "displayName": "Online School"
+      },
+      {
+        "id": "4",
+        "name": "BoardingSchool",
+        "displayName": "Boarding School"
+      },
+      {
+        "id": "5",
+        "name": "DayCumBoardingSchool",
+        "displayName": "Day Cum Boarding School"
+      }
+    ],
+    "boards": [
+      {
+        "id": "1",
+        "name": "CBSE",
+        "displayName": "CBSE"
+      },
+      {
+        "id": "2",
+        "name": "ICSE",
+        "displayName": "ICSE"
+      },
+      {
+        "id": "3",
+        "name": "IGCSE",
+        "displayName": "IGSE"
+      },
+      {
+        "id": "4",
+        "name": "IB",
+        "displayName": "IB"
+      },
+      {
+        "id": "5",
+        "name": "State",
+        "displayName": "StateBoard"
+      }
+    ],
+    "classifications": [
+      {
+        "id": "1",
+        "name": "Boys",
+        "displayName": "Boys"
+      },
+      {
+        "id": "2",
+        "name": "Girls",
+        "displayName": "Girls"
+      },
+      {
+        "id": "3",
+        "name": "Co-Ed",
+        "displayName": "Co-Educataion"
+      }
+    ],
+    "preSchoolTypes": [
+      {
+        "id": "1",
+        "name": "Playway",
+        "displayName": "Playway"
+      },
+      {
+        "id": "2",
+        "name": "Montessory",
+        "displayName": "Montessory"
+      },
+      {
+        "id": "3",
+        "name": "ReggioEmilia",
+        "displayName": "ReggioEmilia"
+      },
+      {
+        "id": "4",
+        "name": "BankStreet",
+        "displayName": "BankStreet"
+      },
+      {
+        "id": "5",
+        "name": "StemBased",
+        "displayName": "StemBased"
+      },
+      {
+        "id": "6",
+        "name": "WaldorfSteiner",
+        "displayName": "WaldorfSteiner"
+      }
+    ],
+    "facilities": [
+      {
+        "id": "1",
+        "name": "ACClassses",
+        "displayName": "ACClassses"
+      },
+      {
+        "id": "2",
+        "name": "Transport",
+        "displayName": "Transport"
+      },
+      {
+        "id": "3",
+        "name": "DayCare",
+        "displayName": "DayCare"
+      },
+      {
+        "id": "4",
+        "name": "CCTVSurveillance",
+        "displayName": "CCTVSurveillance"
+      }
+    ]
+  }]
