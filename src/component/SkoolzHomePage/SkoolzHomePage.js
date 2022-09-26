@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{memo} from "react";
 import AwardsAndRecognitions from "../AwardsAndRecognitions/HomeAwards&Recognitions";
 import Blogs from "../Blogs/BlogsComponent";
 import Banercomp from "../DummyTasks/skoolz";
@@ -28,4 +28,4 @@ const SkoolzHomepageComponent =()=>{
          </div>
     )
 }
-export default SkoolzHomepageComponent;
+export default memo(SkoolzHomepageComponent);

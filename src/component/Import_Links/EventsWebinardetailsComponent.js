@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,memo } from "react";
 import { Link, useLocation } from "react-router-dom";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
@@ -161,4 +161,4 @@ const EventsWebinardetailsComponent = () => {
         </div>
     );
 };
-export default EventsWebinardetailsComponent;
+export default memo(EventsWebinardetailsComponent);

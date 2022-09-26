@@ -1,0 +1,22 @@
+@media screen and (min-width :768px) {
+    .compairSchoolContainer{
+        margin-top: 100px;
+    }   
+}
+.compairSchoolContainer .headingText{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: left;
+    color: #000000cc;
+}  
+ .ImagePreview{
+    height: 100px;
+    width: 100%;
+}  
+.compairBox table,
+.compairBox table tr,
+.compairBox table th{
+    border: none;
+    text-align: left;
+    font-size:14px;
+}

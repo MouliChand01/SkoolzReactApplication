@@ -1,4 +1,4 @@
-import React from "react";
+import React,{memo}from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Awards } from '../../Assets/index'
 import FooterComponent from "../Footer/Footer";
@@ -66,4 +66,4 @@ const AwardAndRecognitionsComp = () => {
         </div>
     )
 }
-export default AwardAndRecognitionsComp;
+export default memo(AwardAndRecognitionsComp);

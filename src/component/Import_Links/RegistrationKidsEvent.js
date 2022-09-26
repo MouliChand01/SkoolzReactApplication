@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,memo } from "react";
 import { Button, Form ,Col,Row} from 'react-bootstrap';
 import './RegistrationKidsEvent.css';
 
@@ -89,4 +89,4 @@ const RegistrationKidsEvent = () => {
         </div>
     )
 }
-export default RegistrationKidsEvent;
+export default memo(RegistrationKidsEvent);

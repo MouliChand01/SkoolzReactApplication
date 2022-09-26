@@ -1,4 +1,4 @@
-import React from "react";
+import React,{memo} from "react";
 import skoolzlogo from "../../Assets/Images/skoolz.PNG"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebook,faTwitter,faLinkedin,faYoutube,faInstagram} from '@fortawesome/free-brands-svg-icons'
@@ -374,4 +374,4 @@ const FooterComponent = () => {
         </div>
     )
 }
-export default FooterComponent;
+export default memo(FooterComponent);

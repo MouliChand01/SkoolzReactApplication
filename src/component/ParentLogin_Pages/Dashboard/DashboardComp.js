@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,memo } from 'react'
 import { Table } from 'react-bootstrap'
 import FooterComponent from '../../Footer/Footer'
 import HeaderComponent from '../../Header/Header'
@@ -143,4 +143,4 @@ function DashboardComp() {
     )
 }
 
-export default DashboardComp
+export default memo(DashboardComp);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,memo } from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import { KidsArena } from '../../Assets/index';
@@ -93,4 +93,4 @@ const KidsArenadetailsComponent = () => {
         </div>
     )
 }
-export default KidsArenadetailsComponent;
+export default memo(KidsArenadetailsComponent);

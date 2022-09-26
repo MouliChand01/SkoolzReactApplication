@@ -1,4 +1,4 @@
-import React from "react";
+import React,{memo} from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import QuickLinksComp from "../QuickLinks/QuickLinks";
@@ -58,4 +58,4 @@ const TestimonialDetailsComp = () => {
         </div>
     )
 }
-export default TestimonialDetailsComp;
+export default memo(TestimonialDetailsComp);

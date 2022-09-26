@@ -1,4 +1,4 @@
-import React from "react";
+import React,{memo} from "react";
 import { Link, useNavigate } from "react-router-dom"
 import skoolzLogo from '../../Assets/Images/skoolz.PNG'
 import FooterComponent from "../Footer/Footer";
@@ -66,4 +66,4 @@ const Events_WebinarComponent = () => {
         </div>
     )
 }
-export default Events_WebinarComponent;
+export default memo(Events_WebinarComponent);

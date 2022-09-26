@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,memo } from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import { LoadBlogs } from '../../Assets/index';
@@ -169,4 +169,4 @@ const BlogsComp = () => {
         </div>
     )
 }
-export default BlogsComp;
+export default memo(BlogsComp);

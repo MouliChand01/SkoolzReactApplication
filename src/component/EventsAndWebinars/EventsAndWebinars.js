@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useState,useEffect,memo} from "react";
 import "./EventsAndWebinars.css"
 import "swiper/css";
 import "swiper/css/pagination";
@@ -326,4 +326,4 @@ const EvetsAndWeninars = () => {
         </div >
     )
 }
-export default EvetsAndWeninars;
+export default memo(EvetsAndWeninars);

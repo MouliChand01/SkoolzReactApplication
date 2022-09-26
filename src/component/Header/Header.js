@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,memo} from "react";
 import skoolzlogo from "../../Assets/Images/skoolz.PNG"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
@@ -189,4 +189,4 @@ const HeaderComponent = (props) => {
 
     )
 }
-export default HeaderComponent;
+export default memo(HeaderComponent);

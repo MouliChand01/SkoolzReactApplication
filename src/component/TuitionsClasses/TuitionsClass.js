@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,memo } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import './TuitionsClass.css';
@@ -124,5 +124,5 @@ const TuitionsClassComp = () => {
         </div>
     )
 }
-export default TuitionsClassComp
+export default memo(TuitionsClassComp);
 

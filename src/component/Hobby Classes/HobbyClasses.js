@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,memo} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import './HobbyClasses.css';
@@ -114,4 +114,4 @@ const HobbyClassesComp = () => {
         </div>
     )
 }
-export default HobbyClassesComp
+export default memo(HobbyClassesComp);

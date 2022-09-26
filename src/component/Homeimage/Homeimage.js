@@ -1,4 +1,4 @@
-import React from "react";
+import React,{memo}from "react";
 import "./Homeimage.css";
 
 const Homeimage =()=>{
@@ -37,4 +37,4 @@ const Homeimage =()=>{
     )
 
 }
-export default Homeimage ;
+export default memo(Homeimage) ;

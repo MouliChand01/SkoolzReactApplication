@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from "react";
+import React, { useState ,useEffect,memo} from "react";
 import blogtrand1 from "../../Assets/Images/CBSE vs ICSE vs IB vs IGCSE vs State Board_11zon.jpg";
 import blogtrand2 from "../../Assets/Images/Various Types of Preschool_11zon.jpg";
 import blogtrand3 from "../../Assets/Images/CBSE schools Banglore_11zon.jpg";
@@ -477,4 +477,4 @@ const BlogsComponent = () => {
         </div >
     )
 }
-export default BlogsComponent;
+export default memo(BlogsComponent);

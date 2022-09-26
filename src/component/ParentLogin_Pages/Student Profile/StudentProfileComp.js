@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,memo } from "react";
 import { Link } from "react-router-dom";
 import { Button, Form, Col, Row } from 'react-bootstrap';
 import './StudentProfileComp.css';
@@ -449,4 +449,4 @@ function StudentProfileComp() {
         </div >
     )
 }
-export default StudentProfileComp;
+export default memo(StudentProfileComp);

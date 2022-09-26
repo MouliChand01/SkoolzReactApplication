@@ -1,4 +1,4 @@
-import React from "react";
+import React,{memo}from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import SchoolsImageSlide from "./SchoolsImageSlider/SchoolsImageSlide";
@@ -442,4 +442,4 @@ const DeatailsSchoolComponent = () => {
     )
 }
 
-export default DeatailsSchoolComponent;
+export default memo(DeatailsSchoolComponent);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,memo } from "react";
 import parent1 from "../../Assets/Images/AnandMayi_Priyadarshini.png";
 import parent2 from "../../Assets/Images/Geetha__s.png";
 import parent3 from "../../Assets/Images/Punith_Gowda.png"
@@ -131,4 +131,4 @@ const Testimonials = () => {
     )
 }
 
-export default Testimonials;
+export default memo(Testimonials);

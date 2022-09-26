@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,memo } from "react";
 import { useLocation ,Link} from "react-router-dom";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
@@ -106,4 +106,4 @@ const BlogsDetailsComp = () => {
         </div>
     )
 }
-export default BlogsDetailsComp;
+export default memo(BlogsDetailsComp);

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{memo} from "react";
 import leader1 from '../../Assets/Images/Srinivas.jpg'
 import leader2 from '../../Assets/Images/Sowmya.jpg'
 import leader3 from '../../Assets/Images/Pramil.jpg'
@@ -227,4 +227,4 @@ const About_usComponent = () => {
         </div>
     )
 }
-export default About_usComponent;
+export default memo(About_usComponent);

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{memo} from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import skoolzLogo from '../../Assets/Images/skoolz.PNG';
@@ -86,4 +86,4 @@ const KidsArenaComponent = () => {
     )
 }
 
-export default KidsArenaComponent;
+export default memo(KidsArenaComponent);

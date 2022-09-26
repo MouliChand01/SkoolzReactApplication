@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,memo} from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import ModelListFilter from "./ModelListFilter/ModelListFilter";
@@ -61,4 +61,4 @@ const SearchSchools = () => {
         </div>
     )
 }
-export default SearchSchools;
+export default memo(SearchSchools);

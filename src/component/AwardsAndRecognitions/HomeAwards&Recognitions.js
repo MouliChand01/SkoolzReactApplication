@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from "react";
+import React,{useEffect,useState,memo} from "react";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import award1 from "../../Assets/Images/Best-Edutech-Award-2021.jpeg";
@@ -140,4 +140,4 @@ const AwardsAndRecognitions = () => {
         </div>
     )
 }
-export default AwardsAndRecognitions;
+export default memo(AwardsAndRecognitions);

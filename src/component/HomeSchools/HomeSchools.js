@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,memo} from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -269,4 +269,4 @@ const Schools = () => {
 
 }
 
-export default Schools;
+export default memo(Schools);

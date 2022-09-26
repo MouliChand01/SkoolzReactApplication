@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import { Link } from "react-router-dom";
 import './QuickLinks.css';
 
@@ -29,4 +29,4 @@ const QuickLinksComp = () => {
         </div>
     )
 }
-export default QuickLinksComp
+export default memo(QuickLinksComp);

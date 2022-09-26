@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,memo } from "react";
 import { useLocation, Link } from "react-router-dom";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
@@ -59,4 +59,4 @@ const AwardDetailsComp = () => {
         </div>
     )
 }
-export default AwardDetailsComp;
+export default memo(AwardDetailsComp);
