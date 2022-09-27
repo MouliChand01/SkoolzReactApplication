@@ -25,6 +25,7 @@ import Banercomp from './component/DummyTasks/skoolz';
 import StudentProfileComp from './component/ParentLogin_Pages/Student Profile/StudentProfileComp';
 import DashboardComp from './component/ParentLogin_Pages/Dashboard/DashboardComp';
 import CompairSchools from './component/SearchSchools/CompairSchools/CompairSchools';
+import ShortListedSchool from './component/ParentLogin_Pages/ShortListed Schools/ShortListedSchool';
 
 
 
@@ -60,6 +61,9 @@ function App() {
 
             <Route path="/student/profile" element={<StudentProfileComp/>} />
             <Route path="/student/dashboard" element={<DashboardComp/>} />
+            <Route path="/student/shortlist-schools" element={<ShortListedSchool/>} />
+
+            <Route path='/home/compare' element={<CompairSchools/>}/>
 
 
             <Route path="/baner" element={<Banercomp/>} />   
@@ -68,7 +72,7 @@ function App() {
             <Route path="/test" element={<Fbcomp />} />
             {/* this is fb login and google api classcomp */}
 
-            <Route path='/compair' element={<CompairSchools/>}/>
+            
 
 
             

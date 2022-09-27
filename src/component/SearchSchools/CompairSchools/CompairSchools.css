@@ -1,8 +1,14 @@
-@media screen and (min-width :768px) {
+@media screen and (min-width :767px) {
     .compairSchoolContainer{
         margin-top: 100px;
     }   
 }
+@media screen and (max-width: 767px){
+    .compairBox{
+        width: 880px;
+        overflow-x: auto;
+    } 
+}  
 .compairSchoolContainer .headingText{
     font-size: 26px;
     font-weight: 600;
@@ -13,10 +19,19 @@
     height: 100px;
     width: 100%;
 }  
-.compairBox table,
-.compairBox table tr,
-.compairBox table th{
+.compairBox .table,
+.compairBox .table tr,
+.compairBox .table th,
+.compairBox .table td{
     border: none;
     text-align: left;
     font-size:14px;
 }
+.compairBox .table tr{
+    height: 54px;
+}
+.compairBox .table tr:nth-child(2n){
+    background: #EEE;
+}
+
+

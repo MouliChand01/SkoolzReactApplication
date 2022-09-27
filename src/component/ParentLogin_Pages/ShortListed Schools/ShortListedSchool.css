@@ -1,0 +1,11 @@
+@media only screen and (min-width: 991px) {
+    .shortListContainer {
+        margin-top: 100px;
+    }
+
+}
+
+.shortListContainer .subText{
+    font-size: 23px;
+    font-weight: 600;
+}

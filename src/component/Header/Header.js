@@ -96,7 +96,7 @@ const HeaderComponent = (props) => {
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                     <li><Link to="/student/profile"><a class="dropdown-item">Student Profile</a></Link></li>
                                     <li><Link to="/student/dashboard"><a class="dropdown-item">Dashboard</a></Link></li>
-                                    <li><a class="dropdown-item" href="#">Shortlisted Schools</a></li>
+                                    <li><Link to="/student/shortlist-schools"><a class="dropdown-item">Shortlisted Schools</a></Link></li>
                                     <li><a class="dropdown-item" href="#">Recive Updates</a></li>
                                     <li><a class="dropdown-item" href="#">Change Password</a></li>
                                     <li class="dropdown-item logout"><GoogleLogout

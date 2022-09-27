@@ -6,6 +6,45 @@
     background-color: #f8f8f8;
     width: 100%;
 }
+.schoolSearch .footerModel {
+    position:sticky;
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.footerBody .footerSchoolCard{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+}
+.footerBody .compairBtn{
+    color: #ffffff !important;
+    cursor: pointer;
+    text-decoration: none;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 27px;
+    min-width: 120px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.25s;
+    box-shadow: none;
+    background: #34A853;
+    border: 1px solid #34A853;
+}
+.footerModel .footerTop{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+.footerModel .closeFooter{
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    right: 40px;
+    top:10px
+}
 
 .hidenIcons .filterIcon button,
 .hidenIcons .chatIcon button {

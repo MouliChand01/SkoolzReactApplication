@@ -9,7 +9,7 @@
     "boardThree": "NA",
     "schoolClassification": "Co-Ed",
     "schoolType": "Pre-School",
-    "annualFees": "₹30,000 - ₹50,000",
+    "annualFees": "₹20,000 - ₹55,000",
     "schoolRating": 0,
     "coverPicturePath": "a89bc78f-b422-4657-b2d0-f98d8d5591b1_CoverPicture.jpg",
     "latitude": 19.02585333,
@@ -18,7 +18,16 @@
     "cityName": "Navi Mumbai",
     "stateName": "Maharashtra",
     "distance": 578.1,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 39,
@@ -30,7 +39,7 @@
     "boardThree": "NA",
     "schoolClassification": "Co-Ed",
     "schoolType": "Pre-School",
-    "annualFees": "₹30,000 - ₹50,000",
+    "annualFees": "₹30,000 - ₹40,000",
     "schoolRating": 0,
     "coverPicturePath": "a490f03e-83f1-4594-a8ac-afabd439fd7b_CoverPicture.jpg",
     "latitude": 19.2792404,
@@ -39,7 +48,16 @@
     "cityName": "Mumbai",
     "stateName": "Maharashtra",
     "distance": 607.6,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 41,
@@ -51,7 +69,7 @@
     "boardThree": "NA",
     "schoolClassification": "Co-Ed",
     "schoolType": "Pre-School",
-    "annualFees": "",
+    "annualFees": "NA",
     "schoolRating": 0,
     "coverPicturePath": "09cf0384-b970-4eb3-b76a-f7379a68b6a7_CoverPicture.jpg",
     "latitude": 19.03465449,
@@ -60,7 +78,16 @@
     "cityName": "bengaluru",
     "stateName": "Maharashtra",
     "distance": 579.6,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 45,
@@ -72,7 +99,7 @@
     "boardThree": "NA",
     "schoolClassification": "Co-Ed",
     "schoolType": "Pre-School",
-    "annualFees": "",
+    "annualFees": "NA",
     "schoolRating": 0,
     "coverPicturePath": null,
     "latitude": 12.9959212472788,
@@ -81,7 +108,16 @@
     "cityName": "Bengaluru",
     "stateName": "Karnataka",
     "distance": 514,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 46,
@@ -93,7 +129,7 @@
     "boardThree": "NA",
     "schoolClassification": "Co-Ed",
     "schoolType": "Pre-School",
-    "annualFees": "",
+    "annualFees": "NA",
     "schoolRating": 0,
     "coverPicturePath": "39b6afa6-c08b-49f1-b2e4-d22f98fd5735_CoverPicture.jpg",
     "latitude": 12.9699779484668,
@@ -102,7 +138,16 @@
     "cityName": "Bengaluru",
     "stateName": "Karnataka",
     "distance": 514.3,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 53,
@@ -114,7 +159,7 @@
     "boardThree": "NA",
     "schoolClassification": "Co-Ed",
     "schoolType": "Pre-School",
-    "annualFees": "",
+    "annualFees": "NA",
     "schoolRating": 0,
     "coverPicturePath": "2215496f-3b31-4ec6-a4f4-e0769b796564_CoverPicture.jpg",
     "latitude": 19.0688853899546,
@@ -123,7 +168,16 @@
     "cityName": "Mumbai",
     "stateName": "Maharashtra",
     "distance": 580.2,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 55,
@@ -144,7 +198,16 @@
     "cityName": "Bengaluru",
     "stateName": "Karnataka",
     "distance": 524.2,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 58,
@@ -165,7 +228,16 @@
     "cityName": "Bengaluru",
     "stateName": "Karnataka",
     "distance": 526.2,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 59,
@@ -186,7 +258,16 @@
     "cityName": "Bengaluru",
     "stateName": "Karnataka",
     "distance": 524,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 60,
@@ -207,7 +288,16 @@
     "cityName": "Daltenganj",
     "stateName": "Jharkhand",
     "distance": 993.9,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 61,
@@ -228,7 +318,16 @@
     "cityName": "Bengaluru",
     "stateName": "Karnataka",
     "distance": 518.3,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 62,
@@ -249,7 +348,16 @@
     "cityName": "Bengaluru",
     "stateName": "Karnataka",
     "distance": 516,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 63,
@@ -270,7 +378,16 @@
     "cityName": "Bengaluru",
     "stateName": "Karnataka",
     "distance": 505.9,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 64,
@@ -291,7 +408,16 @@
     "cityName": "Bengaluru",
     "stateName": "Karnataka",
     "distance": 513.6,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 65,
@@ -312,7 +438,16 @@
     "cityName": "Bengaluru",
     "stateName": "Karnataka",
     "distance": 521.4,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 66,
@@ -333,7 +468,16 @@
     "cityName": "Bengaluru",
     "stateName": "Karnataka",
     "distance": 517.6,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 67,
@@ -354,7 +498,16 @@
     "cityName": "Bengaluru",
     "stateName": "Karnataka",
     "distance": 514.6,
-    "schoolBoard": null
+    "schoolBoard": null,
+    "transport":"Yes",
+    "classes":"Pre-School - KG2",
+    "schoolstrength":"0",
+    "classstrength":"0",
+    "establishmentYear":"2016",
+    "smartClasses":"Yes",
+    "curricularActivities":"Yes",
+    "outdoorSports":"Yes",
+    "indoorSports":"Yes"
   },
   {
     "schoolId": 68,

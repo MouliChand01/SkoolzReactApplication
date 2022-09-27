@@ -1,15 +1,14 @@
-import React, { useState ,memo } from "react";
+import React, { useState, memo } from "react";
 import skoolslogo from "../../../Assets/Images/skoolz.PNG";
 import school1 from "../../../Assets/Images/school_CoverPicture2.png";
-import SearchData from "../../../Assets/searchSchool.json";
-import "./CardComponent.css";
 import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faEnvelope, faUser, faClock, faXmarkSquare ,faHeart} from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faEnvelope, faUser, faClock, faXmarkSquare, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import SearchData from "../../../Assets/searchSchool.json";
+import Swal from 'sweetalert2';
+import "./CardComponent.css";
 
-
-
-const CardFilter = () => {
+const CardFilter = (props) => {
     const [schoolData, setSchoolData] = useState(SearchData);
     const [show, setShow] = useState(false);
     const [parentNameField, setparentNameField] = useState(true);
@@ -26,7 +25,12 @@ const CardFilter = () => {
     const [parentMobile, setParentMobile] = useState();
     const [enterotp, setEnterotp] = useState();
     const [meetingMode, setMeetingMode] = useState("");
-    // const [compairSchool, setCompairSchool] = useState([])
+    const [compairSchool, setCompairSchool] = useState([]);
+    const [shortlistedSchools, setShortlistedSchools] = useState([]);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     const handelSubmit = () => {
         if (!parentName) {
             setparentNameField(false)
@@ -85,13 +89,36 @@ const CardFilter = () => {
             setMeetingMode(e.target.value)
         }
     }
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
+ 
     const comapairSchoolFun = (id) => {
+        if (compairSchool.length <= 2) {
+           let seletingSchool = schoolData.find((ele) => ele.schoolId === id);
+           let uniqueschool = compairSchool && compairSchool.find((ele)=>ele.schoolId === seletingSchool.schoolId)
+           if( uniqueschool === undefined){
+            compairSchool.push(seletingSchool);
+            let selectedObject = [...compairSchool]
+            setCompairSchool(selectedObject);
+            props.comapredObject(selectedObject)  /* this is help to send object card component to school searchcomponent*/
+           }
+           else{
+            Swal.fire({
+                title:'Error!',
+                text:'Looks like you have already added school in compare list!',
+                type:'error',
+                confirmButtonColor:'#34a853',
+            })
+           }
+          }
+        else{
+            Swal.fire("You are running out of limit !!", "Are you sure want to compare the schools ?  delete a school from the list ", "question");
+        }
+    }
+
+    const shortListedschoolsFun = (id) => {
         let seletingSchool = schoolData.find((ele) => ele.schoolId === id);
-        compairSchool.push(seletingSchool);
-        console.log(compairSchool)
+        shortlistedSchools.push(seletingSchool);
+        let selectedObject = [...shortlistedSchools];
+        setShortlistedSchools(selectedObject)  /* this is to store locally in shortlisted scholls but we need api for that we just send sample purpose*/
     }
 
     return (
@@ -186,7 +213,6 @@ const CardFilter = () => {
                                     {!meetingField ? (<p className="errorMsg">Select appointment type</p>) : ""}
                                 </div>
                             </div>
-
                         </div>
                     </form>
                 </Modal.Body>
@@ -194,17 +220,17 @@ const CardFilter = () => {
                     <button className="submitBtn m-auto" onClick={handelSubmit}>Submit</button>
                 </Modal.Footer>
             </Modal>
-    {/* ####################################################################
+            {/* ####################################################################
     ## above one Model pop up bookappoinment bellow one cards filters ##
     #################################################################### */}
             <div className='container cardFilter'>
+                {console.log(compairSchool)}
                 <div className='row mb-3'>
                     <div className='col-12 col-md-12 col-lg-9 buttons'>
                         <button className='btn-selected button col-lg-1'>Schools</button>
                         <button className='buttonHobby'>Hobby classes</button>
                         <button className='buttonTuition'>Tuitions</button>
                     </div>
-
                 </div>
                 {schoolData && schoolData.map((data) => {
                     return <div key={data.schoolId} className='mb-2'>
@@ -212,17 +238,17 @@ const CardFilter = () => {
                             <div className='card cardGroup'>
                                 <div className='card-body p-2'>
                                     <div className="row">
-                                        <div className="col-lg-4">
-                                        <div className="imageIcons">
-                                           <div className="addAhortList">
-                                               <FontAwesomeIcon icon={faHeart}/>
-                                           </div>
-                                           {/* <div className="addNearLoc">
-                                               <button><FontAwesomeIcon icon={faHeart}/>0.2Km</button>
-                                           </div> */}
-                                        </div>
-                                        <div className="d-flex align-items-center">
-                                            <img className="img-fluid px-2" src={school1} />
+                                        <div className="col-lg-4 leftContainer">
+                                            <div className="imageIcons d-flex p-2">
+                                                <div className="addAhortList me-auto">
+                                                    <i class="bi bi-heart-fill" onClick={() => shortListedschoolsFun(data.schoolId)} />
+                                                </div>
+                                                <div className="addNearLoc me-2">
+                                                    <button className="btn"><FontAwesomeIcon icon={faLocationDot} />0.2Km</button>
+                                                </div>
+                                            </div>
+                                            <div className="d-flex align-items-center">
+                                                <img className="img-fluid px-2" src={school1} />
                                             </div>
                                         </div>
                                         <div className="col-lg-8">
@@ -260,12 +286,6 @@ const CardFilter = () => {
                     </div>
                 })
                 }
-                {/* {compairSchool.length &&
-                    <div className="toogleFooter">
-                        <h1>heloooooooooooooooooooooooooooooo</h1>
-                    </div>
-                } */}
-
             </div>
         </div>
     )
