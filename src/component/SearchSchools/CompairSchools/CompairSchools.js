@@ -18,7 +18,7 @@ function CompairSchools() {
                     <div className='row'>
                         <div className='col-lg-3 col-3'>
                             <table className='table table-striped'>
-                                <tr className='ImagePreview'><th>School Image</th></tr>
+                                <tr  style={{"height":"168px"}}><th>School Image</th></tr>
                                 <tr><th>Type of School</th></tr>
                                 <tr><th>Examination Board</th></tr>
                                 <tr><th>Annual Fees</th></tr>

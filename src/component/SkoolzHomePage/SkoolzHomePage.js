@@ -1,7 +1,7 @@
 import React ,{memo} from "react";
 import AwardsAndRecognitions from "../AwardsAndRecognitions/HomeAwards&Recognitions";
 import Blogs from "../Blogs/BlogsComponent";
-import Banercomp from "../DummyTasks/skoolz";
+import Banercomp from "../HomeImage/skoolz";
 import EvetsAndWeninars from "../EventsAndWebinars/EventsAndWebinars";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";

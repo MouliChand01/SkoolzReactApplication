@@ -224,7 +224,7 @@ const CardFilter = (props) => {
     ## above one Model pop up bookappoinment bellow one cards filters ##
     #################################################################### */}
             <div className='container cardFilter'>
-                {console.log(compairSchool)}
+                {console.log(compairSchool,"parent")}
                 <div className='row mb-3'>
                     <div className='col-12 col-md-12 col-lg-9 buttons'>
                         <button className='btn-selected button col-lg-1'>Schools</button>

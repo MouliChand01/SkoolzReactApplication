@@ -15,10 +15,9 @@
     text-align: left;
     color: #000000cc;
 }  
- .ImagePreview{
-    height: 100px;
-    width: 100%;
-}  
+.compairBox .card{
+    border: none !important;
+} 
 .compairBox .table,
 .compairBox .table tr,
 .compairBox .table th,

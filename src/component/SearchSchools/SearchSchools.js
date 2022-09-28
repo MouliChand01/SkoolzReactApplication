@@ -54,6 +54,7 @@ const SearchSchools = () => {
                     </div>
                 )}
                 <div className="container grid">
+                    {console.log(updatedObjects,"childcomp")}
                     <div className="row schools-container">
                         <div className="col-md-12 col-lg-4 col-xl-3 SearchFilter searchFilterPad">
                             <ListFilter />
