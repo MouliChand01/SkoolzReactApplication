@@ -51,6 +51,22 @@
 .dashBoardContainer table .superHead{
     background-color: #F2F2F2;
 }
+.dashBoardContainer .heightText{
+    font-size: 24px;
+    font-weight: 800;
+    color: #D6712D;
+    text-align: left;
+}
+.dashBoardContainer .bellowText{
+    font-size: 18px;
+    font-weight: 400;
+    color: #D6712D;
+    text-align: left;
+}
+.dashBoardContainer .emailCard,
+.dashBoardContainer .PhoneCard{
+    background-color: #f4eae3;
+}
 @media only screen and (min-width: 991px) {
     .dashBoardContainer {
         margin-top: 77px;

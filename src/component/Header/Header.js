@@ -1,34 +1,56 @@
-import React, { useState, useEffect,memo} from "react";
+import React, { useState, useEffect, memo } from "react";
 import skoolzlogo from "../../Assets/Images/skoolz.PNG"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
 import { GoogleLogout } from "react-google-login";
+import {geocodeByAddress,geocodeByPlaceId,getLatLng} from 'react-places-autocomplete';
+import PlacesAutocomplete from 'react-places-autocomplete';
+import google from '../../Assets/Images/googleimage.png'
 import "./Header.css"
 
 const HeaderComponent = (props) => {
+
     const clientId = "280716774713-ln7m28uobck7kbmpkd5do2h4ci2ipj5j.apps.googleusercontent.com";
     const [flag, setFlag] = useState("");
     const [count, setCount] = useState(0);
     const [display, setDisplay] = useState(false);
-    const [email, setEmail] = useState('')
+    const [email, setEmail] = useState('');
+    const [address,setAddress]=useState("");
+    const [corodinates,setCorodinates]=useState({
+        lat: 12.925317,
+        lng: 77.6166666
+    });
+
+    const handleSelect =async value =>{
+        const results = await geocodeByAddress(value);
+        const data= await getLatLng(results[0])
+        console.log(data);
+        setAddress(value);
+        setCorodinates(data)
+    };
 
     useEffect(() => {
         let data = localStorage.getItem('email');
         setEmail(data)
-    })
+    });
 
     const Toggle = () => {
         return (
             setDisplay(!display)
         )
-    }
+    };
+
     const onLogoutSuccess = (res) => {
         console.log("logout Sucess !!!")
         setEmail('')
         localStorage.clear()
 
-    }
+    };
+
+    const searchLocation =()=>{
+        console.log(corodinates)
+    };
 
     return (
 
@@ -80,7 +102,7 @@ const HeaderComponent = (props) => {
                                         <div className="location-icon">
                                             <img src="~/skoolz/assets/img/icon/search_location.svg" alt="location" />
                                         </div>
-                                        <Link to={'/home/search'} type="submit" className="search-icon">
+                                        <Link to={'/home/search'} type="submit" className="search-icon" style={{"lineHeight":"36px"}}>
                                             <FontAwesomeIcon icon={faSearch} style={{ "color": "white" }} />
                                         </Link>
                                     </div>
@@ -90,7 +112,7 @@ const HeaderComponent = (props) => {
                         <div className="hearderRight d-flex align-items-center">
                             <div className="dropdown">
                                 <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span><i className="bi bi-person-circle fa-lg" style={{"color":"green"}}></i></span>&nbsp;&nbsp;&nbsp;
+                                    <span><i className="bi bi-person-circle fa-lg" style={{ "color": "green" }}></i></span>&nbsp;&nbsp;&nbsp;
                                     {email}
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -118,14 +140,51 @@ const HeaderComponent = (props) => {
                         <div className="headerSearchBar headerSearchBarWeb">
                             <div className="input-group">
                                 <div className="fullSearchBox">
-                                    <input id="searchText" type="search" autoComplete="nope" className="headerSearchBox"
-                                        data-content="Type school name or location" placeholder="Enter location & search for nearby Schools & Hobby classes" />
+                                    <PlacesAutocomplete
+                                        value={address}
+                                        onChange={setAddress}
+                                        onSelect={handleSelect}
+                                    >
+                                        {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+                                            <div>
+                                                <input type="search"
+                                                    {...getInputProps({
+                                                        placeholder: 'Enter location & search for nearby Schools & Hobby classes',
+                                                        className: 'location-search-input',
+                                                    })}
+                                                />
+                                                <div className="autocomplete-dropdown-container">
+                                                    {loading && <div>Loading...</div>}
+                                                    {suggestions.map(suggestion => {
+                                                        const className = suggestion.active
+                                                            ? 'suggestion-item--active'
+                                                            : 'suggestion-item';
+                                                        // inline style for demonstration purpose
+                                                        const style = suggestion.active
+                                                            ? { backgroundColor: '#F2F2F2', cursor: 'pointer' }
+                                                            : { backgroundColor: '#ffffff', cursor: 'pointer' };
+                                                        return (
+                                                            <div
+                                                                {...getSuggestionItemProps(suggestion, {
+                                                                    className,
+                                                                    style,
+                                                                })}
+                                                            >
+                                                                <span><i class="bi bi-geo-alt-fill"></i>&nbsp;{suggestion.description}</span>
+
+                                                            </div>
+                                                        );
+
+                                                    })}
+                                                    {/* {suggestions.length && <div className='googleIcon ms-auto'><img src={google} /></div>} */}
+
+                                                </div>
+                                            </div>
+                                        )}
+                                    </PlacesAutocomplete>
                                     <div className="input-group-append search-goup">
-                                        <div className="location-icon">
-                                            <img src="~/skoolz/assets/img/icon/search_location.svg" alt="location" />
-                                        </div>
                                         <Link to={'/home/search'} type="submit" className="search-icon" style={{ "lineHeight": "37px" }}>
-                                            <FontAwesomeIcon icon={faSearch} style={{ "color": "white" }} />
+                                            <FontAwesomeIcon icon={faSearch} style={{ "color": "white" }} onClick={searchLocation} />
                                         </Link>
                                     </div>
                                 </div>
@@ -137,7 +196,7 @@ const HeaderComponent = (props) => {
                                     <Link to={'/'} className="nav-link loginButton" style={{ "fontSize": "20px", "font-weight": "500" }}>Partner with us</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to={'/'} className="nav-link loginButton" style={{ "fontSize": "20px", "font-weight": "500" }} onClick={()=>props.seingGoogle()}>Parent Login</Link>
+                                    <Link to={'/'} className="nav-link loginButton" style={{ "fontSize": "20px", "font-weight": "500" }} onClick={() => props.seingGoogle()}>Parent Login</Link>
                                 </li>
                             </ul>
                         </nav>

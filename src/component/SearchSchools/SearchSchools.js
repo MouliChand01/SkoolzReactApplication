@@ -12,7 +12,8 @@ import { Link } from "react-router-dom";
 
 const SearchSchools = () => {
     const [display, setDisplay] = useState(false);
-    const [footerdisplay, setFooterDisplay] = useState(false)
+    const [footerdisplay, setFooterDisplay] = useState(false);
+    const [deletedItemIndex,setDeletedItemIndex]=useState();
     const [updatedObjects, setUpdatedObjects] = useState([])
 
     const Toggle = () => {
@@ -33,9 +34,10 @@ const SearchSchools = () => {
         setUpdatedObjects(data)
     }
 
-    const deletingSchool=(id)=>{
+    const deletingSchool=(id,index)=>{
           let checked = updatedObjects.filter((ele)=>ele.schoolId !== id);
           setUpdatedObjects(checked)
+          setDeletedItemIndex(index)
     }
     return (
         <div>
@@ -60,7 +62,7 @@ const SearchSchools = () => {
                             <ListFilter />
                         </div>
                         <div className="col-md-12 col-lg-8 col-xl-9 cardFilter" >
-                            <CardFilter comapredObject={getingObjects} />
+                            <CardFilter comapredObject={getingObjects} deletingaitem={deletedItemIndex}/>
                         </div>
                         <div className="hidenIcons">
                             <div className="filterIcon">
@@ -92,7 +94,7 @@ const SearchSchools = () => {
                                                         <div className="row">
                                                             <div className="col-2"></div>
                                                             <div className="col-8">{ele.schoolName}</div>
-                                                            <div className="col-2 d-flex align-items-center"><FontAwesomeIcon icon={faTrashCan} style={{ "color": "red" }} onClick={()=>deletingSchool(ele.schoolId)}/></div>
+                                                            <div className="col-2 d-flex align-items-center"><FontAwesomeIcon icon={faTrashCan} style={{ "color": "red" }} onClick={()=>deletingSchool(ele.schoolId,index)}/></div>
                                                         </div>
                                                     </div>
                                                 </div>

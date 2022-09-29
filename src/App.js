@@ -18,13 +18,12 @@ import BlogsDetailsComp from './component/Import_Links/BlogsDetailsComp';
 import TestimonialDetailsComp from './component/Testimonials/TestimonialDetails';
 import AwardAndRecognitionsComp from './component/AwardsAndRecognitions/AwardAndRecognitions';
 import AwardDetailsComp from './component/AwardsAndRecognitions/AwardDetailsComp';
-import Fbcomp from './component/DummyTasks/facecom';
 import Banercomp from './component/HomeImage/skoolz';
 import StudentProfileComp from './component/ParentLogin_Pages/Student Profile/StudentProfileComp';
 import DashboardComp from './component/ParentLogin_Pages/Dashboard/DashboardComp';
 import CompairSchools from './component/SearchSchools/CompairSchools/CompairSchools';
 import ShortListedSchool from './component/ParentLogin_Pages/ShortListed Schools/ShortListedSchool';
-import SearchComp from './component/DummyTasks/SearchComp';
+
 
 
 
@@ -68,10 +67,7 @@ function App() {
             <Route path="/baner" element={<Banercomp/>} />   
             {/* this is homenew Baner */}
 
-            <Route path="/test" element={<Fbcomp />} />
-            {/* this is fb login and google api classcomp */}
-
-            <Route path='/api' element={<SearchComp/>}/>
+           
 
             
 

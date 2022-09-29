@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react";
+import React, { useState, memo, useEffect } from "react";
 import skoolslogo from "../../../Assets/Images/skoolz.PNG";
 import school1 from "../../../Assets/Images/school_CoverPicture2.png";
 import Modal from 'react-bootstrap/Modal';
@@ -121,6 +121,11 @@ const CardFilter = (props) => {
         setShortlistedSchools(selectedObject)  /* this is to store locally in shortlisted scholls but we need api for that we just send sample purpose*/
     }
 
+    useEffect(()=>{
+        compairSchool.splice(props.deletingaitem,1)
+        setCompairSchool(compairSchool)
+    },[props.deletingaitem])
+
     return (
         <div>
             <Modal
@@ -225,6 +230,7 @@ const CardFilter = (props) => {
     #################################################################### */}
             <div className='container cardFilter'>
                 {console.log(compairSchool,"parent")}
+                {console.log(props.deletingaitem,"indexvalue")}
                 <div className='row mb-3'>
                     <div className='col-12 col-md-12 col-lg-9 buttons'>
                         <button className='btn-selected button col-lg-1'>Schools</button>

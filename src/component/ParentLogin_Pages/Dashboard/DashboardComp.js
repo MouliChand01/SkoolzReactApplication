@@ -1,12 +1,12 @@
-import React, { useState,memo } from 'react'
+import React, { useState, memo } from 'react'
 import { Table } from 'react-bootstrap'
 import FooterComponent from '../../Footer/Footer'
 import HeaderComponent from '../../Header/Header'
 import './DashboardComp.css'
 
 function DashboardComp() {
-    const [mobileVerified, setMobileVerfied] = useState(false);
-    const [emailVerified, setEmailVerfied] = useState(false);
+    const [mobileVerified, setMobileVerfied] = useState(true);
+    const [emailVerified, setEmailVerfied] = useState(true);
     const [schoolReward, setSchoolReward] = useState(0);
     const [hobbyReward, setHobbyReward] = useState(0);
     const [serviceReward, setServiceReward] = useState(0);
@@ -18,6 +18,36 @@ function DashboardComp() {
             <div className='dashBoardContainer baseContainer'>
                 <div className='row'>
                     <div className='highlight mt-5 mb-3'>Dashboard</div>
+                    {emailVerified &&
+                        <div className='card emailCard p-4 mb-4'>
+                            <div className='row'>
+                                <div className='col-lg-9 col-md-12 col-sm-12'>
+                                    <div className='heightText mt-1 mb-1'>Email not verified</div>
+                                    <div className='bellowText'>Your emial not verified.</div>
+                                </div>
+                                <div className='col-lg-3 col-md-12 col-sm-12'>
+                                    <div className='mt-3' style={{ "color": " #34A853", "fontWeight": "400" }}>Verify Email &nbsp;
+                                        <i class="bi bi-box-arrow-in-up-right" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    {mobileVerified &&
+                        <div className='card PhoneCard p-4 mb-4'>
+                            <div className='row'>
+                                <div className='col-lg-9 col-md-12 col-sm-12'>
+                                    <div className='heightText mt-1 mb-1'>Mobile not verified</div>
+                                    <div className='bellowText'>Your mobile number not verified.</div>
+                                </div>
+                                <div className='col-lg-3 col-md-12 col-sm-12'>
+                                    <div className='mt-3' style={{ "color": " #34A853", "fontWeight": "400" }}>Verify Mobile &nbsp;
+                                        <i class="bi bi-box-arrow-in-up-right" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
                     <div className='card schoolCard p-4 mb-4'>
                         <div className='subText my-2'>School Appointments</div>
                         <div className='table-responsive-md table-responsive-sm'>
@@ -133,7 +163,7 @@ function DashboardComp() {
                     <div className='card PartnersCard p-4 mb-4'>
                         <div className='subText my-2'>Our Partners</div>
                         <div className='table-responsive-md table-responsive-sm'>
-                           <button className='viewmoreBtn' type='button'>View More</button>
+                            <button className='viewmoreBtn' type='button'>View More</button>
                         </div>
                     </div>
                 </div>

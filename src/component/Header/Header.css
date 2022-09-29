@@ -136,7 +136,8 @@
 .search-icon {
     width: 39px;
     height: 37px;
-    margin: 6px 6px 0px 0px;
+    /* margin: 6px 6px 0px 0px; */
+    margin: 2px 0px;
 }
 
 .schoolLoggedInUser {
@@ -625,5 +626,51 @@
 
 }
 
+.fullSearchBox{
+    width: 100%;
+}
+.fullSearchBox > div,
+.fullSearchBox > div > input,
+.fullSearchBox > div > .autocomplete-dropdown-container{
+    width: calc(100% - 50px);
+}
+.fullSearchBox > div.search-goup{
+    width: 50px;
+}
 
+.fullSearchBox > div > input,
+.fullSearchBox > div > input:focus-visible{
+    margin: 0;
+    position: relative;
+    left: 1px;
+    height: 41px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 0 5px;
+    outline: none;
+}
+.fullSearchBox > div > .autocomplete-dropdown-container{
+    position: absolute;
+    top: 43px;
+    width: calc(100% - 50px);
+    background: #FFF;
+    border-top: 0;
+    padding: 5px;
+    padding: 0 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
 
+.fullSearchBox > div > .autocomplete-dropdown-container span{
+    width: 100%;
+    font-size: 14px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden ! important;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.fullSearchBox > div > .autocomplete-dropdown-container span i{
+    color: #ccc;
+}
