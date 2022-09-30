@@ -13,7 +13,7 @@ const HeaderComponent = (props) => {
 
     const clientId = "280716774713-ln7m28uobck7kbmpkd5do2h4ci2ipj5j.apps.googleusercontent.com";
     const [flag, setFlag] = useState("");
-    const [count, setCount] = useState(0);
+    const [addcount, setAddCount] = useState(0);
     const [display, setDisplay] = useState(false);
     const [email, setEmail] = useState('');
     const [address,setAddress]=useState("");
@@ -128,8 +128,8 @@ const HeaderComponent = (props) => {
                                 </ul>
                             </div>
                             <div className="cart d-flex align-item-center">
-                                <i class="bi bi-cart2"></i>
-                                <span>{count}</span>
+                               <Link to="/student/cart"> <i class="bi bi-cart2" style={{"color":"black"}}/></Link>
+                                <span>{addcount}</span>
                             </div>
                         </div>
                     </div>

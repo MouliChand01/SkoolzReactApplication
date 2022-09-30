@@ -23,6 +23,8 @@ import StudentProfileComp from './component/ParentLogin_Pages/Student Profile/St
 import DashboardComp from './component/ParentLogin_Pages/Dashboard/DashboardComp';
 import CompairSchools from './component/SearchSchools/CompairSchools/CompairSchools';
 import ShortListedSchool from './component/ParentLogin_Pages/ShortListed Schools/ShortListedSchool';
+import CardComponent from './component/SearchSchools/CardComponent/CardComponent';
+import AddCartComp from './component/ParentLogin_Pages/AddCartComp/AddCartComp';
 
 
 
@@ -60,20 +62,14 @@ function App() {
             <Route path="/student/profile" element={<StudentProfileComp/>} />
             <Route path="/student/dashboard" element={<DashboardComp/>} />
             <Route path="/student/shortlist-schools" element={<ShortListedSchool/>} />
+            <Route path="/student/cart" element={<AddCartComp/>} />
+
 
             <Route path='/home/compare' element={<CompairSchools/>}/>
 
 
             <Route path="/baner" element={<Banercomp/>} />   
             {/* this is homenew Baner */}
-
-           
-
-            
-
-
-            
-           
 
           </Routes>
         </div>

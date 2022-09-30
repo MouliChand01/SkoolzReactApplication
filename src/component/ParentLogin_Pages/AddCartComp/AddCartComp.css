@@ -1,0 +1,35 @@
+@media only screen and (min-width: 991px) {
+    
+  }
+  
+  @media only screen and(max-width:767px) {
+ 
+  }
+
+ .cartContainer .joinOurNetwork {
+    min-height: 132px;
+    background: linear-gradient(90deg, #044816 0%,   #34A853 104.58%);
+    width: 100%;
+    margin-top: 10px;
+    justify-content: left;
+  }
+  .cartBody .heilghtText{
+    text-align: left;
+    font-size: larger;
+    font-weight: 400;
+  }
+  .cartBody .leftcard{
+    text-align: left;
+  }
+  .leftcard .checkoutBth{
+    background-color: #34A853;
+    color: #ffff;
+    padding: 5px 5px;
+    border: #34A853;
+
+  }
+  .cartContainer .joinOurNetworkText{
+    font-size: 36px;
+    font-weight: 400;
+    margin: 2px;
+  }

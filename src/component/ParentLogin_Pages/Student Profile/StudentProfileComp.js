@@ -1,4 +1,4 @@
-import React, { useState,memo } from "react";
+import React, { useState, memo } from "react";
 import { Link } from "react-router-dom";
 import { Button, Form, Col, Row } from 'react-bootstrap';
 import './StudentProfileComp.css';
@@ -30,17 +30,17 @@ function StudentProfileComp() {
                 <div className="subHead pt-4">
                     My Profile
                 </div>
-                <ul className="nav nav-tabs" role="tablist" id="myTab">
-                    <li className="nav-item">
-                        <a className="nav-link active" data-bs-toggle="tab" data-bs-target="#studentDetails" aria-controls="studentDetails" aria-selected="true">Student Details</a>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="student-tab" data-bs-toggle="tab" data-bs-target="#student" type="button" role="tab" aria-controls="home" aria-selected="true">Student Details</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" data-bs-toggle="tab" data-bs-target="#parentDetails" aria-controls="parentDetails" aria-selected="false">Parent Details</a>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="parent-tab" data-bs-toggle="tab" data-bs-target="#parent" type="button" role="tab" aria-controls="profile" aria-selected="false">Parent Details</a>
                     </li>
                 </ul>
-                <div className="tab-content" id="myTabContent">
-                    <div className="card profileCard mt-3">
-                        <div className="fade show active" id="studentDetails" role="tabpanel">
+                <div className="card profileCard mt-3">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="student" role="tabpanel" aria-labelledby="student-tab">
                             <Form autoComplete="off">
                                 <div className="cardHeading1">Basic Information</div>
                                 <Row className="mb-4 m-2">
@@ -253,7 +253,7 @@ function StudentProfileComp() {
                                     </Form.Group>
                                 </Row>
 
-                                <table className="table table-borderless" style={{ "width": "100%" }}>
+                                <table className="table table-borderless">
                                     <thead>
                                         <tr>
                                             <th>Document Name</th>
@@ -285,163 +285,161 @@ function StudentProfileComp() {
                                     <label class="form-check-label" for="Checkbox2">Student Undertaking<span>*</span></label>
                                     <div> I hereby accept that I will abide by the Administrative/Academic/Examination rules during my study in the School. I hereby accept that during my stay in School, I will maintain discipline, and pay the damages caused by me.</div>
                                 </div>
-
+                                <button>Update</button>
                             </Form>
                         </div>
-                        <div className="fade" id="parentDetails" role="tabpanel">
-                            <div>
-                                <Form autoComplete="off">
-                                    <Row className="mb-4 m-2">
-                                        <Form.Group controlId="FatherName" as={Col} md="6">
-                                            <Form.Label>Father's Name</Form.Label>
-                                            <Form.Control className="formControl" type="text" placeholder="Please enter Father Name"></Form.Control>
-                                        </Form.Group>
-                                        <Form.Group controlId="FatherQualification" as={Col} md="6">
-                                            <Form.Label>Father's Qualification</Form.Label>
-                                            <Form.Control className="formControl" type="text" placeholder="Please enter Father Qualification"></Form.Control>
-                                        </Form.Group>
-                                    </Row>
-                                    <Row className="mb-4 m-2">
-                                        <Form.Group controlId="FatherOccupation" as={Col} md="6">
-                                            <Form.Label>Father’s Occupation</Form.Label>
-                                            <Form.Control className="formControl" type="text" placeholder="Please enter Father Occupation"></Form.Control>
-                                        </Form.Group>
-                                        <Form.Group controlId="FatherIncome" as={Col} md="6">
-                                            <Form.Label>Father’s Income</Form.Label>
-                                            <Form.Select className="formControl" placeholder="please select">
-                                                <option>please select</option>
-                                                <option value='1 Lakh bellow'>&lt;&nbsp;1 Lakh</option>
-                                                <option value='1 Lakh - 3 Lakhs'>1 Lakh - 3 Lakhs</option>
-                                                <option value='3 Lakhs - 5 Lakhs'>3 Lakhs - 5 Lakhs</option>
-                                                <option value='5 Lakhs - 10 Lakhs'>5 Lakhs - 10 Lakhs</option>
-                                                <option value='10 Lakhs'>10 Lakh +</option>
-                                                <option value='notapply'>Not Applicable</option>
-                                            </Form.Select>
-                                        </Form.Group>
-                                    </Row>
-                                    <Row className="mb-4 m-2">
-                                        <Form.Group controlId="FatherMobile" as={Col} md="6">
-                                            <Form.Label>Father’s Mobile</Form.Label>
-                                            <Form.Control className="formControl" type="tel" placeholder="Please enter Father MobileNumber"></Form.Control>
-                                        </Form.Group>
-                                        <Form.Group controlId="FatherAadhaar" as={Col} md="6">
-                                            <Form.Label>Father’s Aadhaar Card</Form.Label>
-                                            <Form.Control className="formControl" type="tel" placeholder="Please enter Father Aadhaar Card"></Form.Control>
-                                        </Form.Group>
-                                    </Row>
-                                    <Row className="mb-4 m-2">
-                                        <Form.Group controlId="FatherEmail" as={Col} md="6">
-                                            <Form.Label>Father’s Email</Form.Label>
-                                            <Form.Control className="formControl" type="email" placeholder="Please enter Father Mail"></Form.Control>
-                                        </Form.Group>
-                                        <Form.Group controlId="MotherName" as={Col} md="6">
-                                            <Form.Label>Mother’s Name</Form.Label>
-                                            <Form.Control className="formControl" type="text" placeholder="Please enter Mother Name"></Form.Control>
-                                        </Form.Group>
-                                    </Row>
-                                    <Row className="mb-4 m-2">
-                                        <Form.Group controlId="MotherQualification" as={Col} md="6">
-                                            <Form.Label>Mother’s Qualification</Form.Label>
-                                            <Form.Control className="formControl" type="text" placeholder="Please enter Mother Qualification"></Form.Control>
-                                        </Form.Group>
-                                        <Form.Group controlId="MotherName" as={Col} md="6">
-                                            <Form.Label>Mother’s Name</Form.Label>
-                                            <Form.Control className="formControl" type="text" placeholder="Please enter Mother Name"></Form.Control>
-                                        </Form.Group>
-                                    </Row>
-                                    <Row className="mb-4 m-2">
-                                        <Form.Group controlId="MotherIncome" as={Col} md="6">
-                                            <Form.Label>Mother’s Income</Form.Label>
-                                            <Form.Select className="formControl" placeholder="please select">
-                                                <option>please select</option>
-                                                <option value='1 Lakh bellow'>&lt;&nbsp;1 Lakh</option>
-                                                <option value='1 Lakh - 3 Lakhs'>1 Lakh - 3 Lakhs</option>
-                                                <option value='3 Lakhs - 5 Lakhs'>3 Lakhs - 5 Lakhs</option>
-                                                <option value='5 Lakhs - 10 Lakhs'>5 Lakhs - 10 Lakhs</option>
-                                                <option value='10 Lakhs'>10 Lakh +</option>
-                                                <option value='notapply'>Not Applicable</option>
-                                            </Form.Select>
-                                        </Form.Group>
-                                        <Form.Group controlId="MotherMobile" as={Col} md="6">
-                                            <Form.Label>Mother’s Mobile</Form.Label>
-                                            <Form.Control className="formControl" type="text" placeholder="Please enter Mother MobileNumber"></Form.Control>
-                                        </Form.Group>
-                                    </Row>
-                                    <Row className="mb-4 m-2">
-                                        <Form.Group controlId="MotherAadhaar" as={Col} md="6">
-                                            <Form.Label>Mother’s Aadhaar Card</Form.Label>
-                                            <Form.Control className="formControl" type="tel" placeholder="Please enter Mother Aadhaar Card"></Form.Control>
-                                        </Form.Group>
-                                        <Form.Group controlId="MotherEmail" as={Col} md="6">
-                                            <Form.Label>Mother’s Email</Form.Label>
-                                            <Form.Control className="formControl" type="email" placeholder="Please enter Mother Mail"></Form.Control>
-                                        </Form.Group>
-                                    </Row>
-                                    <Row className="mb-4 m-2">
-                                        <Form.Group controlId="Address" as={Col} md="6">
-                                            <Form.Label>Address</Form.Label>
-                                            <Form.Control className="formControl" type="text" placeholder="Please enter Address"></Form.Control>
-                                        </Form.Group>
-                                        <Form.Group controlId="Pincode" as={Col} md="6">
-                                            <Form.Label>Pincode</Form.Label>
-                                            <Form.Control className="formControl" type="tel" placeholder="Please enter Pincode"></Form.Control>
-                                        </Form.Group>
-                                    </Row>
-                                    <Row className="mb-4 m-2">
-                                        <Form.Group controlId="GardianName" as={Col} md="6">
-                                            <Form.Label>Gardian’s Name</Form.Label>
-                                            <Form.Control className="formControl" type="text" placeholder="Please enter Gardian Name"></Form.Control>
-                                        </Form.Group>
-                                        <Form.Group controlId="GardianQualification" as={Col} md="6">
-                                            <Form.Label>Gardian’s Qualification</Form.Label>
-                                            <Form.Control className="formControl" type="text" placeholder="Please enter Gardian Qualification"></Form.Control>
-                                        </Form.Group>
-                                    </Row>
-                                    <Row className="mb-4 m-2">
-                                        <Form.Group controlId="GardianOccupation" as={Col} md="6">
-                                            <Form.Label>Gardian’s Occupation</Form.Label>
-                                            <Form.Control className="formControl" type="text" placeholder="Please enter Gardian Occupation"></Form.Control>
-                                        </Form.Group>
-                                        <Form.Group controlId="GardianMobile" as={Col} md="6">
-                                            <Form.Label>Gardian’s Mobile</Form.Label>
-                                            <Form.Control className="formControl" type="tel" placeholder="Please enter Gardian MobileNumber"></Form.Control>
-                                        </Form.Group>
-                                    </Row>
-                                    <Row className="mb-4 m-2">
-                                        <Form.Group controlId="GuardianSalary" as={Col} md="6">
-                                            <Form.Label>Guardian's Salary</Form.Label>
-                                            <Form.Control className="formControl" type="tel" placeholder="Please enter Gardian Salary"></Form.Control>
-                                        </Form.Group>
-                                        <Form.Group controlId="GardianEmail" as={Col} md="6">
-                                            <Form.Label>Gardian’s Email</Form.Label>
-                                            <Form.Control className="formControl" type="email" placeholder="Please enter Gardian Mail"></Form.Control>
-                                        </Form.Group>
-                                    </Row>
-                                    <Row className="mb-4 m-2">
-                                        <Form.Group controlId="GuardianAadhar" as={Col} md="6">
-                                            <Form.Label>Guardian Aadhar Card</Form.Label>
-                                            <Form.Control className="formControl" type="tel" placeholder="Please enter Gardian Aadhar"></Form.Control>
-                                        </Form.Group>
-                                        <Form.Group controlId="radioParent" as={Col} md="6">
-                                            <Form.Label>Are you a single parent?</Form.Label>
-                                            <div className="radioBtnGroup">
-                                                <div className="form-check">
-                                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="radio1" />
-                                                    <label className="form-check-label" for="radio1">
-                                                        Yes
-                                                    </label>
-                                                </div>
-                                                <div className="form-check">
-                                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="radio2" checked />
-                                                    <label className="form-check-label" for="radio2">
-                                                        No
-                                                    </label>
-                                                </div>
+                        <div class="tab-pane fade" id="parent" role="tabpanel" aria-labelledby="parent-tab">
+                            <Form autoComplete="off">
+                                <Row className="mb-4 m-2">
+                                    <Form.Group controlId="FatherName" as={Col} md="6">
+                                        <Form.Label>Father's Name</Form.Label>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Father Name"></Form.Control>
+                                    </Form.Group>
+                                    <Form.Group controlId="FatherQualification" as={Col} md="6">
+                                        <Form.Label>Father's Qualification</Form.Label>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Father Qualification"></Form.Control>
+                                    </Form.Group>
+                                </Row>
+                                <Row className="mb-4 m-2">
+                                    <Form.Group controlId="FatherOccupation" as={Col} md="6">
+                                        <Form.Label>Father’s Occupation</Form.Label>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Father Occupation"></Form.Control>
+                                    </Form.Group>
+                                    <Form.Group controlId="FatherIncome" as={Col} md="6">
+                                        <Form.Label>Father’s Income</Form.Label>
+                                        <Form.Select className="formControl" placeholder="please select">
+                                            <option>please select</option>
+                                            <option value='1 Lakh bellow'>&lt;&nbsp;1 Lakh</option>
+                                            <option value='1 Lakh - 3 Lakhs'>1 Lakh - 3 Lakhs</option>
+                                            <option value='3 Lakhs - 5 Lakhs'>3 Lakhs - 5 Lakhs</option>
+                                            <option value='5 Lakhs - 10 Lakhs'>5 Lakhs - 10 Lakhs</option>
+                                            <option value='10 Lakhs'>10 Lakh +</option>
+                                            <option value='notapply'>Not Applicable</option>
+                                        </Form.Select>
+                                    </Form.Group>
+                                </Row>
+                                <Row className="mb-4 m-2">
+                                    <Form.Group controlId="FatherMobile" as={Col} md="6">
+                                        <Form.Label>Father’s Mobile</Form.Label>
+                                        <Form.Control className="formControl" type="tel" placeholder="Please enter Father MobileNumber"></Form.Control>
+                                    </Form.Group>
+                                    <Form.Group controlId="FatherAadhaar" as={Col} md="6">
+                                        <Form.Label>Father’s Aadhaar Card</Form.Label>
+                                        <Form.Control className="formControl" type="tel" placeholder="Please enter Father Aadhaar Card"></Form.Control>
+                                    </Form.Group>
+                                </Row>
+                                <Row className="mb-4 m-2">
+                                    <Form.Group controlId="FatherEmail" as={Col} md="6">
+                                        <Form.Label>Father’s Email</Form.Label>
+                                        <Form.Control className="formControl" type="email" placeholder="Please enter Father Mail"></Form.Control>
+                                    </Form.Group>
+                                    <Form.Group controlId="MotherName" as={Col} md="6">
+                                        <Form.Label>Mother’s Name</Form.Label>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Mother Name"></Form.Control>
+                                    </Form.Group>
+                                </Row>
+                                <Row className="mb-4 m-2">
+                                    <Form.Group controlId="MotherQualification" as={Col} md="6">
+                                        <Form.Label>Mother’s Qualification</Form.Label>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Mother Qualification"></Form.Control>
+                                    </Form.Group>
+                                    <Form.Group controlId="MotherName" as={Col} md="6">
+                                        <Form.Label>Mother’s Name</Form.Label>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Mother Name"></Form.Control>
+                                    </Form.Group>
+                                </Row>
+                                <Row className="mb-4 m-2">
+                                    <Form.Group controlId="MotherIncome" as={Col} md="6">
+                                        <Form.Label>Mother’s Income</Form.Label>
+                                        <Form.Select className="formControl" placeholder="please select">
+                                            <option>please select</option>
+                                            <option value='1 Lakh bellow'>&lt;&nbsp;1 Lakh</option>
+                                            <option value='1 Lakh - 3 Lakhs'>1 Lakh - 3 Lakhs</option>
+                                            <option value='3 Lakhs - 5 Lakhs'>3 Lakhs - 5 Lakhs</option>
+                                            <option value='5 Lakhs - 10 Lakhs'>5 Lakhs - 10 Lakhs</option>
+                                            <option value='10 Lakhs'>10 Lakh +</option>
+                                            <option value='notapply'>Not Applicable</option>
+                                        </Form.Select>
+                                    </Form.Group>
+                                    <Form.Group controlId="MotherMobile" as={Col} md="6">
+                                        <Form.Label>Mother’s Mobile</Form.Label>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Mother MobileNumber"></Form.Control>
+                                    </Form.Group>
+                                </Row>
+                                <Row className="mb-4 m-2">
+                                    <Form.Group controlId="MotherAadhaar" as={Col} md="6">
+                                        <Form.Label>Mother’s Aadhaar Card</Form.Label>
+                                        <Form.Control className="formControl" type="tel" placeholder="Please enter Mother Aadhaar Card"></Form.Control>
+                                    </Form.Group>
+                                    <Form.Group controlId="MotherEmail" as={Col} md="6">
+                                        <Form.Label>Mother’s Email</Form.Label>
+                                        <Form.Control className="formControl" type="email" placeholder="Please enter Mother Mail"></Form.Control>
+                                    </Form.Group>
+                                </Row>
+                                <Row className="mb-4 m-2">
+                                    <Form.Group controlId="Address" as={Col} md="6">
+                                        <Form.Label>Address</Form.Label>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Address"></Form.Control>
+                                    </Form.Group>
+                                    <Form.Group controlId="Pincode" as={Col} md="6">
+                                        <Form.Label>Pincode</Form.Label>
+                                        <Form.Control className="formControl" type="tel" placeholder="Please enter Pincode"></Form.Control>
+                                    </Form.Group>
+                                </Row>
+                                <Row className="mb-4 m-2">
+                                    <Form.Group controlId="GardianName" as={Col} md="6">
+                                        <Form.Label>Gardian’s Name</Form.Label>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Gardian Name"></Form.Control>
+                                    </Form.Group>
+                                    <Form.Group controlId="GardianQualification" as={Col} md="6">
+                                        <Form.Label>Gardian’s Qualification</Form.Label>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Gardian Qualification"></Form.Control>
+                                    </Form.Group>
+                                </Row>
+                                <Row className="mb-4 m-2">
+                                    <Form.Group controlId="GardianOccupation" as={Col} md="6">
+                                        <Form.Label>Gardian’s Occupation</Form.Label>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Gardian Occupation"></Form.Control>
+                                    </Form.Group>
+                                    <Form.Group controlId="GardianMobile" as={Col} md="6">
+                                        <Form.Label>Gardian’s Mobile</Form.Label>
+                                        <Form.Control className="formControl" type="tel" placeholder="Please enter Gardian MobileNumber"></Form.Control>
+                                    </Form.Group>
+                                </Row>
+                                <Row className="mb-4 m-2">
+                                    <Form.Group controlId="GuardianSalary" as={Col} md="6">
+                                        <Form.Label>Guardian's Salary</Form.Label>
+                                        <Form.Control className="formControl" type="tel" placeholder="Please enter Gardian Salary"></Form.Control>
+                                    </Form.Group>
+                                    <Form.Group controlId="GardianEmail" as={Col} md="6">
+                                        <Form.Label>Gardian’s Email</Form.Label>
+                                        <Form.Control className="formControl" type="email" placeholder="Please enter Gardian Mail"></Form.Control>
+                                    </Form.Group>
+                                </Row>
+                                <Row className="mb-4 m-2">
+                                    <Form.Group controlId="GuardianAadhar" as={Col} md="6">
+                                        <Form.Label>Guardian Aadhar Card</Form.Label>
+                                        <Form.Control className="formControl" type="tel" placeholder="Please enter Gardian Aadhar"></Form.Control>
+                                    </Form.Group>
+                                    <Form.Group controlId="radioParent" as={Col} md="6">
+                                        <Form.Label>Are you a single parent?</Form.Label>
+                                        <div className="radioBtnGroup">
+                                            <div className="form-check">
+                                                <input className="form-check-input" type="radio" name="flexRadioDefault" id="radio1" />
+                                                <label className="form-check-label" for="radio1">
+                                                    Yes
+                                                </label>
                                             </div>
-                                        </Form.Group>
-                                    </Row>
-                                </Form>
-                            </div>
+                                            <div className="form-check">
+                                                <input className="form-check-input" type="radio" name="flexRadioDefault" id="radio2" checked />
+                                                <label className="form-check-label" for="radio2">
+                                                    No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </Form.Group>
+                                </Row>
+                            </Form>
                         </div>
                     </div>
                 </div>
