@@ -4,10 +4,10 @@
   }
 }
 
-@media only screen and(max-width:767px) {
-  /* .shortListContainer {
+@media only screen and (max-width:767px) {
+  .shortListContainer {
         margin-top: 100px;
-      } */
+      }
  
 }
 
@@ -46,13 +46,14 @@
   background: #34A853;
   border: 1px solid #34A853;
   padding: 8px 22px;
+  
 }
+
 .shortlistedSchoolCard .bookAppBtn:hover{
-  background-color:#fff;
-  color: #34A853;
-  border: 1px solid #34A853;
-  padding: 8px 22px;
+  color:#34A853;
+  box-shadow: inset 0 -3.25em 0 0 #FFF;
 }
+
 .footerModel {
   position:sticky;
   width: 100%;
@@ -60,4 +61,7 @@
   bottom: 0px;
   background-color:#fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.applyBtn{
+  margin: 10px 0 0;
 }

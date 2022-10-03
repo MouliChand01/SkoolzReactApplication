@@ -1,5 +1,4 @@
 import React, { useState, memo, useEffect } from "react";
-import skoolslogo from "../../../Assets/Images/skoolz.PNG";
 import school1 from "../../../Assets/Images/school_CoverPicture2.png";
 import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

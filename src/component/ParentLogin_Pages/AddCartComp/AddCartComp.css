@@ -18,8 +18,10 @@
     font-size: larger;
     font-weight: 400;
   }
-  .cartBody .leftcard{
+  .cartBody .leftcard,
+  .cartBody .rightCard{
     text-align: left;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
   }
   .leftcard .checkoutBth{
     background-color: #34A853;
@@ -32,4 +34,26 @@
     font-size: 36px;
     font-weight: 400;
     margin: 2px;
+  }
+  .leftcard .headText{
+    font-size: 24px;
+  }
+  .leftcard .rupesText{
+    font-size: 40px;
+    font-weight: 600;
+    color: #D6712D;
+  }
+  .rightCard .rupesText{
+    font-size: 30px;
+    font-weight: 600;
+    color: #D6712D;
+  }
+  .rightCard .schoolName{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+    color:black;
+  }
+  .cartBody a:hover{
+    color: #D6712D;
   }
