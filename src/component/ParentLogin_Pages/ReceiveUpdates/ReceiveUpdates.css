@@ -1,0 +1,27 @@
+.receiveUpdateContainer{
+    background-color: #f2f2f2;
+}
+.receiveUpdateContainer .ImgIcon{
+    height: 82px !important;
+    width: 163px !important;
+}
+.receiveUpdateContainer .ContainerText{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+.receiveUpdateContainer .subText,
+.receiveUpdateContainer .selectLoc{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+.receiveUpdateContainer span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #34A853;
+}
+.receiveUpdateContainer .footerText{
+    text-align: justify;
+    font-size: larger;
+}

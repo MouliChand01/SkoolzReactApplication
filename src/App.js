@@ -23,8 +23,9 @@ import StudentProfileComp from './component/ParentLogin_Pages/Student Profile/St
 import DashboardComp from './component/ParentLogin_Pages/Dashboard/DashboardComp';
 import CompairSchools from './component/SearchSchools/CompairSchools/CompairSchools';
 import ShortListedSchool from './component/ParentLogin_Pages/ShortListed Schools/ShortListedSchool';
-import CardComponent from './component/SearchSchools/CardComponent/CardComponent';
 import AddCartComp from './component/ParentLogin_Pages/AddCartComp/AddCartComp';
+import ReceiveUpdates from './component/ParentLogin_Pages/ReceiveUpdates/ReceiveUpdates';
+import ChangePasswords from './component/ParentLogin_Pages/ChangePassword/ChangePassword';
 
 
 
@@ -59,9 +60,11 @@ function App() {
             <Route path="/forgot-password" element={<ForgotPassword />} />
 
 
-            <Route path="/student/profile" element={<StudentProfileComp/>} />
-            <Route path="/student/dashboard" element={<DashboardComp/>} />
-            <Route path="/student/shortlist-schools" element={<ShortListedSchool/>} />
+            <Route path="/parent/profile" element={<StudentProfileComp/>} />
+            <Route path="/parent/dashboard" element={<DashboardComp/>} />
+            <Route path="/parent/shortlist-schools" element={<ShortListedSchool/>} />
+            <Route path="/parent/receive-updates" element={<ReceiveUpdates/>} />
+            <Route path="/parent/changepassword" element={<ChangePasswords/>} />
             <Route path="/student/cart" element={<AddCartComp/>} />
 
 

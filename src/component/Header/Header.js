@@ -116,11 +116,11 @@ const HeaderComponent = (props) => {
                                     {email}
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><Link to="/student/profile"><a class="dropdown-item">Student Profile</a></Link></li>
-                                    <li><Link to="/student/dashboard"><a class="dropdown-item">Dashboard</a></Link></li>
-                                    <li><Link to="/student/shortlist-schools"><a class="dropdown-item">Shortlisted Schools</a></Link></li>
-                                    <li><a class="dropdown-item" href="#">Recive Updates</a></li>
-                                    <li><a class="dropdown-item" href="#">Change Password</a></li>
+                                    <li><Link to="/parent/profile"><a class="dropdown-item">Student Profile</a></Link></li>
+                                    <li><Link to="/parent/dashboard"><a class="dropdown-item">Dashboard</a></Link></li>
+                                    <li><Link to="/parent/shortlist-schools"><a class="dropdown-item">Shortlisted Schools</a></Link></li>
+                                    <li><Link to="/parent/receive-updates"><a class="dropdown-item">Recive Updates</a></Link></li>
+                                    <li><Link to="/parent/changepassword"><a class="dropdown-item">Change Password</a></Link></li>
                                     <li class="dropdown-item logout"><GoogleLogout
                                         clientId={clientId}
                                         buttonText="Logout"
