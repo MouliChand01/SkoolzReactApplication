@@ -129,3 +129,8 @@
     padding: 0px !important;
     margin: 0px !important;
 }
+.errorMsg {
+    color: #DD4B39;
+    font-weight: 500;
+    text-align: left;
+}

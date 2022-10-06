@@ -26,6 +26,7 @@ import ShortListedSchool from './component/ParentLogin_Pages/ShortListed Schools
 import AddCartComp from './component/ParentLogin_Pages/AddCartComp/AddCartComp';
 import ReceiveUpdates from './component/ParentLogin_Pages/ReceiveUpdates/ReceiveUpdates';
 import ChangePasswords from './component/ParentLogin_Pages/ChangePassword/ChangePassword';
+import Dummyform from './component/Login/Dummyform';
 
 
 
@@ -72,6 +73,7 @@ function App() {
 
 
             <Route path="/baner" element={<Banercomp/>} />   
+            <Route path="/dummy" element={<Dummyform/>} />   
             {/* this is homenew Baner */}
 
           </Routes>
