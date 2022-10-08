@@ -87,10 +87,10 @@ const BlogsDetailsComp = () => {
                                     <div>
                                         <a>
                                             <span> Share : &nbsp;</span>
-                                            <button className="faceBook" style={{ "backgroundColor": "#3B5998" }}><FontAwesomeIcon icon={faFacebookF} style={{ "color": "white" }} /></button>
-                                            <button className="whatesUp" style={{ "backgroundColor": "#1DA1F2" }}><FontAwesomeIcon icon={faWhatsapp} style={{ "color": "white" }} /></button>
-                                            <button className="Twiter" style={{ "backgroundColor": "#4DC247" }}><FontAwesomeIcon icon={faTwitter} style={{ "color": "white" }} /></button>
-                                            <button className="LinkedIn" style={{ "backgroundColor": "blue" }}><FontAwesomeIcon icon={faLinkedin} style={{ "color": "white" }} /></button>
+                                            <button className="faceBook" style={{ "backgroundColor": "#3B5998","border":"none"}}><FontAwesomeIcon icon={faFacebookF} style={{ "color": "white" }} /></button>
+                                            <button className="whatesUp" style={{ "backgroundColor": "#1DA1F2","border":"none" }}><FontAwesomeIcon icon={faWhatsapp} style={{ "color": "white" }} /></button>
+                                            <button className="Twiter" style={{ "backgroundColor": "#4DC247","border":"none" }}><FontAwesomeIcon icon={faTwitter} style={{ "color": "white" }} /></button>
+                                            <button className="LinkedIn" style={{ "backgroundColor": "blue","border":"none" }}><FontAwesomeIcon icon={faLinkedin} style={{ "color": "white" }} /></button>
                                         </a>
                                     </div>
                                 </div>

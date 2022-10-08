@@ -3,12 +3,46 @@ import { Link } from "react-router-dom";
 import { Button, Form, Col, Row } from 'react-bootstrap';
 import './StudentProfileComp.css';
 import HeaderComponent from "../../Header/Header";
-import logo from '../../../Assets/Images/skoolz.PNG'
+import { useFormik } from 'formik';
 
+const validate = values => {
+    const errors = {};
+    if (!values.parentName) {
+        errors.parentName = 'Field is Required';
+    } else if (values.parentName.length > 15) {
+        errors.parentName = 'Must be 15 characters or less';
+    }
+
+    if (!values.parenetQual) {
+        errors.parenetQual = 'Required';
+    } else if (values.parenetQual.length > 20) {
+        errors.parenetQual = 'Must be 20 characters or less';
+    }
+
+    if (!values.email) {
+        errors.email = 'Required';
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+        errors.email = 'Invalid email address';
+    }
+
+    return errors;
+};
 
 function StudentProfileComp() {
     const [file, setFile] = useState('');
     const [filename, setFilename] = useState('');
+
+    const formik = useFormik({
+        initialValues: {
+            parentName: '',
+            parenetQual: '',
+            paretOcc: '',
+        },
+        validate,
+        onSubmit: values => {
+          alert(JSON.stringify(values, null, 2));
+        },
+      });
 
     const photoupload = async (e) => {
         const ImgData = e.target.files[0];
@@ -289,21 +323,24 @@ function StudentProfileComp() {
                             </Form>
                         </div>
                         <div class="tab-pane fade" id="parent" role="tabpanel" aria-labelledby="parent-tab">
-                            <Form autoComplete="off">
+                            <Form autoComplete="off" onSubmit={formik.handleSubmit}>
                                 <Row className="mb-4 m-2">
-                                    <Form.Group controlId="FatherName" as={Col} md="6">
+                                    <Form.Group  as={Col} md="6">
                                         <Form.Label>Father's Name</Form.Label>
-                                        <Form.Control className="formControl" type="text" placeholder="Please enter Father Name"></Form.Control>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Father Name" id="parentName"  onChange={formik.handleChange} value={formik.values.parentName}/>
+                                        {formik.errors.parentName ? <div className="errorode">{formik.errors.parentName}</div> : null}
                                     </Form.Group>
-                                    <Form.Group controlId="FatherQualification" as={Col} md="6">
+                                    <Form.Group as={Col} md="6">
                                         <Form.Label>Father's Qualification</Form.Label>
-                                        <Form.Control className="formControl" type="text" placeholder="Please enter Father Qualification"></Form.Control>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Father Qualification" id="parenetQual" onChange={formik.handleChange} value={formik.values.parenetQual}/>
+                                        {formik.errors.parenetQual ? <div className="errorode">{formik.errors.parenetQual}</div> : null}
                                     </Form.Group>
                                 </Row>
                                 <Row className="mb-4 m-2">
-                                    <Form.Group controlId="FatherOccupation" as={Col} md="6">
+                                    <Form.Group  as={Col} md="6">
                                         <Form.Label>Father’s Occupation</Form.Label>
-                                        <Form.Control className="formControl" type="text" placeholder="Please enter Father Occupation"></Form.Control>
+                                        <Form.Control className="formControl" type="text" placeholder="Please enter Father Occupation" id="paretOcc" onChange={formik.handleChange} value={formik.values.paretOcc}/>
+                                        {formik.errors.paretOcc ? <div className="errorode">{formik.errors.paretOcc}</div> : null}
                                     </Form.Group>
                                     <Form.Group controlId="FatherIncome" as={Col} md="6">
                                         <Form.Label>Father’s Income</Form.Label>
@@ -439,6 +476,9 @@ function StudentProfileComp() {
                                         </div>
                                     </Form.Group>
                                 </Row>
+                                <div className="d-flex">
+                                    <button type="submit" className="updateBtn justify-content-center">Submit</button>
+                                </div>  
                             </Form>
                         </div>
                     </div>

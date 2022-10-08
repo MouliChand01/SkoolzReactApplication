@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTwitter, faWhatsapp, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import "./EventsWebinardetailsComponent.css";
 import RegistrationKidsEvent from "./RegistrationKidsEvent";
 import QuickLinksComp from "../QuickLinks/QuickLinks";
@@ -140,10 +140,10 @@ const EventsWebinardetailsComponent = () => {
                                         <div>
                                             <a>
                                                 <span> Share : &nbsp;</span>
-                                                <button className="faceBook" style={{ "backgroundColor": "#3B5998" }}><FontAwesomeIcon icon={faFacebookF} style={{ "color": "white" }} /></button>
-                                                <button className="whatesUp" style={{ "backgroundColor": "#1DA1F2" }}><FontAwesomeIcon icon={faWhatsapp} style={{ "color": "white" }} /></button>
-                                                <button className="Twiter" style={{ "backgroundColor": "#4DC247" }}><FontAwesomeIcon icon={faTwitter} style={{ "color": "white" }} /></button>
-                                                <button className="LinkedIn" style={{ "backgroundColor": "blue" }}><FontAwesomeIcon icon={faLinkedin} style={{ "color": "white" }} /></button>
+                                                <button className="faceBook" style={{ "backgroundColor": "#3B5998","border":"none" }}><FontAwesomeIcon icon={faFacebookF} style={{ "color": "white" }} /></button>
+                                                <button className="Twiter" style={{ "backgroundColor": "#1DA1F2","border":"none" }}><FontAwesomeIcon icon={faTwitter} style={{ "color": "white" }} /></button>
+                                                <button className="whatesUp" style={{ "backgroundColor": "#4DC247","border":"none"}}><FontAwesomeIcon icon={faWhatsapp} style={{ "color": "white" }} /></button>
+                                                <button className="LinkedIn" style={{ "backgroundColor": "blue","border":"none" }}><FontAwesomeIcon icon={faLinkedinIn} style={{ "color": "white" }} /></button>
                                             </a>
                                         </div>
                                     </div>

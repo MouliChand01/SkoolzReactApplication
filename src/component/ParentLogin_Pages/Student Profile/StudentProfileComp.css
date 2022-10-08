@@ -78,6 +78,11 @@ table,thead{
 table td a{
     color: #34A853;
 }
+.errorode{
+  color: #B10505;
+  font-weight: 600;
+  font-size: small;
+}
 @media screen and (min-width: 768px) {
   .profileContainer {
     margin-top: 73px;
