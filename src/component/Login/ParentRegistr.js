@@ -44,6 +44,7 @@ const ParentRegistrationComp = () => {
             alert(JSON.stringify(values, null, 2));
         },
     });
+  
     return (
         <div>
             <HeaderComponent />

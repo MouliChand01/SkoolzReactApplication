@@ -9,6 +9,8 @@ import "./CardComponent.css";
 
 const CardFilter = (props) => {
     const [schoolData, setSchoolData] = useState(SearchData);
+    // const [schoolData, setSchoolData] = useState(props.state.schoolData);
+
     const [show, setShow] = useState(false);
     const [parentNameField, setparentNameField] = useState(true);
     const [emailField, setemailField] = useState(true);

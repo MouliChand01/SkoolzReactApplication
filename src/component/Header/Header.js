@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
 import { GoogleLogout } from "react-google-login";
-import {geocodeByAddress,geocodeByPlaceId,getLatLng} from 'react-places-autocomplete';
+import { geocodeByAddress, geocodeByPlaceId, getLatLng } from 'react-places-autocomplete';
 import PlacesAutocomplete from 'react-places-autocomplete';
-import google from '../../Assets/Images/googleimage.png'
-import "./Header.css"
+import google from '../../Assets/Images/googleimage.png';
+import "./Header.css";
+import axios from "axios";
 
 const HeaderComponent = (props) => {
 
@@ -16,18 +17,35 @@ const HeaderComponent = (props) => {
     const [addcount, setAddCount] = useState(0);
     const [display, setDisplay] = useState(false);
     const [email, setEmail] = useState('');
-    const [address,setAddress]=useState("");
-    const [corodinates,setCorodinates]=useState({
+    const [address, setAddress] = useState("");
+    const [corodinates, setCorodinates] = useState({
         lat: 12.925317,
         lng: 77.6166666
     });
+    const [schoolData,setSchoolData]=useState([])
 
-    const handleSelect =async value =>{
+    const handleSelect = async value => {
         const results = await geocodeByAddress(value);
-        const data= await getLatLng(results[0])
-        console.log(data);
+        const data = await getLatLng(results[0])
+        // console.log(data);
         setAddress(value);
-        setCorodinates(data)
+        setCorodinates(data);
+        axios.post("https://api.endpoint", {
+            "schoolType": "",
+            "schoolClassification": "",
+            "schoolBoard": "",
+            "schoolFee": "",
+            "preSchoolType": "",
+            "hasAcClasses": false,
+            "hasTransport": false,
+            "hasDayCare": false,
+            "hasCCTvSurveillance": false,
+            "fromFilter": 1,
+            "latitude": corodinates.lat,
+            "longitude": corodinates.lng
+        }).then(res => {
+           setSchoolData(res)
+        })
     };
 
     useEffect(() => {
@@ -48,13 +66,14 @@ const HeaderComponent = (props) => {
 
     };
 
-    const searchLocation =()=>{
+    const searchLocation = () => {
         console.log(corodinates)
     };
 
     return (
 
         <div>
+            {console.log(corodinates, 'ppp')}
             {flag === 0 ? (
                 <div className="header baseContainer webHeader">
                     <div className="logo"><Link to={'/'}><img src={skoolzlogo} alt="logo" /></Link></div>
@@ -102,7 +121,7 @@ const HeaderComponent = (props) => {
                                         <div className="location-icon">
                                             <img src="~/skoolz/assets/img/icon/search_location.svg" alt="location" />
                                         </div>
-                                        <Link to={'/home/search'} type="submit" className="search-icon" style={{"lineHeight":"36px"}}>
+                                        <Link to={'/home/search'} type="submit" className="search-icon" style={{ "lineHeight": "36px" }} state={schoolData}>
                                             <FontAwesomeIcon icon={faSearch} style={{ "color": "white" }} />
                                         </Link>
                                     </div>
@@ -128,7 +147,7 @@ const HeaderComponent = (props) => {
                                 </ul>
                             </div>
                             <div className="cart d-flex align-item-center">
-                               <Link to="/student/cart"> <i class="bi bi-cart2" style={{"color":"black"}}/></Link>
+                                <Link to="/student/cart"> <i class="bi bi-cart2" style={{ "color": "black" }} /></Link>
                                 <span>{addcount}</span>
                             </div>
                         </div>

@@ -6,7 +6,22 @@ import { faUser, faLock } from '@fortawesome/free-solid-svg-icons'
 import './ParentLogin.css'
 import { Link } from "react-router-dom";
 import { GoogleLogin} from "react-google-login";
+import { useFormik } from 'formik';
 import SkoolzHomepageComponent from "../SkoolzHomePage/SkoolzHomePage";
+import { Button } from "react-bootstrap";
+
+const validate = values => {
+    const errors = {};
+    if (!values.Username) {
+        errors.Username = 'UserName Is Required';
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.Username)) {
+        errors.Username = 'Invalid email address';
+    }
+    if (!values.password) {
+        errors.password = 'password Is Required';
+    }  
+    return errors;
+};
 
 
 const ParentLoginComp = () => {
@@ -29,6 +44,22 @@ const ParentLoginComp = () => {
         setData(true)
     }
 
+    const Login = () =>{
+        setData(false)
+    }
+
+    const formik = useFormik({
+        initialValues: {
+            Username: '',
+            password: '',
+        },
+        validate,
+        onSubmit: values => {
+            alert(JSON.stringify(values, null, 2));
+        },
+    });
+  
+
     return (
         <div>
             <HeaderComponent seingGoogle={seingGoogle} />
@@ -42,17 +73,19 @@ const ParentLoginComp = () => {
                                     <h3 className="title text-center m-3">Parent Login To Search, Compare, Apply For The Best School</h3>
                                 </div>
                                 <div className="card-body mb-1">
-                                    <form>
+                                    <form onSubmit={formik.handleSubmit}>
                                         <div className="px-2">
                                             <div class="input-group flex-nowrap my-4">
                                                 <span class="input-group-text" style={{ "backgroundColor": "rgb(235, 234, 234)", "border": "none" }} ><FontAwesomeIcon icon={faUser} /></span>
-                                                <input type="mail" class="form-control" placeholder="Username" aria-label="Username" />
+                                                <input type="mail" class="form-control" placeholder="Username" id="Username" onChange={formik.handleChange} value={formik.values.Username} />
                                             </div>
+                                            {formik.errors.Username ? <div className="errorMsg">{formik.errors.Username}</div> : null}
                                             <div class="input-group flex-nowrap my-4">
                                                 <span class="input-group-text" style={{ "backgroundColor": "rgb(235, 234, 234)", "border": "none" }}><FontAwesomeIcon icon={faLock} /></span>
-                                                <input type="password" class="form-control" placeholder="Password" aria-describedby="passwordHelpBlock" />
+                                                <input type="password" class="form-control" placeholder="Password" id="password" onChange={formik.handleChange} value={formik.values.password}/>
                                             </div>
-                                            <button className="parentLoginBtn">Login</button>
+                                            {formik.errors.password ? <div className="errorMsg">{formik.errors.password}</div> : null}
+                                            <Button className="parentLoginBtn mx-auto" style={{cursor:"pointer",width:"20px"}} type="submit">Login</Button>
                                             <div>
                                                 <div className="row">
                                                     <div className="col-6">
