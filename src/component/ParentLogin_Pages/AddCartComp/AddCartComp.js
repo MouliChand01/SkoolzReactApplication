@@ -37,7 +37,7 @@ function AddCartComp() {
             "indoorSports": "Yes"
         },
         {
-            "schoolId": 39,
+            "schoolId": 43,
             "schoolName": "4 LITTLE WORLD PLAY SCHOOL & DAY CARE HSR LAYOUT",
             "userIdentity": "a89bc78f-b422-4657-b2d0-f98d8d5591b1",
             "schoolAddress": "The Learning Curve Kamothe 36 sec, Mansarovar, Sector 36, Kamothe, Panvel, Mumbai, Maharashtra\r\n,,Navi Mumbai,Maharashtra,410209",
@@ -68,6 +68,10 @@ function AddCartComp() {
         }
         
     ])
+    const removecartSchools =(id)=>{
+        const updatedData = cartItems.filter((val)=>val.schoolId !== id);
+        setCartItems(updatedData)
+    }
     return (
         <div>
             <HeaderComp />
@@ -107,7 +111,7 @@ function AddCartComp() {
                                         <div className='col-6' style={{"textAlign":"right"}}>
                                             <div className='row'>
                                                 <div className='col-8'>
-                                                    <div><a href='#'>RemoveList</a></div>
+                                                    <div><a onClick={()=>removecartSchools(val.schoolId)}>RemoveList</a></div>
                                                     <div><a href='#'>Move To Shortlist</a></div>
                                                 </div>
                                                 <div className='col-4'>

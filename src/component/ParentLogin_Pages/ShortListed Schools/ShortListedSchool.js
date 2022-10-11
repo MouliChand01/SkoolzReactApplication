@@ -6,11 +6,12 @@ import Modal from 'react-bootstrap/Modal';
 import FooterComponent from '../../Footer/Footer';
 import HeaderComponent from '../../Header/Header';
 import blog from '../../../Assets/Images/blog6.jpg';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import './ShortListedSchool.css'
 
 function ShortListedSchool() {
+    const navigate = useNavigate()
     const [shortListedSchool, setShortListedSchool] = useState([
         {
             "schoolId": 36,
@@ -224,17 +225,17 @@ function ShortListedSchool() {
                 let updated = [...compairSchool];
                 setCompairSchool(updated);
             }
-            else{
+            else {
                 Swal.fire({
-                    title:'Error!',
-                    text:'Looks like you have already added school in compare list!',
-                    type:'error',
-                    confirmButtonColor:'#34a853',
+                    title: 'Error!',
+                    text: 'Looks like you have already added school in compare list!',
+                    type: 'error',
+                    confirmButtonColor: '#34a853',
                 })
             }
 
         }
-        else{
+        else {
             Swal.fire("You are running out of limit !!", "Are you sure want to compare the schools ?  delete a school from the list ", "question");
         }
     }
@@ -353,6 +354,7 @@ function ShortListedSchool() {
                 </Modal.Footer>
             </Modal>
             <HeaderComponent />
+
             <div className='shortListContainer baseContainer'>
                 <div className='row justify-content-md-center'>
                     <div className='col-lg-10'>
@@ -397,7 +399,7 @@ function ShortListedSchool() {
                                         <div className='btnGroup px-2 mb-2'>
                                             <a className='compareBtn mx-3' style={{ "color": " #35a84f" }} onClick={() => compairSchoolFun(ele.schoolId)}>+Compare</a>
                                             <button className='applyBtn bookAppBtn' onClick={handleShow}>Book Appointment</button>
-                                            <button className='applyBtn ms-2' onClick={() => addingCart(ele.schoolId)}>Apply</button>
+                                            <Link to='/student/cart'><button className='applyBtn ms-2' onClick={() => addingCart(ele.schoolId)}>Apply</button></Link>             
                                         </div>
                                     </div>
                                 </div>
