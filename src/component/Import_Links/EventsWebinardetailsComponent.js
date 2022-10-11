@@ -24,7 +24,7 @@ const EventsWebinardetailsComponent = () => {
                                 <span>
                                     <Link to='/'><a>Home &nbsp;&gt;&nbsp;</a></Link>
                                     <Link to='/events-webinar'><a>Events &nbsp;&gt;&nbsp;</a></Link>
-                                    <Link to='/events-webinar-details'><a>{eventData.eventName}</a></Link>
+                                    <a>{eventData.eventName}</a>
                                 </span>
                             </div>
                         </div>

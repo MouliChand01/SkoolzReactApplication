@@ -10,11 +10,17 @@ import { faFilter, faAngleDown, faTrashCan } from '@fortawesome/free-solid-svg-i
 import "./SearchSchools.css"
 import { Link } from "react-router-dom";
 
-const SearchSchools = () => {
+const SearchSchools = (props) => {
     const [display, setDisplay] = useState(false);
     const [footerdisplay, setFooterDisplay] = useState(false);
     const [deletedItemIndex,setDeletedItemIndex]=useState();
-    const [updatedObjects, setUpdatedObjects] = useState([])
+    const [selectedNames,setSelectedNames]=useState([]);           /*to geting name and send to names array into cardcomponents*/
+    const [updatedObjects, setUpdatedObjects] = useState([]);
+    const [schoolFilter, setSchoolFilter] = useState([]);
+    const [classificationFilter, setClassificationFilter] = useState([]);
+    const [boardFilter, setBoardFilter] = useState([]);
+    const [preSchoolTypeFilter, setPreSchoolTypeFilter] = useState([]);
+    const [facilitiesFilter, setFacilitiesFilter] = useState([]);
 
     const Toggle = () => {
         return setDisplay(!display)
@@ -39,6 +45,9 @@ const SearchSchools = () => {
           setUpdatedObjects(checked)
           setDeletedItemIndex(index)
     }
+    const geetingSelecctedData =(data)=>{
+       setSelectedNames(data)
+    }
     return (
         <div>
             <div className="schoolSearch">
@@ -56,13 +65,12 @@ const SearchSchools = () => {
                     </div>
                 )}
                 <div className="container grid">
-                    {console.log(updatedObjects,"childcomp")}
                     <div className="row schools-container">
                         <div className="col-md-12 col-lg-4 col-xl-3 SearchFilter searchFilterPad">
-                            <ListFilter />
+                            <ListFilter geetingSelecctedData={geetingSelecctedData}/>
                         </div>
                         <div className="col-md-12 col-lg-8 col-xl-9 cardFilter" >
-                            <CardFilter comapredObject={getingObjects} deletingaitem={deletedItemIndex}/>
+                            <CardFilter comapredObject={getingObjects} deletingaitem={deletedItemIndex} sendingselectedNames={selectedNames}/>
                         </div>
                         <div className="hidenIcons">
                             <div className="filterIcon">

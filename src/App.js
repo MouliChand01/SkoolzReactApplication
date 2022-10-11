@@ -70,7 +70,6 @@ function App() {
 
             <Route path="/baner" element={<Banercomp/>} /> {/* this is homenew Baner */}
 
-
           </Routes>
         </div>
       </BrowserRouter>

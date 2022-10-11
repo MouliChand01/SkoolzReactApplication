@@ -1,10 +1,13 @@
 import React, { useEffect, useState ,memo} from "react";
 import "./SideListFilter.css"
 import sidebarjson from '../../../Assets/sideBar.json'
+import { counter } from "@fortawesome/fontawesome-svg-core";
 
-const ListFilter = () => {
+const ListFilter = (props) => {
 
     const [data, setData] = useState(sidebarjson);
+    const [count,setCount]=useState()
+    const [controlArrayObjectNames,setControlArrayObjectNames]=useState([])
     const [schoolFilter, setSchoolFilter] = useState([])
     const [classificationFilter, setClassificationFilter] = useState([])
     const [boardFilter, setBoardFilter] = useState([])
@@ -12,77 +15,103 @@ const ListFilter = () => {
     const [facilitiesFilter, setFacilitiesFilter] = useState([])
     const { boards, classifications, preSchoolTypes, facilities, schoolTypes } = data[0];
 
-    const onSelected = (type, id) => {
+    const onSelected = (type, id,displayname) => {
         if (type === 'schoolTypes') {
             if (schoolFilter.indexOf(id) === -1) {
-                schoolFilter.push(id)
+                schoolFilter.push(id);
+                controlArrayObjectNames.push(displayname)
                 let checkedData = [...schoolFilter]
                 setSchoolFilter(checkedData)
+                setCount(1) 
             }
-            else if (schoolFilter.includes(id)) {
+            else if (schoolFilter.includes(id) && controlArrayObjectNames.includes(displayname) ) {
                 let index = schoolFilter.indexOf(id);
                 schoolFilter.splice(index, 1);
+                let indexofschooltype = controlArrayObjectNames.indexOf(displayname);
+                controlArrayObjectNames.splice(indexofschooltype,1)
                 let checkedData1 = [...schoolFilter]
                 setSchoolFilter(checkedData1)
+                setCount(1) 
             }
         };
         if (type === 'classifications') {
             if(classificationFilter.indexOf(id) === -1){
                 classificationFilter.push(id)  
+                controlArrayObjectNames.push(displayname)
                 let checkedData=[...classificationFilter]
-                setClassificationFilter(checkedData)          
+                setClassificationFilter(checkedData) 
+                setCount(2)         
             }
-            else if (classificationFilter.includes(id)){
+            else if (classificationFilter.includes(id)  && controlArrayObjectNames.includes(displayname)){
                 let index =classificationFilter.indexOf(id)
                 classificationFilter.splice(index,1);
+                let indexofschooltype = controlArrayObjectNames.indexOf(displayname);
+                controlArrayObjectNames.splice(indexofschooltype,1)
                 let checkedData1=[... classificationFilter]
                 setClassificationFilter(checkedData1)
+                setCount(2) 
             }
         }
         if (type === 'boards') {
             if(boardFilter.indexOf(id) === -1){
                 boardFilter.push(id)  
+                controlArrayObjectNames.push(displayname)
                 let checkedData=[...boardFilter]
-                setBoardFilter(checkedData)          
+                setBoardFilter(checkedData) 
+                setCount(3)          
             }
-            else if (boardFilter.includes(id)){
+            else if (boardFilter.includes(id)  && controlArrayObjectNames.includes(displayname)){
                 let index =boardFilter.indexOf(id)
                 boardFilter.splice(index,1);
+                let indexofschooltype = controlArrayObjectNames.indexOf(displayname);
+                controlArrayObjectNames.splice(indexofschooltype,1)
                 let checkedData1=[... boardFilter]
                 setBoardFilter(checkedData1)
+                setCount(3) 
             }
         }
         if (type === 'preschooltype') {
             if(preSchoolTypeFilter.indexOf(id) === -1){
                 preSchoolTypeFilter.push(id)  
+                controlArrayObjectNames.push(displayname)
                 let checkedData=[...preSchoolTypeFilter]
-                setPreSchoolTypeFilter(checkedData)          
+                setPreSchoolTypeFilter(checkedData) 
+                setCount(4)          
             }
-            else if (preSchoolTypeFilter.includes(id)){
+            else if (preSchoolTypeFilter.includes(id)  && controlArrayObjectNames.includes(displayname)){
                 let index =preSchoolTypeFilter.indexOf(id)
                 preSchoolTypeFilter.splice(index,1);
+                let indexofschooltype = controlArrayObjectNames.indexOf(displayname);
+                controlArrayObjectNames.splice(indexofschooltype,1)
                 let checkedData1=[... preSchoolTypeFilter]
                 setPreSchoolTypeFilter(checkedData1)
+                setCount(4) 
             }
         }
         if (type === 'facility') {
             if(facilitiesFilter.indexOf(id) === -1){
                 facilitiesFilter.push(id)  
+                controlArrayObjectNames.push(displayname)
                 let checkedData=[...facilitiesFilter]
-                setFacilitiesFilter(checkedData)          
+                setFacilitiesFilter(checkedData) 
+                setCount(5)          
             }
-            else if (facilitiesFilter.includes(id)){
+            else if (facilitiesFilter.includes(id)  && controlArrayObjectNames.includes(displayname)){
                 let index =facilitiesFilter.indexOf(id)
                 facilitiesFilter.splice(index,1);
+                let indexofschooltype = controlArrayObjectNames.indexOf(displayname);
+                controlArrayObjectNames.splice(indexofschooltype,1)
                 let checkedData1=[... facilitiesFilter]
                 setFacilitiesFilter(checkedData1)
+                setCount(5) 
             }
         }
+        props.geetingSelecctedData(controlArrayObjectNames)
     }
     return (
 
         <div>
-            {/* {console.log(schoolFilter,classificationFilter,boardFilter,preSchoolTypeFilter,facilitiesFilter)} */}
+            {console.log(controlArrayObjectNames,'ppppppp')}
             <div className="searchFilters">
                 Search Filters <a href="#" className="clearFilters"> Clear All </a>
             </div>
@@ -91,31 +120,31 @@ const ListFilter = () => {
                     <div className="filterTitle">School Type</div>
                     {
                         schoolTypes && schoolTypes.map(ele =>
-                            <button key={ele.id} style={{ "padding": "3px 12px" }} onClick={() => onSelected("schoolTypes", ele.id)}>{ele.displayName}</button>)
+                            <button key={ele.id} style={{ "padding": "3px 12px" }} onClick={() => onSelected("schoolTypes", ele.id, ele.displayName)}>{ele.displayName}</button>)
                     }
                     <hr />
                     <div className="filterTitle">Classification</div>
                     {
                         classifications && classifications.map(ele =>
-                            <button key={ele.id} style={{ "padding": "3px 12px" }} onClick={() => onSelected("classifications",ele.id)}>{ele.displayName}</button>)
+                            <button key={ele.id} style={{ "padding": "3px 12px" }} onClick={() => onSelected("classifications",ele.id,ele.displayName)}>{ele.displayName}</button>)
                     }
                     <hr />
                     <div className="filterTitle">Board</div>
                     {
                         boards && boards.map(ele =>
-                            <button key={ele.id} style={{ "padding": "3px 12px" }} onClick={() => onSelected("boards",ele.id)}>{ele.displayName}</button>)
+                            <button key={ele.id} style={{ "padding": "3px 12px" }} onClick={() => onSelected("boards",ele.id,ele.displayName)}>{ele.displayName}</button>)
                     }
                     <hr />
                     <div className="filterTitle">PreSchool Type</div>
                     {
                         preSchoolTypes && preSchoolTypes.map(ele =>
-                            <button key={ele.id} style={{ "padding": "3px 12px" }} onClick={() => onSelected("preschooltype",ele.id)}>{ele.displayName}</button>)
+                            <button key={ele.id} style={{ "padding": "3px 12px" }} onClick={() => onSelected("preschooltype",ele.id,ele.displayName)}>{ele.displayName}</button>)
                     }
                     <hr />
                     <div className="filterTitle">Facilities</div>
                     {
                         facilities && facilities.map(ele =>
-                            <button key={ele.id} style={{ "padding": "3px 12px" }} onClick={() => onSelected("facility",ele.id)}>{ele.displayName}</button>)
+                            <button key={ele.id} style={{ "padding": "3px 12px" }} onClick={() => onSelected("facility",ele.id,ele.displayName)}>{ele.displayName}</button>)
                     }
 
 
