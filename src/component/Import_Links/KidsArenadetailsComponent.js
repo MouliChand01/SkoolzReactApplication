@@ -2,27 +2,26 @@ import React, { useEffect, useState,memo } from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import { KidsArena } from '../../Assets/index';
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faLinkedin, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 import './KidsArenadetailsComponent.css';
 import QuickLinksComp from "../QuickLinks/QuickLinks";
 
 const KidsArenadetailsComponent = () => {
-    const [data, setData] = useState(null)
-    const { id } = useParams()
+    const location=useLocation()
+
+    const [data, setData] = useState(null);
+    const  id  = location.state
 
     const loadData = () => {
         const currentData = KidsArena.filter(item => item.id == id)
         setData(...currentData)
-        console.log(currentData)
     }
 
     useEffect(() => {
         loadData()
     }, [id])
-
-    console.log(data)
 
     return (
         <div>

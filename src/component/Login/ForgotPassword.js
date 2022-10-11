@@ -34,7 +34,7 @@ const ForgotPassword =()=>{
                         <div className="card forgetpassCard mt-5">
                             <div className="cardLogo d-flex"><FontAwesomeIcon className="fa-2xl" icon={faUser} /></div>
                             <div className="card-header">
-                                <h3 className="title text-center m-3">Forgot Your Password? Enter Your Email To Retrieve Email</h3>
+                                <h3 className="title text-center m-1">Forgot Your Password? Enter Your Email To Retrieve Email</h3>
                             </div>
                             <div className="card-body mb-1">
                                 <form onSubmit={formik.handleSubmit}>
@@ -49,7 +49,7 @@ const ForgotPassword =()=>{
                                 </form>
                             </div>
                             <div className="card-footer m-4">
-                            Remember your password?  &nbsp; <Link to='/login' className="login">Login</Link>
+                            Remember your password?  &nbsp; <Link to='/' className="login">Login</Link>
                             </div>
                         </div>
                     </div>

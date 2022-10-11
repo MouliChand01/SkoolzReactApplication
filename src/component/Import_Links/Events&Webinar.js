@@ -41,7 +41,7 @@ const Events_WebinarComponent = () => {
                                             <div className="col-lg-6 col-sm-12 col-md-12 d-flex flex-column align-content-between">
                                                 <div className="d-flex align-items-start flex-column eventContent mb-2">
                                                     <div className="eventsLink m-2">
-                                                        <h5><strong><a href="#"><Link to="/events-webinar-details" state={EventsAndWebinar[index]}>{val.eventName}</Link></a></strong></h5>
+                                                        <h5><strong><a href="#"><Link to={`/events-webinar/${val.eventName.split(' ').join('-').toLocaleLowerCase()}`} state={EventsAndWebinar[index]}>{val.eventName}</Link></a></strong></h5>
                                                     </div>
                                                     <div className="eventDiscription mt-3 m-1">
                                                         <p>{val.eventDiscription}</p>

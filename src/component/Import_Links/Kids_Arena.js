@@ -1,17 +1,14 @@
-import React,{memo} from "react";
+import React, { memo } from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import skoolzLogo from '../../Assets/Images/skoolz.PNG';
-import { KidsArena } from '../../Assets/index'
-import './Kids_Arena.css';
-
-
+import { KidsArena } from '../../Assets/index';
 import { Link } from "react-router-dom";
+import './Kids_Arena.css';
 
 const KidsArenaComponent = () => {
     return (
         <div>
-            {console.log(KidsArena)}
             <HeaderComponent />
             <div className="kidsArena baseContainer">
                 <div className="row">
@@ -19,7 +16,6 @@ const KidsArenaComponent = () => {
                         <div className="headerPart my-4">
                             <h1>Kids Arena (Content by Kids)</h1>
                         </div>
-
                     </div>
                 </div>
                 <div className="row">
@@ -35,12 +31,11 @@ const KidsArenaComponent = () => {
                                             <div className="cardImage p-3">
                                                 <img className="img-fluid cardImage" src={val.eventImageUrl} />
                                             </div>
-
                                         </div>
                                         <div className="col-lg-6 col-sm-12 col-md-12 d-flex flex-column align-content-between">
                                             <div className="d-flex align-items-start flex-column eventContent mb-2">
                                                 <div className="eventsLink my-1">
-                                                    <h5><Link to={`/kids-arena/${val.id}`}>{val.eventTitle}</Link></h5>
+                                                    <h5><Link to={`/kids-arena/${val.eventTitle.split(' ').join('-').toLocaleLowerCase()}`} state={val.id}>{val.eventTitle}</Link></h5>
                                                 </div>
                                                 <div className="eventDiscription  m-2">
                                                     <p>{val.eventText}</p>
@@ -55,7 +50,7 @@ const KidsArenaComponent = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="col-lg-3 col-sm-12 col-md-12 mt-3">
+                    <div className="col-lg-3 col-sm-12 col-md-12 mt-5">
                         <div className="kidsArenaRightSide">
                             <div className="title">
                                 <h5>Recent Post</h5>
@@ -66,12 +61,14 @@ const KidsArenaComponent = () => {
                                     <div className="row" key={value.id}>
                                         <div className="col-4">
                                             <div className="recentImageLink">
-                                                <a href="# me-4"><img className="img-fluid" src={value.eventImageUrl} /></a>
+                                                <Link to={`/kids-arena/${value.eventTitle.split(' ').join('-').toLocaleLowerCase()}`} state={value.id}>
+                                                    <a className="me-4"><img className="img-fluid" src={value.eventImageUrl} /></a>
+                                                </Link>
                                             </div>
                                         </div>
                                         <div className="col-8">
                                             <div className="recentTextLink">
-                                                <a href="#">{value.eventTitle}</a>
+                                                <Link to={`/kids-arena/${value.eventTitle.split(' ').join('-').toLocaleLowerCase()}`} state={value.id}> <a>{value.eventTitle}</a></Link>
                                             </div>
                                         </div>
                                     </div>

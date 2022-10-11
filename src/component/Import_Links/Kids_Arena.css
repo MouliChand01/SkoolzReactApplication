@@ -72,9 +72,19 @@
    border-radius: 0;
 }
 
-.kidsArena .headLinks a{
+.kidsArena .headLinks a,
+.kidsArenaRightSide .title{
     color: black;
 }
 .kidsArena .headLinks a:hover{
     color:rgba(52, 168, 79, 1);
+}
+.kidsArenaRightSide .recentTextLink{
+    font-size: small;
+    font-weight: 600;
+}
+.kidsArenaRightSide .recentTextLink a:hover{
+    font-size: small;
+    font-weight: 600;
+    color:rgba(52, 168, 79, 1) !important ;
 }

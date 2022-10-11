@@ -145,7 +145,7 @@ const BlogsComp = () => {
                                     <div className="col-lg-6 col-sm-12 col-md-12 d-flex flex-column align-content-between">
                                         <div className="d-flex align-items-start flex-column eventContent mb-2">
                                             <div className="eventsLink m-2">
-                                                <h5><a><Link to="/blogs-details" state={sortedBlogs[index]} >{value.blogName}</Link></a></h5>
+                                                <h5><a><Link to={`/blogs-details/${value.blogName.split(' ').join('-').toLocaleLowerCase()}`} state={sortedBlogs[index]} >{value.blogName}</Link></a></h5>
                                             </div>
                                             <div className="eventDiscription mt-3 m-2">
                                                 <p>{value.blogDes}</p>

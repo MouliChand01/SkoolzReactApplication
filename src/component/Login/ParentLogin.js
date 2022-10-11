@@ -70,7 +70,7 @@ const ParentLoginComp = () => {
                             <div className="card loginCard mt-5">
                                 <div className="cardLogo d-flex"><FontAwesomeIcon className="fa-2xl" icon={faUser} /></div>
                                 <div className="card-header">
-                                    <h3 className="title text-center m-3">Parent Login To Search, Compare, Apply For The Best School</h3>
+                                    <h3 className="title text-center m-1">Parent Login To Search, Compare, Apply For The Best School</h3>
                                 </div>
                                 <div className="card-body mb-1">
                                     <form onSubmit={formik.handleSubmit}>

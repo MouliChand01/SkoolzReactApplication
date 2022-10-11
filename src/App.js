@@ -38,16 +38,16 @@ function App() {
             <Route path="/about-us" element={<About_usComponent />} />
 
             <Route path="/events-webinar" element={<Events_WebinarComponent />} />
-            <Route path="/events-webinar-details" element={<EventsWebinardetailsComponent />} />
+            <Route path="/events-webinar/:name" element={<EventsWebinardetailsComponent />} />
 
             <Route path="/awards" element={<AwardAndRecognitionsComp />} />
             <Route path="/awards/index" element={<AwardDetailsComp />} />
 
             <Route path="/kids-arena" element={<KidsArenaComponent />} />
-            <Route path="/kids-arena/:id" element={<KidsArenadetailsComponent />} />
+            <Route path="/kids-arena/:name" element={<KidsArenadetailsComponent />} />
 
             <Route path="/blogs" element={<BlogsComp />} />
-            <Route path="/blogs-details" element={<BlogsDetailsComp />} />
+            <Route path="/blogs-details/:name" element={<BlogsDetailsComp />} />
 
             <Route path="/school-details" element={<DeatailsSchoolComponent />} />
             <Route path="/testimonial/index" element={<TestimonialDetailsComp />} />
