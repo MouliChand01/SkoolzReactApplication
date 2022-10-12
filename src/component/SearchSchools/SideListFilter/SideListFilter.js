@@ -1,13 +1,11 @@
-import React, { useEffect, useState ,memo} from "react";
-import "./SideListFilter.css"
-import sidebarjson from '../../../Assets/sideBar.json'
-import { counter } from "@fortawesome/fontawesome-svg-core";
+import React, { useState ,memo} from "react";
+import "./SideListFilter.css";
+import sidebarjson from '../../../Assets/sideBar.json';
 
 const ListFilter = (props) => {
-
     const [data, setData] = useState(sidebarjson);
     const [count,setCount]=useState()
-    const [controlArrayObjectNames,setControlArrayObjectNames]=useState([])
+    const [controlArrayObjectNames,setControlArrayObjectNames]=useState([])  /* seleted filelds store*/ 
     const [schoolFilter, setSchoolFilter] = useState([])
     const [classificationFilter, setClassificationFilter] = useState([])
     const [boardFilter, setBoardFilter] = useState([])
@@ -111,7 +109,6 @@ const ListFilter = (props) => {
     return (
 
         <div>
-            {console.log(controlArrayObjectNames,'ppppppp')}
             <div className="searchFilters">
                 Search Filters <a href="#" className="clearFilters"> Clear All </a>
             </div>

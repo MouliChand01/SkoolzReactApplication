@@ -53,3 +53,6 @@ button{
     text-align: left;
 
 }
+.sidebar-card button{
+    font-size: 14px;
+}

@@ -2,7 +2,7 @@ import React, { useState, memo, useEffect } from "react";
 import school1 from "../../../Assets/Images/school_CoverPicture2.png";
 import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faEnvelope, faUser, faClock, faXmarkSquare, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faEnvelope, faUser, faClock, faXmarkSquare, faLocationDot,faXmark} from '@fortawesome/free-solid-svg-icons';
 import SearchData from "../../../Assets/searchSchool.json";
 import Swal from 'sweetalert2';
 import "./CardComponent.css";
@@ -28,9 +28,15 @@ const CardFilter = (props) => {
     const [meetingMode, setMeetingMode] = useState("");
     const [compairSchool, setCompairSchool] = useState([]);
     const [shortlistedSchools, setShortlistedSchools] = useState([]);
+    const [getingSelecetdNames,setGetingSelecetdNames] =useState([]);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    useEffect(()=>{
+        let name = [...props.sendingselectedNames];
+        setGetingSelecetdNames(name)
+    },[props.sendingselectedNames])
 
     const handelSubmit = () => {
         if (!parentName) {
@@ -122,11 +128,18 @@ const CardFilter = (props) => {
         setShortlistedSchools(selectedObject)  /* this is to store locally in shortlisted scholls but we need api for that we just send sample purpose*/
     }
 
+    const btnRemove=(btnName)=>{
+        let selectedbtnIndex= getingSelecetdNames.indexOf(btnName);
+        getingSelecetdNames.splice(selectedbtnIndex,1);
+        let updatedSeletedBtns = [...getingSelecetdNames]
+        setGetingSelecetdNames(updatedSeletedBtns)
+    }
+
     useEffect(()=>{
         compairSchool.splice(props.deletingaitem,1)
         setCompairSchool(compairSchool)
     },[props.deletingaitem])
-
+  
     return (
         <div>
             <Modal
@@ -230,13 +243,17 @@ const CardFilter = (props) => {
     ## above one Model pop up bookappoinment bellow one cards filters ##
     #################################################################### */}
             <div className='container cardFilter'>
-                {console.log(props.sendingselectedNames)}
                 <div className='row mb-3'>
                     <div className='col-12 col-md-12 col-lg-9 buttons'>
                         <button className='btn-selected button col-lg-1'>Schools</button>
                         <button className='buttonHobby'>Hobby classes</button>
                         <button className='buttonTuition'>Tuitions</button>
                     </div>
+                </div>
+                <div className="row propsBtnGroup">
+                    {getingSelecetdNames.map((btn)=>(
+                        <button className="propsBtn">{btn}&nbsp;<FontAwesomeIcon icon={faXmark} onClick={()=>btnRemove(btn)}/></button>
+                    ))}
                 </div>
                 {schoolData && schoolData.map((data) => {
                     return <div key={data.schoolId} className='mb-2'>

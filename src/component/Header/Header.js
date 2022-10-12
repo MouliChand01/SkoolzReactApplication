@@ -18,11 +18,12 @@ const HeaderComponent = (props) => {
     const [display, setDisplay] = useState(false);
     const [email, setEmail] = useState('');
     const [address, setAddress] = useState("");
+    const [schoolData,setSchoolData]=useState([]);
     const [corodinates, setCorodinates] = useState({
         lat: 12.925317,
         lng: 77.6166666
     });
-    const [schoolData,setSchoolData]=useState([])
+  
 
     const handleSelect = async value => {
         const results = await geocodeByAddress(value);
@@ -30,7 +31,7 @@ const HeaderComponent = (props) => {
         // console.log(data);
         setAddress(value);
         setCorodinates(data);
-        axios.post("https://api.endpoint", {
+        axios.post(`${process.env.dev}/endpoint`, {
             "schoolType": "",
             "schoolClassification": "",
             "schoolBoard": "",

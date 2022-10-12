@@ -237,6 +237,14 @@ a {
   padding-right: 90px;
   margin: 20px 0px 32px 0px;
 }
+.propsBtn{
+  display: inline-block;
+  width: fit-content;
+}
+.propsBtnGroup button{
+  background-color: #f8f8f8;
+  color: gray;
+}
 @media (min-width: 992px) {
   .col-lg-1 {
     flex: 0 0 8.333333%;

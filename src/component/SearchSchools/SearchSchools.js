@@ -1,4 +1,4 @@
-import React, { useState, memo, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import FooterComponent from "../Footer/Footer";
 import HeaderComponent from "../Header/Header";
 import ModelListFilter from "./ModelListFilter/ModelListFilter";
@@ -46,7 +46,8 @@ const SearchSchools = (props) => {
           setDeletedItemIndex(index)
     }
     const geetingSelecctedData =(data)=>{
-       setSelectedNames(data)
+       let name= [...data]
+       setSelectedNames(name)
     }
     return (
         <div>
@@ -122,4 +123,4 @@ const SearchSchools = (props) => {
         </div>
     )
 }
-export default memo(SearchSchools);
+export default SearchSchools;
