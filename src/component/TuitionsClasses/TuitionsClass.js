@@ -86,7 +86,6 @@ const TuitionsClassComp = () => {
     }
     return (
         <div>
-            {console.log(role,tuitionupdated)}
             <div className="tuitionsContainer baseContainer">
                 <div className="heading mb-5 mt-5">
                     <h1 className="headingText">Tuition Classes</h1>

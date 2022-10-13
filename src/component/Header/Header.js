@@ -31,27 +31,33 @@ const HeaderComponent = (props) => {
         // console.log(data);
         setAddress(value);
         setCorodinates(data);
-        axios.post(`${process.env.dev}/endpoint`, {
-            "schoolType": "",
-            "schoolClassification": "",
-            "schoolBoard": "",
-            "schoolFee": "",
-            "preSchoolType": "",
-            "hasAcClasses": false,
-            "hasTransport": false,
-            "hasDayCare": false,
-            "hasCCTvSurveillance": false,
-            "fromFilter": 1,
-            "latitude": corodinates.lat,
-            "longitude": corodinates.lng
-        }).then(res => {
-           setSchoolData(res)
-        })
+        // axios.post(`${process.env.dev}/endpoint`, {
+        //     "schoolType": "",
+        //     "schoolClassification": "",
+        //     "schoolBoard": "",
+        //     "schoolFee": "",
+        //     "preSchoolType": "",
+        //     "hasAcClasses": false,
+        //     "hasTransport": false,
+        //     "hasDayCare": false,
+        //     "hasCCTvSurveillance": false,
+        //     "fromFilter": 1,
+        //     "latitude": corodinates.lat,
+        //     "longitude": corodinates.lng
+        // }).then(res => {
+        //    setSchoolData(res)
+        // })
+
+      
+           
+       
+
     };
 
     useEffect(() => {
         let data = localStorage.getItem('email');
-        setEmail(data)
+        setEmail(data);
+        props.gettingCorodinate(corodinates)
     });
 
     const Toggle = () => {
@@ -72,9 +78,7 @@ const HeaderComponent = (props) => {
     };
 
     return (
-
-        <div>
-            {console.log(corodinates, 'ppp')}
+     <div>
             {flag === 0 ? (
                 <div className="header baseContainer webHeader">
                     <div className="logo"><Link to={'/'}><img src={skoolzlogo} alt="logo" /></Link></div>

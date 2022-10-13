@@ -76,7 +76,6 @@ const HobbyClassesComp = () => {
     }
     return (
         <div>
-            {console.log(role, hobbyupdated)}
             <div className="hobbyClassContainer baseContainer">
                 <div className="heading mb-5 mt-5">
                     <h1 className="headingText">Hobby Classes</h1>

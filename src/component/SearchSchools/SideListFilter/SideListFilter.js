@@ -1,11 +1,12 @@
 import React, { useState ,memo} from "react";
 import "./SideListFilter.css";
 import sidebarjson from '../../../Assets/sideBar.json';
+import axios from "axios";
 
 const ListFilter = (props) => {
     const [data, setData] = useState(sidebarjson);
-    const [count,setCount]=useState()
-    const [controlArrayObjectNames,setControlArrayObjectNames]=useState([])  /* seleted filelds store*/ 
+    const [count,setCount]= useState()                                       /* what we selecting at last count for search Api*/
+    const [controlArrayObjectNames,setControlArrayObjectNames]=useState([])  /* seleted filelds storered names*/ 
     const [schoolFilter, setSchoolFilter] = useState([])
     const [classificationFilter, setClassificationFilter] = useState([])
     const [boardFilter, setBoardFilter] = useState([])
@@ -103,12 +104,28 @@ const ListFilter = (props) => {
                 setFacilitiesFilter(checkedData1)
                 setCount(5) 
             }
-        }
-        props.geetingSelecctedData(controlArrayObjectNames)
+        };
+        // axios.post(`${process.env.dev}/endpoint`, {
+        //     "schoolType": "",
+        //     "schoolClassification": "",
+        //     "schoolBoard": "",
+        //     "schoolFee": "",
+        //     "preSchoolType": "",
+        //     "hasAcClasses": false,
+        //     "hasTransport": false,
+        //     "hasDayCare": false,
+        //     "hasCCTvSurveillance": false,
+        //     "fromFilter": 1,
+        //     "latitude": props.sendingCorodinates.lat,
+        //     "longitude": props.sendingCorodinates.lng
+        // }).then(res => {
+        //    setSchoolData(res)
+        // });
+        props.geetingSelecctedData(controlArrayObjectNames);
     }
     return (
-
         <div>
+            {console.log(schoolFilter,classificationFilter, props.sendingCorodinates,"mmmm")}
             <div className="searchFilters">
                 Search Filters <a href="#" className="clearFilters"> Clear All </a>
             </div>

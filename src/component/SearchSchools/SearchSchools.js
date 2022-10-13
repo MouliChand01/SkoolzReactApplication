@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 const SearchSchools = (props) => {
     const [display, setDisplay] = useState(false);
     const [footerdisplay, setFooterDisplay] = useState(false);
+    const [gettingCorod,setGettingCorod]=useState()
     const [deletedItemIndex,setDeletedItemIndex]=useState();
     const [selectedNames,setSelectedNames]=useState([]);           /*to geting name and send to names array into cardcomponents*/
     const [updatedObjects, setUpdatedObjects] = useState([]);
@@ -49,10 +50,14 @@ const SearchSchools = (props) => {
        let name= [...data]
        setSelectedNames(name)
     }
+
+    const gettingCorodinates =(data)=>{
+        setGettingCorod(data);
+    }
     return (
         <div>
             <div className="schoolSearch">
-                <HeaderComponent />
+                <HeaderComponent gettingCorodinate={gettingCorodinates}/>
                 <br /><br /><br />
                 {display && (
                     <div className={`model ${display && 'show'}`} modelFilter id="modelFilter">
@@ -68,7 +73,7 @@ const SearchSchools = (props) => {
                 <div className="container grid">
                     <div className="row schools-container">
                         <div className="col-md-12 col-lg-4 col-xl-3 SearchFilter searchFilterPad">
-                            <ListFilter geetingSelecctedData={geetingSelecctedData}/>
+                            <ListFilter geetingSelecctedData={geetingSelecctedData} sendingCorodinates={gettingCorod}/>
                         </div>
                         <div className="col-md-12 col-lg-8 col-xl-9 cardFilter" >
                             <CardFilter comapredObject={getingObjects} deletingaitem={deletedItemIndex} sendingselectedNames={selectedNames}/>

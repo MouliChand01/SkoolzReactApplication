@@ -22,7 +22,6 @@ const Testimonials = () => {
 
         })
         function doneResizing() {
-            console.log("window is ", window.innerHeight, window.innerWidth)
             setMywindow({ height: window.innerHeight, width: window.innerWidth })
         }
 

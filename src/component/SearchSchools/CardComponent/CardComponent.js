@@ -251,8 +251,8 @@ const CardFilter = (props) => {
                     </div>
                 </div>
                 <div className="row propsBtnGroup">
-                    {getingSelecetdNames.map((btn)=>(
-                        <button className="propsBtn">{btn}&nbsp;<FontAwesomeIcon icon={faXmark} onClick={()=>btnRemove(btn)}/></button>
+                    {getingSelecetdNames.map((btn,index)=>(
+                        <button key={index} className="propsBtn">{btn}&nbsp;<FontAwesomeIcon icon={faXmark} onClick={()=>btnRemove(btn)}/></button>
                     ))}
                 </div>
                 {schoolData && schoolData.map((data) => {
