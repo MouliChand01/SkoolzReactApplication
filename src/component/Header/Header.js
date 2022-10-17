@@ -10,7 +10,7 @@ import google from '../../Assets/Images/googleimage.png';
 import "./Header.css";
 import axios from "axios";
 
-const HeaderComponent = (props) => {
+const HeaderComponent = (props,{gettingCorodinate}) => {
 
     const clientId = "280716774713-ln7m28uobck7kbmpkd5do2h4ci2ipj5j.apps.googleusercontent.com";
     const [flag, setFlag] = useState("");
@@ -27,8 +27,7 @@ const HeaderComponent = (props) => {
 
     const handleSelect = async value => {
         const results = await geocodeByAddress(value);
-        const data = await getLatLng(results[0])
-        // console.log(data);
+        const data = await getLatLng(results[0]);
         setAddress(value);
         setCorodinates(data);
         // axios.post(`${process.env.dev}/endpoint`, {
@@ -47,18 +46,13 @@ const HeaderComponent = (props) => {
         // }).then(res => {
         //    setSchoolData(res)
         // })
-
-      
-           
-       
-
     };
 
     useEffect(() => {
         let data = localStorage.getItem('email');
         setEmail(data);
-        props.gettingCorodinate(corodinates)
-    });
+        //props.gettingCorodinate(corodinates)
+    },[corodinates]);
 
     const Toggle = () => {
         return (

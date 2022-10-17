@@ -9,6 +9,7 @@ import { GoogleLogin} from "react-google-login";
 import { useFormik } from 'formik';
 import SkoolzHomepageComponent from "../SkoolzHomePage/SkoolzHomePage";
 import { Button } from "react-bootstrap";
+import axios, { Axios } from "axios";
 
 const validate = values => {
     const errors = {};
@@ -55,6 +56,19 @@ const ParentLoginComp = () => {
         },
         validate,
         onSubmit: values => {
+            axios.post("https://dev-api.skoolz.in/api/Authentication/token", {
+                "username":values.Username,
+                "password":values.password
+               },
+               {  
+               headers :{
+                'accept': 'application/json',  
+               'Content-Type': 'application/json' 
+            }
+              
+              })
+              .then((res)=>console.log(res))
+              .catch((error)=>(console.log(error,"hiiiii")))
             alert(JSON.stringify(values, null, 2));
         },
     });
@@ -73,7 +87,7 @@ const ParentLoginComp = () => {
                                     <h3 className="title text-center m-1">Parent Login To Search, Compare, Apply For The Best School</h3>
                                 </div>
                                 <div className="card-body mb-1">
-                                    <form onSubmit={formik.handleSubmit}>
+                                    <form onSubmit={formik.handleSubmit} autoComplete>
                                         <div className="px-2">
                                             <div class="input-group flex-nowrap my-4">
                                                 <span class="input-group-text" style={{ "backgroundColor": "rgb(235, 234, 234)", "border": "none" }} ><FontAwesomeIcon icon={faUser} /></span>

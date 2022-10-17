@@ -28,15 +28,27 @@ const CardFilter = (props) => {
     const [meetingMode, setMeetingMode] = useState("");
     const [compairSchool, setCompairSchool] = useState([]);
     const [shortlistedSchools, setShortlistedSchools] = useState([]);
-    const [getingSelecetdNames,setGetingSelecetdNames] =useState([]);
+    const [schoolTypeArray,setSchoolTypeArray]=useState([])
+    const [classificationTypeArray,setClassificationTypeArray]=useState([])
+    const [boardTypeArray,setBoardTypeArray]=useState([])
+    const [preSchoolTypeArray,setPreSchoolTypeArray]=useState([])
+    const [facilitiesTypeArray,setFacilitiesTypeArray]=useState([])  
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     useEffect(()=>{
-        let name = [...props.sendingselectedNames];
-        setGetingSelecetdNames(name)
-    },[props.sendingselectedNames])
+        let name = [...props.schoolTypeItems];
+        setSchoolTypeArray(name)
+        let name1= [...props.classificationItems];
+        setClassificationTypeArray(name1)
+        let name2 =[... props.bordItems];
+        setBoardTypeArray(name2)
+        let name3=[...props.facilitiesItems];
+        setFacilitiesTypeArray(name3)
+        let name4=[...props.preSchoolTypeItems];
+        setPreSchoolTypeArray(name4)
+    },[props.schoolTypeItems,props.classificationItems,props.bordItems,props.facilitiesItems,props.preSchoolTypeItems])
 
     const handelSubmit = () => {
         if (!parentName) {
@@ -62,7 +74,6 @@ const CardFilter = (props) => {
         }
     }
     const seletedinput = (name, e) => {
-        ;
         if (name === 'parentname') {
             setparentNameField(true);
             setParentName(e.target.value)
@@ -128,17 +139,40 @@ const CardFilter = (props) => {
         setShortlistedSchools(selectedObject)  /* this is to store locally in shortlisted scholls but we need api for that we just send sample purpose*/
     }
 
-    const btnRemove=(btnName)=>{
-        let selectedbtnIndex= getingSelecetdNames.indexOf(btnName);
-        getingSelecetdNames.splice(selectedbtnIndex,1);
-        let updatedSeletedBtns = [...getingSelecetdNames]
-        setGetingSelecetdNames(updatedSeletedBtns)
+    const btnRemove=(btntype,btnIndex)=>{
+       if(btntype == "schoolType"){
+        schoolTypeArray.splice(btnIndex,1);
+        let checked= [...schoolTypeArray]
+        setSchoolTypeArray(checked)
+       }
+       if(btntype == "classfication"){
+        classificationTypeArray.splice(btnIndex,1);
+        let checked= [...classificationTypeArray]
+        setClassificationTypeArray(checked)
+       }
+       if(btntype == "board"){
+        boardTypeArray.splice(btnIndex,1);
+        let checked= [...boardTypeArray]
+        setBoardTypeArray(checked)
+       }
+       if(btntype == "facilities"){
+        facilitiesTypeArray.splice(btnIndex,1);
+        let checked= [...facilitiesTypeArray]
+        setFacilitiesTypeArray(checked)
+       }
+       if(btntype == "preSchool"){
+        preSchoolTypeArray.splice(btnIndex,1);
+        let checked= [...preSchoolTypeArray]
+        setPreSchoolTypeArray(checked)
+       }
+       props.sendingAllArrays(schoolTypeArray,classificationTypeArray,boardTypeArray,facilitiesTypeArray,preSchoolTypeArray)
     }
 
     useEffect(()=>{
         compairSchool.splice(props.deletingaitem,1)
         setCompairSchool(compairSchool)
-    },[props.deletingaitem])
+    },[props.deletingaitem]);
+
   
     return (
         <div>
@@ -158,26 +192,26 @@ const CardFilter = (props) => {
                         <div className="px-2">
                             <div class="input-group flex-nowrap my-4">
                                 <span class="input-group-text" style={{ "backgroundColor": "rgb(235, 234, 234)", "border": "none" }} ><FontAwesomeIcon icon={faUser} /></span>
-                                <input type="text" class="form-control" placeholder="Parent Full Name" onChange={(evant) => seletedinput('parentname', event)} />
+                                <input type="text" class="form-control" placeholder="Parent Full Name" onChange={(event) => seletedinput('parentname', event)} />
                             </div>
                             {!parentNameField ? (<p className="errorMsg">Please enter name</p>) : ""}
                             <div class="input-group flex-nowrap my-4">
                                 <span class="input-group-text" style={{ "backgroundColor": "rgb(235, 234, 234)", "border": "none" }} ><FontAwesomeIcon icon={faEnvelope} /></span>
-                                <input type="email" class="form-control" placeholder="Email" onChange={(evant) => seletedinput('parentmail', event)} />
+                                <input type="email" class="form-control" placeholder="Email" onChange={(event) => seletedinput('parentmail', event)} />
                             </div>
                             {!emailField ? (<p className="errorMsg">Please enter valid email</p>) : ""}
                             <div className="row">
                                 <div className="col-lg-6 col-sm-12 col-md-12">
                                     <div class="input-group flex-nowrap my-4">
                                         <span class="input-group-text" style={{ "backgroundColor": "rgb(235, 234, 234)", "border": "none" }} ><FontAwesomeIcon icon={faClock} /></span>
-                                        <input type="date" class="form-control" onChange={(evant) => seletedinput('date', event)} />
+                                        <input type="date" class="form-control" onChange={(event) => seletedinput('date', event)} />
                                     </div>
                                     {!dateField ? (<p className="errorMsg">Enter proper date</p>) : ""}
                                 </div>
 
                                 <div className="col-lg-6 col-sm-12 col-md-12">
                                     <div class="input-group flex-nowrap my-4">
-                                        <select name="cars" id="cars" style={{ "width": "100%", "height": "39px", "border": "none" }} onChange={(evant) => seletedinput('time', event)}>
+                                        <select name="cars" id="cars" style={{ "width": "100%", "height": "39px", "border": "none" }} onChange={(event) => seletedinput('time', event)}>
                                             <option disabled selected>Select Time</option>
                                             <option value="9:00 AM - 9:30 AM">9:00 AM - 9:30 AM</option>
                                             <option value="9:30 AM - 10:00 AM">9:30 AM - 10:00 AM</option>
@@ -204,7 +238,7 @@ const CardFilter = (props) => {
                                 <div className="col-lg-6 col-sm-12 col-md-12">
                                     <div class="input-group flex-nowrap my-4">
                                         <span class="input-group-text" style={{ "backgroundColor": "#FFFFFF", "border": "none" }} >+ 91 </span>
-                                        <input type="tel" class="form-control" placeholder="Mobile Number" maxLength={10} onChange={(evant) => seletedinput('Mobilenumber', event)} />
+                                        <input type="tel" class="form-control" placeholder="Mobile Number" maxLength={10} onChange={(event) => seletedinput('Mobilenumber', event)} />
                                     </div>
                                     {!mobileField ? (<p className="errorMsg">Please enter phone number</p>) : ""}
                                 </div>
@@ -213,7 +247,7 @@ const CardFilter = (props) => {
                                 </div>
                                 <div className="col-md-3 col-6">
                                     <div class="input-group flex-nowrap my-4">
-                                        <input type="tel" class="form-control" placeholder="OTP" maxLength={4} onChange={(evant) => seletedinput('otp', event)} />
+                                        <input type="tel" class="form-control" placeholder="OTP" maxLength={4} onChange={(event) => seletedinput('otp', event)} />
                                     </div>
                                     {!otpField ? (<p className="errorMsg">Please enter OTP</p>) : ""}
                                 </div>
@@ -221,7 +255,7 @@ const CardFilter = (props) => {
                             <div className="row">
                                 <div className="col-lg-6 col-sm-12 col-md-12">
                                     <div class="input-group flex-nowrap my-4">
-                                        <select name="meetingMode" id="meetingMode" style={{ "width": "100%", "height": "39px", "border": "none" }} onChange={(evant) => seletedinput('meetingMode', event)}>
+                                        <select name="meetingMode" id="meetingMode" style={{ "width": "100%", "height": "39px", "border": "none" }} onChange={(event) => seletedinput('meetingMode', event)}>
                                             <option disabled selected>Select Meeting Mode</option>
                                             <option value="Meeting Meet">Meeting Meet</option>
                                             <option value="Virtual Meet">Virtual Meet</option>
@@ -251,8 +285,20 @@ const CardFilter = (props) => {
                     </div>
                 </div>
                 <div className="row propsBtnGroup">
-                    {getingSelecetdNames.map((btn,index)=>(
-                        <button key={index} className="propsBtn">{btn}&nbsp;<FontAwesomeIcon icon={faXmark} onClick={()=>btnRemove(btn)}/></button>
+                    {schoolTypeArray.map((btn,index)=>(
+                        <button key={index} className="propsBtn">{btn}&nbsp;<FontAwesomeIcon icon={faXmark} onClick={()=>btnRemove("schoolType",index)}/></button>
+                    ))}
+                    {classificationTypeArray.map((btn,index)=>(
+                        <button key={index} className="propsBtn">{btn}&nbsp;<FontAwesomeIcon icon={faXmark} onClick={()=>btnRemove("classfication",index)}/></button>
+                    ))}
+                    {boardTypeArray.map((btn,index)=>(
+                        <button key={index} className="propsBtn">{btn}&nbsp;<FontAwesomeIcon icon={faXmark} onClick={()=>btnRemove("board",index)}/></button>
+                    ))}
+                    {preSchoolTypeArray.map((btn,index)=>(
+                        <button key={index} className="propsBtn">{btn}&nbsp;<FontAwesomeIcon icon={faXmark} onClick={()=>btnRemove("preSchool",index)}/></button>
+                    ))}
+                    {facilitiesTypeArray.map((btn,index)=>(
+                        <button key={index} className="propsBtn">{btn}&nbsp;<FontAwesomeIcon icon={faXmark} onClick={()=>btnRemove("facilities",index)}/></button>
                     ))}
                 </div>
                 {schoolData && schoolData.map((data) => {

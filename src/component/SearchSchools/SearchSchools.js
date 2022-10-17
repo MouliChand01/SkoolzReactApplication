@@ -13,15 +13,17 @@ import { Link } from "react-router-dom";
 const SearchSchools = (props) => {
     const [display, setDisplay] = useState(false);
     const [footerdisplay, setFooterDisplay] = useState(false);
-    const [gettingCorod,setGettingCorod]=useState()
-    const [deletedItemIndex,setDeletedItemIndex]=useState();
-    const [selectedNames,setSelectedNames]=useState([]);           /*to geting name and send to names array into cardcomponents*/
+    const [gettingCorod, setGettingCorod] = useState();
+    const [deletedItemIndex, setDeletedItemIndex] = useState();
+    const [schoolTypeArray, setSchoolTypeArray] = useState([])
+    const [classificationTypeArray, setClassificationTypeArray] = useState([])
+    const [boardTypeArray, setBoardTypeArray] = useState([])
+    const [preSchoolTypeArray,setPreSchoolTypeArray]=useState([])
+    const [facilitiesTypeArray, setFacilitiesTypeArray] = useState([])
     const [updatedObjects, setUpdatedObjects] = useState([]);
-    const [schoolFilter, setSchoolFilter] = useState([]);
-    const [classificationFilter, setClassificationFilter] = useState([]);
-    const [boardFilter, setBoardFilter] = useState([]);
-    const [preSchoolTypeFilter, setPreSchoolTypeFilter] = useState([]);
-    const [facilitiesFilter, setFacilitiesFilter] = useState([]);
+
+    const [gettingschool,setGettingSchool]=useState([])
+
 
     const Toggle = () => {
         return setDisplay(!display)
@@ -41,23 +43,48 @@ const SearchSchools = (props) => {
         setUpdatedObjects(data)
     }
 
-    const deletingSchool=(id,index)=>{
-          let checked = updatedObjects.filter((ele)=>ele.schoolId !== id);
-          setUpdatedObjects(checked)
-          setDeletedItemIndex(index)
+    const deletingSchool = (id, index) => {
+        let checked = updatedObjects.filter((ele) => ele.schoolId !== id);
+        setUpdatedObjects(checked)
+        setDeletedItemIndex(index)
     }
-    const geetingSelecctedData =(data)=>{
-       let name= [...data]
-       setSelectedNames(name)
+    const geetingSelecctedData = (arr1, arr2, arr3, arr4,arr5) => {
+        let name = [...arr1]
+        setSchoolTypeArray(name)
+        let name1 = [...arr2]
+        setClassificationTypeArray(name1)
+        let name2 = [...arr3]
+        setBoardTypeArray(name2)
+        let name3 = [...arr4]
+        setFacilitiesTypeArray(name3)
+        let name4 = [...arr5]
+        setPreSchoolTypeArray(name4)
+        
     }
 
-    const gettingCorodinates =(data)=>{
+    const gettingCorodinates = (data) => {
         setGettingCorod(data);
     }
+
+    const sendingAllArrays = (arr1, arr2, arr3, arr4,arr5) => {
+        let name = [...arr1]
+        setSchoolTypeArray(name)
+        setGettingSchool(name)
+        let name1 = [...arr2]
+        setClassificationTypeArray(name1)
+        let name2 = [...arr3]
+        setBoardTypeArray(name2)
+        let name3 = [...arr4]
+        setFacilitiesTypeArray(name3)
+        let name4 = [...arr5]
+        setPreSchoolTypeArray(name4)
+    }
+
     return (
         <div>
+            {}
             <div className="schoolSearch">
-                <HeaderComponent gettingCorodinate={gettingCorodinates}/>
+                <HeaderComponent gettingCorodinate={gettingCorodinates} />
                 <br /><br /><br />
                 {display && (
                     <div className={`model ${display && 'show'}`} modelFilter id="modelFilter">
@@ -73,10 +100,11 @@ const SearchSchools = (props) => {
                 <div className="container grid">
                     <div className="row schools-container">
                         <div className="col-md-12 col-lg-4 col-xl-3 SearchFilter searchFilterPad">
-                            <ListFilter geetingSelecctedData={geetingSelecctedData} sendingCorodinates={gettingCorod}/>
+                            <ListFilter geetingSeleectedArrayItems={geetingSelecctedData} sendingCorodinates={gettingCorod} gettingSchool={gettingschool} classificationItems={classificationTypeArray} bordItems={boardTypeArray} facilitiesItems={facilitiesTypeArray} preSchoolTypeItems={preSchoolTypeArray}/>
                         </div>
                         <div className="col-md-12 col-lg-8 col-xl-9 cardFilter" >
-                            <CardFilter comapredObject={getingObjects} deletingaitem={deletedItemIndex} sendingselectedNames={selectedNames}/>
+                            <CardFilter comapredObject={getingObjects}
+                                deletingaitem={deletedItemIndex} schoolTypeItems={schoolTypeArray} classificationItems={classificationTypeArray} bordItems={boardTypeArray} facilitiesItems={facilitiesTypeArray} preSchoolTypeItems={preSchoolTypeArray} sendingAllArrays={sendingAllArrays} />
                         </div>
                         <div className="hidenIcons">
                             <div className="filterIcon">
@@ -108,7 +136,7 @@ const SearchSchools = (props) => {
                                                         <div className="row">
                                                             <div className="col-2"></div>
                                                             <div className="col-8">{ele.schoolName}</div>
-                                                            <div className="col-2 d-flex align-items-center"><FontAwesomeIcon icon={faTrashCan} style={{ "color": "red" }} onClick={()=>deletingSchool(ele.schoolId,index)}/></div>
+                                                            <div className="col-2 d-flex align-items-center"><FontAwesomeIcon icon={faTrashCan} style={{ "color": "red" }} onClick={() => deletingSchool(ele.schoolId, index)} /></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -116,7 +144,7 @@ const SearchSchools = (props) => {
                                     </div>
                                 </div>
                                 <div className="col-3">
-                                    <div><Link to="/home/compare" state={{from:updatedObjects}}><button className="compairBtn">Compare</button></Link></div>
+                                    <div><Link to="/home/compare" state={{ from: updatedObjects }}><button className="compairBtn">Compare</button></Link></div>
                                 </div>
                             </div>
                         </div>

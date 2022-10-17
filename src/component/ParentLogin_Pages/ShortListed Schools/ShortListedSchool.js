@@ -272,26 +272,26 @@ function ShortListedSchool() {
                         <div className="px-2">
                             <div class="input-group flex-nowrap my-4">
                                 <span class="input-group-text" style={{ "backgroundColor": "rgb(235, 234, 234)", "border": "none" }} ><FontAwesomeIcon icon={faUser} /></span>
-                                <input type="text" class="form-control" placeholder="Parent Full Name" onChange={(evant) => seletedinput('parentname', event)} />
+                                <input type="text" class="form-control" placeholder="Parent Full Name" onChange={(event) => seletedinput('parentname', event)} />
                             </div>
                             {!parentNameField ? (<p className="errorMsg">Please enter name</p>) : ""}
                             <div class="input-group flex-nowrap my-4">
                                 <span class="input-group-text" style={{ "backgroundColor": "rgb(235, 234, 234)", "border": "none" }} ><FontAwesomeIcon icon={faEnvelope} /></span>
-                                <input type="email" class="form-control" placeholder="Email" onChange={(evant) => seletedinput('parentmail', event)} />
+                                <input type="email" class="form-control" placeholder="Email" onChange={(event) => seletedinput('parentmail', event)} />
                             </div>
                             {!emailField ? (<p className="errorMsg">Please enter valid email</p>) : ""}
                             <div className="row">
                                 <div className="col-lg-6 col-sm-12 col-md-12">
                                     <div class="input-group flex-nowrap my-4">
                                         <span class="input-group-text" style={{ "backgroundColor": "rgb(235, 234, 234)", "border": "none" }} ><FontAwesomeIcon icon={faClock} /></span>
-                                        <input type="date" class="form-control" onChange={(evant) => seletedinput('date', event)} />
+                                        <input type="date" class="form-control" onChange={(event) => seletedinput('date', event)} />
                                     </div>
                                     {!dateField ? (<p className="errorMsg">Enter proper date</p>) : ""}
                                 </div>
 
                                 <div className="col-lg-6 col-sm-12 col-md-12">
                                     <div class="input-group flex-nowrap my-4">
-                                        <select name="cars" id="cars" style={{ "width": "100%", "height": "39px", "border": "none" }} onChange={(evant) => seletedinput('time', event)}>
+                                        <select name="cars" id="cars" style={{ "width": "100%", "height": "39px", "border": "none" }} onChange={(event) => seletedinput('time', event)}>
                                             <option disabled selected>Select Time</option>
                                             <option value="9:00 AM - 9:30 AM">9:00 AM - 9:30 AM</option>
                                             <option value="9:30 AM - 10:00 AM">9:30 AM - 10:00 AM</option>
@@ -318,7 +318,7 @@ function ShortListedSchool() {
                                 <div className="col-lg-6 col-sm-12 col-md-12">
                                     <div class="input-group flex-nowrap my-4">
                                         <span class="input-group-text" style={{ "backgroundColor": "#FFFFFF", "border": "none" }} >+ 91 </span>
-                                        <input type="tel" class="form-control" placeholder="Mobile Number" maxLength={10} onChange={(evant) => seletedinput('Mobilenumber', event)} />
+                                        <input type="tel" class="form-control" placeholder="Mobile Number" maxLength={10} onChange={(event) => seletedinput('Mobilenumber', event)} />
                                     </div>
                                     {!mobileField ? (<p className="errorMsg">Please enter phone number</p>) : ""}
                                 </div>
@@ -327,7 +327,7 @@ function ShortListedSchool() {
                                 </div>
                                 <div className="col-md-3 col-6">
                                     <div class="input-group flex-nowrap my-4">
-                                        <input type="tel" class="form-control" placeholder="OTP" maxLength={4} onChange={(evant) => seletedinput('otp', event)} />
+                                        <input type="tel" class="form-control" placeholder="OTP" maxLength={4} onChange={(event) => seletedinput('otp', event)} />
                                     </div>
                                     {!otpField ? (<p className="errorMsg">Please enter OTP</p>) : ""}
                                 </div>
@@ -335,7 +335,7 @@ function ShortListedSchool() {
                             <div className="row">
                                 <div className="col-lg-6 col-sm-12 col-md-12">
                                     <div class="input-group flex-nowrap my-4">
-                                        <select name="meetingMode" id="meetingMode" style={{ "width": "100%", "height": "39px", "border": "none" }} onChange={(evant) => seletedinput('meetingMode', event)}>
+                                        <select name="meetingMode" id="meetingMode" style={{ "width": "100%", "height": "39px", "border": "none" }} onChange={(event) => seletedinput('meetingMode', event)}>
                                             <option disabled selected>Select Meeting Mode</option>
                                             <option value="Meeting Meet">Meeting Meet</option>
                                             <option value="Virtual Meet">Virtual Meet</option>
